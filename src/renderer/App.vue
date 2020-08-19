@@ -6,8 +6,8 @@
 
 <script>
   export default {
-    name: 'tyconbi'
-  }
+    name: 'tyconbi',
+  };
 </script>
 
 <style>
