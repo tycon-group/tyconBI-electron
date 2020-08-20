@@ -25,19 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="添加部分文字">
-      <change afterPath="$PROJECT_DIR$/src/renderer/assets/leo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/Menu.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/Total.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="搭建了一整个大页面">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/Calculator.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Calculator.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/LandingPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/LandingPage/SystemInformation.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/Menu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Menu.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +89,7 @@
       <updated>1597816235012</updated>
       <workItem from="1597816236258" duration="6448000" />
       <workItem from="1597822702330" duration="6781000" />
-      <workItem from="1597886238424" duration="17931000" />
+      <workItem from="1597886238424" duration="19300000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -128,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597887511737</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="搭建了一整个大页面">
+      <created>1597910873662</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1597910873662</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +162,8 @@
     <MESSAGE value="提交新增配置文件" />
     <MESSAGE value="新增ANT 样式库" />
     <MESSAGE value="添加部分文字" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加部分文字" />
+    <MESSAGE value="搭建了一整个大页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="搭建了一整个大页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="684" y="288" key="FileChooserDialogImpl" timestamp="1597822713902">
