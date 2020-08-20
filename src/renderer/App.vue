@@ -1,21 +1,21 @@
 <template>
-  <a-layout id="components-layout-demo-custom-trigger">
+  <a-layout id="components-layout-demo-custom-trigger" class="layout">
     <a-layout-sider v-model="collapsed" :trigger="null" collapsible>
-      <div class="logo">
-
+      <div class="title_name">
+        <span>太江数据分析系统</span>
       </div>
       <a-menu theme="dark" mode="inline" :default-selected-keys="['1']">
         <a-menu-item key="1">
           <a-icon type="user" />
-          <span>nav 1</span>
+          <span>待办事项</span>
         </a-menu-item>
         <a-menu-item key="2">
           <a-icon type="video-camera" />
-          <span>nav 2</span>
+          <span>所有评分</span>
         </a-menu-item>
         <a-menu-item key="3">
           <a-icon type="upload" />
-          <span>nav 3</span>
+          <span>KPI分析</span>
         </a-menu-item>
       </a-menu>
     </a-layout-sider>
@@ -51,15 +51,24 @@ export default {
   padding: 0 24px;
   cursor: pointer;
   transition: color 0.3s;
+
 }
 
 #components-layout-demo-custom-trigger .trigger:hover {
   color: #1890ff;
+  background-color: red;
 }
 
-#components-layout-demo-custom-trigger .logo {
+.title_name {
+  font-family: "Adobe Caslon Pro Bold",serif;
+  font-size: 20px;
   height: 32px;
-  background: rgba(255, 255, 255, 0.2);
   margin: 16px;
+  color: #ffffff;
+}
+
+.layout {
+  width: 100%;
+  height: 100%;
 }
 </style>
