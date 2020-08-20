@@ -20,14 +20,24 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:leo" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="新增ANT 样式库">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="添加部分文字">
+      <change afterPath="$PROJECT_DIR$/src/renderer/assets/leo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/Menu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/Total.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/Calculator.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Calculator.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/LandingPage.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/LandingPage/SystemInformation.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +47,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -60,7 +70,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testtesttest_autool-fe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/renderer/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -68,13 +78,14 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\tyconBI-electron\src\renderer\assets" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\tyconBI-electron\src\renderer\assets" />
       <recent name="D:\tyconBI-electron\src" />
       <recent name="D:\tyconBI-electron\src\renderer\components" />
       <recent name="D:\tyconBI-electron\src\renderer" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\tyconBI-electron\src\renderer\assets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -87,7 +98,7 @@
       <updated>1597816235012</updated>
       <workItem from="1597816236258" duration="6448000" />
       <workItem from="1597822702330" duration="6781000" />
-      <workItem from="1597886238424" duration="1059000" />
+      <workItem from="1597886238424" duration="17931000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -110,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597827854773</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加部分文字">
+      <created>1597887511736</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597887511737</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +145,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="leo" />
                       </list>
                     </value>
                   </entry>
@@ -145,7 +163,8 @@
     <MESSAGE value="修复配置缺陷" />
     <MESSAGE value="提交新增配置文件" />
     <MESSAGE value="新增ANT 样式库" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增ANT 样式库" />
+    <MESSAGE value="添加部分文字" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加部分文字" />
   </component>
   <component name="WindowStateProjectService">
     <state x="684" y="288" key="FileChooserDialogImpl" timestamp="1597822713902">
@@ -160,5 +179,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597824452517" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1597908790829">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597908790829" />
   </component>
 </project>
