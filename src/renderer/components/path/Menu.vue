@@ -5,15 +5,15 @@
     </div>
     <a-menu theme="dark" mode="inline" :default-selected-keys="['1']">
       <a-menu-item key="1">
-        <a-icon type="user" />
+        <a-icon type="project" />
         <span>待办事项</span>
       </a-menu-item>
       <a-menu-item key="2">
-        <a-icon type="video-camera" />
+        <a-icon type="schedule" />
         <span>所有评分</span>
       </a-menu-item>
       <a-menu-item key="3">
-        <a-icon type="upload" />
+        <a-icon type="line-chart" />
         <span>KPI分析</span>
       </a-menu-item>
     </a-menu>

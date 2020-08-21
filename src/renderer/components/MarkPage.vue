@@ -3,6 +3,12 @@
     <Menu />
     <a-layout>
       <a-layout-header style="background: #fff; padding: 0">
+        <div class="header-total">
+          <SearchInput />
+          <DataBtn />
+          <EyeBtn />
+        </div>
+
       </a-layout-header>
       <div class="mid_content">
         <div class="meun_mid">
@@ -14,7 +20,7 @@
 
         </a-layout-content>
 
-        <ContentsDown />
+        <ContentsDownforMark />
 
       </div>
     </a-layout>
@@ -25,13 +31,19 @@
 import Menu from './path/Menu.vue';
 import ContentLeft from './path/ContentLeft.vue';
 import ContentsUp from './path/ContentsUp';
-import ContentsDown from './path/ContentsDown';
+import ContentsDownforMark from './path/ContentsDownforMark';
+import SearchInput from './path/SearchInput';
+import DataBtn from './path/DataBtn';
+import EyeBtn from './path/EyeBtn';
 
 
 export default {
-  name: 'menu',
+  name: 'MarkPage',
   components: {
-    ContentsDown,
+    EyeBtn,
+    DataBtn,
+    SearchInput,
+    ContentsDownforMark,
     ContentsUp,
     Menu,
     ContentLeft,
@@ -43,6 +55,11 @@ export default {
 <style>
 
 .layout {
+  width: 100%;
+  height: 100%;
+}
+
+.header-total {
   width: 100%;
   height: 100%;
 }
@@ -69,13 +86,6 @@ export default {
   min-Height: 40%;
   float: left;
 }
-.mark_submit {
-  width: 60%;
-  min-Height: 40%;
-  margin: 20px 16px;
-  padding: 24px;
-  background: #ffffff;
-  float: left;
-}
+
 
 </style>
