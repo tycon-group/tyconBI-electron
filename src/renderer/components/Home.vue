@@ -1,6 +1,6 @@
 <template>
   <a-layout id="components-layout-demo-custom-trigger" class="layout">
-    <Menu />
+    <Menus />
     <a-layout>
       <a-layout-header style="background: #fff; padding: 0">
       </a-layout-header>
@@ -22,18 +22,18 @@
 </template>
 
 <script>
-import Menu from './path/Menu.vue';
+import Menus from './path/Menus.vue';
 import ContentLeft from './path/ContentLeft.vue';
 import ContentsUp from './path/ContentsUp';
 import ContentsDown from './path/ContentsDown';
 
 
 export default {
-  name: 'menu',
+  name: 'menus',
   components: {
     ContentsDown,
     ContentsUp,
-    Menu,
+    Menus,
     ContentLeft,
   },
 

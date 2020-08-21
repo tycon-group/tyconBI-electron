@@ -25,21 +25,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="拆分左侧菜单栏为组件">
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDownforMark.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/DataBtn.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/EyeBtn.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/SearchInput.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="将待办事项，所有评分页面组件化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/Calculator.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/Menu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/Menu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/Total.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/Menu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/SearchInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/SearchInput.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +100,7 @@
       <workItem from="1597886238424" duration="19877000" />
       <workItem from="1597912771245" duration="638000" />
       <workItem from="1597914383346" duration="2524000" />
-      <workItem from="1597973196764" duration="9512000" />
+      <workItem from="1597973196764" duration="17386000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -150,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597912456781</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="将待办事项，所有评分页面组件化">
+      <created>1597994451642</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597994451642</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +194,8 @@
     <MESSAGE value="添加部分文字" />
     <MESSAGE value="搭建了一整个大页面" />
     <MESSAGE value="拆分左侧菜单栏为组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="拆分左侧菜单栏为组件" />
+    <MESSAGE value="将待办事项，所有评分页面组件化" />
+    <option name="LAST_COMMIT_MESSAGE" value="将待办事项，所有评分页面组件化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
@@ -208,10 +210,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916900430" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1597973212637">
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1597994460626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597973212637" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597994460626" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597916421385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

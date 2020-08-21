@@ -1,17 +1,11 @@
 <template>
-  <Home />
+  <div id="root">
+    <router-link to="/home">首页</router-link>
+    <router-link to="/markpage">评分</router-link>
+    <router-view></router-view>
+  </div>
 </template>
-<script>
-import Home from './components/Home.vue';
 
-export default {
-  name: 'home',
-  components: {
-    Home,
-  },
-
-};
-</script>
 <style>
 
 </style>

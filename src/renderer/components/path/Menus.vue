@@ -4,17 +4,19 @@
       <span>太江数据分析系统</span>
     </div>
     <a-menu theme="dark" mode="inline" :default-selected-keys="['1']">
-      <a-menu-item key="1">
-        <a-icon type="project" />
-        <span>待办事项</span>
+      <a-menu-item key="1" class="things" @click="toThing">
+        <router-link to="/markpage"><a-icon type="project" />
+          <span>待办事项</span>
+        </router-link>
+
       </a-menu-item>
       <a-menu-item key="2">
         <a-icon type="schedule" />
-        <span>所有评分</span>
+        <span class="marks" @click="toMarks">所有评分</span>
       </a-menu-item>
       <a-menu-item key="3">
         <a-icon type="line-chart" />
-        <span>KPI分析</span>
+        <span class="analysis" @click="toAnalysis">KPI分析</span>
       </a-menu-item>
     </a-menu>
     <div class="title_footer">
@@ -28,6 +30,22 @@
 <script>
 export default {
   name: 'Menu',
+  data() {
+    return {
+      collapsed: false,
+    };
+  },
+  methods: {
+    toThing() {
+      this.$message.success('This is a success message');
+    },
+    toMarks() {
+      this.$message.error('This is an error message');
+    },
+    toAnalysis() {
+      this.$message.warning('This is a warning message');
+    },
+  },
 };
 </script>
 

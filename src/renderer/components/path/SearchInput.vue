@@ -7,6 +7,11 @@
 <script>
 export default {
   name: 'SearchInput',
+  methods: {
+    onSearch(value) {
+      console.log(value);
+    },
+  },
 };
 </script>
 

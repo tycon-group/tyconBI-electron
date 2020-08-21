@@ -1,6 +1,6 @@
 <template>
   <a-layout id="components-layout-demo-custom-trigger" class="layout">
-    <Menu />
+    <Menus />
     <a-layout>
       <a-layout-header style="background: #fff; padding: 0">
         <div class="header-total">
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import Menu from './path/Menu.vue';
+import Menus from './path/Menus.vue';
 import ContentLeft from './path/ContentLeft.vue';
 import ContentsUp from './path/ContentsUp';
 import ContentsDownforMark from './path/ContentsDownforMark';
@@ -45,7 +45,7 @@ export default {
     SearchInput,
     ContentsDownforMark,
     ContentsUp,
-    Menu,
+    Menus,
     ContentLeft,
   },
 
