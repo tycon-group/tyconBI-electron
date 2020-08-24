@@ -3,20 +3,26 @@
     <div class="title_name">
       <span>太江数据分析系统</span>
     </div>
-    <a-menu theme="dark" mode="inline" :default-selected-keys="['1']">
-      <a-menu-item key="1" class="things" @click="toThing">
-        <router-link to="/markpage"><a-icon type="project" />
+    <a-menu theme="dark" mode="inline" :default-selected-keys="[$route.path]">
+      <a-menu-item key="/home" class="things" @click="toThing">
+        <router-link to="/home">
+          <a-icon type="project" />
           <span>待办事项</span>
         </router-link>
+      </a-menu-item>
 
+      <a-menu-item key="/markpage" class="analysis">
+        <router-link to="/markpage">
+          <a-icon type="schedule" />
+          <span class="marks">所有评分</span>
+        </router-link>
       </a-menu-item>
-      <a-menu-item key="2">
-        <a-icon type="schedule" />
-        <span class="marks" @click="toMarks">所有评分</span>
-      </a-menu-item>
-      <a-menu-item key="3">
-        <a-icon type="line-chart" />
-        <span class="analysis" @click="toAnalysis">KPI分析</span>
+
+      <a-menu-item key="/analysis" class="analysis">
+        <router-link to="/analysis">
+          <a-icon type="line-chart" />
+          <span>KPI分析</span>
+        </router-link>
       </a-menu-item>
     </a-menu>
     <div class="title_footer">
@@ -37,13 +43,7 @@ export default {
   },
   methods: {
     toThing() {
-      this.$message.success('This is a success message');
-    },
-    toMarks() {
-      this.$message.error('This is an error message');
-    },
-    toAnalysis() {
-      this.$message.warning('This is a warning message');
+      this.$message.success('这是待办实现页面');
     },
   },
 };
@@ -66,7 +66,6 @@ export default {
   position:fixed;
   bottom:0;
 }
-
 
 .user_name {
   width: 100%;
