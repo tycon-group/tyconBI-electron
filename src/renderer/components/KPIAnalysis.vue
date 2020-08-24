@@ -6,12 +6,17 @@
         <div class="header-total">
           <SearchInput />
           <MonthPage />
+          <ButtonGroupTime />
         </div>
-
       </a-layout-header>
+
       <div class="mid_content">
         <div class="meun_mid">
-          <ContentLeft />
+          <div>
+            <img class="logo_img" src="../assets/tycon.png" />
+          </div>
+          <br/><br/>
+          <CompanyMenu />
         </div>
 
         <a-layout-content class="content">
@@ -33,10 +38,14 @@ import ContentsUp from './path/ContentsUp';
 import ContentsDown from './path/ContentsDown';
 import SearchInput from './path/SearchInput';
 import MonthPage from './path/MonthPage';
+import ButtonGroupTime from './path/ButtonGroupTime';
+import CompanyMenu from './path/CompanyMenu';
 
 export default {
   name: 'KPIAnalysis',
   components: {
+    CompanyMenu,
+    ButtonGroupTime,
     MonthPage,
     ContentsDown,
     ContentsUp,
@@ -69,6 +78,15 @@ export default {
   padding: 24px;
 }
 
+.logo_img {
+  width: 100%;
+}
+
+
+
+
+
+
 .content {
   width: 60%;
   margin: 24px 16px;
@@ -77,12 +95,5 @@ export default {
   min-Height: 40%;
   float: left;
 }
-.mark_submit {
-  width: 60%;
-  min-Height: 40%;
-  margin: 20px 16px;
-  padding: 24px;
-  background: #ffffff;
-  float: left;
-}
+
 </style>

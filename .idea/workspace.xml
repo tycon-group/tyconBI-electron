@@ -25,9 +25,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修复跳转页面后高亮框的选择">
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/MonthPage.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="新建KPI页面，做好了上一月下一月样式">
+      <change afterPath="$PROJECT_DIR$/src/renderer/assets/tycon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/MonthPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/MonthPage.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,17 +74,17 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\tyconBI-electron\src\renderer\components" />
-      <recent name="D:\tyconBI-electron\src\renderer\components\path" />
-      <recent name="D:\tyconBI-electron\src\renderer\assets" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\tyconBI-electron\src\renderer\components\path" />
       <recent name="D:\tyconBI-electron\src\renderer\assets" />
       <recent name="D:\tyconBI-electron\src" />
       <recent name="D:\tyconBI-electron\src\renderer\components" />
       <recent name="D:\tyconBI-electron\src\renderer" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\tyconBI-electron\src\renderer\assets" />
+      <recent name="D:\tyconBI-electron\src\renderer\components" />
+      <recent name="D:\tyconBI-electron\src\renderer\components\path" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -146,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598234724931</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="新建KPI页面，做好了上一月下一月样式">
+      <created>1598238845829</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1598238845829</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +202,8 @@
     <MESSAGE value="搭建了一整个大页面" />
     <MESSAGE value="拆分左侧菜单栏为组件" />
     <MESSAGE value="修复跳转页面后高亮框的选择" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复跳转页面后高亮框的选择" />
+    <MESSAGE value="新建KPI页面，做好了上一月下一月样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="新建KPI页面，做好了上一月下一月样式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
@@ -205,14 +218,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916900430" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1598234739463">
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1598238853745">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598234739463" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598238853745" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597916421385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916421385" />
+    <state x="798" y="266" key="run.anything.popup" timestamp="1598263462109">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598263462109" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1597916396893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

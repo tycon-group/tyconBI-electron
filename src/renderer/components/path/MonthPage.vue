@@ -13,5 +13,9 @@ export default {
 </script>
 
 <style>
-
+  .monthpage {
+    float: left;
+    width: 180px;
+    margin-left: 10px;
+  }
 </style>
