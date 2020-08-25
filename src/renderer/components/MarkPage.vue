@@ -19,8 +19,11 @@
           <ContentsUp />
 
         </a-layout-content>
+        <div class="marks">
+          <ContentsDownforMark />
+          <HRContentsDown />
+        </div>
 
-        <ContentsDownforMark />
 
       </div>
     </a-layout>
@@ -35,11 +38,13 @@ import ContentsDownforMark from './path/ContentsDownforMark';
 import SearchInput from './path/SearchInput';
 import DataBtn from './path/DataBtn';
 import EyeBtn from './path/EyeBtn';
+import HRContentsDown from './path/HRContentsDown';
 
 
 export default {
   name: 'MarkPage',
   components: {
+    HRContentsDown,
     EyeBtn,
     DataBtn,
     SearchInput,
@@ -86,6 +91,5 @@ export default {
   min-Height: 40%;
   float: left;
 }
-
 
 </style>

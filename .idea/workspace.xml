@@ -25,9 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="提交组织信息简介布局">
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupRank.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="添加组织列表模板，修改评分文字">
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/HRContentsDown.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsDownforMark.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDownforMark.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +64,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/renderer/components/children" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/renderer/components/path" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -75,8 +78,8 @@
       <recent name="D:\tyconBI-electron\src\renderer\components\path" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\tyconBI-electron\src\renderer\components\children" />
       <recent name="D:\tyconBI-electron\src\renderer\components\path" />
+      <recent name="D:\tyconBI-electron\src\renderer\components\children" />
       <recent name="D:\tyconBI-electron\src\renderer\assets" />
       <recent name="D:\tyconBI-electron\src" />
       <recent name="D:\tyconBI-electron\src\renderer\components" />
@@ -96,7 +99,7 @@
       <workItem from="1597912771245" duration="638000" />
       <workItem from="1597914383346" duration="2524000" />
       <workItem from="1597973196764" duration="9512000" />
-      <workItem from="1598317301010" duration="21771000" />
+      <workItem from="1598317301010" duration="23245000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -182,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598346213245</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="添加组织列表模板，修改评分文字">
+      <created>1598351120120</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1598351120120</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +241,8 @@
     <MESSAGE value="添加组织和个人二级路由和三级路由,用色块大体布局" />
     <MESSAGE value="提交人员详细信息的，header" />
     <MESSAGE value="提交组织信息简介布局" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交组织信息简介布局" />
+    <MESSAGE value="添加组织列表模板，修改评分文字" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加组织列表模板，修改评分文字" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">

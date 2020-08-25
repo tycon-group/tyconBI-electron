@@ -2,7 +2,7 @@
   <a-layout-content class="mark_submit">
     <div class="cont">
       <div class="cont_left">
-        <span>评分：</span>
+        <span>评分:</span>
       </div>
       <div class="cont_right">
               <span>
@@ -64,27 +64,6 @@ export default {
   width: 80%;
   float: left;
 
-}
-.cont_right_up {
-  width: 100%;
-
-}
-.cont_right_up_left {
-  width: 55%;
-  float: left;
-  font-size: 12px;
-}
-.cont_right_up_right {
-  width: 40%;
-  float: left;
-
-  text-align: right;
-  font-size: 12px;
-}
-
-.cont_right_down {
-  width: 100%;
-  float: left;
 }
 
 .footer_btn {

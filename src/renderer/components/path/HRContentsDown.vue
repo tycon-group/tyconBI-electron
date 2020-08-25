@@ -2,7 +2,7 @@
   <a-layout-content class="mark_submit">
     <div class="cont">
       <div class="cont_left">
-        <span>直属领导评分:</span>
+        <span>人事部门评分:</span>
       </div>
       <div class="cont_right">
               <span>
@@ -19,14 +19,14 @@
       <div class="cont_right">
         <a-textarea
             v-model="value"
-            placeholder="评分不为3分，则必须写明理由！"
+            placeholder="请填写备注。"
             :auto-size="{ minRows: 6, maxRows: 12, }"
         />
       </div>
     </div>
     <div class="footer_btn">
       <a-button type="primary">
-        修改
+        提交
       </a-button>
 
     </div>
