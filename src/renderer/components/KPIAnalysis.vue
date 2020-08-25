@@ -19,12 +19,12 @@
           <CompanyMenu />
         </div>
 
-        <a-layout-content class="content">
-          <ContentsUp />
+        <a-layout-content class="content_KPI">
+
+          <router-view></router-view>
 
         </a-layout-content>
 
-        <ContentsDown />
 
       </div>
     </a-layout>
@@ -82,15 +82,11 @@ export default {
   width: 100%;
 }
 
-
-
-
-
-
-.content {
+.content_KPI {
   width: 60%;
+  height: 100%;
   margin: 24px 16px;
-  padding: 24px;
+  padding: 2px;
   background: #ffffff;
   min-Height: 40%;
   float: left;
