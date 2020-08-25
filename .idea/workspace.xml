@@ -25,10 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="添加组织和个人二级路由和三级路由,用色块大体布局">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="提交人员详细信息的，header">
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupInfo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +98,7 @@
       <workItem from="1597912771245" duration="638000" />
       <workItem from="1597914383346" duration="2524000" />
       <workItem from="1597973196764" duration="9512000" />
-      <workItem from="1598317301010" duration="18593000" />
+      <workItem from="1598317301010" duration="20007000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598337253335</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="提交人员详细信息的，header">
+      <created>1598344878358</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1598344878358</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +224,8 @@
     <MESSAGE value="新建KPI页面，做好了上一月下一月样式" />
     <MESSAGE value="添加日期按钮组和公司导航栏" />
     <MESSAGE value="添加组织和个人二级路由和三级路由,用色块大体布局" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加组织和个人二级路由和三级路由,用色块大体布局" />
+    <MESSAGE value="提交人员详细信息的，header" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交人员详细信息的，header" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
@@ -236,10 +244,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916900430" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1598264152505">
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1598344892467">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598264152505" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598344892467" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597916421385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

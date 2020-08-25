@@ -1,7 +1,7 @@
 <template>
   <div class="personInfo">
     <div class="personImages">
-      <img class="personImage" src="../../assets/leo.png"  alt="ssss"/>
+      <img class="personImage" src="../../assets/leo.png"  alt="头像"/>
     </div>
 
     <div class="manInfo">
