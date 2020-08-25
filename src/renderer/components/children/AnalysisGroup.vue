@@ -1,6 +1,6 @@
 <template>
   <div class="a-layout">
-    <div class="layout-header">Header</div>
+    <div class="layout-header">zhehsi zuhzi </div>
     <div class="layout-content">Content</div>
     <div class="layout-footer">Footer</div>
   </div>
@@ -8,8 +8,10 @@
 </template>
 
 <script>
+import PersonInfo from '../path/PersonInfo';
 export default {
   name: 'AnalysisGroup',
+  components: { PersonInfo },
 };
 </script>
 

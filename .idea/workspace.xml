@@ -25,16 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="添加日期按钮组和公司导航栏">
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/part/GroupTotal.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/part/PersonTotal.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="添加组织和个人二级路由和三级路由,用色块大体布局">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +98,7 @@
       <workItem from="1597912771245" duration="638000" />
       <workItem from="1597914383346" duration="2524000" />
       <workItem from="1597973196764" duration="9512000" />
-      <workItem from="1598317301010" duration="13090000" />
+      <workItem from="1598317301010" duration="18593000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -168,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598264128394</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="添加组织和个人二级路由和三级路由,用色块大体布局">
+      <created>1598337253335</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1598337253335</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,13 +216,18 @@
     <MESSAGE value="修复跳转页面后高亮框的选择" />
     <MESSAGE value="新建KPI页面，做好了上一月下一月样式" />
     <MESSAGE value="添加日期按钮组和公司导航栏" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加日期按钮组和公司导航栏" />
+    <MESSAGE value="添加组织和个人二级路由和三级路由,用色块大体布局" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加组织和个人二级路由和三级路由,用色块大体布局" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="818" y="356" key="#Notifications/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916829791" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598336971138">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598336971138" />
     <state x="780" y="226" key="FileChooserDialogImpl" timestamp="1597914427382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -241,9 +248,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598263462109" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1597916396893">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1598337884326">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916396893" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598337884326" />
   </component>
 </project>
