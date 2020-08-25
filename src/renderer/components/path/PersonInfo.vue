@@ -7,19 +7,19 @@
     <div class="manInfo">
       <div class="row">
         <div class="row_left">姓名：张三  Sirui Zhang</div>
-        <div class="row_right">党员： 是</div>
+        <div class="row_right">性别：男</div>
       </div>
       <div class="row">
         <div class="row_left">职位：上海太江信息科技有限公司/工程师</div>
         <div class="row_right">学历：本科</div>
       </div>
       <div class="row">
-        <div class="row_left">生日：1990.9.9</div>
-        <div class="row_right">入职日期：2020.1.1</div>
+        <div class="row_left">出生年月：1990.09.09</div>
+        <div class="row_right">入职日期：2020.01.01</div>
       </div>
       <div class="row">
-        <div class="row_left">性别：男</div>
-        <div class="row_right">工龄：1年</div>
+        <div class="row_left">连续工龄：5年</div>
+        <div class="row_right">在职工龄：1年</div>
       </div>
     </div>
 
