@@ -2,7 +2,7 @@
   <a-layout-content class="mark_submit">
     <div class="cont">
       <div class="cont_left">
-        <span>评分：</span>
+        <span>直属领导评分：</span>
       </div>
       <div class="cont_right">
               <span>
