@@ -12,6 +12,11 @@ import GroupWork from '../components/children/Groups/GroupWork';
 import GroupPotential from '../components/children/Groups/GroupPotential';
 import GroupAttitude from '../components/children/Groups/GroupAttitude';
 import GroupContribution from '../components/children/Groups/GroupContribution';
+import PersonWork from '../components/children/Persons/PersonWork';
+import PersonContribution from '../components/children/Persons/PersonContribution';
+import PersonAttitude from '../components/children/Persons/PersonAttitude';
+import PersonLaw from '../components/children/Persons/PersonLaw';
+import PersonPotential from '../components/children/Persons/PersonPotential';
 
 Vue.use(Router);
 
@@ -79,6 +84,31 @@ export default new Router({
               path: 'personTotal',
               name: 'personTotal',
               component: PersonTotal,
+            },
+            {
+              path: 'personWork',
+              name: 'personWork',
+              component: PersonWork,
+            },
+            {
+              path: 'personContribution',
+              name: 'personContribution',
+              component: PersonContribution,
+            },
+            {
+              path: 'personAttitude',
+              name: 'personAttitude',
+              component: PersonAttitude,
+            },
+            {
+              path: 'personLaw',
+              name: 'personLaw',
+              component: PersonLaw,
+            },
+            {
+              path: 'personPotential',
+              name: 'personPotential',
+              component: PersonPotential,
             },
           ],
         },
