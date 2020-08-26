@@ -2,7 +2,7 @@
   <div class="a-layout">
     <div class="layout-header"><GroupInfo /></div>
     <div class="layout-content">Content</div>
-    <div class="layout-footer">Footer</div>
+    <div class="layout-footer"><GroupRank /></div>
   </div>
 
 </template>
@@ -10,9 +10,10 @@
 <script>
 import PersonInfo from '../path/PersonInfo';
 import GroupInfo from '../path/GroupInfo';
+import GroupRank from '../path/GroupRank';
 export default {
   name: 'AnalysisGroup',
-  components: { GroupInfo, PersonInfo },
+  components: { GroupRank, GroupInfo, PersonInfo },
 };
 </script>
 
@@ -20,11 +21,10 @@ export default {
 .a-layout {
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
 }
 
 .layout-header {
-  background-color: red;
+
   width: 100%;
   height: 25%;
 }
@@ -36,7 +36,6 @@ export default {
 }
 
 .layout-footer {
-  background-color: red;
   width: 100%;
   height: 40%;
 }

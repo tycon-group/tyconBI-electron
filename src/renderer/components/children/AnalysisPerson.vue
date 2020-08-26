@@ -35,7 +35,6 @@ export default {
 }
 
 .layout-footer {
-  background-color: red;
   width: 100%;
   height: 40%;
 }

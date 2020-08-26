@@ -25,9 +25,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="提交人事部评分">
-      <change beforePath="$PROJECT_DIR$/src/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整默认屏幕1170*740">
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/part/AttitudeRank.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/part/ContributionRank.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/part/LawRank.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/part/PotentialRank.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/part/WorkRank.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/GroupRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupRank.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +68,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/renderer/components/path" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/renderer/components/children/part" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -69,17 +76,17 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\tyconBI-electron\src\renderer\components" />
-      <recent name="D:\tyconBI-electron\src\renderer\assets" />
-      <recent name="D:\tyconBI-electron\src\renderer\components\path" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\tyconBI-electron\src\renderer\components\children\part" />
       <recent name="D:\tyconBI-electron\src\renderer\components\path" />
       <recent name="D:\tyconBI-electron\src\renderer\components\children" />
       <recent name="D:\tyconBI-electron\src\renderer\assets" />
       <recent name="D:\tyconBI-electron\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\tyconBI-electron\src\renderer\components" />
+      <recent name="D:\tyconBI-electron\src\renderer\assets" />
+      <recent name="D:\tyconBI-electron\src\renderer\components\path" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -96,7 +103,8 @@
       <workItem from="1597912771245" duration="638000" />
       <workItem from="1597914383346" duration="2524000" />
       <workItem from="1597973196764" duration="9512000" />
-      <workItem from="1598317301010" duration="23562000" />
+      <workItem from="1598317301010" duration="23654000" />
+      <workItem from="1598403405929" duration="7368000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -196,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598352349708</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="调整默认屏幕1170*740">
+      <created>1598352706785</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1598352706786</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +262,8 @@
     <MESSAGE value="提交组织信息简介布局" />
     <MESSAGE value="添加组织列表模板，修改评分文字" />
     <MESSAGE value="提交人事部评分" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交人事部评分" />
+    <MESSAGE value="调整默认屏幕1170*740" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整默认屏幕1170*740" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">

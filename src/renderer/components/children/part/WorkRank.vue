@@ -10,40 +10,40 @@
 <script>
 const columns = [
   {
-    title: '姓名',
+    title: '日志时间',
     dataIndex: 'name',
     width: 80,
   },
   {
-    title: '工作能力',
+    title: '日志完成率',
     dataIndex: 'work',
     width: 80,
     sorter: (a, b) => a.work.localeCompare(b.work),
     sortDirections: ['descend', 'ascend'],
   },
   {
-    title: '工作态度',
+    title: '日志评分率',
     dataIndex: 'attitude',
     width: 80,
     sorter: (a, b) => a.attitude.localeCompare(b.attitude),
     sortDirections: ['descend', 'ascend'],
   },
   {
-    title: '发展潜力',
+    title: '日志评论率',
     dataIndex: 'potential',
     width: 80,
     sorter: (a, b) => a.potential.localeCompare(b.potential),
     sortDirections: ['descend', 'ascend'],
   },
   {
-    title: '突出贡献',
+    title: '#',
     dataIndex: 'contribution',
     width: 80,
     sorter: (a, b) => a.contribution.localeCompare(b.contribution),
     sortDirections: ['descend', 'ascend'],
   },
   {
-    title: '遵纪守法',
+    title: '#',
     dataIndex: 'law',
     width: 80,
     sorter: (a, b) => a.law.localeCompare(b.law),
@@ -68,7 +68,7 @@ const data = [
     potential: 'A',
     contribution: 'B',
     law: 'A',
-    markCount: 'B',
+    markCount: '5',
   },
   {
     key: '2',
@@ -78,7 +78,7 @@ const data = [
     potential: 'A',
     contribution: 'B',
     law: 'A',
-    markCount: 'B',
+    markCount: '3',
   },
   {
     key: '3',
@@ -88,7 +88,7 @@ const data = [
     potential: 'A',
     contribution: 'B',
     law: 'A',
-    markCount: 'B',
+    markCount: '2',
   },
   {
     key: '4',
@@ -98,7 +98,7 @@ const data = [
     potential: 'A',
     contribution: 'B',
     law: 'A',
-    markCount: 'B',
+    markCount: '4',
   },
   {
     key: '5',
@@ -108,7 +108,7 @@ const data = [
     potential: 'A',
     contribution: 'B',
     law: 'A',
-    markCount: 'C',
+    markCount: '3',
   },
   {
     key: '6',
@@ -118,7 +118,7 @@ const data = [
     potential: 'A',
     contribution: 'B',
     law: 'D',
-    markCount: 'B',
+    markCount: '3',
   },
   {
     key: '7',
@@ -128,7 +128,7 @@ const data = [
     potential: 'C',
     contribution: 'B',
     law: 'A',
-    markCount: 'B',
+    markCount: '3',
   },
   {
     key: '8',
@@ -138,7 +138,7 @@ const data = [
     potential: 'A',
     contribution: 'A',
     law: 'A',
-    markCount: 'A',
+    markCount: '5',
   },
 ];
 
