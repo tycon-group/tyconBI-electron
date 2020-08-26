@@ -1,17 +1,19 @@
 <template>
   <div class="a-layout">
     <div class="layout-header"><PersonInfo /></div>
-    <div class="layout-content">这是详细23333333333333</div>
-    <div class="layout-footer">这是详细个55555555555555</div>
+    <div class="layout-table"><ListNav /></div>
+    <div class="layout-content"><router-view></router-view></div>
   </div>
 </template>
 
 <script>
 import PersonInfo from '../path/PersonInfo';
+import ListNav from '../path/ListNav';
 
 export default {
   name: 'AnalysisPerson',
   components: {
+    ListNav,
     PersonInfo,
   },
 };
@@ -28,14 +30,15 @@ export default {
   height: 25%;
 }
 
-.layout-content {
-  background-color: green;
+.layout-table {
   width: 100%;
-  height: 35%;
+  height: 5%;
 }
 
-.layout-footer {
+.layout-content {
   width: 100%;
-  height: 40%;
+  height: 68%;
+  margin-top: 2%;
+  background-color: yellow;
 }
 </style>

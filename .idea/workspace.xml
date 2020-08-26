@@ -25,16 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整默认屏幕1170*740">
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/part/AttitudeRank.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/part/ContributionRank.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/part/LawRank.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/part/PotentialRank.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/part/WorkRank.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="提交组织中的人员排行表">
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/part/TableRankContent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/ListNav.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/GroupRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupRank.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/part/WorkRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/part/WorkRank.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,9 +81,10 @@
       <recent name="D:\tyconBI-electron\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\tyconBI-electron\src\renderer\components\path" />
+      <recent name="D:\tyconBI-electron\src\renderer\components\children\part" />
       <recent name="D:\tyconBI-electron\src\renderer\components" />
       <recent name="D:\tyconBI-electron\src\renderer\assets" />
-      <recent name="D:\tyconBI-electron\src\renderer\components\path" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -104,7 +102,7 @@
       <workItem from="1597914383346" duration="2524000" />
       <workItem from="1597973196764" duration="9512000" />
       <workItem from="1598317301010" duration="23654000" />
-      <workItem from="1598403405929" duration="7368000" />
+      <workItem from="1598403405929" duration="12139000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -211,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598352706786</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="提交组织中的人员排行表">
+      <created>1598411111568</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1598411111568</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +268,8 @@
     <MESSAGE value="添加组织列表模板，修改评分文字" />
     <MESSAGE value="提交人事部评分" />
     <MESSAGE value="调整默认屏幕1170*740" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整默认屏幕1170*740" />
+    <MESSAGE value="提交组织中的人员排行表" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交组织中的人员排行表" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">

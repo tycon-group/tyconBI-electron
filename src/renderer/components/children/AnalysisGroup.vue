@@ -1,19 +1,20 @@
 <template>
   <div class="a-layout">
     <div class="layout-header"><GroupInfo /></div>
-    <div class="layout-content">Content</div>
+    <div class="layout-table"><ListNav/></div>
+    <div class="layout-content"><router-view></router-view></div>
     <div class="layout-footer"><GroupRank /></div>
   </div>
 
 </template>
 
 <script>
-import PersonInfo from '../path/PersonInfo';
 import GroupInfo from '../path/GroupInfo';
 import GroupRank from '../path/GroupRank';
+import ListNav from '../path/ListNav';
 export default {
   name: 'AnalysisGroup',
-  components: { GroupRank, GroupInfo, PersonInfo },
+  components: { ListNav, GroupRank, GroupInfo },
 };
 </script>
 
@@ -29,10 +30,17 @@ export default {
   height: 25%;
 }
 
+.layout-table {
+  background-color: blue;
+  width: 100%;
+  height: 5%;
+}
+
 .layout-content {
   background-color: green;
+  margin-top: 2%;
   width: 100%;
-  height: 35%;
+  height: 28%;
 }
 
 .layout-footer {
