@@ -1,7 +1,7 @@
 <template>
   <div class="a-layout">
     <div class="layout-header"><GroupInfo /></div>
-    <div class="layout-table"><ListNav/></div>
+    <div class="layout-table"><GroupListNav /></div>
     <div class="layout-content"><router-view></router-view></div>
     <div class="layout-footer"><GroupRank /></div>
   </div>
@@ -10,11 +10,11 @@
 
 <script>
 import GroupInfo from '../path/GroupInfo';
-import GroupRank from '../path/GroupRank';
-import ListNav from '../path/ListNav';
+import GroupRank from './Groups/GroupRank';
+import GroupListNav from '../path/GroupListNav';
 export default {
   name: 'AnalysisGroup',
-  components: { ListNav, GroupRank, GroupInfo },
+  components: { GroupListNav, GroupRank, GroupInfo },
 };
 </script>
 
@@ -31,7 +31,6 @@ export default {
 }
 
 .layout-table {
-  background-color: blue;
   width: 100%;
   height: 5%;
 }

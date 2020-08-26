@@ -1,19 +1,19 @@
 <template>
   <div class="a-layout">
     <div class="layout-header"><PersonInfo /></div>
-    <div class="layout-table"><ListNav /></div>
+    <div class="layout-table"><PersonListNav /></div>
     <div class="layout-content"><router-view></router-view></div>
   </div>
 </template>
 
 <script>
 import PersonInfo from '../path/PersonInfo';
-import ListNav from '../path/ListNav';
+import PersonListNav from '../path/PersonListNav';
 
 export default {
   name: 'AnalysisPerson',
   components: {
-    ListNav,
+    PersonListNav,
     PersonInfo,
   },
 };

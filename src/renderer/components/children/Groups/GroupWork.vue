@@ -1,10 +1,12 @@
 <template>
-
+  <div>
+    啥也不是Work
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'Total',
+  name: 'Work',
 };
 </script>
 

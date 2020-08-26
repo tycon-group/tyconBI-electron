@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import WorkRank from './WorkRank';
+import WorkRank from '../Persons/WorkRank';
 
 export default {
   name: 'TableRankContent',
