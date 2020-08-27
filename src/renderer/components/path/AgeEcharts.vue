@@ -16,10 +16,10 @@ export default {
   },
   methods: {
     drawPieChart() {
-      this.chartPie = echarts.init(document.getElementById('personSex'));
+      this.chartPie = echarts.init(document.getElementById('personAge'));
       this.chartPie.setOption({
         title: {
-          text: '性别分布',
+          text: '年龄分布',
           subtext: '',
         },
         tooltip: {
@@ -29,9 +29,9 @@ export default {
         legend: {
           orient: 'vertical',
           bottom: 'bottom',
-          data: ['男性', '女性'],
+          data: ['30岁以下', '31-50', '50岁以上'],
         },
-        color: ['red', 'indigo', 'blue', 'orange', 'yellow', 'green', 'purple'],
+        color: ['yellowgreen', 'green', 'purple'],
         series: [
           {
             name: '分布占比',
@@ -40,8 +40,9 @@ export default {
             center: ['50%', '60%'],
             avoidLabelOverlap: true,
             data: [
-              { value: 335, name: '男性' },
-              { value: 310, name: '女性' },
+              { value: 33, name: '30岁以下' },
+              { value: 31, name: '31-50' },
+              { value: 3, name: '50岁以上' },
             ],
             itemStyle: {
               emphasis: {

@@ -16,10 +16,10 @@ export default {
   },
   methods: {
     drawPieChart() {
-      this.chartPie = echarts.init(document.getElementById('personSex'));
+      this.chartPie = echarts.init(document.getElementById('personDegree'));
       this.chartPie.setOption({
         title: {
-          text: '性别分布',
+          text: '学历分布',
           subtext: '',
         },
         tooltip: {
@@ -29,9 +29,9 @@ export default {
         legend: {
           orient: 'vertical',
           bottom: 'bottom',
-          data: ['男性', '女性'],
+          data: ['大专以下', '大专', '本科', '研究生及以上'],
         },
-        color: ['red', 'indigo', 'blue', 'orange', 'yellow', 'green', 'purple'],
+        color: ['red', 'indigo', 'yellowgreen', 'orange', 'yellow', 'green', 'purple'],
         series: [
           {
             name: '分布占比',
@@ -40,8 +40,10 @@ export default {
             center: ['50%', '60%'],
             avoidLabelOverlap: true,
             data: [
-              { value: 335, name: '男性' },
-              { value: 310, name: '女性' },
+              { value: 35, name: '大专以下' },
+              { value: 35, name: '大专' },
+              { value: 10, name: '本科' },
+              { value: 5, name: '研究生及以上' },
             ],
             itemStyle: {
               emphasis: {

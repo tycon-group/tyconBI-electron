@@ -16,10 +16,10 @@ export default {
   },
   methods: {
     drawPieChart() {
-      this.chartPie = echarts.init(document.getElementById('personSex'));
+      this.chartPie = echarts.init(document.getElementById('personFlow'));
       this.chartPie.setOption({
         title: {
-          text: '性别分布',
+          text: '在职年限',
           subtext: '',
         },
         tooltip: {
@@ -29,9 +29,9 @@ export default {
         legend: {
           orient: 'vertical',
           bottom: 'bottom',
-          data: ['男性', '女性'],
+          data: ['3年以下', '3-5年', '5年以上'],
         },
-        color: ['red', 'indigo', 'blue', 'orange', 'yellow', 'green', 'purple'],
+        color: ['red', 'indigo', 'purple'],
         series: [
           {
             name: '分布占比',
@@ -40,8 +40,9 @@ export default {
             center: ['50%', '60%'],
             avoidLabelOverlap: true,
             data: [
-              { value: 335, name: '男性' },
-              { value: 310, name: '女性' },
+              { value: 65, name: '3年以下' },
+              { value: 30, name: '3-5年' },
+              { value: 20, name: '5年以上' },
             ],
             itemStyle: {
               emphasis: {
@@ -74,5 +75,6 @@ export default {
   width: 100%;
   height: 100%;
   float: left;
+  background-color: orangered;
 }
 </style>
