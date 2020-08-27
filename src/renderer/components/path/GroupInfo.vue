@@ -1,8 +1,8 @@
 <template>
   <div class="personInfo">
     <div class="cols">
-      <div class="up_text">性别占比</div>
       <div class="personSex">
+        <SexEcharts />
       </div>
     </div>
 
@@ -28,8 +28,14 @@
 </template>
 
 <script>
+
+import SexEcharts from './SexEcharts';
+
 export default {
   name: 'GroupInfo',
+  components: {
+    SexEcharts,
+  },
 };
 </script>
 
@@ -45,30 +51,19 @@ export default {
   height: 100%;
   text-align: center;
   float: left;
-  background-color: #888888;
-}
-
-.up_text {
-  width: 100%;
-  height: 20%;
-  margin: 2px;
-  text-align: left;
-  float: left;
 }
 
 .personSex {
   width: 100%;
-  height: 80%;
+  height: 100%;
   text-align: center;
   float: left;
-  background-color: yellow;
 }
 .personDegree {
   width: 100%;
   height: 80%;
   text-align: center;
   float: left;
-  background-color: red;
 }
 
 .personAge {
@@ -76,7 +71,6 @@ export default {
   height: 80%;
   text-align: center;
   float: left;
-  background-color: green;
 }
 
 
@@ -85,16 +79,5 @@ export default {
   height: 80%;
   text-align: center;
   float: left;
-  background-color: red;
 }
-
-.personImage {
-  margin-top: 5%;
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
-  background-color: white;
-}
-
-
 </style>

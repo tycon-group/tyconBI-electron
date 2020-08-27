@@ -25,8 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="写好了个人中的两个导航栏子路由">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改入离职为在职年限">
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/PieChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/SexEcharts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/GroupInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupInfo.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +65,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/renderer/components/children/Persons" />
+    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -100,7 +104,9 @@
       <workItem from="1597973196764" duration="9512000" />
       <workItem from="1598317301010" duration="23654000" />
       <workItem from="1598403405929" duration="22588000" />
-      <workItem from="1598491112509" duration="597000" />
+      <workItem from="1598491112509" duration="1352000" />
+      <workItem from="1598492478426" duration="3569000" />
+      <workItem from="1598496407095" duration="8319000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -235,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598437453759</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="修改入离职为在职年限">
+      <created>1598491807283</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1598491807283</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,7 +304,8 @@
     <MESSAGE value="搭建好横版的导航栏" />
     <MESSAGE value="写好了组织中的导航栏子路由" />
     <MESSAGE value="写好了个人中的两个导航栏子路由" />
-    <option name="LAST_COMMIT_MESSAGE" value="写好了个人中的两个导航栏子路由" />
+    <MESSAGE value="修改入离职为在职年限" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改入离职为在职年限" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
@@ -302,10 +316,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598336971138" />
-    <state x="780" y="226" key="FileChooserDialogImpl" timestamp="1597914427382">
+    <state x="780" y="226" key="FileChooserDialogImpl" timestamp="1598505023455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597914427382" />
+    <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598505023455" />
     <state x="518" y="157" key="SettingsEditor" timestamp="1597916900430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
