@@ -25,22 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="写好了组织中的导航栏子路由">
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonContribution.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonLaw.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonPotential.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="写好了个人中的两个导航栏子路由">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/AttitudeRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/AttitudeRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ContributionRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/ContributionRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/LawRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/LawRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PotentialRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/PotentialRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/WorkRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/WorkRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/part/TableRankContent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/part/TableRankContent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/GroupInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupInfo.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +99,8 @@
       <workItem from="1597914383346" duration="2524000" />
       <workItem from="1597973196764" duration="9512000" />
       <workItem from="1598317301010" duration="23654000" />
-      <workItem from="1598403405929" duration="22328000" />
+      <workItem from="1598403405929" duration="22588000" />
+      <workItem from="1598491112509" duration="597000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -240,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598434051379</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="写好了个人中的两个导航栏子路由">
+      <created>1598437453759</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1598437453759</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +290,8 @@
     <MESSAGE value="提交组织中的人员排行表" />
     <MESSAGE value="搭建好横版的导航栏" />
     <MESSAGE value="写好了组织中的导航栏子路由" />
-    <option name="LAST_COMMIT_MESSAGE" value="写好了组织中的导航栏子路由" />
+    <MESSAGE value="写好了个人中的两个导航栏子路由" />
+    <option name="LAST_COMMIT_MESSAGE" value="写好了个人中的两个导航栏子路由" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">

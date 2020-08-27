@@ -19,7 +19,7 @@
     </div>
 
     <div class="cols">
-      <div class="up_text">入离职</div>
+      <div class="up_text">在职年限</div>
       <div class="personFlow">
       </div>
     </div>
