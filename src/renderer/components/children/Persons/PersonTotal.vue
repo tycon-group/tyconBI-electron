@@ -1,18 +1,29 @@
 <template>
   <div class="total">
-    <div class="radar">
-      个人雷达图
+    <div class="radar" id="radars">
+      <RadarEcharts />
     </div>
     <div class="evidence">
-      <div class="devs">导航栏</div>
-      <div class="lists">这是列表</div>
+      <div class="devs">
+        <PersonRankNav />
+      </div>
+      <div class="lists"><router-view></router-view></div>
     </div>
   </div>
 </template>
 
 <script>
+
+import PersonRankNav from './PersonRankNav';
+import RadarEcharts from '../../path/RadarEcharts';
+
+
 export default {
   name: 'PersonTotal',
+  components: {
+    RadarEcharts,
+    PersonRankNav,
+  },
 };
 </script>
 
@@ -25,7 +36,6 @@ export default {
 .radar {
   width: 100%;
   height: 40%;
-  background-color: green;
 }
 
 .evidence {
@@ -35,12 +45,12 @@ export default {
 
 .devs {
   width: 100%;
-  height: 10%;
+  height: 20%;
+  float: right;
 }
 
 .lists {
   width: 100%;
-  height: 88%;
-  margin-top: 2%;
+  height: 80%;
 }
 </style>

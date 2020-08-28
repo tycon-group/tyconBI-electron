@@ -17,6 +17,11 @@ import PersonContribution from '../components/children/Persons/PersonContributio
 import PersonAttitude from '../components/children/Persons/PersonAttitude';
 import PersonLaw from '../components/children/Persons/PersonLaw';
 import PersonPotential from '../components/children/Persons/PersonPotential';
+import AttitudeRank from '../components/children/Persons/ranking/AttitudeRank';
+import WorkRank from '../components/children/Persons/ranking/WorkRank';
+import ContributionRank from '../components/children/Persons/ranking/ContributionRank';
+import LawRank from '../components/children/Persons/ranking/LawRank';
+import PotentialRank from '../components/children/Persons/ranking/PotentialRank';
 
 Vue.use(Router);
 
@@ -84,6 +89,33 @@ export default new Router({
               path: 'personTotal',
               name: 'personTotal',
               component: PersonTotal,
+              children: [
+                {
+                  path: 'attitudeRank',
+                  name: 'attitudeRank',
+                  component: AttitudeRank,
+                },
+                {
+                  path: 'workRank',
+                  name: 'workRank',
+                  component: WorkRank,
+                },
+                {
+                  path: 'contributionRank',
+                  name: 'contributionRank',
+                  component: ContributionRank,
+                },
+                {
+                  path: 'lawRank',
+                  name: 'lawRank',
+                  component: LawRank,
+                },
+                {
+                  path: 'potentialRank',
+                  name: 'potentialRank',
+                  component: PotentialRank,
+                },
+              ],
             },
             {
               path: 'personWork',

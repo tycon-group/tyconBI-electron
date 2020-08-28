@@ -1,13 +1,20 @@
 <template>
   <div class="total">
-    <div class="detailed">这是明细模块5</div>
-    <div class="trend">这是局趋势图5</div>
+    <div class="detailed"><CountWork /></div>
+    <div class="trend" id="lineEcharts"><LineEcharts /></div>
   </div>
 </template>
 
 <script>
+import LineEcharts from './LineEcharts';
+import CountWork from './CountWork';
+
 export default {
   name: 'PersonWork',
+  components: {
+    CountWork,
+    LineEcharts,
+  },
 };
 </script>
 
@@ -20,12 +27,10 @@ export default {
 .detailed {
   width: 100%;
   height: 40%;
-  background-color: green;
 }
 
 .trend {
   width: 100%;
   height: 60%;
-  background-color: red;
 }
 </style>

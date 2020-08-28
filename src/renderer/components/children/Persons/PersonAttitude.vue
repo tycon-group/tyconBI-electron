@@ -1,7 +1,7 @@
 <template>
   <div class="total">
-    <div class="detailed">这是明细模块2</div>
-    <div class="trend">这是局趋势图2</div>
+    <div class="detailed">这是工作态度明细模块，待确认</div>
+    <div class="trend">这是工作态度趋势模块，待确认</div>
   </div>
 </template>
 
@@ -20,12 +20,10 @@ export default {
 .detailed {
   width: 100%;
   height: 40%;
-  background-color: green;
 }
 
 .trend {
   width: 100%;
   height: 60%;
-  background-color: red;
 }
 </style>
