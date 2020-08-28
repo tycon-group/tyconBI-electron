@@ -1,25 +1,32 @@
 <template>
-  <div class="aaa">
-    54646546546
+  <div class="total">
+    <div class="totalPie" id="totalMark">
+      <TotalEcharts />
+    </div>
   </div>
 </template>
 
 <script>
 
-import SexEcharts from '../../path/SexEcharts';
+import TotalEcharts from '../../path/TotalEcharts';
 
 export default {
   name: 'Total',
   components: {
-    SexEcharts,
+    TotalEcharts,
   },
 };
 </script>
 
 <style scoped>
-.aaa {
+.total {
   width: 100%;
   height: 100%;
-  background-color: #888888;
+}
+
+.totalPie {
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 </style>

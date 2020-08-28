@@ -39,6 +39,5 @@ export default {
   width: 100%;
   height: 68%;
   margin-top: 2%;
-  background-color: yellow;
 }
 </style>

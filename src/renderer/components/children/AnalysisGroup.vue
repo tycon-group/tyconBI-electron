@@ -2,7 +2,12 @@
   <div class="a-layout">
     <div class="layout-header"><GroupInfo /></div>
     <div class="layout-table"><GroupListNav /></div>
-    <div class="layout-content"><router-view></router-view></div>
+    <div class="layout-content">
+      <div class="totalTitle">
+        <span>考评人员共152人，其中3人未参加考评</span>
+      </div>
+      <router-view></router-view>
+    </div>
     <div class="layout-footer"><GroupRank /></div>
   </div>
 
@@ -36,7 +41,6 @@ export default {
 }
 
 .layout-content {
-  background-color: green;
   margin-top: 2%;
   width: 100%;
   height: 28%;
@@ -45,5 +49,12 @@ export default {
 .layout-footer {
   width: 100%;
   height: 40%;
+}
+
+.totalTitle {
+  width: 100%;
+  height: 10%;
+  background-color: #f4f4f4;
+  text-align: left;
 }
 </style>

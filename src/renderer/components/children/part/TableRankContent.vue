@@ -22,7 +22,6 @@ export default {
   height: 100%;
 }
 .layout-content {
-  background-color: green;
   width: 100%;
   height: 35%;
 }

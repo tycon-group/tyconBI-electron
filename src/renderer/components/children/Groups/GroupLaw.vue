@@ -1,15 +1,31 @@
 <template>
-  <div>
-    啥也不是law
+  <div class="total">
+    <div class="totalPie" id="lawCount">
+      <LawEcharts />
+    </div>
   </div>
 </template>
 
 <script>
+import LawEcharts from '../../path/LawEcharts';
+
 export default {
   name: 'Law',
+  components: {
+    LawEcharts,
+  },
 };
 </script>
 
 <style scoped>
+.total {
+  width: 100%;
+  height: 100%;
+}
 
+.totalPie {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
 </style>
