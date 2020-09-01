@@ -25,24 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="组织页面的五个维度饼图">
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/CountWork.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/LineEcharts.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonRankNav.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/RadarEcharts.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="整体架构完成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonContribution.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonContribution.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonLaw.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonLaw.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonPotential.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonPotential.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/AttitudeRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/AttitudeRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/ContributionRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/ContributionRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/LawRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/LawRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/PotentialRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/PotentialRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/WorkRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/WorkRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +103,8 @@
       <workItem from="1598491112509" duration="1352000" />
       <workItem from="1598492478426" duration="3569000" />
       <workItem from="1598496407095" duration="14430000" />
-      <workItem from="1598576464470" duration="16857000" />
+      <workItem from="1598576464470" duration="17844000" />
+      <workItem from="1598922130322" duration="3983000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -281,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598596213492</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="整体架构完成">
+      <created>1598607308875</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1598607308875</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +334,8 @@
     <MESSAGE value="写好性别饼图" />
     <MESSAGE value="写好其他三个饼图" />
     <MESSAGE value="组织页面的五个维度饼图" />
-    <option name="LAST_COMMIT_MESSAGE" value="组织页面的五个维度饼图" />
+    <MESSAGE value="整体架构完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="整体架构完成" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
@@ -356,14 +350,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598505023455" />
-    <state x="518" y="157" key="SettingsEditor" timestamp="1597916900430">
+    <state x="518" y="157" key="SettingsEditor" timestamp="1598922387845">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916900430" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1598344892467">
+    <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598922387845" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1598607671752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598344892467" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598607671752" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597916421385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
