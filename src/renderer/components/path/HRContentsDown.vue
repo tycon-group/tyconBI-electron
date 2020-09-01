@@ -1,5 +1,5 @@
 <template>
-  <a-layout-content class="mark_submit">
+  <a-layout-content class="mark_submit_hr">
     <div class="cont">
       <div class="cont_left">
         <span>人事部门评分:</span>
@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  name: 'ContentsDown',
+  name: 'HRContentsDown',
   data() {
     return {
       collapsed: false,
@@ -71,5 +71,14 @@ export default {
   margin-top: 10px;
   margin-right: 10px;
   text-align: right;
+}
+
+.mark_submit_hr {
+  width: 100%;
+  min-Height: 40%;
+  margin-top: 20px;
+  padding: 24px;
+  background: #f4f4f4;
+  float: left;
 }
 </style>

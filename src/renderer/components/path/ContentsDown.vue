@@ -1,5 +1,5 @@
 <template>
-  <a-layout-content class="mark_submit">
+  <a-layout-content class="mark_submit_home">
     <div class="cont">
       <div class="cont_left">
         <span>评分:</span>
@@ -72,5 +72,14 @@ export default {
   margin-top: 10px;
   margin-right: 10px;
   text-align: right;
+}
+
+.mark_submit_home {
+  width: 100%;
+  min-Height: 40%;
+  margin-top: 20px;
+  padding: 24px;
+  background: #f4f4f4;
+  float: left;
 }
 </style>

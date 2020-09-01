@@ -1,7 +1,7 @@
 <template>
   <a-layout id="components-layout-demo-custom-trigger" class="layout">
     <Menus />
-    <a-layout>
+    <a-layout class="layout2">
       <a-layout-header style="background: #fff; padding: 0">
       </a-layout-header>
       <div class="mid_content">
@@ -11,10 +11,10 @@
 
         <a-layout-content class="content">
           <ContentsUp />
-
+          <ContentsDown />
         </a-layout-content>
 
-        <ContentsDown />
+
 
       </div>
     </a-layout>
@@ -46,15 +46,19 @@ export default {
   width: 100%;
   height: 100%;
 }
-
+.layout2 {
+  width: 100%;
+  height: 100%;
+}
 .mid_content {
   width: 100%;
   height: 100%;
+
 }
 
 .meun_mid {
   width: 30%;
-  min-height: 90%;
+  height: 90%;
   float: left;
   background: #ffffff;
   margin: 24px 16px;
@@ -69,13 +73,4 @@ export default {
   min-Height: 40%;
   float: left;
 }
-.mark_submit {
-  width: 60%;
-  min-Height: 40%;
-  margin: 20px 16px;
-  padding: 24px;
-  background: #ffffff;
-  float: left;
-}
-
 </style>

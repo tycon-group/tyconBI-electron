@@ -8,8 +8,8 @@
           <DataBtn />
           <EyeBtn />
         </div>
-
       </a-layout-header>
+
       <div class="mid_content">
         <div class="meun_mid">
           <ContentLeft />
@@ -17,12 +17,11 @@
 
         <a-layout-content class="content">
           <ContentsUp />
-
-        </a-layout-content>
-        <div class="marks">
           <ContentsDownforMark />
           <HRContentsDown />
-        </div>
+        </a-layout-content>
+
+
 
 
       </div>
@@ -76,7 +75,7 @@ export default {
 
 .meun_mid {
   width: 30%;
-  min-height: 90%;
+  min-height: 80%;
   float: left;
   background: #ffffff;
   margin: 24px 16px;
@@ -85,10 +84,10 @@ export default {
 
 .content {
   width: 60%;
+  min-Height: 50%;
   margin: 24px 16px;
   padding: 24px;
   background: #ffffff;
-  min-Height: 40%;
   float: left;
 }
 
