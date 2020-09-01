@@ -2,12 +2,7 @@
   <div class="a-layout">
     <div class="layout-header"><GroupInfo /></div>
     <div class="layout-table"><GroupListNav /></div>
-    <div class="layout-content">
-      <div class="totalTitle">
-        <span>考评人员共152人，其中3人未参加考评</span>
-      </div>
-      <router-view></router-view>
-    </div>
+
     <div class="layout-footer"><GroupRank /></div>
   </div>
 
@@ -37,7 +32,7 @@ export default {
 
 .layout-table {
   width: 100%;
-  height: 5%;
+  height: 35%;
 }
 
 .layout-content {
