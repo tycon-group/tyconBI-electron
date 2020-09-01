@@ -25,12 +25,13 @@
             trigger: 'axis',
           },
           legend: {
+            bottom: 'bottom',
             data: ['邮件营销', '联盟广告', '视频广告', '直接访问', '搜索引擎'],
           },
           grid: {
             left: '3%',
             right: '4%',
-            bottom: '3%',
+            bottom: '8%',
             containLabel: true,
           },
           toolbox: {
