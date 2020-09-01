@@ -4,10 +4,7 @@
       <RadarEcharts />
     </div>
     <div class="evidence">
-      <div class="devs">
-        <PersonRankNav />
-      </div>
-      <div class="lists"><router-view></router-view></div>
+      <PersonRankNav />
     </div>
   </div>
 </template>
@@ -41,16 +38,5 @@ export default {
 .evidence {
   width: 100%;
   height: 60%;
-}
-
-.devs {
-  width: 100%;
-  height: 20%;
-  float: right;
-}
-
-.lists {
-  width: 100%;
-  height: 80%;
 }
 </style>

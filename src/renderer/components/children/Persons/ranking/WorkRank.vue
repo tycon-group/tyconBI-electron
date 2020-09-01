@@ -10,33 +10,33 @@
 <script>
 const columns = [
   {
-    title: '姓名Attitide',
+    title: '工作能力占位符1',
     dataIndex: 'name',
     width: 80,
   },
   {
-    title: '工作能力',
+    title: '占位符2',
     dataIndex: 'work',
     width: 80,
     sorter: (a, b) => a.work.localeCompare(b.work),
     sortDirections: ['descend', 'ascend'],
   },
   {
-    title: '工作态度',
+    title: '占位符3',
     dataIndex: 'attitude',
     width: 80,
     sorter: (a, b) => a.attitude.localeCompare(b.attitude),
     sortDirections: ['descend', 'ascend'],
   },
   {
-    title: '发展潜力',
+    title: '占位符4',
     dataIndex: 'potential',
     width: 80,
     sorter: (a, b) => a.potential.localeCompare(b.potential),
     sortDirections: ['descend', 'ascend'],
   },
   {
-    title: '突出贡献',
+    title: '占位符5',
     dataIndex: 'contribution',
     width: 80,
     sorter: (a, b) => a.contribution.localeCompare(b.contribution),
@@ -44,7 +44,7 @@ const columns = [
   },
 
   {
-    title: '总评价',
+    title: '占位符6',
     dataIndex: 'markCount',
     width: 80,
     sorter: (a, b) => a.markCount.localeCompare(b.markCount),
@@ -130,7 +130,7 @@ const data = [
 
 
 export default {
-  name: 'GroupRank',
+  name: 'WorkRank',
   data() {
     return {
       data,

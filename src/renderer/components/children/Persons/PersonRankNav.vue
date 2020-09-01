@@ -1,48 +1,52 @@
 <template>
   <div class="personListNav">
-    <a-menu v-model="current" mode="horizontal">
+    <div class="groupListNav">
+      <a-tabs default-active-key="work" @change="callback">
+        <a-tab-pane key="work" tab="工作能力">
+          <WorkRank />
+        </a-tab-pane>
+        <a-tab-pane key="attitude" tab="工作态度">
+          <AttitudeRank />
+        </a-tab-pane>
 
-      <a-menu-item key="work">
-        <router-link to="/analysis/analysisPerson/personTotal/workRank">
-          <span>工作能力</span>
-        </router-link>
-      </a-menu-item>
-
-      <a-menu-item key="attitude">
-        <router-link to="/analysis/analysisPerson/personTotal/attitudeRank">
-          <span>工作态度</span>
-        </router-link>
-      </a-menu-item>
-
-      <a-menu-item key="potential">
-        <router-link to="/analysis/analysisPerson/personTotal/potentialRank">
-          <span>发展潜力</span>
-        </router-link>
-      </a-menu-item>
-
-      <a-menu-item key="contribution">
-        <router-link to="/analysis/analysisPerson/personTotal/contributionRank">
-          <span>突出贡献</span>
-        </router-link>
-      </a-menu-item>
-
-      <a-menu-item key="law">
-        <router-link to="/analysis/analysisPerson/personTotal/lawRank">
-          <span>遵纪守法</span>
-        </router-link>
-      </a-menu-item>
-    </a-menu>
+        <a-tab-pane key="potential" tab="发展潜力">
+          <PotentialRank />
+        </a-tab-pane>
+        <a-tab-pane key="contribution" tab="突出贡献">
+          <ContributionRank />
+        </a-tab-pane>
+        <a-tab-pane key="law" tab="遵纪守法">
+          <LawRank />
+        </a-tab-pane>
+      </a-tabs>
+    </div>
   </div>
 </template>
 
 <script>
 
+import WorkRank from './ranking/WorkRank';
+import AttitudeRank from './ranking/AttitudeRank';
+import PotentialRank from './ranking/PotentialRank';
+import ContributionRank from './ranking/ContributionRank';
+import LawRank from './ranking/LawRank';
+
 export default {
   name: 'PersonListNav',
+  components: {
+    WorkRank,
+    AttitudeRank,
+    PotentialRank,
+    ContributionRank,
+    LawRank,
+  },
   data() {
-    return {
-      current: ['work'],
-    };
+    return {};
+  },
+  methods: {
+    callback(key) {
+      console.log(key);
+    },
   },
 };
 </script>

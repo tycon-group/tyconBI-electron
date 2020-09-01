@@ -25,9 +25,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整打分的布局">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整个人页面的info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonRankNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonRankNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/AttitudeRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/AttitudeRank.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/ContributionRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/ContributionRank.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/LawRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/LawRank.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/PotentialRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/PotentialRank.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/WorkRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/WorkRank.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +110,7 @@
       <workItem from="1598492478426" duration="3569000" />
       <workItem from="1598496407095" duration="14430000" />
       <workItem from="1598576464470" duration="17844000" />
-      <workItem from="1598922130322" duration="12601000" />
+      <workItem from="1598922130322" duration="14148000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -295,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598942238392</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="调整个人页面的info">
+      <created>1598943282869</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1598943282869</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +344,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="新增ANT 样式库" />
     <MESSAGE value="添加部分文字" />
     <MESSAGE value="搭建了一整个大页面" />
     <MESSAGE value="拆分左侧菜单栏为组件" />
@@ -356,7 +368,8 @@
     <MESSAGE value="修改首页文字显示" />
     <MESSAGE value="修改组织Nav为tab" />
     <MESSAGE value="调整打分的布局" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整打分的布局" />
+    <MESSAGE value="调整个人页面的info" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整个人页面的info" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
