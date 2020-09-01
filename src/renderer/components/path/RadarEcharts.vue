@@ -19,13 +19,13 @@ export default {
       this.chartPie = echarts.init(document.getElementById('radars'));
       this.chartPie.setOption({
         title: {
-          text: '多雷达图',
+          text: '多维度雷达图',
         },
         tooltip: {
           trigger: 'axis',
         },
         legend: {
-          left: 'center',
+          left: 'right',
           data: ['维度占比'],
         },
         color: 'yellowgreen',
@@ -38,8 +38,8 @@ export default {
               { text: '突出贡献', max: 100 },
               { text: '遵纪守法', max: 100 },
             ],
-            center: ['35%', '50%'],
-            radius: 80,
+            center: ['50%', '60%'],
+            radius: 60,
           },
         ],
         series: [

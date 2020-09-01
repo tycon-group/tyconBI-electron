@@ -25,11 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整个人页面的total总览中的tab">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="删除多余的页面">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonRankNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonRankNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/RadarEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/RadarEcharts.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,7 @@
       <workItem from="1598492478426" duration="3569000" />
       <workItem from="1598496407095" duration="14430000" />
       <workItem from="1598576464470" duration="17844000" />
-      <workItem from="1598922130322" duration="14990000" />
+      <workItem from="1598922130322" duration="16339000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -311,7 +309,21 @@
       <option name="project" value="LOCAL" />
       <updated>1598944737232</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="删除个人页面的工作能力中的tab多余的div">
+      <created>1598945622098</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1598945622098</updated>
+    </task>
+    <task id="LOCAL-00031" summary="删除多余的页面">
+      <created>1598945766238</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1598945766238</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,8 +359,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="搭建了一整个大页面" />
-    <MESSAGE value="拆分左侧菜单栏为组件" />
     <MESSAGE value="修复跳转页面后高亮框的选择" />
     <MESSAGE value="新建KPI页面，做好了上一月下一月样式" />
     <MESSAGE value="添加日期按钮组和公司导航栏" />
@@ -372,7 +382,9 @@
     <MESSAGE value="调整打分的布局" />
     <MESSAGE value="调整个人页面的info" />
     <MESSAGE value="调整个人页面的total总览中的tab" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整个人页面的total总览中的tab" />
+    <MESSAGE value="删除个人页面的工作能力中的tab多余的div" />
+    <MESSAGE value="删除多余的页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除多余的页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
