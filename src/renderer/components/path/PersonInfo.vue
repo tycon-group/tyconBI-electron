@@ -36,13 +36,12 @@ export default {
 .personInfo {
   width: 100%;
   height: 100%;
-  background-color: #f4f4f4;
 }
 
 .personImages {
-
-  width: 30%;
-  height: 100%;
+  margin-top: 5%;
+  width: 25%;
+  height: 60%;
   text-align: center;
   float: left;
 }
@@ -55,10 +54,10 @@ export default {
 }
 
 .manInfo {
-  width: 70%;
+  width: 75%;
   height: 100%;
-  background-color: white;
   float: left;
+  padding: 20px;
 }
 .row {
   width: 100%;
@@ -71,8 +70,9 @@ export default {
   float: left;
 }
 .row_right {
-  width: 40%;
+  width: 38%;
   height: 100%;
+  margin-left: 2%;
   float: left;
 }
 </style>
