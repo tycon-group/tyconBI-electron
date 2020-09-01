@@ -25,15 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整个人页面的info">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整个人页面的total总览中的tab">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonRankNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonRankNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/AttitudeRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/AttitudeRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/ContributionRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/ContributionRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/LawRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/LawRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/PotentialRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/PotentialRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/WorkRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/WorkRank.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +106,7 @@
       <workItem from="1598492478426" duration="3569000" />
       <workItem from="1598496407095" duration="14430000" />
       <workItem from="1598576464470" duration="17844000" />
-      <workItem from="1598922130322" duration="14148000" />
+      <workItem from="1598922130322" duration="14990000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -308,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598943282869</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="调整个人页面的total总览中的tab">
+      <created>1598944737232</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1598944737232</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +347,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加部分文字" />
     <MESSAGE value="搭建了一整个大页面" />
     <MESSAGE value="拆分左侧菜单栏为组件" />
     <MESSAGE value="修复跳转页面后高亮框的选择" />
@@ -369,7 +371,8 @@
     <MESSAGE value="修改组织Nav为tab" />
     <MESSAGE value="调整打分的布局" />
     <MESSAGE value="调整个人页面的info" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整个人页面的info" />
+    <MESSAGE value="调整个人页面的total总览中的tab" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整个人页面的total总览中的tab" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
@@ -400,9 +403,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1598939493079">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1598945457158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598939493079" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598945457158" />
   </component>
 </project>
