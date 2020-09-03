@@ -8,6 +8,7 @@
           <span>总览</span>
         </router-link>
       </a-menu-item>
+
       <a-menu-item key="work">
         <router-link to="/analysis/analysisPerson/personWork">
           <span>工作能力</span>

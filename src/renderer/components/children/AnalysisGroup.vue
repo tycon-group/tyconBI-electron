@@ -35,21 +35,9 @@ export default {
   height: 35%;
 }
 
-.layout-content {
-  margin-top: 2%;
-  width: 100%;
-  height: 28%;
-}
-
 .layout-footer {
   width: 100%;
   height: 40%;
 }
 
-.totalTitle {
-  width: 100%;
-  height: 10%;
-  background-color: #f4f4f4;
-  text-align: left;
-}
 </style>

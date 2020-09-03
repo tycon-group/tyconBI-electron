@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .personInfo {
   width: 100%;
   height: 100%;

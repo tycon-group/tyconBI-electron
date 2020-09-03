@@ -25,11 +25,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="优化折线图大小">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整logo大小，优化中间一列的宽度">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/CountWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/CountWork.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/GroupInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +113,7 @@
       <workItem from="1598576464470" duration="17844000" />
       <workItem from="1598922130322" duration="20207000" />
       <workItem from="1599008833467" duration="2328000" />
-      <workItem from="1599093089141" duration="2505000" />
+      <workItem from="1599093089141" duration="5853000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -342,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598949743699</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="调整logo大小，优化中间一列的宽度">
+      <created>1599110872368</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1599110872368</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +389,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加日期按钮组和公司导航栏" />
     <MESSAGE value="添加组织和个人二级路由和三级路由,用色块大体布局" />
     <MESSAGE value="提交人员详细信息的，header" />
     <MESSAGE value="提交组织信息简介布局" />
@@ -403,7 +413,8 @@
     <MESSAGE value="删除多余的页面" />
     <MESSAGE value="优化雷达图大小" />
     <MESSAGE value="优化折线图大小" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化折线图大小" />
+    <MESSAGE value="调整logo大小，优化中间一列的宽度" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整logo大小，优化中间一列的宽度" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
@@ -434,9 +445,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1598945457158">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1599110829033">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598945457158" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599110829033" />
   </component>
 </project>

@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .a-layout {
   width: 100%;
   height: 100%;
