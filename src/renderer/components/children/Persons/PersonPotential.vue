@@ -20,6 +20,7 @@ export default {
 .detailed {
   width: 100%;
   height: 40%;
+  border-bottom: 1px solid #dddddd;
 }
 
 .trend {
