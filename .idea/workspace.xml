@@ -25,9 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="优化雷达图大小">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="优化折线图大小">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/LineEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/LineEcharts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +107,9 @@
       <workItem from="1598492478426" duration="3569000" />
       <workItem from="1598496407095" duration="14430000" />
       <workItem from="1598576464470" duration="17844000" />
-      <workItem from="1598922130322" duration="16979000" />
+      <workItem from="1598922130322" duration="20207000" />
+      <workItem from="1599008833467" duration="2328000" />
+      <workItem from="1599093089141" duration="2505000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -330,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598949004642</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="优化折线图大小">
+      <created>1598949743699</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1598949743699</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +378,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="新建KPI页面，做好了上一月下一月样式" />
     <MESSAGE value="添加日期按钮组和公司导航栏" />
     <MESSAGE value="添加组织和个人二级路由和三级路由,用色块大体布局" />
     <MESSAGE value="提交人员详细信息的，header" />
@@ -391,7 +402,8 @@
     <MESSAGE value="删除个人页面的工作能力中的tab多余的div" />
     <MESSAGE value="删除多余的页面" />
     <MESSAGE value="优化雷达图大小" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化雷达图大小" />
+    <MESSAGE value="优化折线图大小" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化折线图大小" />
   </component>
   <component name="WindowStateProjectService">
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
@@ -410,10 +422,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598922387845" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1598607671752">
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1599008892851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598607671752" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599008892851" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597916421385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

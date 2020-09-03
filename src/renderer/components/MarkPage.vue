@@ -56,7 +56,7 @@ export default {
 };
 
 </script>
-<style>
+<style scoped>
 
 .layout {
   width: 100%;
@@ -74,7 +74,7 @@ export default {
 }
 
 .meun_mid {
-  width: 30%;
+  width: 25%;
   min-height: 80%;
   float: left;
   background: #ffffff;
@@ -83,7 +83,7 @@ export default {
 }
 
 .content {
-  width: 60%;
+  width: 65%;
   min-Height: 50%;
   margin: 24px 16px;
   padding: 24px;

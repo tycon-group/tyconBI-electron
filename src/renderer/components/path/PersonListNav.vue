@@ -1,6 +1,8 @@
 <template>
   <div class="personListNav">
-    <a-menu v-model="current" mode="horizontal">
+    <a-menu
+        v-model="current"
+        mode="horizontal">
       <a-menu-item key="total">
         <router-link to="/analysis/analysisPerson/personTotal">
           <span>总览</span>

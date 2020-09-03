@@ -57,7 +57,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 
 .layout {
     width: 100%;
@@ -70,7 +70,7 @@ export default {
 }
 
 .meun_mid {
-  width: 30%;
+  width: 25%;
   min-height: 90%;
   float: left;
   background: #ffffff;
@@ -79,11 +79,11 @@ export default {
 }
 
 .logo_img {
-  width: 100%;
+  width: 180px;
 }
 
 .content_KPI {
-  width: 60%;
+  width: 65%;
   height: 100%;
   margin: 24px 16px;
   padding: 2px;
