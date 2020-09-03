@@ -45,29 +45,32 @@ export default {
 
 
 .personSex {
-  width: 24%;
-  height: 100%;
+  width: 49%;
+  height: 49%;
   text-align: center;
   float: left;
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
 }
 .personDegree {
-  width: 24%;
-  height: 100%;
+  width: 49%;
+  height: 49%;
   text-align: center;
   float: left;
+  border-bottom: 1px solid #dddddd;
 }
 
 .personAge {
-  width: 24%;
-  height: 100%;
+  width: 49%;
+  height: 49%;
   text-align: center;
   float: left;
+  border-right: 1px solid #dddddd;
 }
 
-
 .personFlow {
-  width: 24%;
-  height: 100%;
+  width: 49%;
+  height: 49%;
   text-align: center;
   float: left;
 }

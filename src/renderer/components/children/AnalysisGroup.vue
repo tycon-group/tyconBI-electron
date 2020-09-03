@@ -25,9 +25,8 @@ export default {
 }
 
 .layout-header {
-
   width: 100%;
-  height: 25%;
+  height: 470px;
 }
 
 .layout-table {
