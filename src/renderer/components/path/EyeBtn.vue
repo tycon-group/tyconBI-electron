@@ -1,6 +1,6 @@
 <template>
   <div class="eye_btn">
-    <a-icon type="eye" />本部门员工
+    <a-switch checked-children="本部门" un-checked-children="其他部门" default-checked />
   </div>
 
 </template>
