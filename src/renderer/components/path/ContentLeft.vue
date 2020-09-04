@@ -1,5 +1,5 @@
 <template>
-    <a-menu class="a_menu" style="font-size: 8px !important;" mode="inline" :default-selected-keys="['1']">
+    <a-menu class="a_menu" style="font-size: 8px !important;" mode="inline" :default-selected-keys="['1'] " :scroll="{ x: false}">
       <a-menu-item key="1">
         <span>丁涯_研发组_2020年08月03日</span>
       </a-menu-item>

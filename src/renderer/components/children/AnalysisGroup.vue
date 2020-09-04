@@ -2,7 +2,6 @@
   <div class="a-layout">
     <div class="layout-header"><GroupInfo /></div>
     <div class="layout-table"><GroupListNav /></div>
-
     <div class="layout-footer"><GroupRank /></div>
   </div>
 
@@ -26,7 +25,7 @@ export default {
 
 .layout-header {
   width: 100%;
-  height: 470px;
+  height: 340px;
 }
 
 .layout-table {

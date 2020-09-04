@@ -25,14 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="组织中的饼状图变为两行两列">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整整个页面位置">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Groups/GroupRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Groups/GroupRank.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/EyeBtn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/EyeBtn.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +67,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/renderer/components/children/Persons" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
@@ -112,7 +114,7 @@
       <workItem from="1598922130322" duration="20207000" />
       <workItem from="1599008833467" duration="2328000" />
       <workItem from="1599093089141" duration="17809000" />
-      <workItem from="1599181451511" duration="4622000" />
+      <workItem from="1599181451511" duration="11205000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -373,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599116759786</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="调整整个页面位置">
+      <created>1599186563723</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1599186563723</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,7 +418,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加组织列表模板，修改评分文字" />
     <MESSAGE value="提交人事部评分" />
     <MESSAGE value="调整默认屏幕1170*740" />
     <MESSAGE value="提交组织中的人员排行表" />
@@ -434,9 +442,14 @@
     <MESSAGE value="将css设置scoped，限制它只在当前页起作用。" />
     <MESSAGE value="微调个人信息布局,分模块加上底部分割线" />
     <MESSAGE value="组织中的饼状图变为两行两列" />
-    <option name="LAST_COMMIT_MESSAGE" value="组织中的饼状图变为两行两列" />
+    <MESSAGE value="调整整个页面位置" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整整个页面位置" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="826" y="432" key="#ESLint" timestamp="1599197286830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="826" y="432" key="#ESLint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599197286830" />
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -4,6 +4,7 @@
       :data-source="data"
       :pagination="{ pageSize: 2000 }"
       :scroll="{ y: 200}"
+      style="margin-left: -24px; margin-right: -24px"
   />
 </template>
 
@@ -52,7 +53,6 @@ const columns = [
   {
     title: '总评价',
     dataIndex: 'markCount',
-    width: 80,
     sorter: (a, b) => a.markCount.localeCompare(b.markCount),
     defaultSortOrder: 'ascend',
     sortDirections: ['descend', 'ascend'],
