@@ -2,7 +2,7 @@
   <a-layout id="components-layout-demo-custom-trigger" class="layout">
     <Menus />
     <a-layout>
-      <a-layout-header style="background: #fff; padding: 0">
+      <a-layout-header style="padding: 0; width: 100%; height: 64px; background-color: #f4f4f4; position:fixed; top:0; z-index:999;">
         <div class="header-total">
           <SearchInput />
           <DataBtn />
@@ -11,7 +11,7 @@
       </a-layout-header>
 
       <div class="mid_content">
-        <div class="meun_mid">
+        <div class="menu_mid" style=" padding: 0; background-color: #fff; position:fixed; left: 200px; z-index:999;">
           <ContentLeft />
         </div>
 
@@ -71,24 +71,25 @@ export default {
 .mid_content {
   width: 100%;
   height: 100%;
+  margin-top: 55px;
 }
 
-.meun_mid {
+.menu_mid {
   width: 25%;
-  min-height: 80%;
+  height: 90%;
   float: left;
   background: #ffffff;
-  margin: 24px 16px;
   padding: 24px;
+  margin-top: 10px;
 }
 
 .content {
   width: 65%;
-  min-Height: 50%;
-  margin: 24px 16px;
+  margin-right: 25px;
   padding: 24px;
   background: #ffffff;
-  float: left;
+  min-Height: 50%;
+  float: right;
 }
 
 </style>

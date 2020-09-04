@@ -26,13 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="组织中的饼状图变为两行两列">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/GroupInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupInfo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/EyeBtn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/EyeBtn.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +112,7 @@
       <workItem from="1598922130322" duration="20207000" />
       <workItem from="1599008833467" duration="2328000" />
       <workItem from="1599093089141" duration="17809000" />
+      <workItem from="1599181451511" duration="4622000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>

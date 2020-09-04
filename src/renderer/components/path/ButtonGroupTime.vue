@@ -19,7 +19,7 @@ export default {
 .button_group_time {
   float: right;
   width: 240px;
-  margin-right: 20px;
+  margin-right: 220px;
 }
 
 </style>

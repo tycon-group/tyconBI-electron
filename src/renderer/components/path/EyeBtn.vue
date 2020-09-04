@@ -14,7 +14,7 @@ export default {
 <style>
 .eye_btn {
   float: right;
-  margin-right: 10px;
+  margin-right: 210px;
   width: 120px;
   text-align: center;
 }
