@@ -1,6 +1,7 @@
 <template>
+  <div>
     <a-menu class = "CodeMirror-vscrollbar" style = "display: block; bottom: 0" mode="inline" :default-selected-keys="['1'] " :scroll="{ x: false}">
-      <a-menu-item key="1">
+      <a-menu-item key="1" @click="showDrawer">
         <span>丁涯_研发组_2020年08月03日</span>
       </a-menu-item>
       <a-menu-item key="2">
@@ -70,11 +71,43 @@
         <span>丁涯_研发组_2020年08月01日（星期六）工作汇报</span>
       </a-menu-item>
     </a-menu>
+    <a-drawer
+        title="Basic Drawer"
+        width="700px"
+        placement="right"
+        :closable="false"
+        :visible="visible"
+        :after-visible-change="afterVisibleChange"
+        @close="onClose"
+    >
+      <ContentsUp />
+      <ContentsDown />
+    </a-drawer>
+  </div>
 </template>
 
 <script>
+import ContentsUp from './ContentsUp';
+import ContentsDown from './ContentsDown';
 export default {
   name: 'ContentLeft',
+  components: { ContentsDown, ContentsUp },
+  data() {
+    return {
+      visible: false,
+    };
+  },
+  methods: {
+    afterVisibleChange(val) {
+      console.log('visible', val);
+    },
+    showDrawer() {
+      this.visible = true;
+    },
+    onClose() {
+      this.visible = false;
+    },
+  },
 };
 </script>
 
