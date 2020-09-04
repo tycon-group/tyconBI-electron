@@ -25,13 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整整个页面位置">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整整个页面位置2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Groups/GroupRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Groups/GroupRank.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +109,7 @@
       <workItem from="1598922130322" duration="20207000" />
       <workItem from="1599008833467" duration="2328000" />
       <workItem from="1599093089141" duration="17809000" />
-      <workItem from="1599181451511" duration="11205000" />
+      <workItem from="1599181451511" duration="12049000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -382,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599186563723</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="调整整个页面位置2">
+      <created>1599199138193</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1599199138193</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +420,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="提交人事部评分" />
     <MESSAGE value="调整默认屏幕1170*740" />
     <MESSAGE value="提交组织中的人员排行表" />
     <MESSAGE value="搭建好横版的导航栏" />
@@ -443,7 +444,8 @@
     <MESSAGE value="微调个人信息布局,分模块加上底部分割线" />
     <MESSAGE value="组织中的饼状图变为两行两列" />
     <MESSAGE value="调整整个页面位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整整个页面位置" />
+    <MESSAGE value="调整整个页面位置2" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整整个页面位置2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599197286830">
@@ -466,6 +468,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598922387845" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1599199373140">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1599125765580">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -478,9 +484,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1599110829033">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1599199378220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599110829033" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199378220" />
   </component>
 </project>

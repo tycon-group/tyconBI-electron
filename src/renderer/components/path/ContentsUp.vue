@@ -1,19 +1,19 @@
 <template>
   <a-descriptions bordered>
-    <a-descriptions-item label="撰写时间" span="3">
+    <a-descriptions-item label="撰写时间" span=3>
       <span>2020/08/03 17:35</span>
     </a-descriptions-item>
-    <a-descriptions-item label="日计划" span="3">
+    <a-descriptions-item label="日计划" span=3>
       <span>《隐私条款》</span><br/>
       <span>设计UI交互</span>
     </a-descriptions-item>
-    <a-descriptions-item label="工作记录" span="3">
+    <a-descriptions-item label="工作记录" span=3>
       <span>无</span>
     </a-descriptions-item>
-    <a-descriptions-item label="工作小结" span="3">
+    <a-descriptions-item label="工作小结" span=3>
       <span>无</span>
     </a-descriptions-item>
-    <a-descriptions-item label="评阅记录" span="3">
+    <a-descriptions-item label="评阅记录" span=3>
       <div class="cont_right_up">
         <div class="cont_right_up_left">
           <span>Dylan（许波龙）总经办（太江科技）</span>
