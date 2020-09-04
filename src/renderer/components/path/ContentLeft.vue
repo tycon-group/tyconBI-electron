@@ -1,5 +1,5 @@
 <template>
-    <a-menu class="a_menu" style="font-size: 8px !important;" mode="inline" :default-selected-keys="['1'] " :scroll="{ x: false}">
+    <a-menu class = "CodeMirror-vscrollbar" style = "display: block; bottom: 0" mode="inline" :default-selected-keys="['1'] " :scroll="{ x: false}">
       <a-menu-item key="1">
         <span>丁涯_研发组_2020年08月03日</span>
       </a-menu-item>
@@ -79,8 +79,32 @@ export default {
 </script>
 
 <style>
-.a_menu{
-  height: 100%;
-  overflow-y: scroll;
+
+.CodeMirror-vscrollbar{
+  right:0;
+  top:0;
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+.CodeMirror-vscrollbar{
+  position:absolute;
+  z-index:6;
+  display:none;
+}
+
+/*不定义定义滑块，则为隐藏*/
+
+/**设置滚动条的样式**/
+::-webkit-scrollbar{
+  width:10px;
+  height:20px;
+}
+
+/**滚动槽**/
+
+::-webkit-scrollbar-track{
+  box-shadow:inset 0 0 3px #dcdcdc;
+  border-radius:10px;
 }
 </style>

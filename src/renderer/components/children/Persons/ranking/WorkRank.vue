@@ -1,13 +1,14 @@
 <template>
   <a-table
-      :columns="columns"
-      :data-source="data"
-      :pagination="{ pageSize: 2000 }"
-      :scroll="{ y: 200}"
-  />
+        :columns="columns"
+        :data-source="data"
+        :pagination="{ pageSize: 2000 }"
+        :scroll="{ y: 200}"
+    />
 </template>
 
 <script>
+
 const columns = [
   {
     title: '工作能力占位符1',
