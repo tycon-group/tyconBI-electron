@@ -25,9 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="添加抽屉按钮">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改左下角用户的位置">
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +71,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="ts.external.directory.path" value="D:\webstrom\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -110,7 +112,8 @@
       <workItem from="1598922130322" duration="20207000" />
       <workItem from="1599008833467" duration="2328000" />
       <workItem from="1599093089141" duration="17809000" />
-      <workItem from="1599181451511" duration="22669000" />
+      <workItem from="1599181451511" duration="22861000" />
+      <workItem from="1599440627810" duration="12517000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -413,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599212176241</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="修改左下角用户的位置">
+      <created>1599213104861</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1599213104861</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +459,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="写好了个人中的两个导航栏子路由" />
     <MESSAGE value="修改入离职为在职年限" />
     <MESSAGE value="写好性别饼图" />
     <MESSAGE value="写好其他三个饼图" />
@@ -474,7 +483,8 @@
     <MESSAGE value="优化滑轮" />
     <MESSAGE value="添加部门开关" />
     <MESSAGE value="添加抽屉按钮" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加抽屉按钮" />
+    <MESSAGE value="修改左下角用户的位置" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改左下角用户的位置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599197286830">
@@ -501,10 +511,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1599125765580">
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1599213128399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599125765580" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599213128399" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597916421385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
