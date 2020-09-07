@@ -70,21 +70,19 @@ export default {
   beforeCreate() {
     this.form = this.$form.createForm(this, { name: 'admin', password: '123456' });
   },
+  created() {
+    this.$http.get('http://api.tianapi.com/txapi/tiangou/index?key=291426a3508a7d01328183ea901c4bd2')
+      .then((res) => {
+        console.log(res);
+      })
+    // eslint-disable-next-line no-unused-vars
+      .catch((res) => {
+
+      });
+  },
   methods: {
     handleSubmit(e) {
       e.preventDefault();
-      this.form.validateFields((err, values) => {
-        if (!err) {
-          console.log('Received values of form: ', values);
-          console.log(this.form.getFieldValue('userName'));
-          if (this.form.getFieldValue('userName') === 'admin' && this.form.getFieldValue('password') === '123456') {
-            this.$message.success('登陆成功');
-            this.$router.push({ path: '/home' });
-          } else {
-            this.$message.error('登陆失败');
-          }
-        }
-      });
     },
   },
 };
