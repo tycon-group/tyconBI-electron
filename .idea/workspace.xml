@@ -25,9 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="提交登录页面，使用前端验证实现">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="需要优化登录">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Login.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +112,9 @@
       <workItem from="1599008833467" duration="2328000" />
       <workItem from="1599093089141" duration="17809000" />
       <workItem from="1599181451511" duration="22861000" />
-      <workItem from="1599440627810" duration="24375000" />
+      <workItem from="1599440627810" duration="24557000" />
+      <workItem from="1599526799688" duration="2981000" />
+      <workItem from="1599532470776" duration="11982000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -430,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599460475353</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="需要优化登录">
+      <created>1599476451481</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1599476451481</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +474,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="写好性别饼图" />
     <MESSAGE value="写好其他三个饼图" />
     <MESSAGE value="组织页面的五个维度饼图" />
     <MESSAGE value="整体架构完成" />
@@ -491,12 +498,14 @@
     <MESSAGE value="添加抽屉按钮" />
     <MESSAGE value="修改左下角用户的位置" />
     <MESSAGE value="提交登录页面，使用前端验证实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交登录页面，使用前端验证实现" />
+    <MESSAGE value="需要优化登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="需要优化登录" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="826" y="432" key="#ESLint" timestamp="1599473331741">
+    <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="826" y="432" key="#ESLint/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599535417718" />
     <state x="826" y="432" key="#ESLint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599473331741" />
     <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
       <screen x="0" y="0" width="1920" height="1040" />
