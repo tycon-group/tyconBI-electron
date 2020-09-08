@@ -75,8 +75,17 @@ export default {
       param.append('password', this.forms.password);
       const instance = this.$http.create({ headers: { 'content-type': 'application/x-www-form-urlencoded' } });
       instance.post('http://tyconcps.cn:8888/auth-token/', param).then((response) => {
-        console.log(response);
+        console.log(response.data.token);
         this.$message.success('登录成功');
+        const data1 = response.data;
+        const Store = require('electron-store');
+        const store = new Store();
+        store.set('my_token', data1.token);
+        if (store.get('my_token')) {
+          this.$router.push('/home');
+        } else {
+          this.$router.replace('/home');
+        }
       }).catch((error) => {
         console.log(error);
         this.$message.error('账号或密码错误');

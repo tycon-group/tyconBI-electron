@@ -25,9 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="需要优化登录">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="接口判断登录成功">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +117,7 @@
       <workItem from="1599181451511" duration="22861000" />
       <workItem from="1599440627810" duration="24557000" />
       <workItem from="1599526799688" duration="2981000" />
-      <workItem from="1599532470776" duration="11982000" />
+      <workItem from="1599532470776" duration="21011000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -438,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599476451481</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="接口判断登录成功">
+      <created>1599550914472</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1599550914472</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,7 +484,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="写好其他三个饼图" />
     <MESSAGE value="组织页面的五个维度饼图" />
     <MESSAGE value="整体架构完成" />
     <MESSAGE value="修改首页文字显示" />
@@ -499,7 +508,8 @@
     <MESSAGE value="修改左下角用户的位置" />
     <MESSAGE value="提交登录页面，使用前端验证实现" />
     <MESSAGE value="需要优化登录" />
-    <option name="LAST_COMMIT_MESSAGE" value="需要优化登录" />
+    <MESSAGE value="接口判断登录成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="接口判断登录成功" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -527,17 +537,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1599460494989">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1311" y="148" key="Vcs.Push.Dialog.v2" timestamp="1599551105557">
+      <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
+    <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599551105557" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597916421385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916421385" />
-    <state x="798" y="266" key="run.anything.popup" timestamp="1598601600117">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1122" y="168" key="run.anything.popup" timestamp="1599563014800">
+      <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
+    <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1599200055705">
       <screen x="0" y="0" width="1920" height="1040" />
