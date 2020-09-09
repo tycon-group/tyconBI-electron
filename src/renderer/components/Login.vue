@@ -5,7 +5,6 @@
     </div>
     <a-form-model
         id="components-form-demo-normal-login"
-        @submit="handleSubmit"
         :model="forms"
     >
       <a-form-model-item>
@@ -40,8 +39,7 @@
         <a class="login-form-forgot" href="#">
           Forgot password
         </a>
-        <a-button type="primary" html-type="submit" class="login-form-button"
-                  :disabled="forms.userName === '' || forms.password === ''">
+        <a-button type="primary" html-type="submit" class="login-form-button" @click="handleSubmit">
           Log in
         </a-button>
       </a-form-model-item>
@@ -59,33 +57,30 @@ export default {
       },
     };
   },
-  created() {
-    this.$http.get('http://tyconcps.cn:8888/users')
-      .then((res) => {
-        console.log(res);
-      })
-    // eslint-disable-next-line no-unused-vars
-      .catch((res) => {
-      });
-  },
+  // created() {
+  //   this.$http.get('http://tyconcps.cn:8888/users')
+  //     .then((res) => {
+  //       console.log(res);
+  //     })
+  //   // eslint-disable-next-line no-unused-vars
+  //     .catch((res) => {
+  //     });
+  // },
   methods: {
     handleSubmit() {
+      console.log('dddddddddddd');
       const param = new URLSearchParams();
       param.append('username', this.forms.userName);
       param.append('password', this.forms.password);
       const instance = this.$http.create({ headers: { 'content-type': 'application/x-www-form-urlencoded' } });
-      instance.post('http://tyconcps.cn:8888/auth-token/', param).then((response) => {
+      instance.post('http://10.10.1.5:8888/auth-token/', param).then((response) => {
         console.log(response.data.token);
         this.$message.success('登录成功');
-        const data1 = response.data;
-        const Store = require('electron-store');
-        const store = new Store();
-        store.set('my_token', data1.token);
-        if (store.get('my_token')) {
-          this.$router.push('/home');
-        } else {
-          this.$router.replace('/home');
-        }
+        // const data1 = response.data;
+        // const Store = require('electron-store');
+        // const store = new Store();
+        // store.set('my_token', data1.token);
+        this.$router.push('/home');
       }).catch((error) => {
         console.log(error);
         this.$message.error('账号或密码错误');
