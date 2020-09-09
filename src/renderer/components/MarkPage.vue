@@ -18,7 +18,7 @@
         <a-layout-content class="content">
           <ContentsUp />
           <ContentsDownforMark />
-          <HRContentsDown />
+          <DoubleMark />
         </a-layout-content>
 
 
@@ -37,13 +37,13 @@ import ContentsDownforMark from './path/ContentsDownforMark';
 import SearchInput from './path/SearchInput';
 import DataBtn from './path/DataBtn';
 import EyeBtn from './path/EyeBtn';
-import HRContentsDown from './path/HRContentsDown';
+import DoubleMark from './path/DoubleMark';
 
 
 export default {
   name: 'MarkPage',
   components: {
-    HRContentsDown,
+    DoubleMark,
     EyeBtn,
     DataBtn,
     SearchInput,

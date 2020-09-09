@@ -2,7 +2,7 @@
   <a-layout-content class="mark_submit_hr">
     <div class="cont">
       <div class="cont_left">
-        <span>人事部门评分:</span>
+        <span>评分:</span>
       </div>
       <div class="cont_right">
               <span>
@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  name: 'HRContentsDown',
+  name: 'DoubleMark',
   data() {
     return {
       collapsed: false,

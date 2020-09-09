@@ -25,9 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修复submit函数二次刷新错误">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Login.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="储存token">
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/HRContentsDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/DoubleMark.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +115,7 @@
       <workItem from="1599440627810" duration="24557000" />
       <workItem from="1599526799688" duration="2981000" />
       <workItem from="1599532470776" duration="21011000" />
-      <workItem from="1599612966379" duration="8877000" />
+      <workItem from="1599612966379" duration="9191000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -453,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599617621806</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="储存token">
+      <created>1599640043044</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1599640043044</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -489,7 +496,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="整体架构完成" />
     <MESSAGE value="修改首页文字显示" />
     <MESSAGE value="修改组织Nav为tab" />
     <MESSAGE value="调整打分的布局" />
@@ -514,7 +520,8 @@
     <MESSAGE value="需要优化登录" />
     <MESSAGE value="接口判断登录成功" />
     <MESSAGE value="修复submit函数二次刷新错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复submit函数二次刷新错误" />
+    <MESSAGE value="储存token" />
+    <option name="LAST_COMMIT_MESSAGE" value="储存token" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
