@@ -25,9 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="储存token">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改人事评分，改为评分">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/HRContentsDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/DoubleMark.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsDownforMark.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/MarkShow.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,14 +116,7 @@
       <workItem from="1599440627810" duration="24557000" />
       <workItem from="1599526799688" duration="2981000" />
       <workItem from="1599532470776" duration="21011000" />
-      <workItem from="1599612966379" duration="9191000" />
-    </task>
-    <task id="LOCAL-00001" summary="手脚架搭建">
-      <created>1597816669633</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1597816669633</updated>
+      <workItem from="1599612966379" duration="10791000" />
     </task>
     <task id="LOCAL-00002" summary="修复配置缺陷">
       <created>1597816735054</created>
@@ -460,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599640043044</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="修改人事评分，改为评分">
+      <created>1599640440349</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1599640440350</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +497,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改首页文字显示" />
     <MESSAGE value="修改组织Nav为tab" />
     <MESSAGE value="调整打分的布局" />
     <MESSAGE value="调整个人页面的info" />
@@ -521,7 +521,8 @@
     <MESSAGE value="接口判断登录成功" />
     <MESSAGE value="修复submit函数二次刷新错误" />
     <MESSAGE value="储存token" />
-    <option name="LAST_COMMIT_MESSAGE" value="储存token" />
+    <MESSAGE value="修改人事评分，改为评分" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改人事评分，改为评分" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

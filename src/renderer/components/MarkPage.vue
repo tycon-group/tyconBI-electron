@@ -17,7 +17,7 @@
 
         <a-layout-content class="content">
           <ContentsUp />
-          <ContentsDownforMark />
+          <MarkShow />
           <DoubleMark />
         </a-layout-content>
 
@@ -33,7 +33,7 @@
 import Menus from './path/Menus.vue';
 import ContentLeft from './path/ContentLeft.vue';
 import ContentsUp from './path/ContentsUp';
-import ContentsDownforMark from './path/ContentsDownforMark';
+import MarkShow from './path/MarkShow';
 import SearchInput from './path/SearchInput';
 import DataBtn from './path/DataBtn';
 import EyeBtn from './path/EyeBtn';
@@ -47,7 +47,7 @@ export default {
     EyeBtn,
     DataBtn,
     SearchInput,
-    ContentsDownforMark,
+    MarkShow,
     ContentsUp,
     Menus,
     ContentLeft,
