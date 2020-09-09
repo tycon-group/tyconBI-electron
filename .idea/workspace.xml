@@ -25,7 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="接口判断登录成功">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修复submit函数二次刷新错误">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Login.vue" afterDir="false" />
     </list>
@@ -115,7 +115,7 @@
       <workItem from="1599440627810" duration="24557000" />
       <workItem from="1599526799688" duration="2981000" />
       <workItem from="1599532470776" duration="21011000" />
-      <workItem from="1599612966379" duration="4226000" />
+      <workItem from="1599612966379" duration="8877000" />
     </task>
     <task id="LOCAL-00001" summary="手脚架搭建">
       <created>1597816669633</created>
@@ -446,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599550914472</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="修复submit函数二次刷新错误">
+      <created>1599617621806</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1599617621806</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +489,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="组织页面的五个维度饼图" />
     <MESSAGE value="整体架构完成" />
     <MESSAGE value="修改首页文字显示" />
     <MESSAGE value="修改组织Nav为tab" />
@@ -507,7 +513,8 @@
     <MESSAGE value="提交登录页面，使用前端验证实现" />
     <MESSAGE value="需要优化登录" />
     <MESSAGE value="接口判断登录成功" />
-    <option name="LAST_COMMIT_MESSAGE" value="接口判断登录成功" />
+    <MESSAGE value="修复submit函数二次刷新错误" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复submit函数二次刷新错误" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -523,10 +530,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599118238628" />
+    <state x="310" y="260" width="1200" height="840" key="DiffContextDialog" timestamp="1599618537434">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="310" y="260" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599618537434" />
     <state x="780" y="226" key="FileChooserDialogImpl" timestamp="1598505023455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598505023455" />
+    <state x="712" y="228" key="RollbackChangesDialog" timestamp="1599617807757">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="712" y="228" key="RollbackChangesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599617807757" />
     <state x="518" y="157" key="SettingsEditor" timestamp="1599614555688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -550,9 +565,10 @@
     </state>
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1599200055705">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1599617593568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599617593568" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
 </project>
