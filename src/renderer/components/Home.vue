@@ -7,7 +7,7 @@
 
       <div class="mid_content">
         <div class="menu_mid" style=" padding: 0; background-color: #fff; position:fixed; left: 200px; z-index:999;">
-          <ContentLeft />
+          <ContentLeft :empIDs="empID" />
         </div>
 
         <a-layout-content class="content">
@@ -36,6 +36,11 @@ export default {
     Menus,
     ContentLeft,
   },
+  data() {
+    return {
+      empID: '',
+    };
+  },
   mounted() {
     console.log(this.$route.query.user);
     const username = this.$route.query.user;
@@ -43,6 +48,8 @@ export default {
     this.$http.get(url)
       .then((res) => {
         console.log(res);
+        console.log(res.data.data[0].empID); // 此处取到了登录人员的ID
+        this.empID = res.data.data[0].empID;
       })
       // eslint-disable-next-line no-unused-vars
       .catch((res) => {

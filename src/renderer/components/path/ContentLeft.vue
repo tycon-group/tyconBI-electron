@@ -5,7 +5,7 @@
         <span>丁涯_研发组_2020年08月03日</span>
       </a-menu-item>
       <a-menu-item key="2">
-        <span>丁涯_研发组_2020年08月02日</span>
+        <span>{{empIDs}}</span>
       </a-menu-item>
       <a-menu-item key="3">
         <span>丁涯_研发组_2020年08月01日</span>
@@ -97,6 +97,7 @@ export default {
       visible: false,
     };
   },
+  props: ['empIDs'],
   methods: {
     afterVisibleChange(val) {
       console.log('visible', val);
@@ -109,8 +110,11 @@ export default {
     },
   },
 
-  mounted() {
-    this.$http.get('http://tyconcps.cn:4399/wl/worklogs/')
+  created() {
+    console.log(this.empIDs);
+    // const empIDs = this.empIDs;
+    const url = 'http://tyconcps.cn:4399/wl/underlingsWorklogs/D00999';
+    this.$http.get(url)
       .then((res) => {
         console.log(res);
       })

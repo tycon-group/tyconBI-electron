@@ -154,7 +154,7 @@ export default new Router({
     },
     {
       path: '/',
-      name: 'home',
+      name: 'defaultLogin',
       component: require('@/components/Login').default,
     },
     {

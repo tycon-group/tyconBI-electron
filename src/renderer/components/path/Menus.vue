@@ -4,8 +4,8 @@
       <span>太江数据分析系统</span>
     </div>
     <a-menu theme="dark" mode="inline" :default-selected-keys="[$route.path]">
-      <a-menu-item key="/home" class="things" @click="toThing">
-        <router-link to="/home">
+      <a-menu-item key="/home/:user" class="things" @click="toThing">
+        <router-link to="/home/:user">
           <a-icon type="project" />
           <span>待办事项</span>
         </router-link>
