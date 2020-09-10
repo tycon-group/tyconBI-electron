@@ -25,8 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="kip分析页面中，增加部门这一级">
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="提交日计划的状态tag">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Groups/GroupRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Groups/GroupRank.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,14 +116,7 @@
       <workItem from="1599526799688" duration="2981000" />
       <workItem from="1599532470776" duration="21011000" />
       <workItem from="1599612966379" duration="12110000" />
-      <workItem from="1599699596395" duration="4907000" />
-    </task>
-    <task id="LOCAL-00005" summary="搭建了一整个大页面">
-      <created>1597910873662</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1597910873662</updated>
+      <workItem from="1599699596395" duration="5764000" />
     </task>
     <task id="LOCAL-00006" summary="拆分左侧菜单栏为组件">
       <created>1597912456781</created>
@@ -460,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599704620620</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="提交日计划的状态tag">
+      <created>1599704866588</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1599704866588</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +497,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="调整个人页面的total总览中的tab" />
     <MESSAGE value="删除个人页面的工作能力中的tab多余的div" />
     <MESSAGE value="删除多余的页面" />
     <MESSAGE value="优化雷达图大小" />
@@ -521,7 +521,8 @@
     <MESSAGE value="修改显示领导评分，改为折叠面板展示" />
     <MESSAGE value="修改评分页面" />
     <MESSAGE value="kip分析页面中，增加部门这一级" />
-    <option name="LAST_COMMIT_MESSAGE" value="kip分析页面中，增加部门这一级" />
+    <MESSAGE value="提交日计划的状态tag" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交日计划的状态tag" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -572,10 +573,10 @@
     </state>
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1599617593568">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1599704604226">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599617593568" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599704604226" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
 </project>
