@@ -40,7 +40,7 @@
         <a class="login-form-forgot" href="#">
           Forgot password
         </a>
-        <a-button type="primary" html-type="submit" class="login-form-button" @click="handleSubmit">
+        <a-button type="primary" html-type="submit" class="login-form-button" @click="handleSubmit(user)">
           Log in
         </a-button>
       </a-form-model-item>
@@ -56,6 +56,7 @@ export default {
         userName: '',
         password: '',
       },
+      user: '',
     };
   },
   // created() {
@@ -68,7 +69,7 @@ export default {
   //     });
   // },
   methods: {
-    handleSubmit() {
+    handleSubmit(user) {
       const param = new URLSearchParams();
       param.append('username', this.forms.userName);
       param.append('password', this.forms.password);
@@ -80,8 +81,11 @@ export default {
         const Store = require('electron-store');
         const store = new Store();
         store.set('my_token', data1.token);
+        store.set('user', this.forms.userName);
+        user = store.get('user');
+        console.log(user);
         if (store.get('my_token')) {
-          this.$router.push('/home');
+          this.$router.push({ name: 'home', query: { user: this.forms.userName } });
         } else {
           this.$router.replace('/');
         }

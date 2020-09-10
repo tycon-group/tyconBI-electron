@@ -30,7 +30,7 @@ export default new Router({
   mode: 'hash',
   routes: [
     {
-      path: '/home',
+      path: '/home/:user',
       name: 'home',
       component: Home,
     },

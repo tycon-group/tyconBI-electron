@@ -36,13 +36,11 @@ export default {
     Menus,
     ContentLeft,
   },
-  data() {
-    return {
-      userName: '',
-    };
-  },
   mounted() {
-    this.$http.get('http://tyconcps.cn:4399/hr/employees/?username=leo')
+    console.log(this.$route.query.user);
+    const username = this.$route.query.user;
+    const url = `http://tyconcps.cn:4399/hr/employees/?username=${username}`;
+    this.$http.get(url)
       .then((res) => {
         console.log(res);
       })
