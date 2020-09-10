@@ -25,9 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改评分页面">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="kip分析页面中，增加部门这一级">
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,14 +115,7 @@
       <workItem from="1599526799688" duration="2981000" />
       <workItem from="1599532470776" duration="21011000" />
       <workItem from="1599612966379" duration="12110000" />
-      <workItem from="1599699596395" duration="4576000" />
-    </task>
-    <task id="LOCAL-00004" summary="添加部分文字">
-      <created>1597887511736</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1597887511737</updated>
+      <workItem from="1599699596395" duration="4907000" />
     </task>
     <task id="LOCAL-00005" summary="搭建了一整个大页面">
       <created>1597910873662</created>
@@ -461,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599703104505</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="kip分析页面中，增加部门这一级">
+      <created>1599704620620</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1599704620620</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +496,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="调整个人页面的info" />
     <MESSAGE value="调整个人页面的total总览中的tab" />
     <MESSAGE value="删除个人页面的工作能力中的tab多余的div" />
     <MESSAGE value="删除多余的页面" />
@@ -522,7 +520,8 @@
     <MESSAGE value="修改人事评分，改为评分" />
     <MESSAGE value="修改显示领导评分，改为折叠面板展示" />
     <MESSAGE value="修改评分页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改评分页面" />
+    <MESSAGE value="kip分析页面中，增加部门这一级" />
+    <option name="LAST_COMMIT_MESSAGE" value="kip分析页面中，增加部门这一级" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

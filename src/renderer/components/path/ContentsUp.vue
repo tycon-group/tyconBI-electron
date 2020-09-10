@@ -4,8 +4,12 @@
       <span>2020/08/03 17:35</span>
     </a-descriptions-item>
     <a-descriptions-item label="日计划" span=3>
-      <span>《隐私条款》</span><br/>
+      <a-tag color="green">已完成</a-tag>
+      <span>《隐私条款》</span>
+      <br/>
+      <a-tag color="red">未完成</a-tag>
       <span>设计UI交互</span>
+      <br/>
     </a-descriptions-item>
     <a-descriptions-item label="工作记录" span=3>
       <span>无</span>
