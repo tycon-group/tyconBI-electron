@@ -3,8 +3,8 @@
     <div>
       <a-collapse v-model="activeKey">
         <a-collapse-panel key="1" header="直属领导评分">
-          <p>分值为: {{ mark_value }}</p>
-          <p>理由: {{ reason }}</p>
+          <p>分值为: <span class="mark_number">{{ mark_value }}</span></p>
+          <p>理由: <span class="mark_reason">{{ reason }}</span></p>
         </a-collapse-panel>
       </a-collapse>
     </div>
@@ -29,24 +29,7 @@ export default {
 };
 </script>
 
-<style>
-.cont {
-  width: 100%;
-  height: auto;
-}
-
-.cont_left {
-  width: 25%;
-  float: left;
-
-}
-
-.cont_right {
-  width: 75%;
-  float: left;
-
-}
-
+<style scoped>
 .mark_submit_2 {
   width: 100%;
   min-Height: 40%;
@@ -54,5 +37,16 @@ export default {
   padding: 24px;
   background: #f4f4f4;
   float: left;
+}
+.mark_number {
+  margin-left: 10px;
+  color: red;
+  font-size: 22px;
+  font-weight: bold
+}
+.mark_reason {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: bold
 }
 </style>
