@@ -25,9 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="提交日计划的状态tag">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="恢复组织列表中，最后一列宽度">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Groups/GroupRank.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Groups/GroupRank.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,14 +118,7 @@
       <workItem from="1599526799688" duration="2981000" />
       <workItem from="1599532470776" duration="21011000" />
       <workItem from="1599612966379" duration="12110000" />
-      <workItem from="1599699596395" duration="5764000" />
-    </task>
-    <task id="LOCAL-00006" summary="拆分左侧菜单栏为组件">
-      <created>1597912456781</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1597912456781</updated>
+      <workItem from="1599699596395" duration="13873000" />
     </task>
     <task id="LOCAL-00007" summary="修复跳转页面后高亮框的选择">
       <created>1598234724931</created>
@@ -461,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599704866588</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="回复组织列表中，最后一列宽度">
+      <created>1599705625890</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1599705625890</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +499,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="删除个人页面的工作能力中的tab多余的div" />
     <MESSAGE value="删除多余的页面" />
     <MESSAGE value="优化雷达图大小" />
     <MESSAGE value="优化折线图大小" />
@@ -522,7 +523,8 @@
     <MESSAGE value="修改评分页面" />
     <MESSAGE value="kip分析页面中，增加部门这一级" />
     <MESSAGE value="提交日计划的状态tag" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交日计划的状态tag" />
+    <MESSAGE value="恢复组织列表中，最后一列宽度" />
+    <option name="LAST_COMMIT_MESSAGE" value="恢复组织列表中，最后一列宽度" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -538,14 +540,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599118238628" />
-    <state x="310" y="260" width="1200" height="840" key="DiffContextDialog" timestamp="1599618537434">
+    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog" timestamp="1599719816350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="310" y="260" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599618537434" />
+    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599719816350" />
     <state x="780" y="226" key="FileChooserDialogImpl" timestamp="1598505023455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598505023455" />
+    <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1599714408523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599714408523" />
     <state x="712" y="228" key="RollbackChangesDialog" timestamp="1599617807757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

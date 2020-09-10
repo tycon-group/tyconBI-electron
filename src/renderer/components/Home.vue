@@ -36,7 +36,22 @@ export default {
     Menus,
     ContentLeft,
   },
+  data() {
+    return {
+      userName: '',
+    };
+  },
+  mounted() {
+    this.$http.get('http://tyconcps.cn:4399/hr/employees/?username=leo')
+      .then((res) => {
+        console.log(res);
+      })
+      // eslint-disable-next-line no-unused-vars
+      .catch((res) => {
+      });
+  },
 };
+
 </script>
 <style scoped>
 

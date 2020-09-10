@@ -108,6 +108,16 @@ export default {
       this.visible = false;
     },
   },
+
+  mounted() {
+    this.$http.get('http://tyconcps.cn:4399/wl/worklogs/')
+      .then((res) => {
+        console.log(res);
+      })
+    // eslint-disable-next-line no-unused-vars
+      .catch((res) => {
+      });
+  },
 };
 </script>
 
