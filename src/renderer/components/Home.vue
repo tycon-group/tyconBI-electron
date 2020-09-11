@@ -7,16 +7,13 @@
 
       <div class="mid_content">
         <div class="menu_mid" style=" padding: 0; background-color: #fff; position:fixed; left: 200px; z-index:999;">
-          <ContentLeft :empIDs="empID" />
+          <ContentLeft :empIDs="empIDValue" />
         </div>
 
         <a-layout-content class="content">
           <ContentsUp />
           <ContentsDown />
         </a-layout-content>
-
-
-
       </div>
     </a-layout>
   </a-layout>
@@ -38,7 +35,7 @@ export default {
   },
   data() {
     return {
-      empID: '',
+      empIDValue: '',
     };
   },
   mounted() {
@@ -47,9 +44,8 @@ export default {
     const url = `http://tyconcps.cn:4399/hr/employees/?username=${username}`;
     this.$http.get(url)
       .then((res) => {
-        console.log(res);
         console.log(res.data.data[0].empID); // 此处取到了登录人员的ID
-        this.empID = res.data.data[0].empID;
+        this.empIDValue = res.data.data[0].empID;
       })
       // eslint-disable-next-line no-unused-vars
       .catch((res) => {

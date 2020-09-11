@@ -79,6 +79,6 @@ export default {
 </script>
 <style>
 .demo-loadmore-list {
-  min-height: 350px;
+  min-height: 300px;
 }
 </style>

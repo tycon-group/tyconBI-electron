@@ -25,13 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="删除underlingsWorklogs中第一个s">
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="新建全部列表，整理导航栏，准备做成动态">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,14 +120,7 @@
       <workItem from="1599612966379" duration="12110000" />
       <workItem from="1599699596395" duration="25754000" />
       <workItem from="1599736293659" duration="523000" />
-      <workItem from="1599786403027" duration="4587000" />
-    </task>
-    <task id="LOCAL-00011" summary="提交人员详细信息的，header">
-      <created>1598344878358</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1598344878358</updated>
+      <workItem from="1599786403027" duration="20451000" />
     </task>
     <task id="LOCAL-00012" summary="提交组织信息简介布局">
       <created>1598346213245</created>
@@ -467,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599786530180</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="新建全部列表，整理导航栏，准备做成动态">
+      <created>1599795449172</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1599795449173</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +501,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="将css设置scoped，限制它只在当前页起作用。" />
     <MESSAGE value="微调个人信息布局,分模块加上底部分割线" />
     <MESSAGE value="组织中的饼状图变为两行两列" />
     <MESSAGE value="调整整个页面位置" />
@@ -528,7 +525,8 @@
     <MESSAGE value="通过route，跨页面传参" />
     <MESSAGE value="子组件接收父组件值，" />
     <MESSAGE value="删除underlingsWorklogs中第一个s" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除underlingsWorklogs中第一个s" />
+    <MESSAGE value="新建全部列表，整理导航栏，准备做成动态" />
+    <option name="LAST_COMMIT_MESSAGE" value="新建全部列表，整理导航栏，准备做成动态" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -544,10 +542,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599118238628" />
-    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog" timestamp="1599732826734">
+    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog" timestamp="1599807501161">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599732826734" />
+    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599807501161" />
     <state x="780" y="226" key="FileChooserDialogImpl" timestamp="1598505023455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
