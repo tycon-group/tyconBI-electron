@@ -111,9 +111,9 @@ export default {
   },
 
   created() {
-    console.log(this.empIDs);
+    console.log(this.$props.empIDs);
     // const empIDs = this.empIDs;
-    const url = 'http://tyconcps.cn:4399/wl/underlingsWorklogs/D00999';
+    const url = 'http://tyconcps.cn:4399/wl/underlingWorklogs/D00121';
     this.$http.get(url)
       .then((res) => {
         console.log(res);
