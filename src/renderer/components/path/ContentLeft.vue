@@ -4,72 +4,6 @@
       <a-menu-item key="1" @click="showDrawer">
         <span>丁涯_研发组_2020年08月03日</span>
       </a-menu-item>
-      <a-menu-item key="2">
-        <span>{{empIDs}}</span>
-      </a-menu-item>
-      <a-menu-item key="3">
-        <span>丁涯_研发组_2020年08月01日</span>
-      </a-menu-item>
-
-      <a-menu-item key="4">
-        <span>丁涯_研发组_2020年08月03日（星期一）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="5">
-        <span>丁涯_研发组_2020年08月02日（星期日）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="6">
-        <span>丁涯_研发组_2020年08月01日（星期六）工作汇报</span>
-      </a-menu-item>
-
-      <a-menu-item key="7">
-        <span>丁涯_研发组_2020年08月03日（星期一）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="8">
-        <span>丁涯_研发组_2020年08月02日（星期日）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="9">
-        <span>丁涯_研发组_2020年08月01日（星期六）工作汇报</span>
-      </a-menu-item>
-
-      <a-menu-item key="10">
-        <span>丁涯_研发组_2020年08月03日（星期一）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="11">
-        <span>丁涯_研发组_2020年08月02日（星期日）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="12">
-        <span>丁涯_研发组_2020年08月01日（星期六）工作汇报</span>
-      </a-menu-item>
-
-      <a-menu-item key="13">
-        <span>丁涯_研发组_2020年08月03日（星期一）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="14">
-        <span>丁涯_研发组_2020年08月02日（星期日）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="15">
-        <span>丁涯_研发组_2020年08月01日（星期六）工作汇报</span>
-      </a-menu-item>
-
-      <a-menu-item key="16">
-        <span>丁涯_研发组_2020年08月03日（星期一）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="17">
-        <span>丁涯_研发组_2020年08月02日（星期日）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="18">
-        <span>丁涯_研发组_2020年08月01日（星期六）工作汇报</span>
-      </a-menu-item>
-
-      <a-menu-item key="19">
-        <span>丁涯_研发组_2020年08月03日（星期一）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="20">
-        <span>丁涯_研发组_2020年08月02日（星期日）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="21">
-        <span>丁涯_研发组_2020年08月01日（星期六）工作汇报</span>
-      </a-menu-item>
     </a-menu>
     <a-drawer
         title="Basic Drawer"
@@ -102,6 +36,7 @@ export default {
     afterVisibleChange(val) {
       console.log('visible', val);
     },
+    // 侧边抽屉
     showDrawer() {
       this.visible = true;
     },
@@ -109,11 +44,10 @@ export default {
       this.visible = false;
     },
   },
-
-  created() {
+  mounted() {
     console.log(this.$props.empIDs);
-    // const empIDs = this.empIDs;
-    const url = 'http://tyconcps.cn:4399/wl/underlingWorklogs/D00121';
+    const empID = this.$props.empIDs;
+    const url = `http://tyconcps.cn:4399/wl/underlingWorklogs/${empID}/?is_toBeDone=true&is_showCross=true`;
     this.$http.get(url)
       .then((res) => {
         console.log(res);

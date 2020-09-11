@@ -25,9 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="子组件接收父组件值，">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="删除underlingsWorklogs中第一个s">
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -118,13 +122,7 @@
       <workItem from="1599612966379" duration="12110000" />
       <workItem from="1599699596395" duration="25754000" />
       <workItem from="1599736293659" duration="523000" />
-    </task>
-    <task id="LOCAL-00010" summary="添加组织和个人二级路由和三级路由,用色块大体布局">
-      <created>1598337253335</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1598337253335</updated>
+      <workItem from="1599786403027" duration="4587000" />
     </task>
     <task id="LOCAL-00011" summary="提交人员详细信息的，header">
       <created>1598344878358</created>
@@ -462,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599733545576</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="删除underlingsWorklogs中第一个s">
+      <created>1599786530180</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1599786530180</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +503,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="调整logo大小，优化中间一列的宽度" />
     <MESSAGE value="将css设置scoped，限制它只在当前页起作用。" />
     <MESSAGE value="微调个人信息布局,分模块加上底部分割线" />
     <MESSAGE value="组织中的饼状图变为两行两列" />
@@ -523,7 +527,8 @@
     <MESSAGE value="测试提交" />
     <MESSAGE value="通过route，跨页面传参" />
     <MESSAGE value="子组件接收父组件值，" />
-    <option name="LAST_COMMIT_MESSAGE" value="子组件接收父组件值，" />
+    <MESSAGE value="删除underlingsWorklogs中第一个s" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除underlingsWorklogs中第一个s" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

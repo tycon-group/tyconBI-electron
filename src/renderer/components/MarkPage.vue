@@ -12,7 +12,7 @@
 
       <div class="mid_content">
         <div class="menu_mid" style=" padding: 0; background-color: #fff; position:fixed; left: 200px; z-index:999;">
-          <ContentLeft />
+          <LogsAll />
         </div>
 
         <a-layout-content class="content">
@@ -31,18 +31,19 @@
 
 <script>
 import Menus from './path/Menus.vue';
-import ContentLeft from './path/ContentLeft.vue';
 import ContentsUp from './path/ContentsUp';
 import MarkShow from './path/MarkShow';
 import SearchInput from './path/SearchInput';
 import DataBtn from './path/DataBtn';
 import EyeBtn from './path/EyeBtn';
 import DoubleMark from './path/DoubleMark';
+import LogsAll from './path/LogsAll';
 
 
 export default {
   name: 'MarkPage',
   components: {
+    LogsAll,
     DoubleMark,
     EyeBtn,
     DataBtn,
@@ -50,7 +51,6 @@ export default {
     MarkShow,
     ContentsUp,
     Menus,
-    ContentLeft,
   },
 
 };
