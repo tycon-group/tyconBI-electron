@@ -28,10 +28,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="让所有评分中也能显示内容">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="微调布局">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,14 +127,7 @@
       <workItem from="1599786403027" duration="20478000" />
       <workItem from="1600045784308" duration="49000" />
       <workItem from="1600046012639" duration="35000" />
-      <workItem from="1600046057806" duration="6370000" />
-    </task>
-    <task id="LOCAL-00016" summary="提交组织中的人员排行表">
-      <created>1598411111568</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1598411111568</updated>
+      <workItem from="1600046057806" duration="14090000" />
     </task>
     <task id="LOCAL-00017" summary="搭建好横版的导航栏">
       <created>1598420620355</created>
@@ -470,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600053133130</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="微调布局">
+      <created>1600053663068</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1600053663068</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +508,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="改了span的number" />
     <MESSAGE value="优化滑轮" />
     <MESSAGE value="添加部门开关" />
     <MESSAGE value="添加抽屉按钮" />
@@ -531,7 +532,8 @@
     <MESSAGE value="显示出数组内容title" />
     <MESSAGE value="通过store传值，让页面可以一直取到值" />
     <MESSAGE value="让所有评分中也能显示内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="让所有评分中也能显示内容" />
+    <MESSAGE value="微调布局" />
+    <option name="LAST_COMMIT_MESSAGE" value="微调布局" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

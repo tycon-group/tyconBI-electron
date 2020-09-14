@@ -10,10 +10,6 @@
           <ContentLeft :empIDs="empIDValue" />
         </div>
 
-        <a-layout-content class="content">
-          <ContentsUp />
-          <ContentsDown />
-        </a-layout-content>
       </div>
     </a-layout>
   </a-layout>
@@ -84,12 +80,4 @@ export default {
   padding: 24px;
 }
 
-.content {
-  width: 65%;
-  margin-right: 25px;
-  padding: 24px;
-  background: #ffffff;
-  min-Height: 50%;
-  float: right;
-}
 </style>

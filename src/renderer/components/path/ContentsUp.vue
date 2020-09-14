@@ -37,6 +37,13 @@
 <script>
 export default {
   name: 'ContentsUp',
+  props: ['keyItem'],
+
+  mounted() {
+    setTimeout(() => {
+      console.log(this.keyItem);
+    }, 200);
+  },
 };
 </script>
 

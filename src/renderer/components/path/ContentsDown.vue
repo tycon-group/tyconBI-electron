@@ -37,6 +37,7 @@
 <script>
 export default {
   name: 'ContentsDown',
+  props: ['keyItem'],
   data() {
     return {
       collapsed: false,
