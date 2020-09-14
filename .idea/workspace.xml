@@ -25,9 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="传值修复">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="显示出数组内容title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,14 +121,7 @@
       <workItem from="1599786403027" duration="20478000" />
       <workItem from="1600045784308" duration="49000" />
       <workItem from="1600046012639" duration="35000" />
-      <workItem from="1600046057806" duration="1449000" />
-    </task>
-    <task id="LOCAL-00013" summary="添加组织列表模板，修改评分文字">
-      <created>1598351120120</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1598351120120</updated>
+      <workItem from="1600046057806" duration="2134000" />
     </task>
     <task id="LOCAL-00014" summary="提交人事部评分">
       <created>1598352349708</created>
@@ -466,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599819099621</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="显示出数组内容title">
+      <created>1600047536035</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1600047536035</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +502,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="组织中的饼状图变为两行两列" />
     <MESSAGE value="调整整个页面位置" />
     <MESSAGE value="调整整个页面位置2" />
     <MESSAGE value="改了span的number" />
@@ -527,7 +526,8 @@
     <MESSAGE value="删除underlingsWorklogs中第一个s" />
     <MESSAGE value="新建全部列表，整理导航栏，准备做成动态" />
     <MESSAGE value="传值修复" />
-    <option name="LAST_COMMIT_MESSAGE" value="传值修复" />
+    <MESSAGE value="显示出数组内容title" />
+    <option name="LAST_COMMIT_MESSAGE" value="显示出数组内容title" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

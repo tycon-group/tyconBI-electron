@@ -39,8 +39,11 @@ export default {
     };
   },
   mounted() {
-    console.log(this.$route.query.user);
-    const username = this.$route.query.user;
+    // console.log(this.$route.query.user);// 这是页面传参
+    const Store = require('electron-store');
+    const store = new Store();
+    console.log(store.get('user'));// 这是store传参
+    const username = store.get('user');
     const url = `http://tyconcps.cn:4399/hr/employees/?username=${username}`;
     this.$http.get(url)
       .then((res) => {
