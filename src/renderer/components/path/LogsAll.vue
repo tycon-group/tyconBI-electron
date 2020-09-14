@@ -1,14 +1,14 @@
 <template>
   <div>
     <a-menu class = "CodeMirror-vscrollbar" style = "display: block; bottom: 0" mode="inline" :scroll="{ x: false}">
-      <a-menu-item v-for="(item,id) in items" :key="item.id" @click="showDrawer">
+      <a-menu-item v-for="(item,id) in items" :key="item.id" @click="showDrawer" style="text-align: center">
         <span>{{ item.title }}</span>
       </a-menu-item>
 
     </a-menu>
     <a-drawer
         title="....."
-        width="700px"
+        width="75%"
         placement="right"
         :closable="false"
         :visible="visible"
