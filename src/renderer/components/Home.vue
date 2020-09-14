@@ -49,6 +49,7 @@ export default {
       .then((res) => {
         console.log(res.data.data[0].empID); // 此处取到了登录人员的ID
         this.empIDValue = res.data.data[0].empID;
+        store.set('empID', this.empIDValue);// 此处存了登录人员的ID
       })
       // eslint-disable-next-line no-unused-vars
       .catch((res) => {

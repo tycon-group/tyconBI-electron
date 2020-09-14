@@ -7,7 +7,7 @@
 
     </a-menu>
     <a-drawer
-        title="Basic Drawer"
+        title="....."
         width="700px"
         placement="right"
         :closable="false"
@@ -49,17 +49,19 @@ export default {
 
   mounted() {
     setTimeout(() => {
-      console.log(this.empIDs);
-      const empID = this.empIDs;
+      // console.log(this.empIDs);
+      // const empID = this.empIDs; // 这是props取数据
+      const Store = require('electron-store');
+      const store = new Store();
+      const empID = store.get('empID');
       const url = `http://tyconcps.cn:4399/wl/underlingWorklogs/${empID}/?is_toBeDone=True&is_showCross=True`;
       this.$http.get(url)
         .then((res) => {
           console.log(res);
           this.items = res.data.data;
-          console.log(res.data.data.id);
         })
-      // eslint-disable-next-line no-unused-vars
-        .catch((res) => {
+        .catch((error) => {
+          console.log(error);
         });
     }, 200);
   },

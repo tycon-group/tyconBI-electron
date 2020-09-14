@@ -1,84 +1,99 @@
 <template>
-  <a-list
-      class="demo-loadmore-list"
-      :loading="loading"
-      item-layout="horizontal"
-      :data-source="data"
-  >
-    <div
-        v-if="showLoadingMore"
-        slot="loadMore"
-        :style="{ textAlign: 'center', marginTop: '12px', height: '32px', lineHeight: '32px' }"
+  <div>
+    <a-menu class = "CodeMirror-vscrollbar" style = "display: block; bottom: 0" mode="inline" :scroll="{ x: false}">
+      <a-menu-item v-for="(item,id) in items" :key="item.id" @click="showDrawer">
+        <span>{{ item.title }}</span>
+      </a-menu-item>
+
+    </a-menu>
+    <a-drawer
+        title="....."
+        width="700px"
+        placement="right"
+        :closable="false"
+        :visible="visible"
+        :after-visible-change="afterVisibleChange"
+        @close="onClose"
     >
-      <a-spin v-if="loadingMore" />
-      <a-button v-else @click="onLoadMore">
-        loading more
-      </a-button>
-    </div>
-    <a-list-item slot="renderItem" slot-scope="item, index">
-      <a slot="actions">edit</a>
-      <a slot="actions">more</a>
-      <a-list-item-meta
-          description="Ant Design, a design language for background applications, is refined by Ant UED Team"
-      >
-        <a slot="title" href="https://www.antdv.com/">{{ item.name.last }}</a>
-        <a-avatar
-            slot="avatar"
-            src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
-        />
-      </a-list-item-meta>
-      <div>content</div>
-    </a-list-item>
-  </a-list>
+      <ContentsUp />
+      <ContentsDown />
+    </a-drawer>
+  </div>
 </template>
+
 <script>
-// eslint-disable-next-line import/no-extraneous-dependencies
-import reqwest from 'reqwest';
-
-const fakeDataUrl = 'https://randomuser.me/api/?results=5&inc=name,gender,email,nat&noinfo';
-
+import ContentsUp from './ContentsUp';
+import ContentsDown from './ContentsDown';
 export default {
+  name: 'ContentLeft',
+  components: { ContentsDown, ContentsUp },
   data() {
     return {
-      loading: true,
-      loadingMore: false,
-      showLoadingMore: true,
-      data: [],
+      visible: false,
+      items: [],
     };
   },
-  mounted() {
-    this.getData((res) => {
-      this.loading = false;
-      this.data = res.results;
-    });
-  },
+  props: ['empIDs'],
+
   methods: {
-    getData(callback) {
-      reqwest({
-        url: fakeDataUrl,
-        type: 'json',
-        method: 'get',
-        contentType: 'application/json',
-        success: (res) => {
-          callback(res);
-        },
-      });
+    afterVisibleChange(val) {
+      console.log('visible', val);
     },
-    onLoadMore() {
-      this.loadingMore = true;
-      this.getData((res) => {
-        this.data = this.data.concat(res.results);
-        this.loadingMore = false;
-        this.$nextTick(() => {
-          window.dispatchEvent(new Event('resize'));
+    showDrawer() {
+      this.visible = true;
+    },
+    onClose() {
+      this.visible = false;
+    },
+  },
+
+  mounted() {
+    setTimeout(() => {
+      // console.log(this.empIDs);
+      const Store = require('electron-store');
+      const store = new Store();
+      const empID = store.get('empID');
+      const url = `http://tyconcps.cn:4399/wl/underlingWorklogs/${empID}/?is_toBeDone=False&is_showCross=True`;
+      this.$http.get(url)
+        .then((res) => {
+          console.log(res);
+          this.items = res.data.data;
+        })
+      // eslint-disable-next-line no-unused-vars
+        .catch((res) => {
         });
-      });
-    },
+    }, 200);
   },
 };
 </script>
+
 <style>
-.demo-loadmore-list {
-  min-height: 300px;
+
+.CodeMirror-vscrollbar{
+  right:0;
+  top:0;
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+.CodeMirror-vscrollbar{
+  position:absolute;
+  z-index:6;
+  display:none;
+}
+
+/*不定义定义滑块，则为隐藏*/
+
+/**设置滚动条的样式**/
+::-webkit-scrollbar{
+  width:10px;
+  height:20px;
+}
+
+/**滚动槽**/
+
+::-webkit-scrollbar-track{
+  box-shadow:inset 0 0 3px #dcdcdc;
+  border-radius:10px;
 }
 </style>
