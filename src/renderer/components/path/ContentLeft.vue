@@ -1,75 +1,10 @@
 <template>
   <div>
-    <a-menu class = "CodeMirror-vscrollbar" style = "display: block; bottom: 0" mode="inline" :default-selected-keys="['1'] " :scroll="{ x: false}">
-      <a-menu-item key="1" @click="showDrawer">
-        <span>丁涯_研发组_2020年08月03日</span>
-      </a-menu-item>
-      <a-menu-item key="2">
-        <span>{{empIDs}}</span>
-      </a-menu-item>
-      <a-menu-item key="3">
-        <span>丁涯_研发组_2020年08月01日</span>
+    <a-menu class = "CodeMirror-vscrollbar" style = "display: block; bottom: 0" mode="inline" :scroll="{ x: false}">
+      <a-menu-item v-for="(item,id) in items" :key="item.id" @click="showDrawer">
+        <span>{{ item.title }}</span>
       </a-menu-item>
 
-      <a-menu-item key="4">
-        <span>丁涯_研发组_2020年08月03日（星期一）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="5">
-        <span>丁涯_研发组_2020年08月02日（星期日）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="6">
-        <span>丁涯_研发组_2020年08月01日（星期六）工作汇报</span>
-      </a-menu-item>
-
-      <a-menu-item key="7">
-        <span>丁涯_研发组_2020年08月03日（星期一）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="8">
-        <span>丁涯_研发组_2020年08月02日（星期日）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="9">
-        <span>丁涯_研发组_2020年08月01日（星期六）工作汇报</span>
-      </a-menu-item>
-
-      <a-menu-item key="10">
-        <span>丁涯_研发组_2020年08月03日（星期一）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="11">
-        <span>丁涯_研发组_2020年08月02日（星期日）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="12">
-        <span>丁涯_研发组_2020年08月01日（星期六）工作汇报</span>
-      </a-menu-item>
-
-      <a-menu-item key="13">
-        <span>丁涯_研发组_2020年08月03日（星期一）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="14">
-        <span>丁涯_研发组_2020年08月02日（星期日）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="15">
-        <span>丁涯_研发组_2020年08月01日（星期六）工作汇报</span>
-      </a-menu-item>
-
-      <a-menu-item key="16">
-        <span>丁涯_研发组_2020年08月03日（星期一）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="17">
-        <span>丁涯_研发组_2020年08月02日（星期日）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="18">
-        <span>丁涯_研发组_2020年08月01日（星期六）工作汇报</span>
-      </a-menu-item>
-
-      <a-menu-item key="19">
-        <span>丁涯_研发组_2020年08月03日（星期一）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="20">
-        <span>丁涯_研发组_2020年08月02日（星期日）工作汇报</span>
-      </a-menu-item>
-      <a-menu-item key="21">
-        <span>丁涯_研发组_2020年08月01日（星期六）工作汇报</span>
-      </a-menu-item>
     </a-menu>
     <a-drawer
         title="Basic Drawer"
@@ -95,6 +30,7 @@ export default {
   data() {
     return {
       visible: false,
+      items: [],
     };
   },
   props: ['empIDs'],
@@ -119,6 +55,8 @@ export default {
       this.$http.get(url)
         .then((res) => {
           console.log(res);
+          this.items = res.data.data;
+          console.log(res.data.data.id);
         })
       // eslint-disable-next-line no-unused-vars
         .catch((res) => {
