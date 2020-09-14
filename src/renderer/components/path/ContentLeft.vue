@@ -7,7 +7,7 @@
 
     </a-menu>
     <a-drawer
-        title=" "
+        title="日志详情"
         width="70%"
         placement="right"
         :closable="false"
@@ -47,6 +47,7 @@ export default {
     },
     onClose() {
       this.visible = false;
+      this.$router.go(0);
     },
   },
 

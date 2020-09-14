@@ -28,11 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="微调布局">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="动态传递key值到抽屉里的子组件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,14 +125,7 @@
       <workItem from="1599786403027" duration="20478000" />
       <workItem from="1600045784308" duration="49000" />
       <workItem from="1600046012639" duration="35000" />
-      <workItem from="1600046057806" duration="14090000" />
-    </task>
-    <task id="LOCAL-00017" summary="搭建好横版的导航栏">
-      <created>1598420620355</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1598420620355</updated>
+      <workItem from="1600046057806" duration="21219000" />
     </task>
     <task id="LOCAL-00018" summary="写好了组织中的导航栏子路由">
       <created>1598434051379</created>
@@ -472,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600053663068</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="动态传递key值到抽屉里的子组件">
+      <created>1600069915761</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1600069915761</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +506,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="优化滑轮" />
     <MESSAGE value="添加部门开关" />
     <MESSAGE value="添加抽屉按钮" />
     <MESSAGE value="修改左下角用户的位置" />
@@ -533,7 +530,8 @@
     <MESSAGE value="通过store传值，让页面可以一直取到值" />
     <MESSAGE value="让所有评分中也能显示内容" />
     <MESSAGE value="微调布局" />
-    <option name="LAST_COMMIT_MESSAGE" value="微调布局" />
+    <MESSAGE value="动态传递key值到抽屉里的子组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="动态传递key值到抽屉里的子组件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -589,10 +587,10 @@
     </state>
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1600051780784">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1600069727217">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600051780784" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600069727217" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
 </project>
