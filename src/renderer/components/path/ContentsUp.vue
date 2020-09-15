@@ -50,24 +50,29 @@ export default {
       write_time: '',
     };
   },
+  methods: {
+    clickData() {
+      setTimeout(() => {
+        console.log(this.keyItem);
+        const keyItems = this.keyItem;
+        const url = `http://tyconcps.cn:4399/wl/worklogs/${keyItems}/`;
+        this.$http.get(url)
+          .then((res) => {
+            console.log(res.data.data);
+            console.log(res.data.data.work_records);
+            const datas = res.data.data;
+            this.write_time = datas.write_time;
+            this.work_summary = datas.work_summary;
+            this.work_records = datas.work_records;
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }, 200);
+    },
+  },
   mounted() {
-    setTimeout(() => {
-      console.log(this.keyItem);
-      const keyItems = this.keyItem;
-      const url = `http://tyconcps.cn:4399/wl/worklogs/${keyItems}/`;
-      this.$http.get(url)
-        .then((res) => {
-          console.log(res.data.data);
-          console.log(res.data.data.work_records);
-          const datas = res.data.data;
-          this.write_time = datas.write_time;
-          this.work_summary = datas.work_summary;
-          this.work_records = datas.work_records;
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }, 200);
+    this.clickData();
   },
 };
 </script>

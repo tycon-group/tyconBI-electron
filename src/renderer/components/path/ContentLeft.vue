@@ -15,7 +15,7 @@
         :after-visible-change="afterVisibleChange"
         @close="onClose"
     >
-      <ContentsUp :keyItem="keyItem"/>
+      <ContentsUp ref="ContentsUp" :keyItem="keyItem"/>
       <ContentsDown :keyItem="keyItem"/>
     </a-drawer>
   </div>
@@ -42,12 +42,12 @@ export default {
     },
     showDrawer(key) {
       this.visible = true;
-      console.log(key.key);
       this.keyItem = key.key;
+      console.log(key.key);
+      this.$refs.ContentsUp.clickData();
     },
     onClose() {
       this.visible = false;
-      this.$router.go(0);
     },
   },
 
