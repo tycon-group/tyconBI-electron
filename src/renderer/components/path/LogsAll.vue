@@ -60,7 +60,7 @@ export default {
       const Store = require('electron-store');
       const store = new Store();
       const empID = store.get('empID');
-      const url = `http://tyconcps.cn:4399/wl/underlingWorklogs/${empID}/?is_toBeDone=False&is_showCross=True`;
+      const url = `https://tyconcps.cn:4399/wl/underlingWorklogs/${empID}/?is_toBeDone=False&is_showCross=True`;
       this.$http.get(url)
         .then((res) => {
           console.log(res);
