@@ -65,7 +65,7 @@ export default {
       param.append('username', this.forms.userName);
       param.append('password', this.forms.password);
       const instance = this.$http.create({ headers: { 'content-type': 'application/x-www-form-urlencoded' } });
-      instance.post('http://tyconcps.cn:8888/auth-token/', param).then((response) => {
+      instance.post('https://tyconcps.cn:8888/auth-token/', param).then((response) => {
         console.log(response);
         this.$message.success('登录成功');
         const data1 = response.data;

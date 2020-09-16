@@ -28,11 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="日志列表为空时，显示图片">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="改变链接为HTTPS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,14 +126,7 @@
       <workItem from="1600046012639" duration="35000" />
       <workItem from="1600046057806" duration="21546000" />
       <workItem from="1600146601437" duration="7844000" />
-      <workItem from="1600217887682" duration="21908000" />
-    </task>
-    <task id="LOCAL-00029" summary="调整个人页面的total总览中的tab">
-      <created>1598944737232</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1598944737232</updated>
+      <workItem from="1600217887682" duration="23665000" />
     </task>
     <task id="LOCAL-00030" summary="删除个人页面的工作能力中的tab多余的div">
       <created>1598945622098</created>
@@ -473,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600248566334</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="改变链接为HTTPS">
+      <created>1600249658548</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1600249658548</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +507,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="提交日计划的状态tag" />
     <MESSAGE value="恢复组织列表中，最后一列宽度" />
     <MESSAGE value="测试提交" />
     <MESSAGE value="通过route，跨页面传参" />
@@ -534,7 +531,8 @@
     <MESSAGE value="去除不必要的props量" />
     <MESSAGE value="实现日计划，加上空值隐藏" />
     <MESSAGE value="日志列表为空时，显示图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="日志列表为空时，显示图片" />
+    <MESSAGE value="改变链接为HTTPS" />
+    <option name="LAST_COMMIT_MESSAGE" value="改变链接为HTTPS" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
