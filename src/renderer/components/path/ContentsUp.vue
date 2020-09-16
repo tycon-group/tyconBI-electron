@@ -18,18 +18,18 @@
       <span>{{ work_summary }}</span>
     </a-descriptions-item>
     <a-descriptions-item label="评阅记录" span=3>
-      <div class="cont_right_up">
+      <div class="cont_right_up" v-for="com in comments" :key="com.index">
         <div class="cont_right_up_left">
-          <span>Dylan（许波龙）总经办（太江科技）</span>
+          <span>{{ com.commentator }}</span>
         </div>
         <div class="cont_right_up_right">
-          <span>2020-08-04 09:31</span>
+          <span>{{ com.comment_time}}</span>
+        </div>
+        <div class="cont_right_down">
+          <span>{{ com.content }}</span>
         </div>
       </div>
 
-      <div class="cont_right_down">
-        <span>自主开发，需要考量个人KPI+项目OKR的结合模式，重新整理出整合方案；借助今目标，需考量今目标数据权限等问题。</span>
-      </div>
     </a-descriptions-item>
   </a-descriptions>
 </template>
@@ -64,6 +64,7 @@ export default {
             this.write_time = datas.write_time;
             this.work_summary = datas.work_summary;
             this.work_records = datas.work_records;
+            this.comments = datas.comments;
           })
           .catch((error) => {
             console.log(error);
@@ -80,16 +81,18 @@ export default {
 <style>
 .cont_right_up {
   width: 100%;
-  height: 20px;
-  background-color: #DDFFDD;
   font-size: 12px;
 }
 .cont_right_up_left {
   width: 55%;
+  height: 20px;
+  background-color: #DDFFDD;
   float: left;
 }
 .cont_right_up_right {
   width: 40%;
+  height: 20px;
+  background-color: #DDFFDD;
   float: left;
   text-align: right;
 }
@@ -97,5 +100,6 @@ export default {
 .cont_right_down {
   width: 100%;
   float: left;
+  font-weight: bold;
 }
 </style>
