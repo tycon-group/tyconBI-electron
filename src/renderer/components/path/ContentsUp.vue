@@ -4,12 +4,16 @@
       <span>{{ write_time }}</span>
     </a-descriptions-item>
     <a-descriptions-item label="日计划" span=3>
-      <a-tag color="green">已完成</a-tag>
-      <span>《隐私条款》</span>
-      <br/>
-      <a-tag color="red">未完成</a-tag>
-      <span>设计UI交互</span>
-      <br/>
+      <div v-for="done in daily_plan.done" :key="done.index">
+        <a-tag color="green" v-show="done !== ''">已完成</a-tag>
+        <span>{{ done }}</span>
+        <br/>
+      </div>
+      <div v-for="undone in daily_plan.undone" :key="undone.index">
+        <a-tag color="red" v-show="undone !== ''">未完成</a-tag>
+        <span>{{ undone }}</span>
+        <br/>
+      </div>
     </a-descriptions-item>
     <a-descriptions-item label="工作记录" span=3>
       <span v-for="item in work_records" :key="item.index">{{ item.data }}</span>
@@ -66,6 +70,7 @@ export default {
             this.work_summary = datas.work_summary;
             this.work_records = datas.work_records;
             this.comments = datas.comments;
+            this.daily_plan = datas.daily_plan;
           })
           .catch((error) => {
             console.log(error);
