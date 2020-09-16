@@ -1,11 +1,11 @@
 <template>
   <div>
-    <a-menu class = "CodeMirror-vscrollbar" style = "display: block; bottom: 0" mode="inline" :scroll="{ x: false}">
+    <a-menu v-if="items !== undefined && items.length > 0" class="CodeMirror-vscrollbar" style = "display: block; bottom: 0" mode="inline" :scroll="{ x: false}">
       <a-menu-item v-for="item in items" :key="item.url" @click="showDrawer" style="text-align: center">
         <span>{{ item.title }}</span>
       </a-menu-item>
-
     </a-menu>
+    <a-empty v-else style="margin-top: 200px;"><span slot="description">列表为空</span></a-empty>
     <a-drawer
         title="日志详情"
         width="70%"

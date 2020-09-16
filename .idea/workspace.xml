@@ -28,9 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="去除不必要的props量">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="实现日计划，加上空值隐藏">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,14 +127,7 @@
       <workItem from="1600046012639" duration="35000" />
       <workItem from="1600046057806" duration="21546000" />
       <workItem from="1600146601437" duration="7844000" />
-      <workItem from="1600217887682" duration="16460000" />
-    </task>
-    <task id="LOCAL-00027" summary="调整打分的布局">
-      <created>1598942238392</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1598942238392</updated>
+      <workItem from="1600217887682" duration="20853000" />
     </task>
     <task id="LOCAL-00028" summary="调整个人页面的info">
       <created>1598943282869</created>
@@ -471,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600239241786</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="实现日计划，加上空值隐藏">
+      <created>1600243263104</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1600243263104</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +508,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改评分页面" />
     <MESSAGE value="kip分析页面中，增加部门这一级" />
     <MESSAGE value="提交日计划的状态tag" />
     <MESSAGE value="恢复组织列表中，最后一列宽度" />
@@ -532,7 +532,8 @@
     <MESSAGE value="优化所有评分页面" />
     <MESSAGE value="优化变量名为keyItemUrl" />
     <MESSAGE value="去除不必要的props量" />
-    <option name="LAST_COMMIT_MESSAGE" value="去除不必要的props量" />
+    <MESSAGE value="实现日计划，加上空值隐藏" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现日计划，加上空值隐藏" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -583,10 +584,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916421385" />
-    <state x="-1122" y="168" key="run.anything.popup" timestamp="1599563014800">
-      <screen x="-1920" y="-98" width="1920" height="1040" />
+    <state x="798" y="266" key="run.anything.popup" timestamp="1600247299037">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
+    <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1600239232005">
       <screen x="0" y="0" width="1920" height="1040" />
