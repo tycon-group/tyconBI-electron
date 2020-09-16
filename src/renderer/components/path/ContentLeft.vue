@@ -1,7 +1,7 @@
 <template>
   <div>
     <a-menu class = "CodeMirror-vscrollbar" style = "display: block; bottom: 0" mode="inline" :scroll="{ x: false}">
-      <a-menu-item v-for="item in items" :key="item.id" @click="showDrawer" style="text-align: center">
+      <a-menu-item v-for="item in items" :key="item.url" @click="showDrawer" style="text-align: center">
         <span>{{ item.title }}</span>
       </a-menu-item>
 
@@ -43,7 +43,7 @@ export default {
     showDrawer(key) {
       this.visible = true;
       this.keyItem = key.key;
-      console.log(key.key);
+      console.log(key);
       this.$refs.ContentsUp.clickData();
     },
     onClose() {
@@ -61,7 +61,6 @@ export default {
       const url = `http://tyconcps.cn:4399/wl/underlingWorklogs/${empID}/?is_toBeDone=True&is_showCross=True`;
       this.$http.get(url)
         .then((res) => {
-          console.log(res);
           this.items = res.data.data;
         })
         .catch((error) => {

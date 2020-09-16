@@ -59,15 +59,6 @@ export default {
       user: '',
     };
   },
-  // created() {
-  //   this.$http.get('http://tyconcps.cn:8888/users')
-  //     .then((res) => {
-  //       console.log(res);
-  //     })
-  //   // eslint-disable-next-line no-unused-vars
-  //     .catch((res) => {
-  //     });
-  // },
   methods: {
     handleSubmit(user) {
       const param = new URLSearchParams();
