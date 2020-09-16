@@ -84,6 +84,7 @@ export default {
         store.set('user', this.forms.userName);
         user = store.get('user');
         console.log(user);
+        console.log(data1.token);
         if (store.get('my_token')) {
           this.$router.push({ name: 'home', query: { user: this.forms.userName } });
         } else {

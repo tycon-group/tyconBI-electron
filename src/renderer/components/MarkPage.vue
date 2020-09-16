@@ -12,7 +12,7 @@
 
       <div class="mid_content">
         <div class="menu_mid" style=" padding: 0; background-color: #fff; position:fixed; left: 200px; z-index:999;">
-          <LogsAll />
+          <LogsAll :empIDs="empIDValue"/>
         </div>
 
         <a-layout-content class="content">
@@ -52,7 +52,28 @@ export default {
     ContentsUp,
     Menus,
   },
-
+  data() {
+    return {
+      empIDValue: '',
+    };
+  },
+  mounted() {
+    // console.log(this.$route.query.user);// 这是页面传参
+    const Store = require('electron-store');
+    const store = new Store();
+    console.log(store.get('user'));// 这是store传参
+    const username = store.get('user');
+    const url = `http://tyconcps.cn:4399/hr/employees/?username=${username}`;
+    this.$http.get(url)
+      .then((res) => {
+        console.log(res.data.data[0].empID); // 此处取到了登录人员的ID
+        this.empIDValue = res.data.data[0].empID;
+        store.set('empID', this.empIDValue);// 此处存了登录人员的ID
+      })
+      // eslint-disable-next-line no-unused-vars
+      .catch((res) => {
+      });
+  },
 };
 
 </script>

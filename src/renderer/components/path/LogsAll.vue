@@ -1,13 +1,13 @@
 <template>
   <div>
     <a-menu class = "CodeMirror-vscrollbar" style = "display: block; bottom: 0" mode="inline" :scroll="{ x: false}">
-      <a-menu-item v-for="(item,id) in items" :key="item.id" @click="showDrawer" style="text-align: center">
+      <a-menu-item v-for="item in items" :key="item.id" @click="showDrawer" style="text-align: center">
         <span>{{ item.title }}</span>
       </a-menu-item>
 
     </a-menu>
     <a-drawer
-        title="....."
+        title="日志详情"
         width="75%"
         placement="right"
         :closable="false"
@@ -15,7 +15,7 @@
         :after-visible-change="afterVisibleChange"
         @close="onClose"
     >
-      <ContentsUp />
+      <ContentsUp ref="ContentsUp" :keyItem="keyItem"/>
       <ContentsDown />
     </a-drawer>
   </div>
@@ -31,6 +31,7 @@ export default {
     return {
       visible: false,
       items: [],
+      keyItem: '',
     };
   },
   props: ['empIDs'],
@@ -39,8 +40,11 @@ export default {
     afterVisibleChange(val) {
       console.log('visible', val);
     },
-    showDrawer() {
+    showDrawer(key) {
       this.visible = true;
+      this.keyItem = key.key;
+      console.log(key.key);
+      this.$refs.ContentsUp.clickData();
     },
     onClose() {
       this.visible = false;
