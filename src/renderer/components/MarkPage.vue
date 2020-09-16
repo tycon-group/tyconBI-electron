@@ -15,15 +15,6 @@
           <LogsAll :empIDs="empIDValue"/>
         </div>
 
-        <a-layout-content class="content">
-          <ContentsUp />
-          <MarkShow />
-          <DoubleMark />
-        </a-layout-content>
-
-
-
-
       </div>
     </a-layout>
   </a-layout>
@@ -102,15 +93,6 @@ export default {
   background: #ffffff;
   padding: 24px;
   margin-top: 10px;
-}
-
-.content {
-  width: 65%;
-  margin-right: 25px;
-  padding: 24px;
-  background: #ffffff;
-  min-Height: 50%;
-  float: right;
 }
 
 </style>
