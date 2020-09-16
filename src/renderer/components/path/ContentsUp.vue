@@ -37,7 +37,7 @@
 <script>
 export default {
   name: 'ContentsUp',
-  props: ['keyItem'],
+  props: ['keyItemUrl'],
   data() {
     return {
       comments: [],
@@ -53,10 +53,10 @@ export default {
   methods: {
     clickData() {
       setTimeout(() => {
-        console.log(this.keyItem);
+        console.log(this.keyItemUrl);
         // const keyItems = this.keyItem;
         // const url = `http://tyconcps.cn:4399/wl/worklogs/${keyItems}/`;
-        const url = this.keyItem;
+        const url = this.keyItemUrl;
         this.$http.get(url)
           .then((res) => {
             console.log(res.data.data);

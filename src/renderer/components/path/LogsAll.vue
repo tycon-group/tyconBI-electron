@@ -15,7 +15,7 @@
         :after-visible-change="afterVisibleChange"
         @close="onClose"
     >
-      <ContentsUp ref="ContentsUp" :keyItem="keyItem"/>
+      <ContentsUp ref="ContentsUp" :keyItemUrl="keyItem"/>
       <MarkShow />
       <DoubleMark />
     </a-drawer>

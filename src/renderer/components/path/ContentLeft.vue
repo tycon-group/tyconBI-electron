@@ -15,8 +15,8 @@
         :after-visible-change="afterVisibleChange"
         @close="onClose"
     >
-      <ContentsUp ref="ContentsUp" :keyItem="keyItem"/>
-      <ContentsDown :keyItem="keyItem"/>
+      <ContentsUp ref="ContentsUp" :keyItemUrl="keyItem"/>
+      <ContentsDown />
     </a-drawer>
   </div>
 </template>
