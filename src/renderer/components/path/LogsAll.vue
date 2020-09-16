@@ -16,17 +16,20 @@
         @close="onClose"
     >
       <ContentsUp ref="ContentsUp" :keyItem="keyItem"/>
-      <ContentsDown />
+      <MarkShow />
+      <DoubleMark />
     </a-drawer>
   </div>
 </template>
 
 <script>
 import ContentsUp from './ContentsUp';
-import ContentsDown from './ContentsDown';
+import MarkShow from './MarkShow';
+import DoubleMark from './DoubleMark';
+
 export default {
   name: 'ContentLeft',
-  components: { ContentsDown, ContentsUp },
+  components: { MarkShow, DoubleMark, ContentsUp },
   data() {
     return {
       visible: false,

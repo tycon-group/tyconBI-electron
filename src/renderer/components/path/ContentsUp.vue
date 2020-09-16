@@ -80,6 +80,8 @@ export default {
 <style>
 .cont_right_up {
   width: 100%;
+  height: 20px;
+  background-color: #DDFFDD;
   font-size: 12px;
 }
 .cont_right_up_left {

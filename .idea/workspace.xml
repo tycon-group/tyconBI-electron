@@ -28,10 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="页面也能检测值">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="所有页面和代办页面，值显示成功">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,14 +127,7 @@
       <workItem from="1600046012639" duration="35000" />
       <workItem from="1600046057806" duration="21546000" />
       <workItem from="1600146601437" duration="7844000" />
-      <workItem from="1600217887682" duration="6152000" />
-    </task>
-    <task id="LOCAL-00020" summary="修改入离职为在职年限">
-      <created>1598491807283</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1598491807283</updated>
+      <workItem from="1600217887682" duration="8130000" />
     </task>
     <task id="LOCAL-00021" summary="写好性别饼图">
       <created>1598511813193</created>
@@ -473,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600164020317</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="所有页面和代办页面，值显示成功">
+      <created>1600225076190</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1600225076190</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +508,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改左下角用户的位置" />
     <MESSAGE value="提交登录页面，使用前端验证实现" />
     <MESSAGE value="需要优化登录" />
     <MESSAGE value="接口判断登录成功" />
@@ -534,7 +532,8 @@
     <MESSAGE value="动态传递key值到抽屉里的子组件" />
     <MESSAGE value="在页面上显示了需要的数据，目前钩子还需要优化，如何不刷新页面也能检测值" />
     <MESSAGE value="页面也能检测值" />
-    <option name="LAST_COMMIT_MESSAGE" value="页面也能检测值" />
+    <MESSAGE value="所有页面和代办页面，值显示成功" />
+    <option name="LAST_COMMIT_MESSAGE" value="所有页面和代办页面，值显示成功" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -550,10 +549,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599118238628" />
-    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog" timestamp="1599807501161">
+    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog" timestamp="1600233591336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599807501161" />
+    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600233591336" />
     <state x="780" y="226" key="FileChooserDialogImpl" timestamp="1598505023455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
