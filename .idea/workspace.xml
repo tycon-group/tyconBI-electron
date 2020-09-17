@@ -28,8 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="实现页面倒计时">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="在前端使用v-model,验证当分值不为三，且评论为空时，不允许提交">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,14 +128,7 @@
       <workItem from="1600046057806" duration="21546000" />
       <workItem from="1600146601437" duration="7844000" />
       <workItem from="1600217887682" duration="24551000" />
-      <workItem from="1600304571864" duration="13450000" />
-    </task>
-    <task id="LOCAL-00033" summary="优化折线图大小">
-      <created>1598949743699</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1598949743699</updated>
+      <workItem from="1600304571864" duration="24377000" />
     </task>
     <task id="LOCAL-00034" summary="调整logo大小，优化中间一列的宽度">
       <created>1599110872368</created>
@@ -472,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600326993399</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="在前端使用v-model,验证当分值不为三，且评论为空时，不允许提交">
+      <created>1600328325099</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1600328325099</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -508,7 +509,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="子组件接收父组件值，" />
     <MESSAGE value="删除underlingsWorklogs中第一个s" />
     <MESSAGE value="新建全部列表，整理导航栏，准备做成动态" />
     <MESSAGE value="传值修复" />
@@ -533,7 +533,8 @@
     <MESSAGE value="登录改变链接为HTTPS" />
     <MESSAGE value="改HTTPS,变成所有日志" />
     <MESSAGE value="实现页面倒计时" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现页面倒计时" />
+    <MESSAGE value="在前端使用v-model,验证当分值不为三，且评论为空时，不允许提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="在前端使用v-model,验证当分值不为三，且评论为空时，不允许提交" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -590,10 +591,10 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1600239232005">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1600341974182">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600239232005" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600341974182" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
 </project>

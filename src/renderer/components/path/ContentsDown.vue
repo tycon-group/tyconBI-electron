@@ -9,6 +9,14 @@
                 <a-rate v-model="mark_value" :tooltips="desc" />
                 <span class="ant-rate-text">{{ desc[mark_value - 1] }}</span>
               </span>
+        <a-radio-group style="float: right" name="radioGroup" v-show="this.display" v-model="radio_value" :default-value="1">
+          <a-radio :value="1">
+            直属评分
+          </a-radio>
+          <a-radio :value="2">
+            跨级评分
+          </a-radio>
+        </a-radio-group>
       </div>
     </div>
 
@@ -18,15 +26,15 @@
       </div>
       <div class="cont_right">
         <a-textarea
-            v-model="value"
+            v-model="textarea_value"
             placeholder="评分不为3分，则必须写明理由！"
             :auto-size="{ minRows: 6, maxRows: 12, }"
         />
       </div>
     </div>
     <div class="footer_btn">
-      <a-button :disabled="mark_value !== 3 && value === ''">提交</a-button>
-      <a-button :disabled="mark_value !== 3 && value === ''" type="primary">
+      <a-button :disabled="mark_value !== 3 && textarea_value === ''" @click="submitOneTime">提交</a-button>
+      <a-button :disabled="mark_value !== 3 && textarea_value === ''" @click="submitOneByOne" type="primary">
         提交,并审阅下一个
       </a-button>
 
@@ -37,13 +45,65 @@
 <script>
 export default {
   name: 'ContentsDown',
+  props: ['keyID'],
   data() {
     return {
+      display: false,
       collapsed: false,
+      username: '',
       mark_value: 3,
-      value: '',
+      radio_value: 1,
+      radio_item: '',
+      textarea_value: '',
       desc: ['1分', '2分', '3分', '4分', '5分'],
     };
+  },
+  created() {
+    const Store = require('electron-store');
+    const store = new Store();
+    const empID = store.get('empID');
+    this.username = store.get('user');
+    console.log(empID);
+    if (empID === 'A00001') {
+      this.display = true;
+    }
+  },
+  methods: {
+    // 提交函数
+    submitOneTime() {
+      console.log('提交数据~');
+      if (this.radio_value === 1) {
+        this.radio_item = '直属评分';
+      } else {
+        this.radio_item = '跨级评分';
+      }
+      console.log(this.radio_item);
+      console.log(this.keyID); // 通过props传的值
+      // 此处开始post评分
+      const param = new URLSearchParams();
+      param.append('worklog', this.keyID);
+      param.append('type', this.radio_item);
+      param.append('score', this.mark_value);
+      param.append('remarks', this.textarea_value);
+      param.append('author', this.username);
+      const instance = this.$http.create({ headers: { 'content-type': 'application/x-www-form-urlencoded' } });
+      instance.post('https://tyconcps.cn:4399/wl/scores/', param).then((response) => {
+        console.log(response);
+        this.$message.success('提交成功');
+      }).catch((error) => {
+        console.log(error);
+        this.$message.error('提交失败，请重试！');
+      });
+    },
+    // 打开下一条函数
+    nextOne() {
+      console.log('此处打开下一条');
+    },
+    // 提交并打开下一条
+    submitOneByOne() {
+      this.submitOneTime();
+      this.nextOne();
+    },
   },
 };
 </script>

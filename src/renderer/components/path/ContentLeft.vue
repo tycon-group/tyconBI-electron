@@ -16,7 +16,7 @@
         @close="onClose"
     >
       <ContentsUp ref="ContentsUp" :keyItemUrl="keyItem"/>
-      <ContentsDown />
+      <ContentsDown :keyID="keyID"/>
     </a-drawer>
   </div>
 </template>
@@ -32,6 +32,7 @@ export default {
       visible: false,
       items: [],
       keyItem: '',
+      keyID: '',
     };
   },
   props: ['empIDs'],
@@ -44,6 +45,7 @@ export default {
       this.visible = true;
       this.keyItem = key.key;
       console.log(key);
+      this.keyID = this.keyItem.substring(this.keyItem.lastIndexOf('/') + 1);
       this.$refs.ContentsUp.clickData();
     },
     onClose() {
