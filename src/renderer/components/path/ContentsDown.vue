@@ -25,8 +25,8 @@
       </div>
     </div>
     <div class="footer_btn">
-      <a-button>提交</a-button>
-      <a-button type="primary">
+      <a-button :disabled="mark_value !== 3 && value === ''">提交</a-button>
+      <a-button :disabled="mark_value !== 3 && value === ''" type="primary">
         提交,并审阅下一个
       </a-button>
 

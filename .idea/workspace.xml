@@ -28,12 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="改HTTPS,变成所有日志">
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/DeadLine.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="实现页面倒计时">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,14 +127,7 @@
       <workItem from="1600046057806" duration="21546000" />
       <workItem from="1600146601437" duration="7844000" />
       <workItem from="1600217887682" duration="24551000" />
-      <workItem from="1600304571864" duration="12206000" />
-    </task>
-    <task id="LOCAL-00032" summary="优化雷达图大小">
-      <created>1598949004642</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1598949004642</updated>
+      <workItem from="1600304571864" duration="13450000" />
     </task>
     <task id="LOCAL-00033" summary="优化折线图大小">
       <created>1598949743699</created>
@@ -475,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600305585807</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="实现页面倒计时">
+      <created>1600326993399</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1600326993399</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +508,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="通过route，跨页面传参" />
     <MESSAGE value="子组件接收父组件值，" />
     <MESSAGE value="删除underlingsWorklogs中第一个s" />
     <MESSAGE value="新建全部列表，整理导航栏，准备做成动态" />
@@ -536,7 +532,8 @@
     <MESSAGE value="改变链接为HTTPS" />
     <MESSAGE value="登录改变链接为HTTPS" />
     <MESSAGE value="改HTTPS,变成所有日志" />
-    <option name="LAST_COMMIT_MESSAGE" value="改HTTPS,变成所有日志" />
+    <MESSAGE value="实现页面倒计时" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现页面倒计时" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -552,10 +549,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599118238628" />
-    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog" timestamp="1600242203051">
+    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog" timestamp="1600327869252">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600242203051" />
+    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600327869252" />
     <state x="780" y="226" key="FileChooserDialogImpl" timestamp="1598505023455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
