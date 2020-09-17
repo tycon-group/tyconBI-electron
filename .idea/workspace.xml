@@ -28,8 +28,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="登录改变链接为HTTPS">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="改HTTPS,变成所有日志">
+      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/DeadLine.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +75,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="ts.external.directory.path" value="D:\webstrom\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -126,14 +130,7 @@
       <workItem from="1600046057806" duration="21546000" />
       <workItem from="1600146601437" duration="7844000" />
       <workItem from="1600217887682" duration="24551000" />
-      <workItem from="1600304571864" duration="829000" />
-    </task>
-    <task id="LOCAL-00031" summary="删除多余的页面">
-      <created>1598945766238</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1598945766238</updated>
+      <workItem from="1600304571864" duration="12206000" />
     </task>
     <task id="LOCAL-00032" summary="优化雷达图大小">
       <created>1598949004642</created>
@@ -471,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600251354999</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="改HTTPS,变成所有日志">
+      <created>1600305585807</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1600305585807</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +511,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="测试提交" />
     <MESSAGE value="通过route，跨页面传参" />
     <MESSAGE value="子组件接收父组件值，" />
     <MESSAGE value="删除underlingsWorklogs中第一个s" />
@@ -532,7 +535,8 @@
     <MESSAGE value="日志列表为空时，显示图片" />
     <MESSAGE value="改变链接为HTTPS" />
     <MESSAGE value="登录改变链接为HTTPS" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录改变链接为HTTPS" />
+    <MESSAGE value="改HTTPS,变成所有日志" />
+    <option name="LAST_COMMIT_MESSAGE" value="改HTTPS,变成所有日志" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -564,20 +568,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="712" y="228" key="RollbackChangesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599617807757" />
-    <state x="518" y="157" key="SettingsEditor" timestamp="1599614555688">
+    <state x="518" y="157" key="SettingsEditor" timestamp="1600306034018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599614555688" />
+    <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600306034018" />
     <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598922387845" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1599199373140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1600164028233">
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1600305770377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599551105557" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600164028233" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600305770377" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597916421385">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -2,7 +2,8 @@
   <a-layout class="layout">
     <Menus />
     <a-layout class="layout2">
-      <a-layout-header style=" padding: 0; width: 100%; height: 64px; background-color: #f4f4f4; position:fixed; top:0; z-index:999;">
+      <a-layout-header style="margin-left: 8px; padding: 0; width: 89%; height: 61px; position:fixed; top:0; z-index:999;">
+        <DeadLine />
       </a-layout-header>
 
       <div class="mid_content">
@@ -20,6 +21,7 @@ import Menus from './path/Menus.vue';
 import ContentLeft from './path/ContentLeft.vue';
 import ContentsUp from './path/ContentsUp';
 import ContentsDown from './path/ContentsDown';
+import DeadLine from './path/DeadLine';
 
 export default {
   name: 'menus',
@@ -28,6 +30,7 @@ export default {
     ContentsUp,
     Menus,
     ContentLeft,
+    DeadLine,
   },
   data() {
     return {
