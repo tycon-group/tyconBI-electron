@@ -28,9 +28,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="改变链接为HTTPS">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="登录改变链接为HTTPS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,14 +125,8 @@
       <workItem from="1600046012639" duration="35000" />
       <workItem from="1600046057806" duration="21546000" />
       <workItem from="1600146601437" duration="7844000" />
-      <workItem from="1600217887682" duration="23665000" />
-    </task>
-    <task id="LOCAL-00030" summary="删除个人页面的工作能力中的tab多余的div">
-      <created>1598945622098</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1598945622098</updated>
+      <workItem from="1600217887682" duration="24551000" />
+      <workItem from="1600304571864" duration="829000" />
     </task>
     <task id="LOCAL-00031" summary="删除多余的页面">
       <created>1598945766238</created>
@@ -471,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600249658548</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="登录改变链接为HTTPS">
+      <created>1600251354999</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1600251354999</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +507,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="恢复组织列表中，最后一列宽度" />
     <MESSAGE value="测试提交" />
     <MESSAGE value="通过route，跨页面传参" />
     <MESSAGE value="子组件接收父组件值，" />
@@ -532,7 +531,8 @@
     <MESSAGE value="实现日计划，加上空值隐藏" />
     <MESSAGE value="日志列表为空时，显示图片" />
     <MESSAGE value="改变链接为HTTPS" />
-    <option name="LAST_COMMIT_MESSAGE" value="改变链接为HTTPS" />
+    <MESSAGE value="登录改变链接为HTTPS" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录改变链接为HTTPS" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

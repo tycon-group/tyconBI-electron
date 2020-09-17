@@ -14,7 +14,7 @@
       <a-menu-item key="/markpage" class="analysis">
         <router-link to="/markpage">
           <a-icon type="schedule" />
-          <span class="marks">所有评分</span>
+          <span class="marks">所有日志</span>
         </router-link>
       </a-menu-item>
 

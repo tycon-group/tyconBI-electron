@@ -54,7 +54,7 @@ export default {
     const store = new Store();
     console.log(store.get('user'));// 这是store传参
     const username = store.get('user');
-    const url = `http://tyconcps.cn:4399/hr/employees/?username=${username}`;
+    const url = `https://tyconcps.cn:4399/hr/employees/?username=${username}`;
     this.$http.get(url)
       .then((res) => {
         console.log(res.data.data[0].empID); // 此处取到了登录人员的ID
