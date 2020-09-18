@@ -1,34 +1,36 @@
 <template>
-  <div class="eye_btn">
-    <a-switch checked-children="本部门" un-checked-children="其他部门" @click="ck_change" default-checked v-model="test"/>
+  <div class="dept_btn">
+    <a-switch checked-children="本部门" un-checked-children="其他部门" @click="ck_change" default-checked v-model="dept1"/>
   </div>
 
 </template>
 
 <script>
 export default {
-  name: 'EyeBtn',
+  name: 'DeptBtn',
   data() {
     return {
-      test: true,
+      dept1: true,
     };
   },
   mounted() {
-    console.log(this.test);
+    console.log(this.dept1);
   },
   methods: {
     ck_change() {
-      console.log(this.test);
+      const Store = require('electron-store');
+      const store = new Store();
+      const dept1 = store.set('dept1');
+      console.log(dept1);
     },
   },
 };
 </script>
 
 <style>
-.eye_btn {
-  float: right;
-  margin-right: 210px;
-  width: 120px;
+.dept_btn {
+  width: 100px;
   text-align: center;
+  background-color: #F4F4F4;
 }
 </style>
