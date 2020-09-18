@@ -28,9 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="准备改进url">
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/EyeBtn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/DeptBtn.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改按钮名称">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/DeptBtn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/DeptBtn.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,14 +128,7 @@
       <workItem from="1600146601437" duration="7844000" />
       <workItem from="1600217887682" duration="24551000" />
       <workItem from="1600304571864" duration="24417000" />
-      <workItem from="1600391622493" duration="3889000" />
-    </task>
-    <task id="LOCAL-00036" summary="微调个人信息布局,分模块加上底部分割线">
-      <created>1599115866080</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1599115866081</updated>
+      <workItem from="1600391622493" duration="7708000" />
     </task>
     <task id="LOCAL-00037" summary="组织中的饼状图变为两行两列">
       <created>1599116759786</created>
@@ -473,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600397034022</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="修改按钮名称">
+      <created>1600397391330</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1600397391330</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +509,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="传值修复" />
     <MESSAGE value="显示出数组内容title" />
     <MESSAGE value="通过store传值，让页面可以一直取到值" />
     <MESSAGE value="让所有评分中也能显示内容" />
@@ -534,7 +533,8 @@
     <MESSAGE value="在前端使用v-model,验证当分值不为三，且评论为空时，不允许提交" />
     <MESSAGE value="还差一个token验证" />
     <MESSAGE value="准备改进url" />
-    <option name="LAST_COMMIT_MESSAGE" value="准备改进url" />
+    <MESSAGE value="修改按钮名称" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改按钮名称" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
