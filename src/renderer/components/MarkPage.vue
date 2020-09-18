@@ -6,7 +6,7 @@
         <div class="header-total">
           <SearchInput />
           <DataBtn />
-          <EyeBtn />
+          <DeptBtn />
         </div>
       </a-layout-header>
 
@@ -26,7 +26,7 @@ import ContentsUp from './path/ContentsUp';
 import MarkShow from './path/MarkShow';
 import SearchInput from './path/SearchInput';
 import DataBtn from './path/DataBtn';
-import EyeBtn from './path/EyeBtn';
+import DeptBtn from './path/DeptBtn';
 import DoubleMark from './path/DoubleMark';
 import LogsAll from './path/LogsAll';
 
@@ -36,7 +36,7 @@ export default {
   components: {
     LogsAll,
     DoubleMark,
-    EyeBtn,
+    DeptBtn,
     DataBtn,
     SearchInput,
     MarkShow,
