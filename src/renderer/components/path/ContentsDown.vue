@@ -9,14 +9,6 @@
                 <a-rate v-model="mark_value" :tooltips="desc" />
                 <span class="ant-rate-text">{{ desc[mark_value - 1] }}</span>
               </span>
-        <a-radio-group style="float: right" name="radioGroup" v-show="this.display" v-model="radio_value" :default-value="1">
-          <a-radio :value="1">
-            直属评分
-          </a-radio>
-          <a-radio :value="2">
-            跨级评分
-          </a-radio>
-        </a-radio-group>
       </div>
     </div>
 
@@ -48,12 +40,9 @@ export default {
   props: ['keyID'],
   data() {
     return {
-      display: false,
       collapsed: false,
       username: '',
       mark_value: 3,
-      radio_value: 1,
-      radio_item: '',
       textarea_value: '',
       desc: ['1分', '2分', '3分', '4分', '5分'],
     };
@@ -64,25 +53,22 @@ export default {
     const empID = store.get('empID');
     this.username = store.get('user');
     console.log(empID);
-    if (empID === 'A00001') {
-      this.display = true;
-    }
   },
   methods: {
     // 提交函数
     submitOneTime() {
       console.log('提交数据~');
-      if (this.radio_value === 1) {
-        this.radio_item = '直属评分';
-      } else {
-        this.radio_item = '跨级评分';
-      }
-      console.log(this.radio_item);
+      // if (this.radio_value === 1) {
+      //   this.radio_item = '直属评分';
+      // } else {
+      //   this.radio_item = '跨级评分';
+      // }
+      // console.log(this.radio_item);
       console.log(this.keyID); // 通过props传的值
       // 此处开始post评分
       const param = new URLSearchParams();
       param.append('worklog', this.keyID);
-      param.append('type', this.radio_item);
+      // param.append('type', this.radio_item);
       param.append('score', this.mark_value);
       param.append('remarks', this.textarea_value);
       param.append('author', this.username);
