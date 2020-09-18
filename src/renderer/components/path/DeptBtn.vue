@@ -17,11 +17,8 @@ export default {
     console.log(this.dept1);
   },
   methods: {
-    ck_change() {
-      const Store = require('electron-store');
-      const store = new Store();
-      const dept1 = store.set('dept1');
-      console.log(dept1);
+    ck_change(res) {
+      console.log(res);
     },
   },
 };
