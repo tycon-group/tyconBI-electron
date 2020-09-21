@@ -13,6 +13,12 @@ export default {
       dept1: true,
     };
   },
+  watch: {
+    dept1(newOne, oldOne) {
+      console.log(oldOne, '改变了', newOne);
+      this.$message.success('已切换');
+    },
+  },
   mounted() {
     console.log(this.dept1);
   },
