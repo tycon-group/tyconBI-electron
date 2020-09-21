@@ -6,11 +6,13 @@
 </template>
 
 <script>
+import Bus from './bus.js';
 export default {
   name: 'DeptBtn',
   data() {
     return {
       dept1: true,
+      type1: '',
     };
   },
   watch: {
@@ -25,6 +27,12 @@ export default {
   methods: {
     ck_change(res) {
       console.log(res);
+      if (this.dept1 === true) {
+        this.type1 = 'direct';
+      } else {
+        this.type1 = 'cross';
+      }
+      Bus.$emit('vals', this.type1);
     },
   },
 };

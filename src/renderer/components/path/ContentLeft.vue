@@ -24,6 +24,8 @@
 <script>
 import ContentsUp from './ContentsUp';
 import ContentsDown from './ContentsDown';
+import Bus from './bus.js';
+
 export default {
   name: 'ContentLeft',
   components: { ContentsDown, ContentsUp },
@@ -33,6 +35,7 @@ export default {
       items: [],
       keyItem: '',
       keyID: '',
+      type1: 'direct',
     };
   },
   props: ['empIDs'],
@@ -53,21 +56,39 @@ export default {
     },
   },
 
+  created() {
+    const Store = require('electron-store');
+    const store = new Store();
+    const empID = store.get('empID');
+    const url = `https://tyconcps.cn:4399/wl/myUndoneWorklogs/${empID}/?type=${this.type1}`;
+    this.$http.get(url)
+      .then((res) => {
+        this.items = res.data.data;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  },
   mounted() {
     setTimeout(() => {
       // console.log(this.empIDs);
       // const empID = this.empIDs; // 这是props取数据
-      const Store = require('electron-store');
-      const store = new Store();
-      const empID = store.get('empID');
-      const url = `https://tyconcps.cn:4399/wl/myUndoneWorklogs/${empID}/?type=direct`;
-      this.$http.get(url)
-        .then((res) => {
-          this.items = res.data.data;
-        })
-        .catch((error) => {
-          console.log(error);
-        });
+      const vm = this;
+      // 用$on事件来接收参数
+      Bus.$on('vals', (data) => {
+        vm.type1 = data;
+        const Store = require('electron-store');
+        const store = new Store();
+        const empID = store.get('empID');
+        const url = `https://tyconcps.cn:4399/wl/myUndoneWorklogs/${empID}/?type=${this.type1}`;
+        this.$http.get(url)
+          .then((res) => {
+            this.items = res.data.data;
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      });
     }, 200);
   },
 };
