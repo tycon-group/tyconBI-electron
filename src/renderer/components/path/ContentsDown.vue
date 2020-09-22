@@ -59,21 +59,25 @@ export default {
     // 提交函数
     submitOneTime() {
       console.log('提交数据~', this.type1);
-      if (this.type1 === 1) {
+      if (this.type1 === 'direct') {
         this.type1s = '直属评分';
       } else {
         this.type1s = '跨级评分';
       }
       console.log(this.type1s);
-      console.log(this.keyID); // 通过props传的值
+      console.log(this.keyID, '这是本日志ID'); // 通过props传的值
       // 此处开始post评分
+      const Store = require('electron-store');
+      const store = new Store();
+      console.log(store.get('my_token'), '这是token'); // 查看一下token
       const param = new URLSearchParams();
       param.append('worklog', this.keyID);
       param.append('type', this.type1s);
       param.append('score', this.mark_value);
       param.append('remarks', this.textarea_value);
       param.append('author', this.username);
-      const instance = this.$http.create({ headers: { 'content-type': 'application/x-www-form-urlencoded' } });
+      const tokens = `JWT ${store.get('my_token')}`;
+      const instance = this.$http.create({ headers: { 'content-type': 'application/x-www-form-urlencoded', Authorization: tokens } });
       instance.post('https://tyconcps.cn:4399/wl/scores/', param).then((response) => {
         console.log(response);
         this.$message.success('提交成功');

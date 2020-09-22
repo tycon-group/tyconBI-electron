@@ -28,9 +28,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="使用created加载初始值；&#10;使用bus.js中间件，储存数据">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="获取所需要的参数">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,13 +130,7 @@
       <workItem from="1600304571864" duration="24417000" />
       <workItem from="1600391622493" duration="21083000" />
       <workItem from="1600649724197" duration="13375000" />
-    </task>
-    <task id="LOCAL-00043" summary="添加抽屉按钮">
-      <created>1599212176241</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1599212176241</updated>
+      <workItem from="1600736410330" duration="3520000" />
     </task>
     <task id="LOCAL-00044" summary="修改左下角用户的位置">
       <created>1599213104861</created>
@@ -475,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600665169844</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="获取所需要的参数">
+      <created>1600736511233</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1600736511233</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +511,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="所有页面和代办页面，值显示成功" />
     <MESSAGE value="给评阅信息加上备注" />
     <MESSAGE value="给评阅信息加上背景" />
     <MESSAGE value="显示出评阅内容" />
@@ -536,7 +535,8 @@
     <MESSAGE value="去除store储存开关值" />
     <MESSAGE value="使用watch" />
     <MESSAGE value="使用created加载初始值；&#10;使用bus.js中间件，储存数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用created加载初始值；&#10;使用bus.js中间件，储存数据" />
+    <MESSAGE value="获取所需要的参数" />
+    <option name="LAST_COMMIT_MESSAGE" value="获取所需要的参数" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
