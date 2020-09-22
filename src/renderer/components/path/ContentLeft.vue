@@ -16,7 +16,7 @@
         @close="onClose"
     >
       <ContentsUp ref="ContentsUp" :keyItemUrl="keyItem"/>
-      <ContentsDown :keyID="keyID"/>
+      <ContentsDown :keyID="keyID" :type1="type1"/>
     </a-drawer>
   </div>
 </template>

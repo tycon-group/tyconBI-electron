@@ -37,12 +37,13 @@
 <script>
 export default {
   name: 'ContentsDown',
-  props: ['keyID'],
+  props: ['keyID', 'type1'],
   data() {
     return {
       collapsed: false,
       username: '',
       mark_value: 3,
+      type1s: '',
       textarea_value: '',
       desc: ['1分', '2分', '3分', '4分', '5分'],
     };
@@ -57,18 +58,18 @@ export default {
   methods: {
     // 提交函数
     submitOneTime() {
-      console.log('提交数据~');
-      // if (this.radio_value === 1) {
-      //   this.radio_item = '直属评分';
-      // } else {
-      //   this.radio_item = '跨级评分';
-      // }
-      // console.log(this.radio_item);
+      console.log('提交数据~', this.type1);
+      if (this.type1 === 1) {
+        this.type1s = '直属评分';
+      } else {
+        this.type1s = '跨级评分';
+      }
+      console.log(this.type1s);
       console.log(this.keyID); // 通过props传的值
       // 此处开始post评分
       const param = new URLSearchParams();
       param.append('worklog', this.keyID);
-      // param.append('type', this.radio_item);
+      param.append('type', this.type1s);
       param.append('score', this.mark_value);
       param.append('remarks', this.textarea_value);
       param.append('author', this.username);
