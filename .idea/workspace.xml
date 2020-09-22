@@ -28,8 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="尝试去除了patch">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="使用跳转回退，来刷新页面">
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,14 +129,7 @@
       <workItem from="1600304571864" duration="24417000" />
       <workItem from="1600391622493" duration="21083000" />
       <workItem from="1600649724197" duration="13375000" />
-      <workItem from="1600736410330" duration="14814000" />
-    </task>
-    <task id="LOCAL-00047" summary="接口判断登录成功">
-      <created>1599550914472</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1599550914472</updated>
+      <workItem from="1600736410330" duration="15177000" />
     </task>
     <task id="LOCAL-00048" summary="修复submit函数二次刷新错误">
       <created>1599617621806</created>
@@ -475,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600755696263</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="使用跳转回退，来刷新页面">
+      <created>1600767747716</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1600767747716</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +510,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="使用url，取消id拼接" />
     <MESSAGE value="优化所有评分页面" />
     <MESSAGE value="优化变量名为keyItemUrl" />
     <MESSAGE value="去除不必要的props量" />
@@ -536,7 +534,8 @@
     <MESSAGE value="post提交成功" />
     <MESSAGE value="修改评分状态" />
     <MESSAGE value="尝试去除了patch" />
-    <option name="LAST_COMMIT_MESSAGE" value="尝试去除了patch" />
+    <MESSAGE value="使用跳转回退，来刷新页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用跳转回退，来刷新页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

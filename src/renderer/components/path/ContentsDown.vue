@@ -25,11 +25,10 @@
       </div>
     </div>
     <div class="footer_btn">
-      <a-button :disabled="mark_value !== 3 && textarea_value === ''" @click="submitOneTime">提交</a-button>
-      <a-button :disabled="mark_value !== 3 && textarea_value === ''" @click="submitOneByOne" type="primary">
-        提交,并审阅下一个
-      </a-button>
-
+      <a-button :disabled="mark_value !== 3 && textarea_value === ''" @click="submitOneTime" type="primary">提交</a-button>
+<!--      <a-button :disabled="mark_value !== 3 && textarea_value === ''" @click="submitOneByOne" type="primary">-->
+<!--        提交,并审阅下一个-->
+<!--      </a-button>-->
     </div>
   </a-layout-content>
 </template>
