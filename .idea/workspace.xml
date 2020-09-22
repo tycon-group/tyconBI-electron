@@ -28,7 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="post提交成功">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改评分状态">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" afterDir="false" />
     </list>
@@ -130,14 +130,7 @@
       <workItem from="1600304571864" duration="24417000" />
       <workItem from="1600391622493" duration="21083000" />
       <workItem from="1600649724197" duration="13375000" />
-      <workItem from="1600736410330" duration="7882000" />
-    </task>
-    <task id="LOCAL-00045" summary="提交登录页面，使用前端验证实现">
-      <created>1599460475353</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1599460475353</updated>
+      <workItem from="1600736410330" duration="9106000" />
     </task>
     <task id="LOCAL-00046" summary="需要优化登录">
       <created>1599476451481</created>
@@ -475,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600742833655</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="修改评分状态">
+      <created>1600754411153</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1600754411153</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +511,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="给评阅信息加上背景" />
     <MESSAGE value="显示出评阅内容" />
     <MESSAGE value="使用url，取消id拼接" />
     <MESSAGE value="优化所有评分页面" />
@@ -536,7 +535,8 @@
     <MESSAGE value="使用created加载初始值；&#10;使用bus.js中间件，储存数据" />
     <MESSAGE value="获取所需要的参数" />
     <MESSAGE value="post提交成功" />
-    <option name="LAST_COMMIT_MESSAGE" value="post提交成功" />
+    <MESSAGE value="修改评分状态" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改评分状态" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
