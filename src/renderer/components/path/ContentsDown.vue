@@ -41,6 +41,7 @@ export default {
   data() {
     return {
       collapsed: false,
+      inject: ['reload'],
       username: '',
       mark_value: 3,
       type1s: '',
@@ -81,6 +82,13 @@ export default {
       instance.post('https://tyconcps.cn:4399/wl/scores/', param).then((response) => {
         console.log(response);
         this.$message.success('提交成功');
+        // window.location.reload(); // 一段空白
+        // this.$router.go(0);// 一段空白
+        // 跳转到不存在页面再返回当前页面
+        const NewPage = `_empty?time=${new Date().getTime() / 500}`;
+        this.$router.push(NewPage);
+        this.$router.go(-1);
+        console.log('运行到这里了');
       }).catch((error) => {
         console.log(error);
         this.$message.error('提交失败，请重试！');

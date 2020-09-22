@@ -28,7 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改评分状态">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="尝试去除了patch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" afterDir="false" />
     </list>
@@ -130,14 +130,7 @@
       <workItem from="1600304571864" duration="24417000" />
       <workItem from="1600391622493" duration="21083000" />
       <workItem from="1600649724197" duration="13375000" />
-      <workItem from="1600736410330" duration="9106000" />
-    </task>
-    <task id="LOCAL-00046" summary="需要优化登录">
-      <created>1599476451481</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1599476451481</updated>
+      <workItem from="1600736410330" duration="14814000" />
     </task>
     <task id="LOCAL-00047" summary="接口判断登录成功">
       <created>1599550914472</created>
@@ -475,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600754411153</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="尝试去除了patch">
+      <created>1600755696263</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1600755696263</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +511,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="显示出评阅内容" />
     <MESSAGE value="使用url，取消id拼接" />
     <MESSAGE value="优化所有评分页面" />
     <MESSAGE value="优化变量名为keyItemUrl" />
@@ -536,7 +535,8 @@
     <MESSAGE value="获取所需要的参数" />
     <MESSAGE value="post提交成功" />
     <MESSAGE value="修改评分状态" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改评分状态" />
+    <MESSAGE value="尝试去除了patch" />
+    <option name="LAST_COMMIT_MESSAGE" value="尝试去除了patch" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -552,10 +552,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599118238628" />
-    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog" timestamp="1600327869252">
+    <state x="372" y="75" width="1200" height="840" key="DiffContextDialog" timestamp="1600755574751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="338" y="151" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600327869252" />
+    <state x="372" y="75" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600755574751" />
     <state x="780" y="226" key="FileChooserDialogImpl" timestamp="1598505023455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -564,10 +564,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599714408523" />
-    <state x="712" y="228" key="RollbackChangesDialog" timestamp="1600420257446">
+    <state x="712" y="228" key="RollbackChangesDialog" timestamp="1600755576099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="712" y="228" key="RollbackChangesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600420257446" />
+    <state x="712" y="228" key="RollbackChangesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600755576099" />
     <state x="518" y="157" key="SettingsEditor" timestamp="1600423305790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
