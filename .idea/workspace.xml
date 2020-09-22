@@ -28,8 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="使用跳转回退，来刷新页面">
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="暂时注释掉提交并显示下一条">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,14 +130,7 @@
       <workItem from="1600304571864" duration="24417000" />
       <workItem from="1600391622493" duration="21083000" />
       <workItem from="1600649724197" duration="13375000" />
-      <workItem from="1600736410330" duration="15177000" />
-    </task>
-    <task id="LOCAL-00048" summary="修复submit函数二次刷新错误">
-      <created>1599617621806</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1599617621806</updated>
+      <workItem from="1600736410330" duration="16609000" />
     </task>
     <task id="LOCAL-00049" summary="储存token">
       <created>1599640043044</created>
@@ -474,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600767747716</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="暂时注释掉提交并显示下一条">
+      <created>1600767979321</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1600767979321</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,7 +511,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="优化所有评分页面" />
     <MESSAGE value="优化变量名为keyItemUrl" />
     <MESSAGE value="去除不必要的props量" />
     <MESSAGE value="实现日计划，加上空值隐藏" />
@@ -535,7 +535,8 @@
     <MESSAGE value="修改评分状态" />
     <MESSAGE value="尝试去除了patch" />
     <MESSAGE value="使用跳转回退，来刷新页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用跳转回退，来刷新页面" />
+    <MESSAGE value="暂时注释掉提交并显示下一条" />
+    <option name="LAST_COMMIT_MESSAGE" value="暂时注释掉提交并显示下一条" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

@@ -27,7 +27,7 @@
     </a-menu>
     <div class="title_footer">
       <div class="img_photo"><a-avatar :size="32" src="https://tyconstore-1302115199.cos.ap-shanghai.myqcloud.com/leo.jpg" alt="加载失败"/></div>
-      <div class="user_name">摆鱼</div>
+      <div class="user_name">{{ my_name }}</div>
       <div class="company_name">上海太江信息科技有限公司</div>
     </div>
   </a-layout-sider>
@@ -39,7 +39,14 @@ export default {
   data() {
     return {
       collapsed: false,
+      my_name: '',
     };
+  },
+  mounted() {
+    const Store = require('electron-store');
+    const store = new Store();
+    console.log(store.get('my_name'));// 这是store传参
+    this.my_name = store.get('my_name');
   },
   methods: {
     toThing() {

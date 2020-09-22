@@ -49,6 +49,7 @@ export default {
     const url = `https://tyconcps.cn:4399/hr/employees/?username=${username}`;
     this.$http.get(url)
       .then((res) => {
+        store.set('my_name', res.data.data[0].name);
         console.log(res.data.data[0].empID); // 此处取到了登录人员的ID
         this.empIDValue = res.data.data[0].empID;
         store.set('empID', this.empIDValue);// 此处存了登录人员的ID
