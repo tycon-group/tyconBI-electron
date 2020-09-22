@@ -40,6 +40,7 @@ export default {
   props: ['keyID', 'type1'],
   data() {
     return {
+      visible: false,
       collapsed: false,
       username: '',
       mark_value: 3,
@@ -81,6 +82,15 @@ export default {
       instance.post('https://tyconcps.cn:4399/wl/scores/', param).then((response) => {
         console.log(response);
         this.$message.success('提交成功');
+        const param2 = new URLSearchParams();
+        param2.append('is_scored', true);
+        instance.patch(`https://tyconcps.cn:4399/wl/worklogs/${this.keyID}`, param2).then((res) => {
+          console.log(res);
+          this.visible = false; // 关闭抽屉
+        }).catch((err) => {
+          console.log(err);
+          this.$message.error('修改失败，请重试！');
+        });
       }).catch((error) => {
         console.log(error);
         this.$message.error('提交失败，请重试！');
