@@ -26,7 +26,7 @@
       </a-menu-item>
     </a-menu>
     <div class="title_footer">
-      <div class="img_photo"><a-avatar :size="32" src="https://tyconstore-1302115199.cos.ap-shanghai.myqcloud.com/leo.jpg" alt="加载失败"/></div>
+      <div class="img_photo"><a-avatar :size="64" :src="this.avatars" alt="加载失败"/></div>
       <div class="user_name">{{ my_name }}</div>
 <!--      <div class="company_name">上海太江信息科技有限公司</div>-->
     </div>
@@ -40,6 +40,7 @@ export default {
     return {
       collapsed: false,
       my_name: '',
+      avatars: '',
     };
   },
   mounted() {
@@ -47,6 +48,8 @@ export default {
     const store = new Store();
     console.log(store.get('my_name'));// 这是store传参
     this.my_name = store.get('my_name'); // 中文名
+    this.avatars = store.get('avatar'); // 头像
+    console.log(this.avatars, '此处是第二次头像地址');
   },
   methods: {
     toThing() {
@@ -76,11 +79,11 @@ export default {
 }
 
 .img_photo {
-  width: 35px;
+  width: 45px;
   height: auto;
   margin-left: 1px;
   float: left;
-  margin-top: 7px;
+  margin-top: -14px;
 }
 
 .user_name {

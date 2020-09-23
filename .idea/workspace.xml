@@ -28,8 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="左下角姓名实现">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="注释用户公司显示，">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,14 +131,8 @@
       <workItem from="1600304571864" duration="24417000" />
       <workItem from="1600391622493" duration="21083000" />
       <workItem from="1600649724197" duration="13375000" />
-      <workItem from="1600736410330" duration="17215000" />
-    </task>
-    <task id="LOCAL-00050" summary="修改人事评分，改为评分">
-      <created>1599640440349</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1599640440350</updated>
+      <workItem from="1600736410330" duration="17495000" />
+      <workItem from="1600822829153" duration="5502000" />
     </task>
     <task id="LOCAL-00051" summary="修改显示领导评分，改为折叠面板展示">
       <created>1599641951529</created>
@@ -475,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600769755745</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="注释用户公司显示，">
+      <created>1600770329384</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1600770329384</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,7 +513,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="去除不必要的props量" />
     <MESSAGE value="实现日计划，加上空值隐藏" />
     <MESSAGE value="日志列表为空时，显示图片" />
     <MESSAGE value="改变链接为HTTPS" />
@@ -536,7 +537,8 @@
     <MESSAGE value="使用跳转回退，来刷新页面" />
     <MESSAGE value="暂时注释掉提交并显示下一条" />
     <MESSAGE value="左下角姓名实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="左下角姓名实现" />
+    <MESSAGE value="注释用户公司显示，" />
+    <option name="LAST_COMMIT_MESSAGE" value="注释用户公司显示，" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
