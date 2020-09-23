@@ -3,6 +3,8 @@
     <div>
       <a-collapse v-model="activeKey">
         <a-collapse-panel v-for="mark in mark_show" :key="mark.index" header="评分">
+          <p>评分人：<span class="mark_reason">{{ mark.author }}</span></p>
+          <p>评分时间：<span class="mark_reason">{{ mark.comment_time }}</span></p>
           <p>{{ mark.type }}为: <span class="mark_number">{{ mark.score }}</span></p>
           <p>理由: <span class="mark_reason">{{ mark.remarks }}</span></p>
         </a-collapse-panel>

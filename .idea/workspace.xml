@@ -28,10 +28,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="循环领导评分">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="开始输出评分，将评分人中文名传入">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsDown.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/MarkShow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/MarkShow.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,14 +131,7 @@
       <workItem from="1600391622493" duration="21083000" />
       <workItem from="1600649724197" duration="13375000" />
       <workItem from="1600736410330" duration="17495000" />
-      <workItem from="1600822829153" duration="20254000" />
-    </task>
-    <task id="LOCAL-00057" summary="通过route，跨页面传参">
-      <created>1599728389646</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1599728389646</updated>
+      <workItem from="1600822829153" duration="20937000" />
     </task>
     <task id="LOCAL-00058" summary="子组件接收父组件值，">
       <created>1599733545576</created>
@@ -478,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600847367704</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="开始输出评分，将评分人中文名传入">
+      <created>1600848029579</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1600848029579</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,8 +512,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="在前端使用v-model,验证当分值不为三，且评论为空时，不允许提交" />
-    <MESSAGE value="还差一个token验证" />
     <MESSAGE value="准备改进url" />
     <MESSAGE value="修改按钮名称" />
     <MESSAGE value="在按钮组件中获取了点击后的实时状态" />
@@ -539,7 +535,9 @@
     <MESSAGE value="隐藏所有评分页面的部门按钮" />
     <MESSAGE value="完成日期按钮" />
     <MESSAGE value="循环领导评分" />
-    <option name="LAST_COMMIT_MESSAGE" value="循环领导评分" />
+    <MESSAGE value="开始输出评分" />
+    <MESSAGE value="开始输出评分，将评分人中文名传入" />
+    <option name="LAST_COMMIT_MESSAGE" value="开始输出评分，将评分人中文名传入" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
