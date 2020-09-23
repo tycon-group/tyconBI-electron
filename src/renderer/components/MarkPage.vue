@@ -6,7 +6,6 @@
         <div class="header-total">
           <SearchInput />
           <DataBtn />
-          <DeptBtn style="float: right; margin-right: 240px"/>
         </div>
       </a-layout-header>
 
@@ -26,7 +25,6 @@ import ContentsUp from './path/ContentsUp';
 import MarkShow from './path/MarkShow';
 import SearchInput from './path/SearchInput';
 import DataBtn from './path/DataBtn';
-import DeptBtn from './path/DeptBtn';
 import DoubleMark from './path/DoubleMark';
 import LogsAll from './path/LogsAll';
 
@@ -36,7 +34,6 @@ export default {
   components: {
     LogsAll,
     DoubleMark,
-    DeptBtn,
     DataBtn,
     SearchInput,
     MarkShow,
