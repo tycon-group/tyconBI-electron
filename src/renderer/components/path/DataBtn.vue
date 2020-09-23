@@ -8,11 +8,20 @@
 </template>
 
 <script>
+import Bus from './bus';
+
 export default {
   name: 'DataBtn',
+  data() {
+    return {
+      datestring: [],
+    };
+  },
   methods: {
     onChange(date, dateString) {
       console.log(date, dateString);
+      this.datestring = dateString;
+      Bus.$emit('dates', this.datestring);
     },
   },
 };
