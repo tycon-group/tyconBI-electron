@@ -26,7 +26,7 @@
       </a-menu-item>
     </a-menu>
     <div class="title_footer">
-      <div class="img_photo"><a-avatar :size="64" :src="this.avatar" alt="加载失败"/></div>
+      <div class="img_photo"><a-avatar :size="50" :src="this.avatar" alt="加载失败"/></div>
       <div class="user_name">{{ my_name }}</div>
 <!--      <div class="company_name">上海太江信息科技有限公司</div>-->
     </div>
@@ -99,7 +99,7 @@ export default {
 .user_name {
   width: 120px;
   height: auto;
-  margin-top: 7px;
+  margin-top: -7px;
   float: left;
   font-size: 22px;
   text-align: center;

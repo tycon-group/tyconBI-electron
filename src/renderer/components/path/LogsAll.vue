@@ -26,6 +26,7 @@
 import ContentsUp from './ContentsUp';
 import MarkShow from './MarkShow';
 import DoubleMark from './DoubleMark';
+import Bus from './bus';
 
 export default {
   name: 'ContentLeft',
@@ -35,6 +36,8 @@ export default {
       visible: false,
       items: [],
       keyItem: '',
+      keyIDs: '',
+      dates: [],
     };
   },
   props: ['empIDs'],
@@ -46,17 +49,17 @@ export default {
     showDrawer(key) {
       this.visible = true;
       this.keyItem = key.key;
-      console.log(key.key);
+      console.log(key);
+      this.keyIDs = this.keyItem.substring(this.keyItem.lastIndexOf('/') + 1);
+      console.log(this.keyIDs);
       this.$refs.ContentsUp.clickData();
     },
     onClose() {
       this.visible = false;
     },
   },
-
-  mounted() {
+  created() {
     setTimeout(() => {
-      // console.log(this.empIDs);
       const Store = require('electron-store');
       const store = new Store();
       const empID = store.get('empID');
@@ -66,9 +69,37 @@ export default {
           console.log(res);
           this.items = res.data.data;
         })
-      // eslint-disable-next-line no-unused-vars
+        // eslint-disable-next-line no-unused-vars
         .catch((res) => {
         });
+    }, 200);
+  },
+  mounted() {
+    setTimeout(() => {
+      // console.log(this.empIDs);
+      const vm = this;
+      // 用$on事件来接收参数
+      Bus.$on('dates', (data) => {
+        vm.dates = data;
+        // eslint-disable-next-line camelcase
+        const start_date = this.dates[0];
+        // eslint-disable-next-line camelcase
+        const end_date = this.dates[1];
+        console.log(start_date, end_date);
+        const Store = require('electron-store');
+        const store = new Store();
+        const empID = store.get('empID');
+        // eslint-disable-next-line camelcase
+        const url = `https://tyconcps.cn:4399/wl/myAllWorklogs/${empID}/?start_date=${start_date}&&end_date=${end_date}`;
+        this.$http.get(url)
+          .then((res) => {
+            console.log(res);
+            this.items = res.data.data;
+          })
+        // eslint-disable-next-line no-unused-vars
+          .catch((res) => {
+          });
+      });
     }, 200);
   },
 };
