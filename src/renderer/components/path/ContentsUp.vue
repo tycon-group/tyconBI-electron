@@ -39,6 +39,7 @@
 </template>
 
 <script>
+import Bus from './bus.js';
 export default {
   name: 'ContentsUp',
   props: ['keyItemUrl'],
@@ -52,6 +53,7 @@ export default {
       work_records: [],
       work_summary: '',
       write_time: '',
+      mark_show: [],
     };
   },
   methods: {
@@ -63,14 +65,15 @@ export default {
         const url = this.keyItemUrl;
         this.$http.get(url)
           .then((res) => {
-            console.log(res.data.data);
-            console.log(res.data.data.work_records);
+            console.log(res.data.scores);
             const datas = res.data.data;
             this.write_time = datas.write_time;
             this.work_summary = datas.work_summary;
             this.work_records = datas.work_records;
             this.comments = datas.comments;
             this.daily_plan = datas.daily_plan;
+            this.mark_show = res.data.scores;
+            Bus.$emit('mark_show', this.mark_show);
           })
           .catch((error) => {
             console.log(error);

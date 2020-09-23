@@ -2,9 +2,9 @@
   <a-layout-content class="mark_submit_2">
     <div>
       <a-collapse v-model="activeKey">
-        <a-collapse-panel key="1" header="直属领导评分">
-          <p>分值为: <span class="mark_number">{{ mark_value }}</span></p>
-          <p>理由: <span class="mark_reason">{{ reason }}</span></p>
+        <a-collapse-panel v-for="mark in mark_show" :key="mark.index" header="领导评分">
+          <p>分值为: <span class="mark_number">{{ mark.score }}</span></p>
+          <p>理由: <span class="mark_reason">{{ mark.remarks }}</span></p>
         </a-collapse-panel>
       </a-collapse>
     </div>
@@ -12,12 +12,12 @@
 </template>
 
 <script>
+import Bus from './bus.js';
 export default {
   name: 'MarkShow',
   data() {
     return {
-      mark_value: '3',
-      reason: '评分为3分，一切正常！',
+      mark_show: [],
       activeKey: ['1'],
     };
   },
@@ -25,6 +25,16 @@ export default {
     activeKey(key) {
       console.log(key);
     },
+  },
+  mounted() {
+    setTimeout(() => {
+      const vm = this;
+      // 用$on事件来接收参数
+      Bus.$on('mark_show', (data) => {
+        vm.mark_show = data;
+        console.log(this.mark_show, '哈哈哈哈哈哈哈哈');
+      });
+    }, 200);
   },
 };
 </script>
