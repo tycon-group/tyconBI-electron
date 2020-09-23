@@ -25,7 +25,6 @@ import ContentsUp from './path/ContentsUp';
 import MarkShow from './path/MarkShow';
 import SearchInput from './path/SearchInput';
 import DataBtn from './path/DataBtn';
-import DoubleMark from './path/DoubleMark';
 import LogsAll from './path/LogsAll';
 
 
@@ -33,7 +32,6 @@ export default {
   name: 'MarkPage',
   components: {
     LogsAll,
-    DoubleMark,
     DataBtn,
     SearchInput,
     MarkShow,

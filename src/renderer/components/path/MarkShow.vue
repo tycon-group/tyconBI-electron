@@ -34,7 +34,7 @@ export default {
       // 用$on事件来接收参数
       Bus.$on('mark_show', (data) => {
         vm.mark_show = data;
-        console.log(this.mark_show, '哈哈哈哈哈哈哈哈');
+        console.log(this.mark_show);
       });
     }, 200);
   },
