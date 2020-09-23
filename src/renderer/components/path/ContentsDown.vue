@@ -52,7 +52,7 @@ export default {
     const Store = require('electron-store');
     const store = new Store();
     const empID = store.get('empID');
-    this.username = store.get('user');
+    this.username = store.get('my_name');
     console.log(empID);
   },
   methods: {

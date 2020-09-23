@@ -2,8 +2,8 @@
   <a-layout-content class="mark_submit_2">
     <div>
       <a-collapse v-model="activeKey">
-        <a-collapse-panel v-for="mark in mark_show" :key="mark.index" header="领导评分">
-          <p>分值为: <span class="mark_number">{{ mark.score }}</span></p>
+        <a-collapse-panel v-for="mark in mark_show" :key="mark.index" header="评分">
+          <p>{{ mark.type }}为: <span class="mark_number">{{ mark.score }}</span></p>
           <p>理由: <span class="mark_reason">{{ mark.remarks }}</span></p>
         </a-collapse-panel>
       </a-collapse>
@@ -18,7 +18,7 @@ export default {
   data() {
     return {
       mark_show: [],
-      activeKey: ['1'],
+      activeKey: ['0'],
     };
   },
   watch: {

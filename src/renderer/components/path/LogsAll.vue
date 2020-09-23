@@ -17,7 +17,7 @@
     >
       <ContentsUp ref="ContentsUp" :keyItemUrl="keyItem"/>
       <MarkShow />
-      <DoubleMark />
+<!--      <DoubleMark />-->
     </a-drawer>
   </div>
 </template>
@@ -25,12 +25,12 @@
 <script>
 import ContentsUp from './ContentsUp';
 import MarkShow from './MarkShow';
-import DoubleMark from './DoubleMark';
+// import DoubleMark from './DoubleMark';
 import Bus from './bus';
 
 export default {
   name: 'ContentLeft',
-  components: { MarkShow, DoubleMark, ContentsUp },
+  components: { MarkShow, ContentsUp },
   data() {
     return {
       visible: false,
