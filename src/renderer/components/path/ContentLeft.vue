@@ -56,7 +56,7 @@ export default {
     },
   },
 
-  beforeCreate() {
+  created() {
     const Store = require('electron-store');
     const store = new Store();
     const empID = store.get('empID');

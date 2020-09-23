@@ -28,7 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="添加输入框搜索" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="去除所有评分页面的部门开关">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,14 +131,7 @@
       <workItem from="1600391622493" duration="21083000" />
       <workItem from="1600649724197" duration="13375000" />
       <workItem from="1600736410330" duration="17495000" />
-      <workItem from="1600822829153" duration="24173000" />
-    </task>
-    <task id="LOCAL-00061" summary="传值修复">
-      <created>1599819099621</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1599819099621</updated>
+      <workItem from="1600822829153" duration="27425000" />
     </task>
     <task id="LOCAL-00062" summary="显示出数组内容title">
       <created>1600047536035</created>
@@ -473,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600851631229</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="去除所有评分页面的部门开关">
+      <created>1600851944229</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1600851944229</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +512,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="删除了单选按钮组" />
     <MESSAGE value="删除了单选按钮组，暂时注释一些代码" />
     <MESSAGE value="给代办页面加上开关，使用store储存开关值" />
     <MESSAGE value="去除store储存开关值" />
@@ -534,7 +536,8 @@
     <MESSAGE value="修改输出样式" />
     <MESSAGE value="添加搜索" />
     <MESSAGE value="添加输入框搜索" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加输入框搜索" />
+    <MESSAGE value="去除所有评分页面的部门开关" />
+    <option name="LAST_COMMIT_MESSAGE" value="去除所有评分页面的部门开关" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -550,10 +553,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599118238628" />
-    <state x="372" y="75" width="1200" height="840" key="DiffContextDialog" timestamp="1600755574751">
+    <state x="372" y="75" width="1200" height="840" key="DiffContextDialog" timestamp="1600854040702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="372" y="75" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600755574751" />
+    <state x="372" y="75" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600854040702" />
     <state x="780" y="226" key="FileChooserDialogImpl" timestamp="1598505023455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
