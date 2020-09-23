@@ -76,7 +76,7 @@ export default {
         console.log(user);
         console.log(data1.token);
         if (store.get('my_token')) {
-          this.$router.push({ name: 'home', query: { user: this.forms.userName } });
+          this.$router.push('home');
         } else {
           this.$router.replace('/');
         }

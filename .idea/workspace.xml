@@ -28,8 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="去除所有评分页面的部门开关">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="尝试刷新跳过">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,14 +132,7 @@
       <workItem from="1600391622493" duration="21083000" />
       <workItem from="1600649724197" duration="13375000" />
       <workItem from="1600736410330" duration="17495000" />
-      <workItem from="1600822829153" duration="27425000" />
-    </task>
-    <task id="LOCAL-00062" summary="显示出数组内容title">
-      <created>1600047536035</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1600047536035</updated>
+      <workItem from="1600822829153" duration="28137000" />
     </task>
     <task id="LOCAL-00063" summary="通过store传值，让页面可以一直取到值">
       <created>1600048261769</created>
@@ -476,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600851944229</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="尝试刷新跳过">
+      <created>1600855155789</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1600855155789</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +513,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="删除了单选按钮组，暂时注释一些代码" />
     <MESSAGE value="给代办页面加上开关，使用store储存开关值" />
     <MESSAGE value="去除store储存开关值" />
     <MESSAGE value="使用watch" />
@@ -537,7 +537,8 @@
     <MESSAGE value="添加搜索" />
     <MESSAGE value="添加输入框搜索" />
     <MESSAGE value="去除所有评分页面的部门开关" />
-    <option name="LAST_COMMIT_MESSAGE" value="去除所有评分页面的部门开关" />
+    <MESSAGE value="尝试刷新跳过" />
+    <option name="LAST_COMMIT_MESSAGE" value="尝试刷新跳过" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
