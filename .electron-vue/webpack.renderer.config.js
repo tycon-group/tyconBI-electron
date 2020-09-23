@@ -27,7 +27,7 @@ let rendererConfig = {
     renderer: path.join(__dirname, '../src/renderer/main.js')
   },
   externals: [
-    ...Object.keys(dependencies || {}).filter(d => !whiteListedModules.includes(d))
+    // ...Object.keys(dependencies || {}).filter(d => !whiteListedModules.includes(d))
   ],
   module: {
     rules: [
@@ -142,9 +142,10 @@ let rendererConfig = {
         removeAttributeQuotes: true,
         removeComments: true
       },
-      nodeModules: process.env.NODE_ENV !== 'production'
-        ? path.resolve(__dirname, '../node_modules')
-        : false
+      // nodeModules: process.env.NODE_ENV !== 'production'
+      //   ? path.resolve(__dirname, '../node_modules')
+      //   : false
+      nodeModules:path.resolve(__dirname, '../node_modules')
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin()
