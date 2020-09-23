@@ -28,10 +28,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="加settime来显示数据">
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/DoubleMark.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/MarkShow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/MarkShow.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="删除二次评分呈现，修饰部分">
+      <change afterPath="$PROJECT_DIR$/logo.ico" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,14 +130,7 @@
       <workItem from="1600391622493" duration="21083000" />
       <workItem from="1600649724197" duration="13375000" />
       <workItem from="1600736410330" duration="17495000" />
-      <workItem from="1600822829153" duration="28502000" />
-    </task>
-    <task id="LOCAL-00064" summary="让所有评分中也能显示内容">
-      <created>1600053133130</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1600053133130</updated>
+      <workItem from="1600822829153" duration="28830000" />
     </task>
     <task id="LOCAL-00065" summary="微调布局">
       <created>1600053663068</created>
@@ -477,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600855913719</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="删除二次评分呈现，修饰部分">
+      <created>1600856177325</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1600856177325</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,7 +511,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="去除store储存开关值" />
     <MESSAGE value="使用watch" />
     <MESSAGE value="使用created加载初始值；&#10;使用bus.js中间件，储存数据" />
     <MESSAGE value="获取所需要的参数" />
@@ -538,7 +535,8 @@
     <MESSAGE value="去除所有评分页面的部门开关" />
     <MESSAGE value="尝试刷新跳过" />
     <MESSAGE value="加settime来显示数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="加settime来显示数据" />
+    <MESSAGE value="删除二次评分呈现，修饰部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除二次评分呈现，修饰部分" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

@@ -19,7 +19,8 @@
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
     "test": "npm run unit && npm run e2e",
     "unit": "karma start test/unit/karma.conf.js",
-    "postinstall": "npm run lint:fix"
+    "postinstall": "npm run lint:fix",
+    "package":"electron-packager . TyconBI --platform=win32 --arch=x64 --icon=logo.ico --out=./out --asar --app-version=0.0.1 --overwrite --ignore=node_modules",
   },
   "build": {
     "productName": "tyconbi",
