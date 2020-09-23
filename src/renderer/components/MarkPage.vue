@@ -6,7 +6,7 @@
         <div class="header-total">
           <SearchInput />
           <DataBtn />
-          <DeptBtn style="float: right; margin-right: 240px" v-show="false"/>
+          <DeptBtn style="float: right; margin-right: 240px"/>
         </div>
       </a-layout-header>
 

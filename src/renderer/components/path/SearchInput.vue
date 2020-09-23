@@ -5,11 +5,14 @@
 </template>
 
 <script>
+import Bus from './bus';
+
 export default {
   name: 'SearchInput',
   methods: {
     onSearch(value) {
       console.log(value);
+      Bus.$emit('input_data', value);
     },
   },
 };

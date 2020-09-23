@@ -28,9 +28,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="开始输出评分，将评分人中文名传入">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改输出样式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/MarkShow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/MarkShow.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MarkPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/SearchInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/SearchInput.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,14 +133,7 @@
       <workItem from="1600391622493" duration="21083000" />
       <workItem from="1600649724197" duration="13375000" />
       <workItem from="1600736410330" duration="17495000" />
-      <workItem from="1600822829153" duration="20937000" />
-    </task>
-    <task id="LOCAL-00058" summary="子组件接收父组件值，">
-      <created>1599733545576</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1599733545576</updated>
+      <workItem from="1600822829153" duration="22511000" />
     </task>
     <task id="LOCAL-00059" summary="删除underlingsWorklogs中第一个s">
       <created>1599786530180</created>
@@ -476,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600848029579</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="修改输出样式">
+      <created>1600848593936</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1600848593936</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,7 +514,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="准备改进url" />
     <MESSAGE value="修改按钮名称" />
     <MESSAGE value="在按钮组件中获取了点击后的实时状态" />
     <MESSAGE value="删除了单选按钮组" />
@@ -537,7 +538,8 @@
     <MESSAGE value="循环领导评分" />
     <MESSAGE value="开始输出评分" />
     <MESSAGE value="开始输出评分，将评分人中文名传入" />
-    <option name="LAST_COMMIT_MESSAGE" value="开始输出评分，将评分人中文名传入" />
+    <MESSAGE value="修改输出样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改输出样式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
