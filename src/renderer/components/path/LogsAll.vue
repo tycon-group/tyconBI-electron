@@ -38,6 +38,7 @@ export default {
       keyItem: '',
       keyIDs: '',
       dates: [],
+      input_data: '',
     };
   },
   props: ['empIDs'],
@@ -97,6 +98,21 @@ export default {
             this.items = res.data.data;
           })
         // eslint-disable-next-line no-unused-vars
+          .catch((res) => {
+          });
+      });
+      Bus.$on('input_data', (data) => {
+        vm.input_data = data;
+        const Store = require('electron-store');
+        const store = new Store();
+        const empID = store.get('empID');
+        const url = `https://tyconcps.cn:4399/wl/myAllWorklogs/${empID}/?search=${this.input_data}`;
+        this.$http.get(url)
+          .then((res) => {
+            console.log(res);
+            this.items = res.data.data;
+          })
+          // eslint-disable-next-line no-unused-vars
           .catch((res) => {
           });
       });
