@@ -49,9 +49,9 @@ export default {
     const url = `https://tyconcps.cn:4399/hr/employees/?username=${username}`;
     this.$http.get(url)
       .then((res) => {
-        store.set('my_name', res.data.data[0].name);// 此处取到了登录人员的中文名
-        store.set('avatar', res.data.data[0].avatar);// 此处取到了登录人员的头像地址
-        console.log(res.data.data[0].avatar); // 第一次打印头像地址
+        // store.set('my_name', res.data.data[0].name);// 此处取到了登录人员的中文名
+        // store.set('avatar', res.data.data[0].avatar);// 此处取到了登录人员的头像地址
+        // console.log(res.data.data[0].avatar); // 第一次打印头像地址
         console.log(res.data.data[0].empID); // 此处取到了登录人员的ID
         this.empIDValue = res.data.data[0].empID;
         store.set('empID', this.empIDValue);// 此处存了登录人员的ID

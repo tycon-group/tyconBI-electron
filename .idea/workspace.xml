@@ -28,7 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="注释用户公司显示，">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="提交用户名，头像store储存">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" afterDir="false" />
@@ -132,14 +132,7 @@
       <workItem from="1600391622493" duration="21083000" />
       <workItem from="1600649724197" duration="13375000" />
       <workItem from="1600736410330" duration="17495000" />
-      <workItem from="1600822829153" duration="5502000" />
-    </task>
-    <task id="LOCAL-00051" summary="修改显示领导评分，改为折叠面板展示">
-      <created>1599641951529</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1599641951529</updated>
+      <workItem from="1600822829153" duration="9492000" />
     </task>
     <task id="LOCAL-00052" summary="修改评分页面">
       <created>1599703104504</created>
@@ -477,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600770329384</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="提交用户名，头像store储存">
+      <created>1600828887865</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1600828887865</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,7 +513,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="实现日计划，加上空值隐藏" />
     <MESSAGE value="日志列表为空时，显示图片" />
     <MESSAGE value="改变链接为HTTPS" />
     <MESSAGE value="登录改变链接为HTTPS" />
@@ -538,7 +537,8 @@
     <MESSAGE value="暂时注释掉提交并显示下一条" />
     <MESSAGE value="左下角姓名实现" />
     <MESSAGE value="注释用户公司显示，" />
-    <option name="LAST_COMMIT_MESSAGE" value="注释用户公司显示，" />
+    <MESSAGE value="提交用户名，头像store储存" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交用户名，头像store储存" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -595,9 +595,10 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1600665149925">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1600828870633">
+      <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
+    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1600828870633" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600665149925" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>

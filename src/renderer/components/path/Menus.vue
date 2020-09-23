@@ -26,7 +26,7 @@
       </a-menu-item>
     </a-menu>
     <div class="title_footer">
-      <div class="img_photo"><a-avatar :size="64" :src="this.avatars" alt="加载失败"/></div>
+      <div class="img_photo"><a-avatar :size="64" :src="this.avatar" alt="加载失败"/></div>
       <div class="user_name">{{ my_name }}</div>
 <!--      <div class="company_name">上海太江信息科技有限公司</div>-->
     </div>
@@ -40,16 +40,26 @@ export default {
     return {
       collapsed: false,
       my_name: '',
-      avatars: '',
+      avatar: '',
     };
   },
-  mounted() {
+  created() {
     const Store = require('electron-store');
     const store = new Store();
-    console.log(store.get('my_name'));// 这是store传参
-    this.my_name = store.get('my_name'); // 中文名
-    this.avatars = store.get('avatar'); // 头像
-    console.log(this.avatars, '此处是第二次头像地址');
+    console.log(store.get('user'));// 这是store传参
+    const username = store.get('user');
+    const url = `https://tyconcps.cn:4399/hr/employees/?username=${username}`;
+    this.$http.get(url)
+      .then((res) => {
+        store.set('my_name', res.data.data[0].name);// 此处取到了登录人员的中文名
+        store.set('avatar', res.data.data[0].avatar);// 此处取到了登录人员的头像地址
+        this.avatar = store.get('avatar');
+        this.my_name = store.get('my_name');
+        // console.log(this.avatar); // 第一次打印头像地址
+      })
+      // eslint-disable-next-line no-unused-vars
+      .catch((res) => {
+      });
   },
   methods: {
     toThing() {
