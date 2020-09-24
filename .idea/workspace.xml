@@ -23,14 +23,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:leo" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:test" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="第四次失败build，">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="准备使用test删除npm依赖，换成yarn">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,14 +133,7 @@
       <workItem from="1600649724197" duration="13375000" />
       <workItem from="1600736410330" duration="17495000" />
       <workItem from="1600822829153" duration="32738000" />
-      <workItem from="1600909724044" duration="1899000" />
-    </task>
-    <task id="LOCAL-00068" summary="页面也能检测值">
-      <created>1600164020317</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1600164020317</updated>
+      <workItem from="1600909724044" duration="5117000" />
     </task>
     <task id="LOCAL-00069" summary="所有页面和代办页面，值显示成功">
       <created>1600225076190</created>
@@ -477,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600860374551</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="准备使用test删除npm依赖，换成yarn">
+      <created>1600912251501</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1600912251501</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,7 +500,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="leo" />
+                        <option value="test" />
                       </list>
                     </value>
                   </entry>
@@ -513,7 +514,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="post提交成功" />
     <MESSAGE value="修改评分状态" />
     <MESSAGE value="尝试去除了patch" />
     <MESSAGE value="使用跳转回退，来刷新页面" />
@@ -538,7 +538,8 @@
     <MESSAGE value="修改package配置" />
     <MESSAGE value="修改package配置2" />
     <MESSAGE value="第四次失败build，" />
-    <option name="LAST_COMMIT_MESSAGE" value="第四次失败build，" />
+    <MESSAGE value="准备使用test删除npm依赖，换成yarn" />
+    <option name="LAST_COMMIT_MESSAGE" value="准备使用test删除npm依赖，换成yarn" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -580,11 +581,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1600909749998">
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1600912256816">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599551105557" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600909749998" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600912256816" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597916421385">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -596,11 +597,11 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1600856646554">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1600912243851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1600828870633" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600856646554" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600912243851" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
 </project>
