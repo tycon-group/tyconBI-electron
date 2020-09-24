@@ -14,13 +14,12 @@
     "e2e": "npm run pack && mocha test/e2e",
     "lint": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter src test",
     "lint:fix": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter --fix src test",
-    "pack": "npm run pack:main && npm run pack:renderer",
+    "pack": "electron-packager ./ TyconBI --win --out ../TyconBI5 --arch=x64 --app-version=0.0.1 --electron-version=2.0.18",
     "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
     "test": "npm run unit && npm run e2e",
     "unit": "karma start test/unit/karma.conf.js",
-    "postinstall": "npm run lint:fix",
-    "pack": "electron-packager . TyconBI --win --out ../TyconBI4 --arch=x64 --app-version=0.0.1 --electron-version=2.0.18"
+    "postinstall": "npm run lint:fix"
   },
   "build": {
     "productName": "tyconbi",
@@ -93,6 +92,7 @@
     "electron-builder": "^20.19.2",
     "electron-debug": "^1.5.0",
     "electron-devtools-installer": "^2.2.4",
+    "electron-packager": "^15.1.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-friendly-formatter": "^4.0.1",

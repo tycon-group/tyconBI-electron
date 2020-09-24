@@ -28,11 +28,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改package配置2">
-      <change afterPath="$PROJECT_DIR$/timg.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="第四次失败build，">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logo.ico" beforeDir="false" afterPath="$PROJECT_DIR$/logo.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,14 +131,8 @@
       <workItem from="1600391622493" duration="21083000" />
       <workItem from="1600649724197" duration="13375000" />
       <workItem from="1600736410330" duration="17495000" />
-      <workItem from="1600822829153" duration="32699000" />
-    </task>
-    <task id="LOCAL-00067" summary="在页面上显示了需要的数据，目前钩子还需要优化，如何不刷新页面也能检测值">
-      <created>1600080365341</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1600080365342</updated>
+      <workItem from="1600822829153" duration="32738000" />
+      <workItem from="1600909724044" duration="1899000" />
     </task>
     <task id="LOCAL-00068" summary="页面也能检测值">
       <created>1600164020317</created>
@@ -479,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600856698382</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="第四次失败build，">
+      <created>1600860374551</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1600860374551</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,7 +513,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="获取所需要的参数" />
     <MESSAGE value="post提交成功" />
     <MESSAGE value="修改评分状态" />
     <MESSAGE value="尝试去除了patch" />
@@ -540,7 +537,8 @@
     <MESSAGE value="删除二次评分呈现，修饰部分" />
     <MESSAGE value="修改package配置" />
     <MESSAGE value="修改package配置2" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改package配置2" />
+    <MESSAGE value="第四次失败build，" />
+    <option name="LAST_COMMIT_MESSAGE" value="第四次失败build，" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -582,11 +580,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1600423309745">
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1600909749998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599551105557" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600423309745" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600909749998" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597916421385">
       <screen x="0" y="0" width="1920" height="1040" />
