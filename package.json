@@ -47,7 +47,8 @@
       ]
     },
     "mac": {
-      "icon": "build/icons/icon.icns"
+      "icon": "build/icons/icon.icns",
+      "target": "pkg"
     },
     "win": {
       "icon": "build/icons/icon.ico"
@@ -61,7 +62,9 @@
     "axios": "^0.18.0",
     "electron-store": "^6.0.0",
     "moment": "^2.28.0",
+    "react": "^16.13.1",
     "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.13.1",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6",
     "vue-router": "^3.0.1",
