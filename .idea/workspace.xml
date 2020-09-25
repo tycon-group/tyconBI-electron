@@ -28,10 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="准备使用test删除npm依赖，换成yarn">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改版本号，token">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/DeptBtn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/DeptBtn.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="leo" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,19 +77,19 @@
     <property name="ts.external.directory.path" value="D:\webstrom\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\tyconBI-electron" />
-      <recent name="D:\tyconBI-electron\src\renderer\components\children\Persons" />
-      <recent name="D:\tyconBI-electron\src\renderer\components\children\Persons\ranking" />
-      <recent name="D:\tyconBI-electron\src\renderer\components\children\Groups" />
-      <recent name="D:\tyconBI-electron\src\renderer\components\path" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\tyconBI-electron\src\renderer\components\children\Persons" />
       <recent name="D:\tyconBI-electron\src\renderer\components\path" />
       <recent name="D:\tyconBI-electron\src\renderer\components\children\Persons\ranking" />
       <recent name="D:\tyconBI-electron\src\renderer\components\children\Groups" />
       <recent name="D:\tyconBI-electron\src\renderer\components\children\part" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\tyconBI-electron" />
+      <recent name="D:\tyconBI-electron\src\renderer\components\children\Persons" />
+      <recent name="D:\tyconBI-electron\src\renderer\components\children\Persons\ranking" />
+      <recent name="D:\tyconBI-electron\src\renderer\components\children\Groups" />
+      <recent name="D:\tyconBI-electron\src\renderer\components\path" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
@@ -504,7 +503,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="first" />
                       </list>
                     </value>
                   </entry>
@@ -591,9 +590,10 @@
     <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599551105557" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600912256816" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
-    <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597916421385">
+    <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1601016425989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1601016425989" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916421385" />
     <state x="798" y="266" key="run.anything.popup" timestamp="1600247299037">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -601,11 +601,11 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1600912243851">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1601016604125">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1600828870633" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600912243851" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1601016604125" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
 </project>
