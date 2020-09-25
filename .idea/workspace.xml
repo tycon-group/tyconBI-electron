@@ -28,9 +28,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改版本号，token">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/DeptBtn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/DeptBtn.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="实现自动显示上一次开关值的显示">
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,13 +136,6 @@
       <workItem from="1600736410330" duration="17495000" />
       <workItem from="1600822829153" duration="32738000" />
       <workItem from="1600909724044" duration="5117000" />
-    </task>
-    <task id="LOCAL-00069" summary="所有页面和代办页面，值显示成功">
-      <created>1600225076190</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1600225076190</updated>
     </task>
     <task id="LOCAL-00070" summary="给评阅信息加上背景">
       <created>1600234334151</created>
@@ -481,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600912251501</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="实现自动显示上一次开关值的显示">
+      <created>1601017084869</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1601017084869</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,7 +516,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改评分状态" />
     <MESSAGE value="尝试去除了patch" />
     <MESSAGE value="使用跳转回退，来刷新页面" />
     <MESSAGE value="暂时注释掉提交并显示下一条" />
@@ -542,7 +540,8 @@
     <MESSAGE value="修改package配置2" />
     <MESSAGE value="第四次失败build，" />
     <MESSAGE value="准备使用test删除npm依赖，换成yarn" />
-    <option name="LAST_COMMIT_MESSAGE" value="准备使用test删除npm依赖，换成yarn" />
+    <MESSAGE value="实现自动显示上一次开关值的显示" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现自动显示上一次开关值的显示" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
