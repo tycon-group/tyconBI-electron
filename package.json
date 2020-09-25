@@ -1,6 +1,6 @@
 {
   "name": "tyconbi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "tyconcps",
   "description": "An electron-vue project",
   "license": null,
@@ -32,7 +32,7 @@
       "provider": "github",
       "repo": "https://github.com/tycon-group/tyconBI-electron",
       "owner": "tyconcps",
-      "token": "90cc819f9d2c3f674a31f30ea6bafc21b3bad829",
+      "token": "f8846ce30389112c8496a69cb5bd8df9d325c7d4",
       "releaseType": "release",
       "publishAutoUpdate": true
     },
