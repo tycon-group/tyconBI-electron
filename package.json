@@ -1,6 +1,6 @@
 {
   "name": "tyconbi",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "tyconcps",
   "description": "An electron-vue project",
   "license": null,
@@ -54,6 +54,12 @@
         }
       ]
     },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": true
+    },
+
     "mac": {
       "icon": "build/icons/icon.icns",
       "target": "pkg"
