@@ -18,7 +18,7 @@ export default {
   watch: {
     dept1(newOne, oldOne) {
       console.log(oldOne, '改变了', newOne);
-      this.$message.success('已切换');
+      // this.$message.success('已切换');
       const Store = require('electron-store');
       const store = new Store();
       store.set('dept1', newOne);
