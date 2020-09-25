@@ -65,7 +65,12 @@
       "target": "pkg"
     },
     "win": {
-      "icon": "build/icons/icon.ico"
+      "icon": "build/icons/icon.ico",
+      "target": [
+        "nsis",
+        "zip"
+      ]
+
     },
     "linux": {
       "icon": "build/icons",
