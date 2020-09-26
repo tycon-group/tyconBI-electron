@@ -28,7 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="暂时注释掉自动更新">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="用户可选安装位置2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -92,7 +92,7 @@
       <recent name="D:\tyconBI-electron\src\renderer\components\path" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -137,20 +137,8 @@
       <workItem from="1600736410330" duration="17495000" />
       <workItem from="1600822829153" duration="32738000" />
       <workItem from="1600909724044" duration="5117000" />
-    </task>
-    <task id="LOCAL-00070" summary="给评阅信息加上背景">
-      <created>1600234334151</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1600234334151</updated>
-    </task>
-    <task id="LOCAL-00071" summary="显示出评阅内容">
-      <created>1600235601142</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1600235601143</updated>
+      <workItem from="1601026768692" duration="36000" />
+      <workItem from="1601081688810" duration="1590000" />
     </task>
     <task id="LOCAL-00072" summary="使用url，取消id拼接">
       <created>1600238106868</created>
@@ -481,7 +469,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601017084869</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="用户可选安装位置">
+      <created>1601026126587</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1601026126587</updated>
+    </task>
+    <task id="LOCAL-00120" summary="用户可选安装位置2">
+      <created>1601026547857</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1601026547857</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -517,8 +519,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="尝试去除了patch" />
-    <MESSAGE value="使用跳转回退，来刷新页面" />
     <MESSAGE value="暂时注释掉提交并显示下一条" />
     <MESSAGE value="左下角姓名实现" />
     <MESSAGE value="注释用户公司显示，" />
@@ -542,7 +542,9 @@
     <MESSAGE value="第四次失败build，" />
     <MESSAGE value="准备使用test删除npm依赖，换成yarn" />
     <MESSAGE value="实现自动显示上一次开关值的显示" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现自动显示上一次开关值的显示" />
+    <MESSAGE value="用户可选安装位置" />
+    <MESSAGE value="用户可选安装位置2" />
+    <option name="LAST_COMMIT_MESSAGE" value="用户可选安装位置2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -584,11 +586,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1600912256816">
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1601026793998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599551105557" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600912256816" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1601026793998" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1601016425989">
       <screen x="0" y="0" width="1920" height="1040" />
