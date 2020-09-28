@@ -28,7 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="引入测试menu动态">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="第一套模板">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu2.vue" afterDir="false" />
     </list>
@@ -163,14 +163,7 @@
       <workItem from="1601197615768" duration="3000" />
       <workItem from="1601197627390" duration="38000" />
       <workItem from="1601197699276" duration="1660000" />
-      <workItem from="1601254906153" duration="10157000" />
-    </task>
-    <task id="LOCAL-00073" summary="优化所有评分页面">
-      <created>1600238632836</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1600238632836</updated>
+      <workItem from="1601254906153" duration="14974000" />
     </task>
     <task id="LOCAL-00074" summary="优化变量名为keyItemUrl">
       <created>1600239186340</created>
@@ -508,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601194251034</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="第一套模板">
+      <created>1601280278032</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1601280278033</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +544,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修复首次不显示头像" />
     <MESSAGE value="获取date值" />
     <MESSAGE value="隐藏所有评分页面的部门按钮" />
     <MESSAGE value="完成日期按钮" />
@@ -569,7 +568,8 @@
     <MESSAGE value="动态菜单" />
     <MESSAGE value=" menu更新" />
     <MESSAGE value="引入测试menu动态" />
-    <option name="LAST_COMMIT_MESSAGE" value="引入测试menu动态" />
+    <MESSAGE value="第一套模板" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一套模板" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
