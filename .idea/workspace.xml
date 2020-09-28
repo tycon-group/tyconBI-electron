@@ -29,9 +29,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="引入测试menu动态">
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu2.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu2.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +63,10 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/renderer/components/path" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -74,8 +74,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="ts.external.directory.path" value="D:\webstrom\WebStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -150,13 +151,19 @@
       <workItem from="1601193916538" duration="62000" />
       <workItem from="1601193987212" duration="50000" />
       <workItem from="1601194069634" duration="150000" />
-    </task>
-    <task id="LOCAL-00072" summary="使用url，取消id拼接">
-      <created>1600238106868</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1600238106868</updated>
+      <workItem from="1601194369864" duration="51000" />
+      <workItem from="1601194485095" duration="561000" />
+      <workItem from="1601195065849" duration="758000" />
+      <workItem from="1601195833784" duration="47000" />
+      <workItem from="1601195918084" duration="26000" />
+      <workItem from="1601195948988" duration="42000" />
+      <workItem from="1601196800427" duration="44000" />
+      <workItem from="1601197209229" duration="324000" />
+      <workItem from="1601197570645" duration="14000" />
+      <workItem from="1601197615768" duration="3000" />
+      <workItem from="1601197627390" duration="38000" />
+      <workItem from="1601197699276" duration="1660000" />
+      <workItem from="1601254906153" duration="10157000" />
     </task>
     <task id="LOCAL-00073" summary="优化所有评分页面">
       <created>1600238632836</created>
@@ -494,7 +501,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601026547857</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="引入测试menu动态">
+      <created>1601194251034</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1601194251034</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,10 +566,10 @@
     <MESSAGE value="用户可选安装位置" />
     <MESSAGE value="用户可选安装位置2" />
     <MESSAGE value="引入menu测试" />
-    <MESSAGE value="引入测试menu动态" />
     <MESSAGE value="动态菜单" />
     <MESSAGE value=" menu更新" />
-    <option name="LAST_COMMIT_MESSAGE" value=" menu更新" />
+    <MESSAGE value="引入测试menu动态" />
+    <option name="LAST_COMMIT_MESSAGE" value="引入测试menu动态" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -588,19 +602,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="712" y="228" key="RollbackChangesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600755576099" />
-    <state x="518" y="157" key="SettingsEditor" timestamp="1601167972465">
+    <state x="518" y="157" key="SettingsEditor" timestamp="1601197663096">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1601167972465" />
+    <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1601197663096" />
     <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598922387845" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1599199373140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1601167976884">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1311" y="148" key="Vcs.Push.Dialog.v2" timestamp="1601194280372">
+      <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
-    <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599551105557" />
+    <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1601194280372" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1601167976884" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1601016425989">

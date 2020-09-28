@@ -13,12 +13,14 @@
           <!-- 菜单遍历的开始 -->
           <template v-for="item in list">
             <!-- 如果当前遍历项没有children，视为子菜单项，注意所有的key都是path用于路由跳转，以及当前选中记录 -->
-            <a-menu-item v-if="!item.children" :key="item.path">
-              <i :class="item.icon" />
-              <span>{{ item.title }}</span>
+            <a-menu-item v-if="!item.child" :key="item.index">
+              <span slot="title" v-if="!item.employees" :key="item.index"><router-link to="/analysis/analysisPerson" tag="span">{{ item.name }}</router-link></span>
+              <span slot="title" v-else :key="item.employees.index"><router-link to="/analysis/analysisPerson" tag="span">{{ item.employees.name }}</router-link></span>
             </a-menu-item>
             <!-- 否则视为子菜单，传入菜单信息并且运用下面定义的函数式组件 -->
-            <sub-menu v-else :key="item.path" :menu-info="item" />
+            <sub-menu v-else :key="item.index" :menu-info="item">
+              <span slot="title"><router-link to="/analysis/analysisGroup" tag="span">{{ item.name }}</router-link></span>
+            </sub-menu>
           </template>
         </a-menu>
       </div>
@@ -35,16 +37,15 @@ import { Menu } from 'ant-design-vue';
 // 定义函数式组件
 const SubMenu = {
   template: `
-      <a-sub-menu :key="menuInfo.path" v-bind="$props" v-on="$listeners">
+      <a-sub-menu :key="menuInfo.index" v-bind="$props" v-on="$listeners">
         <span slot="title">
-          <i :class="menuInfo.icon" /><span>{{ menuInfo.title }}</span>
+          <span>{{ menuInfo.name }}</span>
         </span>
-        <template v-for="item in menuInfo.children">
-          <a-menu-item v-if="!item.children" :key="item.path">
-            <i :class="item.icon" />
-            <span>{{ item.title }}</span>
+        <template v-for="item in menuInfo.child">
+          <a-menu-item v-if="!item.child" :key="item.index">
+            <span>{{ item.name }}</span>
           </a-menu-item>
-          <sub-menu v-else :key="item.path" :menu-info="item" />
+          <sub-menu v-else :key="item.index" :menu-info="item" />
         </template>
       </a-sub-menu>
     `,
@@ -77,50 +78,107 @@ export default {
       // 菜单信息，可从后台获取
       list: [
         {
-          key: '1',
-          title: '项目信息管理',
-          path: '/infomationManage',
-          icon: 'iconfont icon-information',
-        },
-        {
-          key: '2',
-          title: '安全信息管理',
-          path: '/safeInfoManage',
-          icon: 'iconfont icon-anquan',
-          children: [
+          name: '香港煌卓国际有限公司',
+          id: 5,
+          url: 'https://tyconcps.cn:4399/hr/orgAndEmpDetail/5',
+          employees: [
             {
-              key: '2.1',
-              title: '安全风险管理',
-              path: '/safeRisk',
-              icon: '',
-              children: [
-                {
-                  key: '2.1.1',
-                  title: '风险分类管理',
-                  path: '/riskClassifyManage',
-                  icon: '',
-                },
-                {
-                  key: '2.1.2',
-                  title: '分类辨识',
-                  path: '/classifyIdentity',
-                  icon: '',
-                },
-              ],
+              name: '于坤',
+              empID: 'A00076',
+              url: 'https://tyconcps.cn:4399/hr/employees/A00076',
+            },
+            {
+              name: '邵乃文',
+              empID: 'A00001',
+              url: 'https://tyconcps.cn:4399/hr/employees/A00001',
             },
           ],
-        },
-        {
-          key: '3',
-          title: '质量信息管理',
-          path: '/qualityInfoManage',
-          icon: 'iconfont icon-zhiliang',
-          children: [
+          child: [
             {
-              key: '3.1',
-              title: '质量控制点管理',
-              path: '/controlPointManage',
-              icon: '',
+              name: '煌卓商务信息咨询（上海）有限公司',
+              id: 6,
+              url: 'https://tyconcps.cn:4399/hr/orgAndEmpDetail/6',
+              employees: [
+              ],
+              child: [
+                {
+                  name: '总裁办（煌卓商务）',
+                  id: 40,
+                  url: 'https://tyconcps.cn:4399/hr/orgAndEmpDetail/40',
+                  employees: [
+                  ],
+                  child: [
+                    {
+                      name: '煌卓工业',
+                      id: 39,
+                      url: 'https://tyconcps.cn:4399/hr/orgAndEmpDetail/39',
+                      employees: [
+                      ],
+                      child: [
+                      ],
+                    },
+                    {
+                      name: '长三角区域',
+                      id: 41,
+                      url: 'https://tyconcps.cn:4399/hr/orgAndEmpDetail/41',
+                      employees: [
+                        {
+                          name: '张三',
+                          empID: 'S00001',
+                          url: 'https://tyconcps.cn:4399/hr/employees/S00001',
+                        },
+                      ],
+                      child: [
+                      ],
+                    },
+                    {
+                      name: '华南区域',
+                      id: 42,
+                      url: 'https://tyconcps.cn:4399/hr/orgAndEmpDetail/42',
+                      employees: [
+                      ],
+                      child: [
+                      ],
+                    },
+                    {
+                      name: '华北、西北区域',
+                      id: 43,
+                      url: 'https://tyconcps.cn:4399/hr/orgAndEmpDetail/43',
+                      employees: [
+                      ],
+                      child: [
+                      ],
+                    },
+                    {
+                      name: '开发部',
+                      id: 44,
+                      url: 'https://tyconcps.cn:4399/hr/orgAndEmpDetail/44',
+                      employees: [
+                      ],
+                      child: [
+                      ],
+                    },
+                    {
+                      name: '物流招商部',
+                      id: 45,
+                      url: 'https://tyconcps.cn:4399/hr/orgAndEmpDetail/45',
+                      employees: [
+                      ],
+                      child: [
+                      ],
+                    },
+                    {
+                      name: '公共关系事业部',
+                      id: 46,
+                      url: 'https://tyconcps.cn:4399/hr/orgAndEmpDetail/46',
+                      employees: [
+                      ],
+                      child: [
+                      ],
+                    },
+                  ],
+                },
+              ],
             },
           ],
         },
