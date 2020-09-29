@@ -45,9 +45,9 @@ const SubMenu = {
           <a-icon type="mail" /><span>{{ menuInfo.title }}</span>
         </span>
         <template v-for="item in menuInfo.children">
-          <a-menu-item v-if="!item.children" :key="item.key">
+          <a-menu-item v-if="item.children.length === 0 " :key="item.key">
             <a-icon type="pie-chart" />
-            <span>{{ item.title }}</span>
+            <span>{{ item.key + 300000 }}</span>
           </a-menu-item>
           <sub-menu v-else :key="item.key" :menu-info="item" />
         </template>
@@ -58,7 +58,7 @@ const SubMenu = {
   isSubMenu: true,
   props: {
     ...Menu.SubMenu.props,
-    // Cannot overlap with properties within Menu.SubMenu.props
+    // Cannot overlap with properties within Menu.SubMenu.propsmm
     menuInfo: {
       type: Object,
       default: () => ({}),
@@ -77,6 +77,7 @@ export default {
           key: '1',
           title: 'Option 1',
           na: [],
+          children: [],
         },
         {
           key: '2',
@@ -85,19 +86,27 @@ export default {
           children: [
             {
               key: '2.1',
-              title: 'Navigation 3',
+              title: 'Navigation 2.1',
               na: [],
-              children: [{ key: '2.1.1', title: 'Option 2.1.1' }],
+              children: [
+                {
+                  key: '2.1.1',
+                  title: 'Option 2.1.1',
+                  na: [{ key: '555.0', title: 'Option 555.0' }],
+                  children: [],
+                },
+              ],
             },
             {
               key: '2.2',
-              title: 'Navigation 4',
+              title: 'Navigation 2.2',
               na: [],
               children: [
                 {
                   key: '2.2.1',
                   title: 'Option 2.2.1',
                   na: [],
+                  children: [],
                 },
               ],
             },

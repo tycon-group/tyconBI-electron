@@ -28,7 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="第一套模板">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="!item.children判断是否有； item.children === '' 和 item.children === []区别需要注意">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu2.vue" afterDir="false" />
     </list>
@@ -163,14 +163,10 @@
       <workItem from="1601197615768" duration="3000" />
       <workItem from="1601197627390" duration="38000" />
       <workItem from="1601197699276" duration="1660000" />
-      <workItem from="1601254906153" duration="14974000" />
-    </task>
-    <task id="LOCAL-00074" summary="优化变量名为keyItemUrl">
-      <created>1600239186340</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1600239186340</updated>
+      <workItem from="1601254906153" duration="15348000" />
+      <workItem from="1601287501066" duration="51000" />
+      <workItem from="1601287584233" duration="61000" />
+      <workItem from="1601341283507" duration="4371000" />
     </task>
     <task id="LOCAL-00075" summary="去除不必要的props量">
       <created>1600239241786</created>
@@ -508,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601280278033</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="!item.children判断是否有； item.children === '' 和 item.children === []区别需要注意">
+      <created>1601287446177</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1601287446177</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +547,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="获取date值" />
     <MESSAGE value="隐藏所有评分页面的部门按钮" />
     <MESSAGE value="完成日期按钮" />
     <MESSAGE value="循环领导评分" />
@@ -569,7 +571,8 @@
     <MESSAGE value=" menu更新" />
     <MESSAGE value="引入测试menu动态" />
     <MESSAGE value="第一套模板" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一套模板" />
+    <MESSAGE value="!item.children判断是否有； item.children === '' 和 item.children === []区别需要注意" />
+    <option name="LAST_COMMIT_MESSAGE" value="!item.children判断是否有； item.children === '' 和 item.children === []区别需要注意" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -586,18 +589,18 @@
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600856046656" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599118238628" />
-    <state x="372" y="75" width="1200" height="840" key="DiffContextDialog" timestamp="1600854040702">
+    <state x="372" y="75" width="1200" height="840" maximized="true" key="DiffContextDialog" timestamp="1601287645769">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="372" y="75" width="1200" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600854040702" />
+    <state x="372" y="75" width="1200" height="840" maximized="true" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1601287645769" />
     <state x="780" y="226" key="FileChooserDialogImpl" timestamp="1598505023455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598505023455" />
-    <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1599714408523">
+    <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1601287535276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599714408523" />
+    <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1601287535276" />
     <state x="712" y="228" key="RollbackChangesDialog" timestamp="1600755576099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -628,11 +631,11 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1601190159582">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1601342810846">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1600828870633" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1601190159582" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1601342810846" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
 </project>
