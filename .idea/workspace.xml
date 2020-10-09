@@ -28,7 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="使用树图">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="去除/deep/">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu2.vue" afterDir="false" />
     </list>
@@ -168,21 +168,7 @@
       <workItem from="1601287584233" duration="61000" />
       <workItem from="1601341283507" duration="7798000" />
       <workItem from="1602199409073" duration="5382000" />
-      <workItem from="1602207151610" duration="2649000" />
-    </task>
-    <task id="LOCAL-00077" summary="日志列表为空时，显示图片">
-      <created>1600248566334</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1600248566334</updated>
-    </task>
-    <task id="LOCAL-00078" summary="改变链接为HTTPS">
-      <created>1600249658548</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1600249658548</updated>
+      <workItem from="1602207151610" duration="12548000" />
     </task>
     <task id="LOCAL-00079" summary="登录改变链接为HTTPS">
       <created>1600251354999</created>
@@ -513,7 +499,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601371895632</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="使用/deep/效果不好">
+      <created>1602210032392</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1602210032392</updated>
+    </task>
+    <task id="LOCAL-00127" summary="去除/deep/">
+      <created>1602210071582</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1602210071582</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,8 +549,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="循环领导评分" />
-    <MESSAGE value="开始输出评分" />
     <MESSAGE value="开始输出评分，将评分人中文名传入" />
     <MESSAGE value="修改输出样式" />
     <MESSAGE value="添加搜索" />
@@ -574,7 +572,9 @@
     <MESSAGE value="!item.children判断是否有； item.children === '' 和 item.children === []区别需要注意" />
     <MESSAGE value="目前只实现了child数组中值打印" />
     <MESSAGE value="使用树图" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用树图" />
+    <MESSAGE value="使用/deep/效果不好" />
+    <MESSAGE value="去除/deep/" />
+    <option name="LAST_COMMIT_MESSAGE" value="去除/deep/" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -603,10 +603,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1601287535276" />
-    <state x="712" y="228" key="RollbackChangesDialog" timestamp="1600755576099">
+    <state x="712" y="228" key="RollbackChangesDialog" timestamp="1602233517610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="712" y="228" key="RollbackChangesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600755576099" />
+    <state x="712" y="228" key="RollbackChangesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602233517610" />
     <state x="237" y="92" key="SettingsEditor" timestamp="1602199974987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -633,11 +633,11 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1601348158768">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1602210021639">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1600828870633" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1601348158768" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602210021639" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
 </project>

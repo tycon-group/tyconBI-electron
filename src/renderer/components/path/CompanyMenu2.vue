@@ -1,120 +1,83 @@
 <template>
-  <div>
-    <a-input-search style="margin-bottom: 8px" placeholder="Search" @change="onChange" />
-    <a-tree
-        :expanded-keys="expandedKeys"
-        :auto-expand-parent="autoExpandParent"
-        :tree-data="gData"
-        @expand="onExpand"
+  <div style="width: 256px; margin: 5px">
+    <a-menu
+        :default-selected-keys="['1']"
+        :default-open-keys="['2']"
+        :accordion="true"
+        mode="inline"
+        :inline-collapsed="collapsed"
     >
-      <template slot="title" slot-scope="{ title }">
-        <span v-if="title.indexOf(searchValue) > -1">
-          {{ title.substr(0, title.indexOf(searchValue)) }}
-          <span style="color: #f50">{{ searchValue }}</span>
-          {{ title.substr(title.indexOf(searchValue) + searchValue.length) }}
-        </span>
-        <span v-else>{{ title }}</span>
+      <template v-for="item in list">
+        <a-menu-item v-if="!item.children" :key="item.key">
+          <a-icon type="pie-chart" />
+          <span>{{ item.title }}</span>
+        </a-menu-item>
+        <sub-menu v-else :key="item.key" :menu-info="item">
+        </sub-menu>
       </template>
-    </a-tree>
+    </a-menu>
   </div>
 </template>
 
 <script>
-const x = 3;
-const y = 2;
-const z = 1;
-const gData = [];
-
-// eslint-disable-next-line consistent-return
-const generateData = (_level, _preKey, _tns) => {
-  const preKey = _preKey || '0';
-  const tns = _tns || gData;
-
-  const children = [];
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < x; i++) {
-    const key = `${preKey}-${i}`;
-    tns.push({ title: key, key, scopedSlots: { title: 'title' } });
-    if (i < y) {
-      children.push(key);
-    }
-  }
-  if (_level < 0) {
-    return tns;
-  }
-  const level = _level - 1;
-  children.forEach((key, index) => {
-    tns[index].children = [];
-    return generateData(level, key, tns[index].children);
-  });
-};
-generateData(z);
-
-const dataList = [];
-const generateList = (data) => {
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < data.length; i++) {
-    const node = data[i];
-    // eslint-disable-next-line prefer-destructuring
-    const key = node.key;
-    dataList.push({ key, title: key });
-    if (node.children) {
-      generateList(node.children);
-    }
-  }
-};
-generateList(gData);
-
-const getParentKey = (key, tree) => {
-  let parentKey;
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < tree.length; i++) {
-    const node = tree[i];
-    if (node.children) {
-      if (node.children.some(item => item.key === key)) {
-        parentKey = node.key;
-      } else if (getParentKey(key, node.children)) {
-        parentKey = getParentKey(key, node.children);
-      }
-    }
-  }
-  return parentKey;
+import { Menu } from 'ant-design-vue';
+const SubMenu = {
+  template: `
+      <a-sub-menu :key="menuInfo.key" v-bind="$props" v-on="$listeners">
+        <span slot="title">
+          <a-icon type="mail" /><span>{{ menuInfo.title }}</span>
+        </span>
+        <template v-for="item in menuInfo.children">
+          <a-menu-item v-if="!item.children" :key="item.key">
+            <a-icon type="pie-chart" />
+            <span>{{ item.title }}</span>
+          </a-menu-item>
+          <sub-menu v-else :key="item.key" :menu-info="item" />
+        </template>
+      </a-sub-menu>
+    `,
+  name: 'SubMenu',
+  // must add isSubMenu: true
+  isSubMenu: true,
+  props: {
+    ...Menu.SubMenu.props,
+    // Cannot overlap with properties within Menu.SubMenu.props
+    menuInfo: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
 };
 export default {
+  components: {
+    'sub-menu': SubMenu,
+  },
   data() {
     return {
-      expandedKeys: [],
-      searchValue: '',
-      autoExpandParent: true,
-      gData,
+      collapsed: false,
+      list: [
+        {
+          key: '1',
+          title: 'Option 1',
+        },
+        {
+          key: '2',
+          title: 'Navigation 2',
+          children: [
+            {
+              key: '2.1',
+              title: 'Navigation 3',
+              children: [{ key: '2.1.1', title: 'Option 2.1.1' }],
+            },
+          ],
+        },
+      ],
     };
   },
   methods: {
-    onExpand(expandedKeys) {
-      this.expandedKeys = expandedKeys;
-      this.autoExpandParent = false;
-    },
-    onChange(e) {
-      // eslint-disable-next-line prefer-destructuring
-      const value = e.target.value;
-      const expandedKeys = dataList
-        .map((item) => {
-          if (item.title.indexOf(value) > -1) {
-            return getParentKey(item.key, gData);
-          }
-          return null;
-        })
-        .filter((item, i, self) => item && self.indexOf(item) === i);
-      Object.assign(this, {
-        expandedKeys,
-        searchValue: value,
-        autoExpandParent: true,
-      });
+    toggleCollapsed() {
+      this.collapsed = !this.collapsed;
     },
   },
 };
 </script>
-
-<style>
-
-</style>
