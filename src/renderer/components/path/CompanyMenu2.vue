@@ -114,3 +114,19 @@ export default {
   },
 };
 </script>
+
+<style>
+.ant-tree li span.ant-tree-switcher {
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+}
+.ant-tree-switcher.ant-tree-switcher_close{
+  background:url('//assets.2dfire.com/frontend/b415e20fc703838e5a028437366ff22a.png') no-repeat;
+  background-size:contain;
+}
+.ant-tree-switcher.ant-tree-switcher_open{
+  background:url('//assets.2dfire.com/frontend/568ca02f82eee05829d276881363c22a.png') no-repeat;
+  background-size:contain;
+}
+</style>
