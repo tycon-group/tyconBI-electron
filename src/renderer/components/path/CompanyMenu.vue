@@ -23,6 +23,16 @@
 
         <a-sub-menu key="sub3">
           <span slot="title"><router-link to="/analysis/analysisGroup" tag="span">上海太江信息科技有限公司</router-link></span>
+          <a-menu-item key="17">
+            <router-link to="/analysis/analysisPerson">
+              <span>古力娜扎</span>
+            </router-link>
+          </a-menu-item>
+          <a-menu-item key="18">
+            <router-link to="/analysis/analysisPerson">
+              <span>迪丽热巴</span>
+            </router-link>
+          </a-menu-item>
           <a-sub-menu key="sub2_1">
             <span slot="title"><router-link to="/analysis/analysisGroup" tag="span">研发部</router-link></span>
               <a-menu-item key="2">

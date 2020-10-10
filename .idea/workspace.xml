@@ -28,9 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="去除/deep/">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="显示样式类似组织架构，但是功能无法实现">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu2.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,14 +170,7 @@
       <workItem from="1601341283507" duration="7798000" />
       <workItem from="1602199409073" duration="5382000" />
       <workItem from="1602207151610" duration="12548000" />
-      <workItem from="1602295269853" duration="2390000" />
-    </task>
-    <task id="LOCAL-00079" summary="登录改变链接为HTTPS">
-      <created>1600251354999</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1600251354999</updated>
+      <workItem from="1602295269853" duration="5699000" />
     </task>
     <task id="LOCAL-00080" summary="改HTTPS,变成所有日志">
       <created>1600305585807</created>
@@ -514,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602210071582</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="显示样式类似组织架构，但是功能无法实现">
+      <created>1602298228071</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1602298228071</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +551,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="开始输出评分，将评分人中文名传入" />
     <MESSAGE value="修改输出样式" />
     <MESSAGE value="添加搜索" />
     <MESSAGE value="添加输入框搜索" />
@@ -575,7 +575,8 @@
     <MESSAGE value="使用树图" />
     <MESSAGE value="使用/deep/效果不好" />
     <MESSAGE value="去除/deep/" />
-    <option name="LAST_COMMIT_MESSAGE" value="去除/deep/" />
+    <MESSAGE value="显示样式类似组织架构，但是功能无法实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="显示样式类似组织架构，但是功能无法实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

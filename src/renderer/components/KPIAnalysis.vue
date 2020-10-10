@@ -16,7 +16,7 @@
             <img class="logo_img" src="../assets/tycon.png" />
           </div>
           <br/><br/>
-          <CompanyMenu2 />
+          <CompanyMenu />
         </div>
 
         <a-layout-content class="content_KPI">
@@ -39,12 +39,12 @@ import ContentsDown from './path/ContentsDown';
 import SearchInput from './path/SearchInput';
 import MonthPage from './path/MonthPage';
 import ButtonGroupTime from './path/ButtonGroupTime';
-import CompanyMenu2 from './path/CompanyMenu2';
+import CompanyMenu from './path/CompanyMenu';
 
 export default {
   name: 'KPIAnalysis',
   components: {
-    CompanyMenu2,
+    CompanyMenu,
     ButtonGroupTime,
     MonthPage,
     ContentsDown,
