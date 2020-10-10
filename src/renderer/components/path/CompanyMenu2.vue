@@ -8,12 +8,12 @@
         :inline-collapsed="collapsed"
     >
       <template v-for="item in list">
-        <a-menu-item v-if="!item.children" :key="item.key">
-          <a-icon type="pie-chart" />
-          <span>{{ item.title }}</span>
-        </a-menu-item>
-        <sub-menu v-else :key="item.key" :menu-info="item">
+        <sub-menu :key="item.key" :menu-info="item">
         </sub-menu>
+        <a-menu-item v-if="item.aaa.length !== 0" v-for="optionss in item.aaa" :key="optionss.index">
+          <a-icon type="pie-chart" />
+          <span>{{ optionss.title }}</span>
+        </a-menu-item>
       </template>
     </a-menu>
   </div>
@@ -28,11 +28,11 @@ const SubMenu = {
           <a-icon type="mail" /><span>{{ menuInfo.title }}</span>
         </span>
         <template v-for="item in menuInfo.children">
-          <a-menu-item v-if="!item.children" :key="item.key">
+          <sub-menu :key="item.key" :menu-info="item" />
+          <a-menu-item v-if="item.aaa.length !== 0" v-for="optionss in item.aaa" :key="optionss.index">
             <a-icon type="pie-chart" />
-            <span>{{ item.title }}</span>
+            <span>{{ optionss.title }}</span>
           </a-menu-item>
-          <sub-menu v-else :key="item.key" :menu-info="item" />
         </template>
       </a-sub-menu>
     `,
@@ -58,16 +58,54 @@ export default {
       list: [
         {
           key: '1',
-          title: 'Option 1',
+          title: 'Nav1',
+          aaa: [
+            {
+              title: 'option1',
+            },
+            {
+              title: 'option2',
+            },
+          ],
+          children: [],
         },
         {
           key: '2',
-          title: 'Navigation 2',
+          title: 'Nav2',
+          aaa: [
+            {
+              title: 'option3',
+            },
+            {
+              title: 'option4',
+            },
+          ],
           children: [
             {
               key: '2.1',
-              title: 'Navigation 3',
-              children: [{ key: '2.1.1', title: 'Option 2.1.1' }],
+              title: 'NavNav1',
+              aaa: [],
+              children: [
+                {
+                  key: '2.1.1',
+                  title: 'NavNavNav1',
+                  aaa: [
+                    {
+                      title: 'option5',
+                    },
+                    {
+                      title: 'option6',
+                    },
+                    {
+                      title: 'option7',
+                    },
+                    {
+                      title: 'option8',
+                    },
+                  ],
+                  children: [],
+                },
+              ],
             },
           ],
         },
