@@ -8,12 +8,11 @@
         :inline-collapsed="collapsed"
     >
       <template v-for="item in list">
-        <sub-menu :key="item.key" :menu-info="item">
-        </sub-menu>
-        <a-menu-item v-if="item.aaa.length !== 0" v-for="optionss in item.aaa" :key="optionss.index">
+        <a-menu-item v-if="!item.children" :key="item.key">
           <a-icon type="pie-chart" />
-          <span>{{ optionss.title }}</span>
+          <span>{{ item.title }}</span>
         </a-menu-item>
+        <sub-menu v-else :key="item.key" :menu-info="item" />
       </template>
     </a-menu>
   </div>
@@ -23,18 +22,18 @@
 import { Menu } from 'ant-design-vue';
 const SubMenu = {
   template: `
-      <a-sub-menu :key="menuInfo.key" v-bind="$props" v-on="$listeners">
-        <span slot="title">
+    <a-sub-menu :key="menuInfo.key" v-bind="$props" v-on="$listeners">
+    <span slot="title">
           <a-icon type="mail" /><span>{{ menuInfo.title }}</span>
         </span>
-        <template v-for="item in menuInfo.children">
-          <sub-menu :key="item.key" :menu-info="item" />
-          <a-menu-item v-if="item.aaa.length !== 0" v-for="optionss in item.aaa" :key="optionss.index">
-            <a-icon type="pie-chart" />
-            <span>{{ optionss.title }}</span>
-          </a-menu-item>
-        </template>
-      </a-sub-menu>
+    <template v-for="item in menuInfo.children">
+      <a-menu-item v-for="items in menuInfo.aaa" v-if="items.length !== 0" :key="items.index">
+        <a-icon type="pie-chart" />
+        <span>{{ items.title }}</span>
+      </a-menu-item>
+      <sub-menu v-if="item.length !== 0" :key="item.key" :menu-info="item" />
+    </template>
+    </a-sub-menu>
     `,
   name: 'SubMenu',
   // must add isSubMenu: true
