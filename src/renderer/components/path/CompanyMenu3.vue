@@ -5,14 +5,13 @@
         style="width: 100%"
         :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
         :tree-data="treeData"
-        placeholder="Please select"
-        tree-default-expand-all
+        placeholder="请选择需要查看的组织"
         :replace-fields="{ title: 'name', key: 'id', value: 'id', children: 'child' }"
     >
     </a-tree-select>
     <a-menu>
-      <a-menu-item v-for="item in data1" :key="item.index" style="text-align: center">
-        <span>{{ item.title }}</span>
+      <a-menu-item v-for="item in empData" :key="item.index" style="text-align: center">
+        <span>{{ item.name }}</span>
       </a-menu-item>
     </a-menu>
   </div>
@@ -468,13 +467,21 @@ export default {
     return {
       value: undefined,
       treeData,
-      data1: [],
+      empData: [],
     };
   },
   watch: {
     value(value) {
       console.log(value);
-      this.data1 = this.value.aaa;
+      const url = `https://tyconcps.cn:4399/hr/employees/?organization=${value}`;
+      this.$http.get(url)
+        .then((res) => {
+          this.empData = res.data.data;
+          console.log(res.data.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     },
   },
 };

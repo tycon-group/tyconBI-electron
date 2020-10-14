@@ -29,7 +29,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="尝试组织人员分开">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="引入真实组织数据，使用replaceFields&#9;替换 treeNode 中 title,value,key,children 字段为 treeData 中对应的字段">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu3.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu3.vue" afterDir="false" />
     </list>
@@ -95,7 +95,7 @@
       <recent name="D:\tyconBI-electron\src\renderer\components\path" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -173,14 +173,8 @@
       <workItem from="1602295269853" duration="6330000" />
       <workItem from="1602464215308" duration="5047000" />
       <workItem from="1602550599807" duration="9892000" />
-      <workItem from="1602639804691" duration="2512000" />
-    </task>
-    <task id="LOCAL-00082" summary="在前端使用v-model,验证当分值不为三，且评论为空时，不允许提交">
-      <created>1600328325099</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1600328325099</updated>
+      <workItem from="1602639804691" duration="4494000" />
+      <workItem from="1602658829345" duration="36000" />
     </task>
     <task id="LOCAL-00083" summary="还差一个token验证">
       <created>1600342228739</created>
@@ -518,11 +512,18 @@
       <option name="project" value="LOCAL" />
       <updated>1602571438671</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="引入真实组织数据，使用replaceFields&#9;替换 treeNode 中 title,value,key,children 字段为 treeData 中对应的字段">
+      <created>1602642412790</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1602642412791</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -554,7 +555,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加输入框搜索" />
     <MESSAGE value="去除所有评分页面的部门开关" />
     <MESSAGE value="尝试刷新跳过" />
     <MESSAGE value="加settime来显示数据" />
@@ -579,7 +579,8 @@
     <MESSAGE value="显示样式类似组织架构，但是功能无法实现" />
     <MESSAGE value="回退回固定数据" />
     <MESSAGE value="尝试组织人员分开" />
-    <option name="LAST_COMMIT_MESSAGE" value="尝试组织人员分开" />
+    <MESSAGE value="引入真实组织数据，使用replaceFields&#9;替换 treeNode 中 title,value,key,children 字段为 treeData 中对应的字段" />
+    <option name="LAST_COMMIT_MESSAGE" value="引入真实组织数据，使用replaceFields&#9;替换 treeNode 中 title,value,key,children 字段为 treeData 中对应的字段" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
