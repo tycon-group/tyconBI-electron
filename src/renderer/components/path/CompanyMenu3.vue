@@ -11,7 +11,9 @@
     </a-tree-select>
     <a-menu v-if="empData !== undefined && empData.length > 0" class="CodeMirror-vscrollbar2" style = "display: block; bottom: 0" mode="inline" :scroll="{ x: false }">
       <a-menu-item v-for="item in empData" :key="item.index" style="text-align: center">
-        <span>{{ item.name }}</span>
+        <router-link to="/analysis/analysisPerson">
+          <span>{{ item.name }}</span>
+        </router-link>
       </a-menu-item>
     </a-menu>
     <a-empty v-else style="margin-top: 200px;"><span slot="description">列表为空</span></a-empty>

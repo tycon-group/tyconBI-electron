@@ -22,16 +22,14 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/first" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:first" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="实现数据出现">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="实现组织架构">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu3.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu3.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,13 +173,6 @@
       <workItem from="1602550599807" duration="9892000" />
       <workItem from="1602639804691" duration="4494000" />
       <workItem from="1602658829345" duration="36000" />
-    </task>
-    <task id="LOCAL-00084" summary="准备改进url">
-      <created>1600397034022</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1600397034022</updated>
     </task>
     <task id="LOCAL-00085" summary="修改按钮名称">
       <created>1600397391330</created>
@@ -519,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602664253506</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="实现组织架构">
+      <created>1602666628477</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1602666628477</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +539,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/first" />
+                        <option value="first" />
                       </list>
                     </value>
                   </entry>
@@ -555,7 +553,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="尝试刷新跳过" />
     <MESSAGE value="加settime来显示数据" />
     <MESSAGE value="删除二次评分呈现，修饰部分" />
     <MESSAGE value="修改package配置" />
@@ -580,7 +577,8 @@
     <MESSAGE value="尝试组织人员分开" />
     <MESSAGE value="引入真实组织数据，使用replaceFields&#9;替换 treeNode 中 title,value,key,children 字段为 treeData 中对应的字段" />
     <MESSAGE value="实现数据出现" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现数据出现" />
+    <MESSAGE value="实现组织架构" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现组织架构" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -617,20 +615,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="712" y="228" key="RollbackChangesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602233517610" />
-    <state x="237" y="92" key="SettingsEditor" timestamp="1602199974987">
+    <state x="237" y="92" key="SettingsEditor" timestamp="1602666796454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="237" y="92" key="SettingsEditor/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602199974987" />
+    <state x="237" y="92" key="SettingsEditor/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602666796454" />
     <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598922387845" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1599199373140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1602571443936">
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1602666642618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1601194280372" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602571443936" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602666642618" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1602471557655">
       <screen x="0" y="0" width="1920" height="1040" />
