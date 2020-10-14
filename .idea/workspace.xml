@@ -22,16 +22,16 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:first" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/first" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="回退回固定数据">
-      <change afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu3.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="尝试组织人员分开">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu3.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu3.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,14 +172,8 @@
       <workItem from="1602207151610" duration="12548000" />
       <workItem from="1602295269853" duration="6330000" />
       <workItem from="1602464215308" duration="5047000" />
-      <workItem from="1602550599807" duration="5902000" />
-    </task>
-    <task id="LOCAL-00081" summary="实现页面倒计时">
-      <created>1600326993399</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1600326993399</updated>
+      <workItem from="1602550599807" duration="9892000" />
+      <workItem from="1602639804691" duration="2512000" />
     </task>
     <task id="LOCAL-00082" summary="在前端使用v-model,验证当分值不为三，且评论为空时，不允许提交">
       <created>1600328325099</created>
@@ -517,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602321803413</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="尝试组织人员分开">
+      <created>1602571438670</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1602571438671</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +540,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="first" />
+                        <option value="origin/first" />
                       </list>
                     </value>
                   </entry>
@@ -553,7 +554,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加搜索" />
     <MESSAGE value="添加输入框搜索" />
     <MESSAGE value="去除所有评分页面的部门开关" />
     <MESSAGE value="尝试刷新跳过" />
@@ -578,7 +578,8 @@
     <MESSAGE value="去除/deep/" />
     <MESSAGE value="显示样式类似组织架构，但是功能无法实现" />
     <MESSAGE value="回退回固定数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="回退回固定数据" />
+    <MESSAGE value="尝试组织人员分开" />
+    <option name="LAST_COMMIT_MESSAGE" value="尝试组织人员分开" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -624,11 +625,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1602199952831">
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1602571443936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1601194280372" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602199952831" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602571443936" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1602471557655">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -641,10 +642,10 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1602210021639">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1602641699477">
+      <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
-    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1600828870633" />
+    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1602641699477" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602210021639" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
