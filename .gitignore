@@ -11,3 +11,4 @@ thumbs.db
 !.gitkeep
 .idea
 out/*
+/package-lock.json

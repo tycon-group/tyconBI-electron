@@ -21,6 +21,8 @@
 </template>
 
 <script>
+import Bus from './bus';
+
 export default {
   data() {
     return {
@@ -59,10 +61,11 @@ export default {
     ckItem(e) {
       console.log(e, '这是人员详细信息的url');
       // 将数据传到electron-store保存
-      const Store = require('electron-store');
-      const store = new Store();
-      store.set('itemUrl', e);
-      console.log(store.get('itemUrl'));
+      // const Store = require('electron-store');
+      // const store = new Store();
+      // store.set('itemUrl', e);
+      // console.log(store.get('itemUrl'));
+      Bus.$emit('itemUrl', e);
     },
   },
 };

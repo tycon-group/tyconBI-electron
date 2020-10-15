@@ -27,8 +27,25 @@
 </template>
 
 <script>
+import Bus from './bus';
+
 export default {
   name: 'PersonInfo',
+  data() {
+    return {
+      itemUrl: [],
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      const vm = this;
+      // 用$on事件来接收参数
+      Bus.$on('itemUrl', (data) => {
+        vm.itemUrl = data;
+        console.log(this.itemUrl); // 这里取到了被点击的列表所对应的人员的信息链接
+      });
+    }, 200);
+  },
 };
 </script>
 
