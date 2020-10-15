@@ -9,8 +9,8 @@
         :replace-fields="{ title: 'name', key: 'id', value: 'id', children: 'child' }"
     >
     </a-tree-select>
-    <a-menu v-if="empData !== undefined && empData.length > 0" class="CodeMirror-vscrollbar2" style = "display: block; bottom: 0" mode="inline" :scroll="{ x: false }">
-      <a-menu-item v-for="item in empData" :key="item.index" style="text-align: center">
+    <a-menu v-if="empData !== undefined && empData.length > 0" class="CodeMirror-vscrollbar2" style = "display: block; bottom: 0;" mode="inline" :scroll="{ x: false }">
+      <a-menu-item v-for="item in empData" :key="item.index" style="width: 98%; text-align: center; border-bottom: 1px solid #F4F4F4">
         <router-link to="/analysis/analysisPerson">
           <span>{{ item.name }}</span>
         </router-link>
