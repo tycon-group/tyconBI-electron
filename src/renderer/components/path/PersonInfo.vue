@@ -6,7 +6,7 @@
 
     <div class="manInfo">
       <div class="row">
-        <div class="row_left">姓名：张三  Sirui Zhang</div>
+        <div class="row_left">姓名：{{ zhName }}  {{ enName }}</div>
         <div class="row_right">性别：男</div>
       </div>
       <div class="row">
@@ -34,17 +34,30 @@ export default {
   data() {
     return {
       itemUrl: [],
+      itemData: [],
+      zhName: '',
+      enName: '',
+      sex: '',
     };
   },
-  mounted() {
-    setTimeout(() => {
-      const vm = this;
-      // 用$on事件来接收参数
-      Bus.$on('itemUrl', (data) => {
-        vm.itemUrl = data;
-        console.log(this.itemUrl); // 这里取到了被点击的列表所对应的人员的信息链接
-      });
-    }, 200);
+  created() {
+    const vm = this;
+    // 用$on事件来接收参数
+    Bus.$on('itemUrl', (data) => {
+      vm.itemUrl = data;
+      console.log(this.itemUrl); // 这里取到了被点击的列表所对应的人员的信息链接
+      const url = this.itemUrl;
+      this.$http.get(url)
+        .then((res) => {
+          this.itemData = res.data;
+          this.zhName = this.itemData.name;
+          this.enName = this.itemData.enName;
+          console.log(this.zhName);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    });
   },
 };
 </script>

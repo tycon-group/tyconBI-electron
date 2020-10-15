@@ -59,7 +59,7 @@ export default {
   },
   methods: {
     ckItem(e) {
-      console.log(e, '这是人员详细信息的url');
+      console.log(e, '这是url获取位置');
       // 将数据传到electron-store保存
       // const Store = require('electron-store');
       // const store = new Store();

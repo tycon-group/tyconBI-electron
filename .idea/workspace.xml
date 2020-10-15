@@ -28,8 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="将数据传到electron-store保存">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="通过BUS.js取到了人员url地址">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
@@ -176,14 +175,7 @@
       <workItem from="1602550599807" duration="9892000" />
       <workItem from="1602639804691" duration="4494000" />
       <workItem from="1602658829345" duration="36000" />
-      <workItem from="1602723819727" duration="15352000" />
-    </task>
-    <task id="LOCAL-00091" summary="使用created加载初始值；&#10;使用bus.js中间件，储存数据">
-      <created>1600665169843</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1600665169844</updated>
+      <workItem from="1602723819727" duration="22171000" />
     </task>
     <task id="LOCAL-00092" summary="获取所需要的参数">
       <created>1600736511233</created>
@@ -521,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602745513106</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="通过BUS.js取到了人员url地址">
+      <created>1602748076414</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1602748076414</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,7 +556,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="实现自动显示上一次开关值的显示" />
     <MESSAGE value="用户可选安装位置" />
     <MESSAGE value="用户可选安装位置2" />
     <MESSAGE value="引入menu测试" />
@@ -582,7 +580,8 @@
     <MESSAGE value="删除废弃的选择框组件" />
     <MESSAGE value="获取menu中的选取值的url属性" />
     <MESSAGE value="将数据传到electron-store保存" />
-    <option name="LAST_COMMIT_MESSAGE" value="将数据传到electron-store保存" />
+    <MESSAGE value="通过BUS.js取到了人员url地址" />
+    <option name="LAST_COMMIT_MESSAGE" value="通过BUS.js取到了人员url地址" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -645,11 +644,11 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1602744659491">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1602748061312">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1602641699477" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602744659491" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602748061312" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
 </project>
