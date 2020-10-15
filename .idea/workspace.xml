@@ -22,14 +22,16 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:first" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/first" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="实现组织架构">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="点击人员可以跳转">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu3.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu3.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +95,7 @@
       <recent name="D:\tyconBI-electron\src\renderer\components\path" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -173,13 +175,7 @@
       <workItem from="1602550599807" duration="9892000" />
       <workItem from="1602639804691" duration="4494000" />
       <workItem from="1602658829345" duration="36000" />
-    </task>
-    <task id="LOCAL-00085" summary="修改按钮名称">
-      <created>1600397391330</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1600397391330</updated>
+      <workItem from="1602723819727" duration="1534000" />
     </task>
     <task id="LOCAL-00086" summary="在按钮组件中获取了点击后的实时状态">
       <created>1600409095879</created>
@@ -517,11 +513,18 @@
       <option name="project" value="LOCAL" />
       <updated>1602666628477</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="点击人员可以跳转">
+      <created>1602667115215</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1602667115215</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -539,7 +542,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="first" />
+                        <option value="origin/first" />
                       </list>
                     </value>
                   </entry>
@@ -553,7 +556,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="加settime来显示数据" />
     <MESSAGE value="删除二次评分呈现，修饰部分" />
     <MESSAGE value="修改package配置" />
     <MESSAGE value="修改package配置2" />
@@ -578,7 +580,8 @@
     <MESSAGE value="引入真实组织数据，使用replaceFields&#9;替换 treeNode 中 title,value,key,children 字段为 treeData 中对应的字段" />
     <MESSAGE value="实现数据出现" />
     <MESSAGE value="实现组织架构" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现组织架构" />
+    <MESSAGE value="点击人员可以跳转" />
+    <option name="LAST_COMMIT_MESSAGE" value="点击人员可以跳转" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -624,11 +627,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1602666642618">
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1602666800999">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1601194280372" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602666642618" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602666800999" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1602471557655">
       <screen x="0" y="0" width="1920" height="1040" />

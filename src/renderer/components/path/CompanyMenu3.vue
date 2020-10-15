@@ -2,7 +2,7 @@
   <div>
     <a-tree-select
         v-model="value"
-        style="width: 100%"
+        style="width: 90%; margin-left: 5%"
         :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
         :tree-data="treeData"
         placeholder="请选择需要查看的组织"
