@@ -27,7 +27,6 @@ export default {
       value: undefined,
       treeData: [],
       empData: [],
-      itemUrl: '',
     };
   },
   watch: {
@@ -59,8 +58,11 @@ export default {
   methods: {
     ckItem(e) {
       console.log(e, '这是人员详细信息的url');
-      // 将数据传到页面参数保存
-      this.itemUrl = e;
+      // 将数据传到electron-store保存
+      const Store = require('electron-store');
+      const store = new Store();
+      store.set('itemUrl', e);
+      console.log(store.get('itemUrl'));
     },
   },
 };

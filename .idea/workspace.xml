@@ -28,9 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="删除废弃的选择框组件">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="获取menu中的选取值的url属性">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,14 +175,7 @@
       <workItem from="1602550599807" duration="9892000" />
       <workItem from="1602639804691" duration="4494000" />
       <workItem from="1602658829345" duration="36000" />
-      <workItem from="1602723819727" duration="12246000" />
-    </task>
-    <task id="LOCAL-00089" summary="去除store储存开关值">
-      <created>1600420827504</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1600420827504</updated>
+      <workItem from="1602723819727" duration="12900000" />
     </task>
     <task id="LOCAL-00090" summary="使用watch">
       <created>1600650205488</created>
@@ -519,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602739050464</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="获取menu中的选取值的url属性">
+      <created>1602744668420</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1602744668420</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,7 +556,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="第四次失败build，" />
     <MESSAGE value="准备使用test删除npm依赖，换成yarn" />
     <MESSAGE value="实现自动显示上一次开关值的显示" />
     <MESSAGE value="用户可选安装位置" />
@@ -580,7 +580,8 @@
     <MESSAGE value="优化居中 选择框位置" />
     <MESSAGE value="优化列表选项的底部边框" />
     <MESSAGE value="删除废弃的选择框组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除废弃的选择框组件" />
+    <MESSAGE value="获取menu中的选取值的url属性" />
+    <option name="LAST_COMMIT_MESSAGE" value="获取menu中的选取值的url属性" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -643,11 +644,11 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1602641699477">
-      <screen x="-1920" y="-98" width="1920" height="1040" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1602744659491">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1602641699477" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602210021639" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602744659491" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
 </project>
