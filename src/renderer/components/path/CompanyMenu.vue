@@ -10,7 +10,7 @@
     >
     </a-tree-select>
     <a-menu v-if="empData !== undefined && empData.length > 0" class="CodeMirror-vscrollbar2" style = "display: block; bottom: 0;" mode="inline" :scroll="{ x: false }">
-      <a-menu-item v-for="item in empData" :key="item.index" style="width: 98%; text-align: center; border-bottom: 1px solid #F4F4F4">
+      <a-menu-item @click="ckItem(item.url)" v-for="item in empData" :key="item.index" style="width: 98%; text-align: center; border-bottom: 1px solid #F4F4F4">
         <router-link to="/analysis/analysisPerson">
           <span>{{ item.name }}</span>
         </router-link>
@@ -27,6 +27,7 @@ export default {
       value: undefined,
       treeData: [],
       empData: [],
+      itemUrl: '',
     };
   },
   watch: {
@@ -55,7 +56,15 @@ export default {
         });
     }, 200);
   },
+  methods: {
+    ckItem(e) {
+      console.log(e, '这是人员详细信息的url');
+      // 将数据传到页面参数保存
+      this.itemUrl = e;
+    },
+  },
 };
+
 </script>
 
 <style>

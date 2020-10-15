@@ -22,15 +22,15 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/first" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:first" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="优化列表选项的底部边框">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="删除废弃的选择框组件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,14 +174,7 @@
       <workItem from="1602550599807" duration="9892000" />
       <workItem from="1602639804691" duration="4494000" />
       <workItem from="1602658829345" duration="36000" />
-      <workItem from="1602723819727" duration="7533000" />
-    </task>
-    <task id="LOCAL-00088" summary="给代办页面加上开关，使用store储存开关值">
-      <created>1600413455137</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1600413455137</updated>
+      <workItem from="1602723819727" duration="12246000" />
     </task>
     <task id="LOCAL-00089" summary="去除store储存开关值">
       <created>1600420827504</created>
@@ -519,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602729550527</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="删除废弃的选择框组件">
+      <created>1602739050464</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1602739050464</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -541,7 +541,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/first" />
+                        <option value="first" />
                       </list>
                     </value>
                   </entry>
@@ -555,7 +555,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改package配置2" />
     <MESSAGE value="第四次失败build，" />
     <MESSAGE value="准备使用test删除npm依赖，换成yarn" />
     <MESSAGE value="实现自动显示上一次开关值的显示" />
@@ -580,7 +579,8 @@
     <MESSAGE value="点击人员可以跳转" />
     <MESSAGE value="优化居中 选择框位置" />
     <MESSAGE value="优化列表选项的底部边框" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化列表选项的底部边框" />
+    <MESSAGE value="删除废弃的选择框组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除废弃的选择框组件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
