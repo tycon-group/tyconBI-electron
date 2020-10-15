@@ -1,96 +1,89 @@
 <template>
   <div>
-    <a-menu
-        style="width: 100%"
-        :default-selected-keys="[]"
-        mode="inline"
-        @click="handleClick"
+    <a-tree-select
+        v-model="value"
+        style="width: 90%; margin-left: 5%"
+        :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
+        :tree-data="treeData"
+        placeholder="请选择需要查看的组织"
+        :replace-fields="{ title: 'name', key: 'id', value: 'id', children: 'child' }"
     >
-
-      <a-sub-menu key="sub1" type="cluster" @titleClick="titleClick">
-        <span slot="title"><router-link to="/analysis/analysisGroup" tag="span">上海太江集团有限公司</router-link></span>
-        <a-sub-menu key="sub2">
-          <span slot="title"><router-link to="/analysis/analysisGroup" tag="span">上海太江建设工程有限公司</router-link></span>
-          <a-sub-menu key="sub2_1">
-            <span slot="title"><router-link to="/analysis/analysisGroup" tag="span">项目部</router-link></span>
-            <a-menu-item key="1">
-              <router-link to="/analysis/analysisPerson">
-                <span>张三</span>
-              </router-link>
-            </a-menu-item>
-          </a-sub-menu>
-        </a-sub-menu>
-
-        <a-sub-menu key="sub3">
-          <span slot="title"><router-link to="/analysis/analysisGroup" tag="span">上海太江信息科技有限公司</router-link></span>
-          <a-menu-item key="17">
-            <router-link to="/analysis/analysisPerson">
-              <span>古力娜扎</span>
-            </router-link>
-          </a-menu-item>
-          <a-menu-item key="18">
-            <router-link to="/analysis/analysisPerson">
-              <span>迪丽热巴</span>
-            </router-link>
-          </a-menu-item>
-          <a-sub-menu key="sub2_1">
-            <span slot="title"><router-link to="/analysis/analysisGroup" tag="span">研发部</router-link></span>
-              <a-menu-item key="2">
-              <router-link to="/analysis/analysisPerson">
-                <span>李四</span>
-              </router-link>
-            </a-menu-item>
-
-            <a-menu-item key="3">
-              <router-link to="/analysis/analysisPerson">
-                <span>王二麻子</span>
-              </router-link>
-            </a-menu-item>
-          </a-sub-menu>
-        </a-sub-menu>
-
-        <a-sub-menu key="sub4">
-          <span slot="title"><router-link to="/analysis/analysisGroup" tag="span">上海太江文化发展有限公司</router-link></span>
-          <a-menu-item key="7">
-            <router-link to="/analysis/analysisPerson">
-              <span>赵高</span>
-            </router-link>
-          </a-menu-item>
-          <a-menu-item key="8">
-            <router-link to="/analysis/analysisPerson">
-              <span>项羽</span>
-            </router-link>
-          </a-menu-item>
-          <a-menu-item key="9">
-            <router-link to="/analysis/analysisPerson">
-              <span>易小川</span>
-            </router-link>
-          </a-menu-item>
-        </a-sub-menu>
-      </a-sub-menu>
+    </a-tree-select>
+    <a-menu v-if="empData !== undefined && empData.length > 0" class="CodeMirror-vscrollbar2" style = "display: block; bottom: 0;" mode="inline" :scroll="{ x: false }">
+      <a-menu-item v-for="item in empData" :key="item.index" style="width: 98%; text-align: center; border-bottom: 1px solid #F4F4F4">
+        <router-link to="/analysis/analysisPerson">
+          <span>{{ item.name }}</span>
+        </router-link>
+      </a-menu-item>
     </a-menu>
+    <a-empty v-else style="margin-top: 200px;"><span slot="description">列表为空</span></a-empty>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CompanyMenu',
   data() {
     return {
-      current: ['title'],
+      value: undefined,
+      treeData: [],
+      empData: [],
     };
   },
-  methods: {
-    handleClick(e) {
-      console.log('click', e);
+  watch: {
+    value(value) {
+      console.log(value);
+      const url = `https://tyconcps.cn:4399/hr/employees/?organization=${value}`;
+      this.$http.get(url)
+        .then((res) => {
+          this.empData = res.data.data;
+          console.log(res.data.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     },
-    titleClick(e) {
-      console.log('titleClick', e);
-    },
+  },
+  mounted() {
+    setTimeout(() => {
+      const url = 'https://tyconcps.cn:4399/hr/listOrgAndEmp';
+      this.$http.get(url)
+        .then((res) => {
+          this.treeData = res.data.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }, 200);
   },
 };
 </script>
 
 <style>
+.CodeMirror-vscrollbar2{
+  right:0;
+  top:180px;
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
 
+.CodeMirror-vscrollbar2{
+  position:absolute;
+  z-index:6;
+  display:none;
+}
+
+/*不定义定义滑块，则为隐藏*/
+
+/**设置滚动条的样式**/
+::-webkit-scrollbar{
+  width:10px;
+  height:20px;
+}
+
+/**滚动槽**/
+
+::-webkit-scrollbar-track{
+  box-shadow:inset 0 0 3px #dcdcdc;
+  border-radius:10px;
+}
 </style>

@@ -29,9 +29,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="优化居中 选择框位置">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="优化列表选项的底部边框">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu3.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu3.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,14 +174,7 @@
       <workItem from="1602550599807" duration="9892000" />
       <workItem from="1602639804691" duration="4494000" />
       <workItem from="1602658829345" duration="36000" />
-      <workItem from="1602723819727" duration="5399000" />
-    </task>
-    <task id="LOCAL-00087" summary="删除了单选按钮组，暂时注释一些代码">
-      <created>1600409579289</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1600409579289</updated>
+      <workItem from="1602723819727" duration="7533000" />
     </task>
     <task id="LOCAL-00088" summary="给代办页面加上开关，使用store储存开关值">
       <created>1600413455137</created>
@@ -520,7 +512,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602725691681</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="优化列表选项的底部边框">
+      <created>1602729550527</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1602729550527</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +555,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改package配置" />
     <MESSAGE value="修改package配置2" />
     <MESSAGE value="第四次失败build，" />
     <MESSAGE value="准备使用test删除npm依赖，换成yarn" />
@@ -581,7 +579,8 @@
     <MESSAGE value="实现组织架构" />
     <MESSAGE value="点击人员可以跳转" />
     <MESSAGE value="优化居中 选择框位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化居中 选择框位置" />
+    <MESSAGE value="优化列表选项的底部边框" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化列表选项的底部边框" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
