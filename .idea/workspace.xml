@@ -28,7 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="开始将值打印到页面上">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="初始化员工页面所需要的值">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
     </list>
@@ -53,6 +53,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="f326e725-ab55-4f4a-9e1a-1e230beee1c8" />
   </component>
   <component name="ProjectId" id="1gIy7UPuIaVxYdVWDBxAZKtyGFd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -175,14 +178,7 @@
       <workItem from="1602639804691" duration="4494000" />
       <workItem from="1602658829345" duration="36000" />
       <workItem from="1602723819727" duration="22204000" />
-      <workItem from="1602810383185" duration="3491000" />
-    </task>
-    <task id="LOCAL-00093" summary="post提交成功">
-      <created>1600742833654</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1600742833655</updated>
+      <workItem from="1602810383185" duration="5457000" />
     </task>
     <task id="LOCAL-00094" summary="修改评分状态">
       <created>1600754411153</created>
@@ -520,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602759044593</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="初始化员工页面所需要的值">
+      <created>1602822089374</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1602822089374</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +559,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="用户可选安装位置2" />
     <MESSAGE value="引入menu测试" />
     <MESSAGE value="动态菜单" />
     <MESSAGE value=" menu更新" />
@@ -581,7 +583,8 @@
     <MESSAGE value="将数据传到electron-store保存" />
     <MESSAGE value="通过BUS.js取到了人员url地址" />
     <MESSAGE value="开始将值打印到页面上" />
-    <option name="LAST_COMMIT_MESSAGE" value="开始将值打印到页面上" />
+    <MESSAGE value="初始化员工页面所需要的值" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化员工页面所需要的值" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -618,10 +621,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="712" y="228" key="RollbackChangesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602233517610" />
-    <state x="237" y="92" key="SettingsEditor" timestamp="1602666796454">
+    <state x="526" y="91" key="SettingsEditor" timestamp="1602822209048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="237" y="92" key="SettingsEditor/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602666796454" />
+    <state x="526" y="91" key="SettingsEditor/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602822209048" />
     <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598922387845" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1599199373140">
       <screen x="0" y="0" width="1920" height="1040" />
