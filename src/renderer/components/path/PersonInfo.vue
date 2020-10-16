@@ -18,8 +18,8 @@
         <div class="row_right">入职日期：{{ dateOfHire }}</div>
       </div>
       <div class="row">
-        <div class="row_left">连续工龄：5年</div>
-        <div class="row_right">在职工龄：1年</div>
+        <div class="row_left">连续工龄：{{ yearForWork }}</div>
+        <div class="row_right">在职工龄：{{ yearInCompany }}</div>
       </div>
     </div>
 
@@ -66,16 +66,71 @@ export default {
           } else {
             this.gender = '女';
           }
-          this.education = this.itemData.education;
-          this.dateOfBirth = this.itemData.dateOfBirth;
-          this.dateOfHire = this.itemData.dateOfHire;
+          // 学历
+          const educations = this.itemData.education;
+          if (educations !== null) {
+            this.education = this.itemData.education;
+          } else {
+            this.education = '暂无学历信息';
+          }
+          // 生日
+          const dateOfBirths = this.itemData.dateOfBirth;
+          if (dateOfBirths !== null) {
+            this.dateOfBirth = this.itemData.dateOfBirth;
+          } else {
+            this.dateOfBirth = '暂无生日信息';
+          }
+          // 入职时间
+          const dateOfHires = this.itemData.dateOfHire;
+          if (dateOfHires !== null) {
+            this.dateOfHire = this.itemData.dateOfHire;
+          } else {
+            this.dateOfHire = '暂无入职时间信息';
+          }
           this.avatar = this.itemData.avatar;
+          // 获取当前时间
+          const date1 = new Date();
+          // 获取开始工作日期，（工作年限）
+          // eslint-disable-next-line prefer-destructuring
+          const dateOfStartWork = this.itemData.dateOfStartWork;
+          if (dateOfStartWork !== null) {
+            const date2 = new Date(dateOfStartWork);
+            // eslint-disable-next-line radix,no-mixed-operators,max-len
+            const monthCount = parseInt(date1.getFullYear() - date2.getFullYear()) * 12 - date2.getMonth() + date1.getMonth();
+            const resM = monthCount % 12;
+            // eslint-disable-next-line radix
+            const resY = parseInt(monthCount / 12);
+            if (resY === 0 && resM === 0) {
+              this.yearForWork = '不足一个月';
+            } else {
+              this.yearForWork = `${resY}年${resM}月`;
+            }
+          } else {
+            this.yearForWork = '无开始工作信息';
+          }
+          // 最新入职太江日期
+          if (dateOfHires !== null) {
+            const date2 = new Date(dateOfHires);
+            // eslint-disable-next-line radix,no-mixed-operators,max-len
+            const monthCount = parseInt(date1.getFullYear() - date2.getFullYear()) * 12 - date2.getMonth() + date1.getMonth();
+            const resM = monthCount % 12;
+            // eslint-disable-next-line radix
+            const resY = parseInt(monthCount / 12);
+            if (resY === 0 && resM === 0) {
+              this.yearInCompany = '不足一个月';
+            } else {
+              this.yearInCompany = `${resY}年${resM}月`;
+            }
+          } else {
+            this.yearInCompany = '无入职时间信息';
+          }
         })
         .catch((error) => {
           console.log(error);
         });
     });
   },
+
 };
 </script>
 

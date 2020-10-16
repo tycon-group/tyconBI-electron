@@ -28,7 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="初始化员工页面所需要的值">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="提交了头像值">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
     </list>
@@ -178,14 +178,7 @@
       <workItem from="1602639804691" duration="4494000" />
       <workItem from="1602658829345" duration="36000" />
       <workItem from="1602723819727" duration="22204000" />
-      <workItem from="1602810383185" duration="5457000" />
-    </task>
-    <task id="LOCAL-00094" summary="修改评分状态">
-      <created>1600754411153</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1600754411153</updated>
+      <workItem from="1602810383185" duration="13846000" />
     </task>
     <task id="LOCAL-00095" summary="尝试去除了patch">
       <created>1600755696263</created>
@@ -523,7 +516,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602822089374</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="提交了头像值">
+      <created>1602824969326</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1602824969327</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,7 +559,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="引入menu测试" />
     <MESSAGE value="动态菜单" />
     <MESSAGE value=" menu更新" />
     <MESSAGE value="引入测试menu动态" />
@@ -584,7 +583,8 @@
     <MESSAGE value="通过BUS.js取到了人员url地址" />
     <MESSAGE value="开始将值打印到页面上" />
     <MESSAGE value="初始化员工页面所需要的值" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化员工页面所需要的值" />
+    <MESSAGE value="提交了头像值" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交了头像值" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
