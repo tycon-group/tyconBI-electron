@@ -28,9 +28,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="通过BUS.js取到了人员url地址">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="开始将值打印到页面上">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,14 +174,8 @@
       <workItem from="1602550599807" duration="9892000" />
       <workItem from="1602639804691" duration="4494000" />
       <workItem from="1602658829345" duration="36000" />
-      <workItem from="1602723819727" duration="22171000" />
-    </task>
-    <task id="LOCAL-00092" summary="获取所需要的参数">
-      <created>1600736511233</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1600736511233</updated>
+      <workItem from="1602723819727" duration="22204000" />
+      <workItem from="1602810383185" duration="3491000" />
     </task>
     <task id="LOCAL-00093" summary="post提交成功">
       <created>1600742833654</created>
@@ -520,7 +513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602748076414</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="开始将值打印到页面上">
+      <created>1602759044593</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1602759044593</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,7 +556,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="用户可选安装位置" />
     <MESSAGE value="用户可选安装位置2" />
     <MESSAGE value="引入menu测试" />
     <MESSAGE value="动态菜单" />
@@ -581,7 +580,8 @@
     <MESSAGE value="获取menu中的选取值的url属性" />
     <MESSAGE value="将数据传到electron-store保存" />
     <MESSAGE value="通过BUS.js取到了人员url地址" />
-    <option name="LAST_COMMIT_MESSAGE" value="通过BUS.js取到了人员url地址" />
+    <MESSAGE value="开始将值打印到页面上" />
+    <option name="LAST_COMMIT_MESSAGE" value="开始将值打印到页面上" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -627,11 +627,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1602746813870">
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1602759048693">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1601194280372" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602746813870" />
+    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602759048693" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1602471557655">
       <screen x="0" y="0" width="1920" height="1040" />

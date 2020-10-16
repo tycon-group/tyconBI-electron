@@ -38,6 +38,12 @@ export default {
       zhName: '',
       enName: '',
       sex: '',
+      zhPosition: '',
+      education: '',
+      birthday: '',
+      dateOfHire: '',
+      timeForWork: '',
+      timeInCompany: '',
     };
   },
   created() {
