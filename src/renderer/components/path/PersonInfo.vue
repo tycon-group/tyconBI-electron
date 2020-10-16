@@ -10,7 +10,7 @@
         <div class="row_right">性别：{{ gender }}</div>
       </div>
       <div class="row">
-        <div class="row_left">职位：上海太江信息科技有限公司/工程师</div>
+        <div class="row_left">职位：{{ zhPosition }}</div>
         <div class="row_right">学历：{{ education }}</div>
       </div>
       <div class="row">
@@ -59,6 +59,10 @@ export default {
           this.itemData = res.data;
           this.zhName = this.itemData.name;
           this.enName = this.itemData.enName;
+          // 职位数组变为只取第一哥元素的值
+          const zhPositions = this.itemData.roles[0];
+          console.log(zhPositions);
+          this.zhPosition = zhPositions;
           // 判断性别
           const sex = this.itemData.gender;
           if (sex === 'M') {
