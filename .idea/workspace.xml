@@ -28,10 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="此处setTimeout一下，就可以取到最新数据">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/CountWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/CountWork.vue" afterDir="false" />
-    </list>
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="添加补写数，评分数区分人事和直属，优化css" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,14 +176,7 @@
       <workItem from="1602658829345" duration="36000" />
       <workItem from="1602723819727" duration="22204000" />
       <workItem from="1602810383185" duration="17458000" />
-      <workItem from="1603069369893" duration="15203000" />
-    </task>
-    <task id="LOCAL-00100" summary="提交用户名，头像store储存">
-      <created>1600828887865</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1600828887865</updated>
+      <workItem from="1603069369893" duration="15969000" />
     </task>
     <task id="LOCAL-00101" summary="修复首次不显示头像">
       <created>1600837285635</created>
@@ -524,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603092151712</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="添加补写数，评分数区分人事和直属，优化css">
+      <created>1603092697320</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1603092697320</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,7 +557,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="目前只实现了child数组中值打印" />
     <MESSAGE value="使用树图" />
     <MESSAGE value="使用/deep/效果不好" />
     <MESSAGE value="去除/deep/" />
@@ -585,7 +581,8 @@
     <MESSAGE value="优化个人信息显示，切换组织时，刷新变为空白" />
     <MESSAGE value="添加选择框的跳转，准备传组织号" />
     <MESSAGE value="此处setTimeout一下，就可以取到最新数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="此处setTimeout一下，就可以取到最新数据" />
+    <MESSAGE value="添加补写数，评分数区分人事和直属，优化css" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加补写数，评分数区分人事和直属，优化css" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -637,6 +634,10 @@
     <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1601194280372" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602759048693" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
+    <state x="-1157" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603092657420">
+      <screen x="-1920" y="-98" width="1920" height="1040" />
+    </state>
+    <state x="-1157" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603092657420" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog" timestamp="1602471557655">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -648,10 +649,10 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1603091967728">
+    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1603092689190">
       <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
-    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603091967728" />
+    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603092689190" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602748061312" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>

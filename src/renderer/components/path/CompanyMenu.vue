@@ -7,7 +7,7 @@
         :tree-data="treeData"
         placeholder="请选择需要查看的组织"
         :replace-fields="{ title: 'name', key: 'id', value: 'id', children: 'child' }"
-        @change="tsChange"
+        @click="tsClick"
         @select="tsSelect"
     >
     </a-tree-select>
@@ -59,7 +59,7 @@ export default {
     }, 200);
   },
   methods: {
-    tsChange() {
+    tsClick() {
       console.log('tree值变化');
       Bus.$emit('flagTS', false);
     },
