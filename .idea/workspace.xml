@@ -30,7 +30,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="获取当前时间，计算年限。优化显示一般的数据情况">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/LineEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/LineEcharts.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +179,7 @@
       <workItem from="1602658829345" duration="36000" />
       <workItem from="1602723819727" duration="22204000" />
       <workItem from="1602810383185" duration="17458000" />
+      <workItem from="1603069369893" duration="5698000" />
     </task>
     <task id="LOCAL-00096" summary="使用跳转回退，来刷新页面">
       <created>1600767747716</created>
