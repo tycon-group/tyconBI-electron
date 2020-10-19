@@ -28,11 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="优化个人信息显示，切换组织时，刷新变为空白">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="添加选择框的跳转，准备传组织号">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/GroupInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupInfo.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,14 +179,7 @@
       <workItem from="1602658829345" duration="36000" />
       <workItem from="1602723819727" duration="22204000" />
       <workItem from="1602810383185" duration="17458000" />
-      <workItem from="1603069369893" duration="13859000" />
-    </task>
-    <task id="LOCAL-00098" summary="左下角姓名实现">
-      <created>1600769755744</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1600769755745</updated>
+      <workItem from="1603069369893" duration="14561000" />
     </task>
     <task id="LOCAL-00099" summary="注释用户公司显示，">
       <created>1600770329384</created>
@@ -526,7 +517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603085942259</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="添加选择框的跳转，准备传组织号">
+      <created>1603091487816</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1603091487816</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +560,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="第一套模板" />
     <MESSAGE value="!item.children判断是否有； item.children === '' 和 item.children === []区别需要注意" />
     <MESSAGE value="目前只实现了child数组中值打印" />
     <MESSAGE value="使用树图" />
@@ -587,7 +584,8 @@
     <MESSAGE value="获取当前时间，计算年限。优化显示一般的数据情况" />
     <MESSAGE value="修改折线图，X轴为4月到下年3月" />
     <MESSAGE value="优化个人信息显示，切换组织时，刷新变为空白" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化个人信息显示，切换组织时，刷新变为空白" />
+    <MESSAGE value="添加选择框的跳转，准备传组织号" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加选择框的跳转，准备传组织号" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

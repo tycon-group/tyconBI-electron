@@ -64,10 +64,13 @@ export default {
       Bus.$emit('flagTS', false);
     },
     tsSelect() {
-      this.$router.push({
-        name: 'analysisGroup',
-      });
-      // 此处需要传组织相关信息
+      setTimeout(() => {
+        console.log(this.value, 'test2');
+        // 此处setTimeout一下，就可以取到最新数据
+        this.$router.push({
+          name: 'analysisGroup', // 此处会报错，两次进入同一个路由，对项目没有影响
+        });
+      }, 200);
     },
     ckItem(e) {
       console.log(e, '这是url获取位置');
