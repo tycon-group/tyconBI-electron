@@ -28,9 +28,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="获取当前时间，计算年限。优化显示一般的数据情况">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改折线图，X轴为4月到下年3月">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/LineEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/LineEcharts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,14 +181,7 @@
       <workItem from="1602658829345" duration="36000" />
       <workItem from="1602723819727" duration="22204000" />
       <workItem from="1602810383185" duration="17458000" />
-      <workItem from="1603069369893" duration="5698000" />
-    </task>
-    <task id="LOCAL-00096" summary="使用跳转回退，来刷新页面">
-      <created>1600767747716</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1600767747716</updated>
+      <workItem from="1603069369893" duration="9522000" />
     </task>
     <task id="LOCAL-00097" summary="暂时注释掉提交并显示下一条">
       <created>1600767979321</created>
@@ -524,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602834970009</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="修改折线图，X轴为4月到下年3月">
+      <created>1603076811143</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1603076811143</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,7 +562,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" menu更新" />
     <MESSAGE value="引入测试menu动态" />
     <MESSAGE value="第一套模板" />
     <MESSAGE value="!item.children判断是否有； item.children === '' 和 item.children === []区别需要注意" />
@@ -585,7 +586,8 @@
     <MESSAGE value="初始化员工页面所需要的值" />
     <MESSAGE value="提交了头像值" />
     <MESSAGE value="获取当前时间，计算年限。优化显示一般的数据情况" />
-    <option name="LAST_COMMIT_MESSAGE" value="获取当前时间，计算年限。优化显示一般的数据情况" />
+    <MESSAGE value="修改折线图，X轴为4月到下年3月" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改折线图，X轴为4月到下年3月" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

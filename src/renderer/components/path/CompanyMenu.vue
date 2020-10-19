@@ -7,6 +7,7 @@
         :tree-data="treeData"
         placeholder="请选择需要查看的组织"
         :replace-fields="{ title: 'name', key: 'id', value: 'id', children: 'child' }"
+        @change="tsChange"
     >
     </a-tree-select>
     <a-menu v-if="empData !== undefined && empData.length > 0" class="CodeMirror-vscrollbar2" style = "display: block; bottom: 0;" mode="inline" :scroll="{ x: false }">
@@ -58,6 +59,10 @@ export default {
     }, 200);
   },
   methods: {
+    tsChange() {
+      console.log('tree值变化');
+      Bus.$emit('flagTS', false);
+    },
     ckItem(e) {
       console.log(e, '这是url获取位置');
       // 将数据传到electron-store保存
@@ -66,6 +71,7 @@ export default {
       // store.set('itemUrl', e);
       // console.log(store.get('itemUrl'));
       Bus.$emit('itemUrl', e);
+      Bus.$emit('flagTS', true);
     },
   },
 };
