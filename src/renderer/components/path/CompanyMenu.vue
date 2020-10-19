@@ -8,6 +8,7 @@
         placeholder="请选择需要查看的组织"
         :replace-fields="{ title: 'name', key: 'id', value: 'id', children: 'child' }"
         @change="tsChange"
+        @select="tsSelect"
     >
     </a-tree-select>
     <a-menu v-if="empData !== undefined && empData.length > 0" class="CodeMirror-vscrollbar2" style = "display: block; bottom: 0;" mode="inline" :scroll="{ x: false }">
@@ -34,7 +35,6 @@ export default {
   },
   watch: {
     value(value) {
-      console.log(value);
       const url = `https://tyconcps.cn:4399/hr/employees/?organization=${value}`;
       this.$http.get(url)
         .then((res) => {
@@ -62,6 +62,12 @@ export default {
     tsChange() {
       console.log('tree值变化');
       Bus.$emit('flagTS', false);
+    },
+    tsSelect() {
+      this.$router.push({
+        name: 'analysisGroup',
+      });
+      // 此处需要传组织相关信息
     },
     ckItem(e) {
       console.log(e, '这是url获取位置');
