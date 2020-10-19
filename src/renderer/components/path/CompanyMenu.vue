@@ -12,7 +12,7 @@
     >
     </a-tree-select>
     <a-menu v-if="empData !== undefined && empData.length > 0" class="CodeMirror-vscrollbar2" style = "display: block; bottom: 0;" mode="inline" :scroll="{ x: false }">
-      <a-menu-item @click="ckItem(item.url)" v-for="item in empData" :key="item.index" style="width: 98%; text-align: center; border-bottom: 1px solid #F4F4F4">
+      <a-menu-item @click="ckItem(item.url, item.empID)" v-for="item in empData" :key="item.index" style="width: 98%; text-align: center; border-bottom: 1px solid #F4F4F4">
         <router-link to="/analysis/analysisPerson">
           <span>{{ item.name }}</span>
         </router-link>
@@ -31,6 +31,7 @@ export default {
       value: undefined,
       treeData: [],
       empData: [],
+      empIDCom: '',
     };
   },
   watch: {
@@ -47,8 +48,11 @@ export default {
     },
   },
   mounted() {
+    const Store = require('electron-store');
+    const store = new Store();
+    this.empIDCom = store.get('empID');
     setTimeout(() => {
-      const url = 'https://tyconcps.cn:4399/hr/listOrgAndEmp';
+      const url = `https://tyconcps.cn:4399/hr/listOrgAndEmp?empID=${this.empIDCom}`;
       this.$http.get(url)
         .then((res) => {
           this.treeData = res.data.data;
@@ -73,14 +77,16 @@ export default {
         });
       }, 200);
     },
-    ckItem(e) {
+    ckItem(e, f) {
       console.log(e, '这是url获取位置');
+      console.log(f, '这是被查看人员empID获取位置');
       // 将数据传到electron-store保存
       // const Store = require('electron-store');
       // const store = new Store();
       // store.set('itemUrl', e);
       // console.log(store.get('itemUrl'));
       Bus.$emit('itemUrl', e);
+      Bus.$emit('itemEmpID', f);
       Bus.$emit('flagTS', true);
     },
   },

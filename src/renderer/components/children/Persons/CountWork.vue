@@ -35,8 +35,23 @@
 </template>
 
 <script>
+import Bus from '../../path/bus';
+
 export default {
   name: 'CountWork',
+  data() {
+    return {
+      itemEmpID: '',
+    };
+  },
+  created() {
+    const vm = this;
+    // 用$on事件来接收参数
+    Bus.$on('itemEmpID', (data) => {
+      vm.itemEmpID = data;
+      console.log(this.itemEmpID, '测试007'); // 这里取到了被点击的列表所对应的人员的信息链接
+    });
+  },
 };
 </script>
 
