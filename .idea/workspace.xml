@@ -28,10 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="select的click改回change,并在change中调用select">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改组织架构权限，显示；&#10;传递被查看人员的ID">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/CountWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/CountWork.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,14 +180,7 @@
       <workItem from="1602658829345" duration="36000" />
       <workItem from="1602723819727" duration="22204000" />
       <workItem from="1602810383185" duration="17458000" />
-      <workItem from="1603069369893" duration="19474000" />
-    </task>
-    <task id="LOCAL-00103" summary="隐藏所有评分页面的部门按钮">
-      <created>1600840265103</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1600840265103</updated>
+      <workItem from="1603069369893" duration="22445000" />
     </task>
     <task id="LOCAL-00104" summary="完成日期按钮">
       <created>1600844715554</created>
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603095007366</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="修改组织架构权限，显示；&#10;传递被查看人员的ID">
+      <created>1603097229261</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1603097229261</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +561,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="显示样式类似组织架构，但是功能无法实现" />
     <MESSAGE value="回退回固定数据" />
     <MESSAGE value="尝试组织人员分开" />
     <MESSAGE value="引入真实组织数据，使用replaceFields&#9;替换 treeNode 中 title,value,key,children 字段为 treeData 中对应的字段" />
@@ -586,7 +585,8 @@
     <MESSAGE value="select的change改为click" />
     <MESSAGE value="select的click改回change,并在change中调用" />
     <MESSAGE value="select的click改回change,并在change中调用select" />
-    <option name="LAST_COMMIT_MESSAGE" value="select的click改回change,并在change中调用select" />
+    <MESSAGE value="修改组织架构权限，显示；&#10;传递被查看人员的ID" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改组织架构权限，显示；&#10;传递被查看人员的ID" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

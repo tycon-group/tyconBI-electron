@@ -61,7 +61,7 @@ export default {
       setTimeout(() => {
         console.log(this.keyItemUrl);
         // const keyItems = this.keyItem;
-        // const url = `http://tyconcps.cn:4399/wl/worklogs/${keyItems}/`;
+        // const url = `https://tyconcps.cn:4399/wl/worklogs/${keyItems}/`;
         const url = this.keyItemUrl;
         this.$http.get(url)
           .then((res) => {
