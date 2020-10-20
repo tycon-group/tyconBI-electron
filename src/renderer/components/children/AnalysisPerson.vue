@@ -1,7 +1,7 @@
 <template>
   <div class="a-layout">
     <div class="layout-header"><PersonInfo /></div>
-    <div class="layout-table"><PersonListNav /></div>
+    <div class="layout-table"><PersonListNav :worklogsData="worklogsData"/></div>
     <div class="layout-content"><router-view></router-view></div>
   </div>
 </template>
@@ -35,12 +35,18 @@ export default {
           console.log(res.data, '取到所有日志信息数组，现在取上一个月的');
           this.worklogsData = res.data[res.data.length - 1];
           console.log(this.worklogsData, '取到上一个月日志信息数组');
-          Bus.$emit('defaultCount', this.worklogsData); // 将上月数据数组通过Bus传递
+          // Bus.$emit('defaultCount', this.worklogsData); // 将上月数据数组通过Bus传递
         })
         .catch((error) => {
           console.log(error);
         });
     });
+  },
+  methods: {
+    chper() {
+      console.log(this.worklogsData, '值变化');
+      // Bus.$emit('defaultCount', this.worklogsData); // 将上月数据数组通过Bus传递
+    },
   },
 };
 </script>

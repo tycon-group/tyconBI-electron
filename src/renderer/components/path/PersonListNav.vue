@@ -9,10 +9,8 @@
         </router-link>
       </a-menu-item>
 
-      <a-menu-item key="work">
-        <router-link to="/analysis/analysisPerson/personWork">
-          <span>工作能力</span>
-        </router-link>
+      <a-menu-item key="work" @click="workPER">
+        <span>工作能力</span>
       </a-menu-item>
 
       <a-menu-item key="attitude">
@@ -54,12 +52,24 @@ export default {
       flagTS: false,
     };
   },
-  created() {
+  props: ['worklogsData'],
+  mounted() {
     const vm = this;
     Bus.$on('flagTS', (data) => {
       vm.flagTS = data;
-      console.log(this.flagTS, '测试2');
+      console.log(this.flagTS, '测试显示');
     });
+    console.log(this.worklogsData, '测试点111');
+  },
+  methods: {
+    workPER() {
+      this.$router.push({
+        name: 'personWork',
+        params: {
+          workPER: this.worklogsData,
+        },
+      });
+    },
   },
 };
 </script>
