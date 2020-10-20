@@ -28,9 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="取到最新一个月的数据">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="启用treeselect搜索，条件为title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,14 +180,7 @@
       <workItem from="1602723819727" duration="22204000" />
       <workItem from="1602810383185" duration="17458000" />
       <workItem from="1603069369893" duration="22835000" />
-      <workItem from="1603155977340" duration="3428000" />
-    </task>
-    <task id="LOCAL-00106" summary="开始输出评分，将评分人中文名传入">
-      <created>1600848029579</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1600848029579</updated>
+      <workItem from="1603155977340" duration="5276000" />
     </task>
     <task id="LOCAL-00107" summary="修改输出样式">
       <created>1600848593936</created>
@@ -525,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603157187035</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="启用treeselect搜索，条件为title">
+      <created>1603160343174</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1603160343174</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +561,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="引入真实组织数据，使用replaceFields&#9;替换 treeNode 中 title,value,key,children 字段为 treeData 中对应的字段" />
     <MESSAGE value="实现数据出现" />
     <MESSAGE value="实现组织架构" />
     <MESSAGE value="点击人员可以跳转" />
@@ -586,7 +585,8 @@
     <MESSAGE value="修改组织架构权限，显示；&#10;传递被查看人员的ID" />
     <MESSAGE value="需要将连接位移到group页面；&#10;实现了传值" />
     <MESSAGE value="取到最新一个月的数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="取到最新一个月的数据" />
+    <MESSAGE value="启用treeselect搜索，条件为title" />
+    <option name="LAST_COMMIT_MESSAGE" value="启用treeselect搜索，条件为title" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -653,11 +653,11 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603156800124" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1603101893689">
-      <screen x="-1920" y="-98" width="1920" height="1040" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1603160336467">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603101893689" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602748061312" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603160336467" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
 </project>

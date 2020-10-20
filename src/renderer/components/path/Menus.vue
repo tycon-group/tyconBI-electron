@@ -11,14 +11,14 @@
         </router-link>
       </a-menu-item>
 
-      <a-menu-item key="/markpage" class="analysis">
+      <a-menu-item key="/markpage" class="analysis" @click="toMark">
         <router-link to="/markpage">
           <a-icon type="schedule" />
           <span class="marks">所有日志</span>
         </router-link>
       </a-menu-item>
 
-      <a-menu-item key="/analysis" class="analysis">
+      <a-menu-item key="/analysis" class="analysis" @click="toKPI">
         <router-link to="/analysis">
           <a-icon type="line-chart" />
           <span>KPI分析</span>
@@ -63,7 +63,13 @@ export default {
   },
   methods: {
     toThing() {
-      this.$message.success('这是待办实现页面');
+      this.$message.warning('请注意部门切换按钮~');
+    },
+    toMark() {
+      this.$message.warning('请使用搜索框和日期选择器查看人员日志~');
+    },
+    toKPI() {
+      this.$message.warning('请注意报告值值为上一月数据~');
     },
   },
 };
