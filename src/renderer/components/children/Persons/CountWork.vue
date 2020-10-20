@@ -36,14 +36,22 @@
 
 <script>
 
+import Bus from '../../path/bus';
+
 export default {
   name: 'CountWork',
   data() {
     return {
-      itemEmpID: '',
+      defaultCount: [],
     };
   },
-
+  mounted() {
+    const vm = this;
+    Bus.$on('defaultCount', (data) => {
+      vm.defaultCount = data;
+      console.log(this.defaultCount, '测试数组');
+    });
+  },
 };
 </script>
 

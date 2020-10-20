@@ -58,7 +58,7 @@ export default {
     const vm = this;
     Bus.$on('flagTS', (data) => {
       vm.flagTS = data;
-      console.log(this.flagTS, '测试2'); // 这里取到了被点击的列表所对应的人员的信息链接
+      console.log(this.flagTS, '测试2');
     });
   },
 };
