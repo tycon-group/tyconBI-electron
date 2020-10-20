@@ -28,10 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改组织架构权限，显示；&#10;传递被查看人员的ID">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="需要将连接位移到group页面；&#10;实现了传值">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/CountWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/CountWork.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentsUp.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,14 +180,8 @@
       <workItem from="1602658829345" duration="36000" />
       <workItem from="1602723819727" duration="22204000" />
       <workItem from="1602810383185" duration="17458000" />
-      <workItem from="1603069369893" duration="22445000" />
-    </task>
-    <task id="LOCAL-00104" summary="完成日期按钮">
-      <created>1600844715554</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1600844715554</updated>
+      <workItem from="1603069369893" duration="22835000" />
+      <workItem from="1603155977340" duration="998000" />
     </task>
     <task id="LOCAL-00105" summary="循环领导评分">
       <created>1600847367704</created>
@@ -525,7 +519,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603097229261</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="需要将连接位移到group页面；&#10;实现了传值">
+      <created>1603101912905</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1603101912905</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +562,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="回退回固定数据" />
     <MESSAGE value="尝试组织人员分开" />
     <MESSAGE value="引入真实组织数据，使用replaceFields&#9;替换 treeNode 中 title,value,key,children 字段为 treeData 中对应的字段" />
     <MESSAGE value="实现数据出现" />
@@ -586,7 +586,8 @@
     <MESSAGE value="select的click改回change,并在change中调用" />
     <MESSAGE value="select的click改回change,并在change中调用select" />
     <MESSAGE value="修改组织架构权限，显示；&#10;传递被查看人员的ID" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改组织架构权限，显示；&#10;传递被查看人员的ID" />
+    <MESSAGE value="需要将连接位移到group页面；&#10;实现了传值" />
+    <option name="LAST_COMMIT_MESSAGE" value="需要将连接位移到group页面；&#10;实现了传值" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -647,16 +648,16 @@
     </state>
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602471557655" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916421385" />
-    <state x="798" y="266" key="run.anything.popup" timestamp="1600247299037">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1599563014800" />
-    <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
-    <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1603093819516">
+    <state x="-1122" y="168" key="run.anything.popup" timestamp="1603156800124">
       <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
-    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603093819516" />
+    <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603156800124" />
+    <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
+    <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
+    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1603101893689">
+      <screen x="-1920" y="-98" width="1920" height="1040" />
+    </state>
+    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603101893689" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602748061312" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
