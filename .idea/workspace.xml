@@ -28,12 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="通过bus传递了上月统计数据">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="获取到传递来的值">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/CountWork.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,14 +180,7 @@
       <workItem from="1602723819727" duration="22204000" />
       <workItem from="1602810383185" duration="17458000" />
       <workItem from="1603069369893" duration="22835000" />
-      <workItem from="1603155977340" duration="17207000" />
-    </task>
-    <task id="LOCAL-00111" summary="尝试刷新跳过">
-      <created>1600855155789</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1600855155789</updated>
+      <workItem from="1603155977340" duration="19558000" />
     </task>
     <task id="LOCAL-00112" summary="加settime来显示数据">
       <created>1600855913719</created>
@@ -528,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603172768955</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="获取到传递来的值">
+      <created>1603184405891</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1603184405891</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +561,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="优化列表选项的底部边框" />
     <MESSAGE value="删除废弃的选择框组件" />
     <MESSAGE value="获取menu中的选取值的url属性" />
     <MESSAGE value="将数据传到electron-store保存" />
@@ -589,7 +585,8 @@
     <MESSAGE value="删除不需要的组件" />
     <MESSAGE value="清理不必要的引用" />
     <MESSAGE value="通过bus传递了上月统计数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="通过bus传递了上月统计数据" />
+    <MESSAGE value="获取到传递来的值" />
+    <option name="LAST_COMMIT_MESSAGE" value="获取到传递来的值" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
