@@ -3,38 +3,28 @@
     <a-menu
         v-model="current"
         mode="horizontal">
-      <a-menu-item key="total">
-        <router-link to="/analysis/analysisPerson/personTotal">
-          <span>总览</span>
-        </router-link>
+      <a-menu-item key="total" @click="totalPER">
+        <span>总览</span>
       </a-menu-item>
 
       <a-menu-item key="work" @click="workPER">
         <span>工作能力</span>
       </a-menu-item>
 
-      <a-menu-item key="attitude">
-        <router-link to="/analysis/analysisPerson/personAttitude">
-          <span>工作态度</span>
-        </router-link>
+      <a-menu-item key="attitude" @click="attitudePER">
+        <span>工作态度</span>
       </a-menu-item>
 
-      <a-menu-item key="potential">
-        <router-link to="/analysis/analysisPerson/personPotential">
-          <span>发展潜力</span>
-        </router-link>
+      <a-menu-item key="potential" @click="potentialPER">
+        <span>发展潜力</span>
       </a-menu-item>
 
-      <a-menu-item key="contribution">
-        <router-link to="/analysis/analysisPerson/personContribution">
-          <span>突出贡献</span>
-        </router-link>
+      <a-menu-item key="contribution" @click="contributionPER">
+        <span>突出贡献</span>
       </a-menu-item>
 
-      <a-menu-item key="law">
-        <router-link to="/analysis/analysisPerson/personLaw">
-          <span>遵纪守法</span>
-        </router-link>
+      <a-menu-item key="law" @click="lawPER">
+        <span>遵纪守法</span>
       </a-menu-item>
     </a-menu>
   </div>
@@ -59,14 +49,53 @@ export default {
       vm.flagTS = data;
       console.log(this.flagTS, '测试显示');
     });
-    console.log(this.worklogsData, '测试点111');
   },
   methods: {
+    totalPER() {
+      this.$router.push({
+        name: 'personTotal',
+        params: {
+          totalPER: this.worklogsData, // 待修改数据源
+        },
+      });
+    },
     workPER() {
       this.$router.push({
         name: 'personWork',
         params: {
           workPER: this.worklogsData,
+        },
+      });
+    },
+    attitudePER() {
+      this.$router.push({
+        name: 'personAttitude',
+        params: {
+          attitudePER: this.worklogsData, // 待修改数据源
+        },
+      });
+    },
+    potentialPER() {
+      this.$router.push({
+        name: 'personPotential',
+        params: {
+          potentialPER: this.worklogsData, // 待修改数据源
+        },
+      });
+    },
+    contributionPER() {
+      this.$router.push({
+        name: 'personContribution',
+        params: {
+          contributionPER: this.worklogsData, // 待修改数据源
+        },
+      });
+    },
+    lawPER() {
+      this.$router.push({
+        name: 'personLaw',
+        params: {
+          lawPER: this.worklogsData, // 待修改数据源
         },
       });
     },
