@@ -28,9 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="启用treeselect搜索，条件为title">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="删除不需要的组件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/KPIAnalysis.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,21 +180,7 @@
       <workItem from="1602723819727" duration="22204000" />
       <workItem from="1602810383185" duration="17458000" />
       <workItem from="1603069369893" duration="22835000" />
-      <workItem from="1603155977340" duration="5276000" />
-    </task>
-    <task id="LOCAL-00107" summary="修改输出样式">
-      <created>1600848593936</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1600848593936</updated>
-    </task>
-    <task id="LOCAL-00108" summary="添加搜索">
-      <created>1600850260902</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1600850260903</updated>
+      <workItem from="1603155977340" duration="7643000" />
     </task>
     <task id="LOCAL-00109" summary="添加输入框搜索">
       <created>1600851631229</created>
@@ -525,7 +511,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603160343174</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="添加数据源提醒">
+      <created>1603162270968</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1603162270968</updated>
+    </task>
+    <task id="LOCAL-00157" summary="删除不需要的组件">
+      <created>1603162432796</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1603162432796</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,8 +561,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="实现数据出现" />
-    <MESSAGE value="实现组织架构" />
     <MESSAGE value="点击人员可以跳转" />
     <MESSAGE value="优化居中 选择框位置" />
     <MESSAGE value="优化列表选项的底部边框" />
@@ -586,7 +584,9 @@
     <MESSAGE value="需要将连接位移到group页面；&#10;实现了传值" />
     <MESSAGE value="取到最新一个月的数据" />
     <MESSAGE value="启用treeselect搜索，条件为title" />
-    <option name="LAST_COMMIT_MESSAGE" value="启用treeselect搜索，条件为title" />
+    <MESSAGE value="添加数据源提醒" />
+    <MESSAGE value="删除不需要的组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除不需要的组件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -598,10 +598,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="818" y="356" key="#Notifications/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916829791" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600856046656">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603162415408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600856046656" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603162415408" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599118238628" />
     <state x="372" y="75" width="1200" height="840" maximized="true" key="DiffContextDialog" timestamp="1602483984804">
       <screen x="0" y="0" width="1920" height="1040" />

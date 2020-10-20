@@ -5,7 +5,6 @@
       <a-layout-header style="padding: 0; width: 100%; height: 64px; background-color: #f4f4f4; position:fixed; top:0; z-index:999;">
         <div class="header-total">
           <SearchInput />
-          <MonthPage />
           <ButtonGroupTime />
         </div>
       </a-layout-header>
@@ -37,7 +36,6 @@ import ContentLeft from './path/ContentLeft.vue';
 import ContentsUp from './path/ContentsUp';
 import ContentsDown from './path/ContentsDown';
 import SearchInput from './path/SearchInput';
-import MonthPage from './path/MonthPage';
 import ButtonGroupTime from './path/ButtonGroupTime';
 import CompanyMenu from './path/CompanyMenu';
 
@@ -46,7 +44,6 @@ export default {
   components: {
     CompanyMenu,
     ButtonGroupTime,
-    MonthPage,
     ContentsDown,
     ContentsUp,
     Menus,
