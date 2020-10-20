@@ -2,6 +2,7 @@
   <div>
     <a-tree-select
         v-model="value"
+        showSearch
         style="width: 90%; margin-left: 5%"
         :dropdown-style="{ maxHeight: '400px', overflow: 'auto' }"
         :tree-data="treeData"
@@ -9,6 +10,7 @@
         :replace-fields="{ title: 'name', key: 'id', value: 'id', children: 'child' }"
         @change="tsChange"
         @select="tsSelect"
+        treeNodeFilterProp="title"
     >
     </a-tree-select>
     <a-menu v-if="empData !== undefined && empData.length > 0" class="CodeMirror-vscrollbar2" style = "display: block; bottom: 0;" mode="inline" :scroll="{ x: false }">
