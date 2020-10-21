@@ -31,36 +31,21 @@ export default {
     Bus.$on('itemEmpID', (data) => {
       vm.itemEmpID = data;
       console.log(this.itemEmpID); // 这里取到了被点击的列表所对应的人员的信息链接
-      // 此处判断月份是否是4月初之前，来确认搜索的年份是否-1
+      // 此处获取上月数据，故月份值-1，但.getMonth()方法返回值为0-11类似于index，所以不用-1
       const date1 = new Date();
       const years = date1.getFullYear();
-      const months = date1.getMonth();
-      if (months < 4) {
-        this.yearss = years - 1;
-        this.monthss = months - 1;
-      } else {
-        this.yearss = years;
-        this.monthss = months - 1;
-      }
-      console.log(this.yearss, this.monthss);
-      const url = `https://tyconcps.cn:4399/kpi/worklog/trend/?empID=${this.itemEmpID}&fiscal_year=${this.yearss}`; // 还需要加上当财年条件
+      const months = date1.getMonth(); // 取得值为index，相当于上月值
+      console.log(years, months);
+      const url = `https://tyconcps.cn:4399/kpi/worklog/reports/month/?empID=${this.itemEmpID}&year=${years}&month=${months}`; // 还需要加上当财年条件
       this.$http.get(url)
         .then((res) => {
-          console.log(res.data, '取到所有日志信息数组，现在取上一个月的');
-          this.worklogsData = res.data[this.monthss];
-          console.log(this.worklogsData, '取到上一个月日志信息数组');
-          // Bus.$emit('defaultCount', this.worklogsData); // 将上月数据数组通过Bus传递
+          console.log(res.data, '取到上一个月的值');
+          this.worklogsData = res.data;
         })
         .catch((error) => {
           console.log(error);
         });
     });
-  },
-  methods: {
-    chper() {
-      console.log(this.worklogsData, '值变化');
-      // Bus.$emit('defaultCount', this.worklogsData); // 将上月数据数组通过Bus传递
-    },
   },
 };
 </script>

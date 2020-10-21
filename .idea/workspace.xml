@@ -28,9 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="输入框中取到年值">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="对于输入框中的年份，前七个算作财年，后面12个算作真实年份">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,14 +187,7 @@
       <workItem from="1603250497950" duration="985000" />
       <workItem from="1603255714880" duration="180000" />
       <workItem from="1603256200013" duration="139000" />
-      <workItem from="1603256347241" duration="4169000" />
-    </task>
-    <task id="LOCAL-00118" summary="实现自动显示上一次开关值的显示">
-      <created>1601017084869</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1601017084869</updated>
+      <workItem from="1603256347241" duration="6207000" />
     </task>
     <task id="LOCAL-00119" summary="用户可选安装位置">
       <created>1601026126587</created>
@@ -532,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603258915471</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="对于输入框中的年份，前七个算作财年，后面12个算作真实年份">
+      <created>1603261398174</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1603261398174</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +568,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="初始化员工页面所需要的值" />
     <MESSAGE value="提交了头像值" />
     <MESSAGE value="获取当前时间，计算年限。优化显示一般的数据情况" />
     <MESSAGE value="修改折线图，X轴为4月到下年3月" />
@@ -593,7 +592,8 @@
     <MESSAGE value="替换按钮组内容至选择框" />
     <MESSAGE value="改正接口所需要的参数" />
     <MESSAGE value="输入框中取到年值" />
-    <option name="LAST_COMMIT_MESSAGE" value="输入框中取到年值" />
+    <MESSAGE value="对于输入框中的年份，前七个算作财年，后面12个算作真实年份" />
+    <option name="LAST_COMMIT_MESSAGE" value="对于输入框中的年份，前七个算作财年，后面12个算作真实年份" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
