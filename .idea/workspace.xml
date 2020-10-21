@@ -22,14 +22,13 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/first" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:first" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="改正接口所需要的参数">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="输入框中取到年值">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" afterDir="false" />
     </list>
@@ -188,14 +187,7 @@
       <workItem from="1603250497950" duration="985000" />
       <workItem from="1603255714880" duration="180000" />
       <workItem from="1603256200013" duration="139000" />
-      <workItem from="1603256347241" duration="2257000" />
-    </task>
-    <task id="LOCAL-00117" summary="准备使用test删除npm依赖，换成yarn">
-      <created>1600912251501</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1600912251501</updated>
+      <workItem from="1603256347241" duration="4169000" />
     </task>
     <task id="LOCAL-00118" summary="实现自动显示上一次开关值的显示">
       <created>1601017084869</created>
@@ -533,7 +525,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603255760056</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="输入框中取到财年值">
+      <created>1603258915471</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1603258915471</updated>
+    </task>
+    <option name="localTasksCounter" value="167" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,7 +554,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/first" />
+                        <option value="first" />
                       </list>
                     </value>
                   </entry>
@@ -569,7 +568,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="开始将值打印到页面上" />
     <MESSAGE value="初始化员工页面所需要的值" />
     <MESSAGE value="提交了头像值" />
     <MESSAGE value="获取当前时间，计算年限。优化显示一般的数据情况" />
@@ -594,7 +592,8 @@
     <MESSAGE value="优化了跳转结构" />
     <MESSAGE value="替换按钮组内容至选择框" />
     <MESSAGE value="改正接口所需要的参数" />
-    <option name="LAST_COMMIT_MESSAGE" value="改正接口所需要的参数" />
+    <MESSAGE value="输入框中取到年值" />
+    <option name="LAST_COMMIT_MESSAGE" value="输入框中取到年值" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -620,10 +619,10 @@
     </state>
     <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603244404219" />
     <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598505023455" />
-    <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1601287535276">
+    <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1603261100278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1601287535276" />
+    <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603261100278" />
     <state x="184" y="86" key="MergeDialog" timestamp="1602471458118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

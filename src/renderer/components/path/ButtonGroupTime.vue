@@ -1,6 +1,6 @@
 <template>
   <div class="selectDrop">
-    <a-input v-model="value" placeholder="请输入年份" suffix="财年" style="width: 140px" :max-length="4"/>
+    <a-input v-model="value" placeholder="请输入年份" suffix="年" style="width: 140px" :max-length="4"/>
     <a-select
         show-search
         placeholder="请选择一个时间跨度~"
@@ -25,9 +25,10 @@ export default {
   data() {
     return {
       dataResources: [
-        '全财年', '上半年', '下半年', '第一季度', '第二季度', '第三季度', '第四季度', '1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月',
+        '全财年', '上半财年', '下半财年', '第一季度', '第二季度', '第三季度', '第四季度', '1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月',
       ],
       inputYear: '',
+      selectTime: '',
       value: undefined,
     };
   },
@@ -39,6 +40,7 @@ export default {
   methods: {
     handleChange(value) {
       console.log(`selected ${value}`);
+      this.selectTime = value;
     },
     handleBlur() {
       console.log('blur');
