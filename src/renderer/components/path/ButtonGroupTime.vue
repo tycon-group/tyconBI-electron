@@ -1,6 +1,6 @@
 <template>
   <div class="selectDrop">
-    <a-input v-model="value" placeholder="请输入年份" suffix="年" style="width: 140px" :max-length="4"/>
+    <a-input @blur="inputBlur" v-model="value" placeholder="请输入年份" suffix="年" style="width: 140px" :max-length="4"/>
     <a-select
         show-search
         placeholder="请选择一个时间跨度~"
@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import Bus from './bus';
+
 export default {
   name: 'ButtonGroupTime',
   data() {
@@ -43,7 +45,20 @@ export default {
       this.selectTime = value;
     },
     handleBlur() {
-      console.log('blur');
+      console.log('blur select');
+      if (this.inputYear !== '' && this.selectTime !== '') {
+        console.log('可以传值2,over');
+        Bus.$emit('inputYear', this.inputYear);
+        Bus.$emit('selectTime', this.selectTime);
+      }
+    },
+    inputBlur() {
+      console.log('blur input');
+      if (this.inputYear !== '' && this.selectTime !== '') {
+        console.log('可以传值1,over');
+        Bus.$emit('inputYear', this.inputYear);
+        Bus.$emit('selectTime', this.selectTime);
+      }
     },
     handleFocus() {
       console.log('focus');
