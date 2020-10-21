@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="selectDrop">
     <a-select
         show-search
         placeholder="请选择一个时间跨度~"
@@ -48,6 +48,9 @@ export default {
 </script>
 
 <style>
-
-
+.selectDrop {
+  float: right;
+  width: 240px;
+  margin-right: 220px;
+}
 </style>
