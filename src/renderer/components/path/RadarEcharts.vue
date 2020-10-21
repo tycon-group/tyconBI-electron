@@ -19,7 +19,7 @@ export default {
       this.chartPie = echarts.init(document.getElementById('radars'));
       this.chartPie.setOption({
         title: {
-          text: '多维度雷达图',
+          text: '综合分析',
         },
         tooltip: {
           trigger: 'axis',

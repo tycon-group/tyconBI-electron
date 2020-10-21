@@ -23,6 +23,7 @@ export default {
       worklogsData: [],
       yearss: '',
       monthss: '',
+      yearTimeData: '',
     };
   },
   mounted() {
@@ -37,10 +38,25 @@ export default {
       console.log(this.itemEmpID); // 这里取到了被点击的列表所对应的人员的信息链接
       // 此处获取上月数据，故月份值-1，但.getMonth()方法返回值为0-11类似于index，所以不用-1
       console.log(years, months);
-      const url = `https://tyconcps.cn:4399/kpi/worklog/reports/month/?empID=${this.itemEmpID}&year=${years}&month=${months}`; // 还需要加上当财年条件
+      const url = `https://tyconcps.cn:4399/kpi/worklog/reports/month/?empID=${this.itemEmpID}&year=${years}&month=${months}`; // 还需要加上当前年条件
       this.$http.get(url)
         .then((res) => {
           console.log(res.data, '取到上一个月的值');
+          this.worklogsData = res.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    });
+    Bus.$on('yearTimeData', (data) => {
+      vm.yearTimeData = data;
+      console.log(this.yearTimeData);
+      const yearsM = this.yearTimeData[0];
+      const monthsM = this.yearTimeData[1][0];
+      const url = `https://tyconcps.cn:4399/kpi/worklog/reports/month/?empID=${this.itemEmpID}&year=${yearsM}&month=${monthsM}`; // 还需要加上当前年条件
+      this.$http.get(url)
+        .then((res) => {
+          console.log(res.data, '取到时间段的值');
           this.worklogsData = res.data;
         })
         .catch((error) => {

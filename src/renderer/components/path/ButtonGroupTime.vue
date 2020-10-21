@@ -32,32 +32,33 @@ export default {
       inputYear: '',
       selectTime: '',
       value: undefined,
+      yearTimeData: [],
     };
   },
   watch: {
     value(value) {
       this.inputYear = value; // 将财年值取出
+      this.yearTimeData[0] = this.inputYear;
     },
   },
   methods: {
     handleChange(value) {
       console.log(`selected ${value}`);
       this.selectTime = value;
+      this.yearTimeData[1] = this.selectTime;
     },
     handleBlur() {
       console.log('blur select');
       if (this.inputYear !== '' && this.selectTime !== '') {
-        console.log('可以传值2,over');
-        Bus.$emit('inputYear', this.inputYear);
-        Bus.$emit('selectTime', this.selectTime);
+        console.log('可以传值2,over', this.yearTimeData);
+        Bus.$emit('yearTimeData', this.yearTimeData);
       }
     },
     inputBlur() {
       console.log('blur input');
       if (this.inputYear !== '' && this.selectTime !== '') {
-        console.log('可以传值1,over');
-        Bus.$emit('inputYear', this.inputYear);
-        Bus.$emit('selectTime', this.selectTime);
+        console.log('可以传值1,over', this.yearTimeData);
+        Bus.$emit('yearTimeData', this.yearTimeData);
       }
     },
     handleFocus() {

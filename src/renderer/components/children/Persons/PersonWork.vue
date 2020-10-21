@@ -59,7 +59,7 @@ export default {
       count_of_scored2: '',
     };
   },
-  mounted() {
+  created() {
     setTimeout(() => {
       this.defaultCount = this.$route.params.workPER;
       this.count_of_worklogs = this.defaultCount.count_of_worklogs;
