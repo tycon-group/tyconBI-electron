@@ -43,7 +43,7 @@ export default {
         this.monthss = months - 1;
       }
       console.log(this.yearss, this.monthss);
-      const url = `https://tyconcps.cn:4399/kpi/worklog/trend/?empID=${this.itemEmpID}&years=${this.yearss}`; // 还需要加上当财年条件
+      const url = `https://tyconcps.cn:4399/kpi/worklog/trend/?empID=${this.itemEmpID}&fiscal_year=${this.yearss}`; // 还需要加上当财年条件
       this.$http.get(url)
         .then((res) => {
           console.log(res.data, '取到所有日志信息数组，现在取上一个月的');
