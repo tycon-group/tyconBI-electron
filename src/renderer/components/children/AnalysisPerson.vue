@@ -26,15 +26,16 @@ export default {
     };
   },
   mounted() {
-    const vm = this;
+    // 取出当前时间
+    const date1 = new Date();
+    const years = date1.getFullYear();
+    const months = date1.getMonth(); // 取得值为index，相当于上月值
     // 用$on事件来接收参数 , 此处是 默认显示的 工作能力 上月数据
+    const vm = this;
     Bus.$on('itemEmpID', (data) => {
       vm.itemEmpID = data;
       console.log(this.itemEmpID); // 这里取到了被点击的列表所对应的人员的信息链接
       // 此处获取上月数据，故月份值-1，但.getMonth()方法返回值为0-11类似于index，所以不用-1
-      const date1 = new Date();
-      const years = date1.getFullYear();
-      const months = date1.getMonth(); // 取得值为index，相当于上月值
       console.log(years, months);
       const url = `https://tyconcps.cn:4399/kpi/worklog/reports/month/?empID=${this.itemEmpID}&year=${years}&month=${months}`; // 还需要加上当财年条件
       this.$http.get(url)
