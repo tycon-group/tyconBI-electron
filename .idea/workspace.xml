@@ -28,9 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="获取到传递来的值">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="优化了跳转结构">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/renderer/components/path" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -180,21 +180,13 @@
       <workItem from="1602723819727" duration="22204000" />
       <workItem from="1602810383185" duration="17458000" />
       <workItem from="1603069369893" duration="22835000" />
-      <workItem from="1603155977340" duration="19558000" />
-    </task>
-    <task id="LOCAL-00112" summary="加settime来显示数据">
-      <created>1600855913719</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1600855913719</updated>
-    </task>
-    <task id="LOCAL-00113" summary="删除二次评分呈现，修饰部分">
-      <created>1600856177325</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1600856177325</updated>
+      <workItem from="1603155977340" duration="20171000" />
+      <workItem from="1603243260490" duration="291000" />
+      <workItem from="2549929157315" duration="45000" />
+      <workItem from="1603244603068" duration="245000" />
+      <workItem from="1603244881861" duration="1833000" />
+      <workItem from="1603246727651" duration="1805000" />
+      <workItem from="1603248555270" duration="554000" />
     </task>
     <task id="LOCAL-00114" summary="修改package配置">
       <created>1600856655975</created>
@@ -525,7 +517,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603184405891</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="实现了日志信息的打印">
+      <created>1603186878857</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1603186878857</updated>
+    </task>
+    <task id="LOCAL-00162" summary="优化了跳转结构">
+      <created>1603187411024</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1603187411024</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,8 +567,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="删除废弃的选择框组件" />
-    <MESSAGE value="获取menu中的选取值的url属性" />
     <MESSAGE value="将数据传到electron-store保存" />
     <MESSAGE value="通过BUS.js取到了人员url地址" />
     <MESSAGE value="开始将值打印到页面上" />
@@ -586,7 +590,9 @@
     <MESSAGE value="清理不必要的引用" />
     <MESSAGE value="通过bus传递了上月统计数据" />
     <MESSAGE value="获取到传递来的值" />
-    <option name="LAST_COMMIT_MESSAGE" value="获取到传递来的值" />
+    <MESSAGE value="实现了日志信息的打印" />
+    <MESSAGE value="优化了跳转结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化了跳转结构" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -607,9 +613,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="372" y="75" width="1200" height="840" maximized="true" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602483984804" />
-    <state x="780" y="226" key="FileChooserDialogImpl" timestamp="1598505023455">
+    <state x="780" y="226" key="FileChooserDialogImpl" timestamp="1603244404219">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603244404219" />
     <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598505023455" />
     <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1601287535276">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -653,11 +660,11 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603156800124" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1603172739001">
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1603245866801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603101893689" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603172739001" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603245866801" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
 </project>
