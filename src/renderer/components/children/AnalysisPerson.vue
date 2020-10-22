@@ -51,7 +51,6 @@ export default {
     // 选择值
     Bus.$on('yearTimeData', (data) => {
       vm.yearTimeData = data;
-      console.log(this.yearTimeData, '这里这两字轰炸机家啊大家大嫂大');
       const yearsM = this.yearTimeData[0];
       // 定义一个中间值
       const temp = this.yearTimeData[1];
@@ -67,7 +66,7 @@ export default {
         const url = `https://tyconcps.cn:4399/kpi/worklog/reports/semiannual/?empID=${this.itemEmpID}&fiscal_year=${yearsM}&semiannual=${this.semiannualM}`;
         this.$http.get(url)
           .then((res) => {
-            console.log(res.data, '取到时间段的值');
+            console.log(res.data, '取到时间段年的值');
             Bus.$emit('worklogsData', res.data);
           })
           .catch((error) => {
@@ -79,7 +78,7 @@ export default {
         const url = `https://tyconcps.cn:4399/kpi/worklog/reports/quarter/?empID=${this.itemEmpID}&fiscal_year=${yearsM}&quarter=${quarterM}`;
         this.$http.get(url)
           .then((res) => {
-            console.log(res.data, '取到时间段的值');
+            console.log(res.data, '取到时间段季度的值');
             Bus.$emit('worklogsData', res.data);
           })
           .catch((error) => {
@@ -91,7 +90,7 @@ export default {
         const url = `https://tyconcps.cn:4399/kpi/worklog/reports/month/?empID=${this.itemEmpID}&year=${yearsM}&month=${monthsM}`;
         this.$http.get(url)
           .then((res) => {
-            console.log(res.data, '取到时间段的值');
+            console.log(res.data, '取到时间段月份的值');
             Bus.$emit('worklogsData', res.data);
           })
           .catch((error) => {
