@@ -12,8 +12,8 @@
         @change="handleChange"
     >
       <a-icon slot="suffixIcon" type="smile" />
-      <a-select-option v-for="item in dataResources" :key="item.index" :value="item">
-        {{ item }}
+      <a-select-option v-for="item in dataResources" :key="item.name" :value="item.value">
+        {{ item.name }}
       </a-select-option>
     </a-select>
   </div>
@@ -27,7 +27,82 @@ export default {
   data() {
     return {
       dataResources: [
-        '全财年', '上半财年', '下半财年', '第一季度', '第二季度', '第三季度', '第四季度', '1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月',
+        {
+          name: '全财年',
+          value: 'all',
+        },
+        {
+          name: '上半财年',
+          value: 'temp1st',
+        },
+        {
+          name: '下半财年',
+          value: 'temp2nd',
+        },
+        {
+          name: '第一季度',
+          value: '1st',
+        },
+        {
+          name: '第二季度',
+          value: '2nd',
+        },
+        {
+          name: '第三季度',
+          value: '3rd',
+        },
+        {
+          name: '第四季度',
+          value: '4th',
+        },
+        {
+          name: '1月',
+          value: '1',
+        },
+        {
+          name: '2月',
+          value: '2',
+        },
+        {
+          name: '3月',
+          value: '3',
+        },
+        {
+          name: '4月',
+          value: '4',
+        },
+        {
+          name: '5月',
+          value: '5',
+        },
+        {
+          name: '6月',
+          value: '6',
+        },
+        {
+          name: '7月',
+          value: '7',
+        },
+        {
+          name: '8月',
+          value: '8',
+        },
+        {
+          name: '9月',
+          value: '9',
+        },
+        {
+          name: '10月',
+          value: '10',
+        },
+        {
+          name: '11月',
+          value: '11',
+        },
+        {
+          name: '12月',
+          value: '12',
+        },
       ],
       inputYear: '',
       selectTime: '',
@@ -44,7 +119,13 @@ export default {
   methods: {
     handleChange(value) {
       console.log(`selected ${value}`);
-      this.selectTime = value;
+      if (value === 'temp1st') {
+        this.selectTime = '1st';
+      } else if (value === 'temp2nd') {
+        this.selectTime = '2nd';
+      } else {
+        this.selectTime = value;
+      }
       this.yearTimeData[1] = this.selectTime;
     },
     handleBlur() {

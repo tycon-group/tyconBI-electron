@@ -31,9 +31,7 @@
     <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="通过焦点失去来触发传值">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/RadarEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/RadarEcharts.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,6 +189,7 @@
       <workItem from="1603255714880" duration="180000" />
       <workItem from="1603256200013" duration="139000" />
       <workItem from="1603256347241" duration="15482000" />
+      <workItem from="1603328923313" duration="4791000" />
     </task>
     <task id="LOCAL-00122" summary="第一套模板">
       <created>1601280278032</created>

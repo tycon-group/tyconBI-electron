@@ -48,16 +48,18 @@ export default {
           console.log(error);
         });
     });
+    // 自选月份
     Bus.$on('yearTimeData', (data) => {
       vm.yearTimeData = data;
       console.log(this.yearTimeData);
       const yearsM = this.yearTimeData[0];
-      const monthsM = this.yearTimeData[1][0];
+      const monthsM = this.yearTimeData[1];
       const url = `https://tyconcps.cn:4399/kpi/worklog/reports/month/?empID=${this.itemEmpID}&year=${yearsM}&month=${monthsM}`; // 还需要加上当前年条件
       this.$http.get(url)
         .then((res) => {
           console.log(res.data, '取到时间段的值');
-          this.worklogsData = res.data;
+          // this.worklogsData = res.data;
+          Bus.$emit('worklogsData', res.data);
         })
         .catch((error) => {
           console.log(error);
