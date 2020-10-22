@@ -50,7 +50,6 @@ export default {
   name: 'PersonWork',
   data() {
     return {
-      chartPie: null,
       defaultCount: [],
       worklogsData: [],
       count_of_worklogs: '',
@@ -60,11 +59,16 @@ export default {
       count_of_rewrote: '',
       count_of_scored: '',
       count_of_scored2: '',
+      chartPie: null,
+      pieYear: '',
+      pieData: [],
     };
   },
+  // 点击后初始值
   created() {
     setTimeout(() => {
       this.defaultCount = this.$route.params.workPER;
+      console.log(this.defaultCount);
       this.count_of_worklogs = this.defaultCount.count_of_worklogs;
       this.count_of_commented = this.defaultCount.count_of_commented;
       this.count_of_high_score = this.defaultCount.count_of_high_score;
@@ -72,15 +76,25 @@ export default {
       this.count_of_rewrote = this.defaultCount.count_of_rewrote;
       this.count_of_scored = this.defaultCount.count_of_scored;
       this.count_of_scored2 = this.defaultCount.count_of_scored2;
+      // 折线图
+      const date1 = new Date();
+      const tempYear = date1.getFullYear();
+      const tempMonth = date1.getMonth();
+      console.log(tempYear);
+      if (tempMonth < 4) {
+        this.pieYear = tempYear - 1;
+      } else {
+        this.pieYear = tempYear;
+      }
     }, 200);
   },
+  // 日期选择时调用
   mounted() {
     this.drawCharts(); // 折线图
     const vm = this;
-    // 用$on事件来接收参数
+    // 用$on事件来接收参数   统计
     Bus.$on('worklogsData', (data) => {
       vm.worklogsData = data;
-      console.log(this.worklogsData, '测试000');
       this.count_of_worklogs = this.worklogsData.count_of_worklogs;
       this.count_of_commented = this.worklogsData.count_of_commented;
       this.count_of_high_score = this.worklogsData.count_of_high_score;
@@ -89,74 +103,50 @@ export default {
       this.count_of_scored = this.worklogsData.count_of_scored;
       this.count_of_scored2 = this.worklogsData.count_of_scored2;
     });
+    // 折线图
+    Bus.$on('pieData', (data) => {
+      vm.pieData = data;
+      console.log(this.pieData);
+    });
   },
   methods: {
     drawPieChart() {
-      this.chartPie = echarts.init(document.getElementById('lineEcharts'));
-      this.chartPie.setOption({
-        title: {
-          text: '折线图堆叠',
-        },
-        tooltip: {
-          trigger: 'axis',
-        },
-        legend: {
-          bottom: 'bottom',
-          data: ['邮件营销', '联盟广告', '视频广告', '直接访问', '搜索引擎'],
-        },
-        grid: {
-          left: '3%',
-          right: '4%',
-          bottom: '8%',
-          containLabel: true,
-        },
-        toolbox: {
-          feature: {
-            saveAsImage: {},
+      setTimeout(() => {
+        this.chartPie = echarts.init(document.getElementById('lineEcharts'));
+        this.chartPie.setOption({
+          title: {
+            text: `${this.pieYear}财年趋势图`,
           },
-        },
-        xAxis: {
-          type: 'category',
-          boundaryGap: false,
-          data: ['4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月', '1月', '2月', '3月'],
-        },
-        yAxis: {
-          type: 'value',
-        },
-        series: [
-          {
-            name: '邮件营销',
-            type: 'line',
-            stack: '总量',
-            data: [120, 132, 101, 134, 90, 230, 210],
+          tooltip: {
+            trigger: 'axis',
           },
-          {
-            name: '联盟广告',
-            type: 'line',
-            stack: '总量',
-            data: [220, 182, 191, 234, 290, 330, 310],
+          legend: {
+            bottom: 'bottom',
+            data: ['日志数', '日志评论数', '直属评分', '人事评分', '日志补写率', '高评数', '低评数'],
           },
-          {
-            name: '视频广告',
-            type: 'line',
-            stack: '总量',
-            data: [150, 232, 201, 154, 190, 330, 410],
+          grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '15%',
+            containLabel: true,
           },
-          {
-            name: '直接访问',
-            type: 'line',
-            stack: '总量',
-            data: [320, 332, 301, 334, 390, 330, 320],
+          toolbox: {
+            feature: {
+              saveAsImage: {},
+            },
           },
-          {
-            name: '搜索引擎',
-            type: 'line',
-            stack: '总量',
-            data: [820, 932, 901, 934, 290, 330, 320],
+          xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月', '1月', '2月', '3月'],
           },
-        ],
-      });
-      window.onresize = this.chartPie.resize;
+          yAxis: {
+            type: 'value',
+          },
+          series: this.pieData,
+        });
+        window.onresize = this.chartPie.resize;
+      }, 200);
     },
     drawCharts() {
       this.drawPieChart();

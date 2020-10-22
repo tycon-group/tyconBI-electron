@@ -52,6 +52,7 @@ export default {
     Bus.$on('yearTimeData', (data) => {
       vm.yearTimeData = data;
       const yearsM = this.yearTimeData[0];
+      // 统计值
       // 定义一个中间值
       const temp = this.yearTimeData[1];
       if (temp === 'all' || temp === 'temp1st' || temp === 'temp2nd') {
@@ -97,6 +98,15 @@ export default {
             console.log(error);
           });
       }
+      // 折线图
+      const url = `https://tyconcps.cn:4399/kpi/worklog/trend/?empID=${this.itemEmpID}&fiscal_year=${yearsM}`;
+      this.$http.get(url)
+        .then((res) => {
+          Bus.$emit('pieData', res.data);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     });
   },
 };
