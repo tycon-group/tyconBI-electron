@@ -41,6 +41,7 @@
 
 <script>
 import LineEcharts from './LineEcharts';
+import Bus from '../../path/bus';
 
 export default {
   name: 'PersonWork',
@@ -50,6 +51,7 @@ export default {
   data() {
     return {
       defaultCount: [],
+      worklogsData: [],
       count_of_worklogs: '',
       count_of_commented: '',
       count_of_high_score: '',
@@ -70,6 +72,21 @@ export default {
       this.count_of_scored = this.defaultCount.count_of_scored;
       this.count_of_scored2 = this.defaultCount.count_of_scored2;
     }, 200);
+  },
+  mounted() {
+    const vm = this;
+    // 用$on事件来接收参数
+    Bus.$on('worklogsData', (data) => {
+      vm.worklogsData = data;
+      console.log(this.worklogsData, '测试000');
+      this.count_of_worklogs = this.worklogsData.count_of_worklogs;
+      this.count_of_commented = this.worklogsData.count_of_commented;
+      this.count_of_high_score = this.worklogsData.count_of_high_score;
+      this.count_of_low_score = this.worklogsData.count_of_low_score;
+      this.count_of_rewrote = this.worklogsData.count_of_rewrote;
+      this.count_of_scored = this.worklogsData.count_of_scored;
+      this.count_of_scored2 = this.worklogsData.count_of_scored2;
+    });
   },
 };
 </script>
