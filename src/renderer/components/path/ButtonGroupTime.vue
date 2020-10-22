@@ -119,19 +119,18 @@ export default {
   methods: {
     handleChange(value) {
       console.log(`selected ${value}`);
+      this.selectTime = value;
       this.yearTimeData[1] = this.selectTime;
     },
     handleBlur() {
-      console.log('blur select');
       if (this.inputYear !== '' && this.selectTime !== '') {
-        console.log('可以传值222222222222,over', this.yearTimeData);
+        console.log('选择可以传值,over', this.yearTimeData);
         Bus.$emit('yearTimeData', this.yearTimeData);
       }
     },
     inputBlur() {
-      console.log('blur input');
       if (this.inputYear !== '' && this.selectTime !== '') {
-        console.log('可以传值11111111,over', this.yearTimeData);
+        console.log('输入可以传值,over', this.yearTimeData);
         Bus.$emit('yearTimeData', this.yearTimeData);
       }
     },
