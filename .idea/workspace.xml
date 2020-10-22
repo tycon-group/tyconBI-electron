@@ -28,9 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改数据格式">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="绑定好季度">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,21 +189,7 @@
       <workItem from="1603255714880" duration="180000" />
       <workItem from="1603256200013" duration="139000" />
       <workItem from="1603256347241" duration="15482000" />
-      <workItem from="1603328923313" duration="5304000" />
-    </task>
-    <task id="LOCAL-00123" summary="!item.children判断是否有； item.children === '' 和 item.children === []区别需要注意">
-      <created>1601287446177</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1601287446177</updated>
-    </task>
-    <task id="LOCAL-00124" summary="目前只实现了child数组中值打印">
-      <created>1601348186726</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1601348186727</updated>
+      <workItem from="1603328923313" duration="13982000" />
     </task>
     <task id="LOCAL-00125" summary="使用树图">
       <created>1601371895632</created>
@@ -533,7 +520,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603334370673</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="绑定好月份选择">
+      <created>1603334865114</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1603334865114</updated>
+    </task>
+    <task id="LOCAL-00173" summary="绑定好季度">
+      <created>1603335729876</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1603335729877</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,8 +570,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加选择框的跳转，准备传组织号" />
-    <MESSAGE value="此处setTimeout一下，就可以取到最新数据" />
     <MESSAGE value="添加补写数，评分数区分人事和直属，优化css" />
     <MESSAGE value="select的change改为click" />
     <MESSAGE value="select的click改回change,并在change中调用" />
@@ -594,7 +593,9 @@
     <MESSAGE value="调整取日期的位置，使用范围扩大" />
     <MESSAGE value="通过焦点失去来触发传值" />
     <MESSAGE value="修改数据格式" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改数据格式" />
+    <MESSAGE value="绑定好月份选择" />
+    <MESSAGE value="绑定好季度" />
+    <option name="LAST_COMMIT_MESSAGE" value="绑定好季度" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

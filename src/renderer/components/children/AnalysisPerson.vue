@@ -21,8 +21,7 @@ export default {
     return {
       itemEmpID: '',
       worklogsData: [],
-      yearss: '',
-      monthss: '',
+      semiannualM: '',
       yearTimeData: '',
     };
   },
@@ -49,39 +48,56 @@ export default {
           console.log(error);
         });
     });
-    // 自选月份
-    // Bus.$on('yearTimeData', (data) => {
-    //   vm.yearTimeData = data;
-    //   console.log(this.yearTimeData);
-    //   const yearsM = this.yearTimeData[0];
-    //   const monthsM = this.yearTimeData[1];
-    //   const url = `https://tyconcps.cn:4399/kpi/worklog/reports/month/?empID=${this.itemEmpID}&year=${yearsM}&month=${monthsM}`; // 还需要加上当前年条件
-    //   this.$http.get(url)
-    //     .then((res) => {
-    //       console.log(res.data, '取到时间段的值');
-    //       // this.worklogsData = res.data;
-    //       Bus.$emit('worklogsData', res.data);
-    //     })
-    //     .catch((error) => {
-    //       console.log(error);
-    //     });
-    // });
-    // 自选季度
+    // 选择值
     Bus.$on('yearTimeData', (data) => {
       vm.yearTimeData = data;
-      console.log(this.yearTimeData);
+      console.log(this.yearTimeData, '这里这两字轰炸机家啊大家大嫂大');
       const yearsM = this.yearTimeData[0];
-      const quarterM = this.yearTimeData[1];
-      const url = `https://tyconcps.cn:4399/kpi/worklog/reports/quarter/?empID=${this.itemEmpID}&fiscal_year=${yearsM}&quarter=${quarterM}`; // 还需要加上当前年条件
-      this.$http.get(url)
-        .then((res) => {
-          console.log(res.data, '取到时间段的值');
-          // this.worklogsData = res.data;
-          Bus.$emit('worklogsData', res.data);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
+      // 定义一个中间值
+      const temp = this.yearTimeData[1];
+      if (temp === 'all' || temp === 'temp1st' || temp === 'temp2nd') {
+        // 自选年度
+        if (temp === 'temp1st') {
+          this.semiannualM = '1st';
+        } else if (temp === 'temp2nd') {
+          this.semiannualM = '2nd';
+        } else {
+          this.semiannualM = 'all';
+        }
+        const url = `https://tyconcps.cn:4399/kpi/worklog/reports/semiannual/?empID=${this.itemEmpID}&fiscal_year=${yearsM}&semiannual=${this.semiannualM}`;
+        this.$http.get(url)
+          .then((res) => {
+            console.log(res.data, '取到时间段的值');
+            Bus.$emit('worklogsData', res.data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      } else if (temp === '1st' || temp === '2nd' || temp === '3rd' || temp === '4th') {
+        // 自选季度
+        const quarterM = this.yearTimeData[1];
+        const url = `https://tyconcps.cn:4399/kpi/worklog/reports/quarter/?empID=${this.itemEmpID}&fiscal_year=${yearsM}&quarter=${quarterM}`;
+        this.$http.get(url)
+          .then((res) => {
+            console.log(res.data, '取到时间段的值');
+            Bus.$emit('worklogsData', res.data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      } else {
+        // 自选月份
+        const monthsM = this.yearTimeData[1];
+        const url = `https://tyconcps.cn:4399/kpi/worklog/reports/month/?empID=${this.itemEmpID}&year=${yearsM}&month=${monthsM}`;
+        this.$http.get(url)
+          .then((res) => {
+            console.log(res.data, '取到时间段的值');
+            Bus.$emit('worklogsData', res.data);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
     });
   },
 };
