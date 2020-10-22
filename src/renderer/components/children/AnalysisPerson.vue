@@ -33,6 +33,7 @@ export default {
     const months = date1.getMonth(); // 取得值为index，相当于上月值
     // 用$on事件来接收参数 , 此处是 默认显示的 工作能力 上月数据
     const vm = this;
+    // 默认出现上一个月值
     Bus.$on('itemEmpID', (data) => {
       vm.itemEmpID = data;
       console.log(this.itemEmpID); // 这里取到了被点击的列表所对应的人员的信息链接
@@ -49,12 +50,29 @@ export default {
         });
     });
     // 自选月份
+    // Bus.$on('yearTimeData', (data) => {
+    //   vm.yearTimeData = data;
+    //   console.log(this.yearTimeData);
+    //   const yearsM = this.yearTimeData[0];
+    //   const monthsM = this.yearTimeData[1];
+    //   const url = `https://tyconcps.cn:4399/kpi/worklog/reports/month/?empID=${this.itemEmpID}&year=${yearsM}&month=${monthsM}`; // 还需要加上当前年条件
+    //   this.$http.get(url)
+    //     .then((res) => {
+    //       console.log(res.data, '取到时间段的值');
+    //       // this.worklogsData = res.data;
+    //       Bus.$emit('worklogsData', res.data);
+    //     })
+    //     .catch((error) => {
+    //       console.log(error);
+    //     });
+    // });
+    // 自选季度
     Bus.$on('yearTimeData', (data) => {
       vm.yearTimeData = data;
       console.log(this.yearTimeData);
       const yearsM = this.yearTimeData[0];
-      const monthsM = this.yearTimeData[1];
-      const url = `https://tyconcps.cn:4399/kpi/worklog/reports/month/?empID=${this.itemEmpID}&year=${yearsM}&month=${monthsM}`; // 还需要加上当前年条件
+      const quarterM = this.yearTimeData[1];
+      const url = `https://tyconcps.cn:4399/kpi/worklog/reports/quarter/?empID=${this.itemEmpID}&fiscal_year=${yearsM}&quarter=${quarterM}`; // 还需要加上当前年条件
       this.$http.get(url)
         .then((res) => {
           console.log(res.data, '取到时间段的值');
