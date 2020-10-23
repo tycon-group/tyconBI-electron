@@ -133,6 +133,10 @@ export default {
         console.log('输入可以传值,over', this.yearTimeData);
         Bus.$emit('yearTimeData', this.yearTimeData);
       }
+      // 折线图传年份值
+      if (this.inputYear !== '') {
+        Bus.$emit('pieYear', this.inputYear);
+      }
     },
     handleFocus() {
       console.log('focus');

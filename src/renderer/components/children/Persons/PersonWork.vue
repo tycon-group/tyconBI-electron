@@ -110,7 +110,9 @@ export default {
     // 折线图
     Bus.$on('pieData', (data) => {
       vm.pieData = data;
+      vm.pieYear = data.fiscal_year;
       console.log(this.pieData);
+      this.drawCharts();
     });
   },
   methods: {
@@ -147,7 +149,7 @@ export default {
           yAxis: {
             type: 'value',
           },
-          series: this.pieData,
+          series: this.pieData.data,
         });
         window.onresize = this.chartPie.resize;
       }, 200);

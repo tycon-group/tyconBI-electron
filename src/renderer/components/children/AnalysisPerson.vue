@@ -24,7 +24,7 @@ export default {
       worklogsPieData: [],
       semiannualM: '',
       yearTimeData: '',
-      pieYear1: '',
+      pieYear: '',
     };
   },
   mounted() {
@@ -51,11 +51,11 @@ export default {
         });
       // 默认折线图的值
       if (months + 1 < 4) {
-        this.pieYear1 = years - 1;
+        this.pieYear = years - 1;
       } else {
-        this.pieYear1 = years;
+        this.pieYear = years;
       }
-      const urlPie = `https://tyconcps.cn:4399/kpi/worklog/trend/?empID=${this.itemEmpID}&fiscal_year=${this.pieYear1}`;
+      const urlPie = `https://tyconcps.cn:4399/kpi/worklog/trend/?empID=${this.itemEmpID}&fiscal_year=${this.pieYear}`;
       this.$http.get(urlPie)
         .then((res) => {
           this.worklogsPieData = res.data;
@@ -114,8 +114,11 @@ export default {
             console.log(error);
           });
       }
+    });
+    Bus.$on('pieYear', (data) => {
+      vm.pieYear = data;
       // 折线图
-      const url = `https://tyconcps.cn:4399/kpi/worklog/trend/?empID=${this.itemEmpID}&fiscal_year=${yearsM}`;
+      const url = `https://tyconcps.cn:4399/kpi/worklog/trend/?empID=${this.itemEmpID}&fiscal_year=${this.pieYear}`;
       this.$http.get(url)
         .then((res) => {
           Bus.$emit('pieData', res.data);

@@ -28,8 +28,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="获取并打印了默认情况下，折线图的值，">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整文字设置2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,21 +191,7 @@
       <workItem from="1603256200013" duration="139000" />
       <workItem from="1603256347241" duration="15482000" />
       <workItem from="1603328923313" duration="23681000" />
-      <workItem from="1603414991059" duration="4080000" />
-    </task>
-    <task id="LOCAL-00131" summary="引入真实组织数据，使用replaceFields&#9;替换 treeNode 中 title,value,key,children 字段为 treeData 中对应的字段">
-      <created>1602642412790</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1602642412791</updated>
-    </task>
-    <task id="LOCAL-00132" summary="实现数据出现">
-      <created>1602664253506</created>
-      <option name="number" value="00132" />
-      <option name="presentableId" value="LOCAL-00132" />
-      <option name="project" value="LOCAL" />
-      <updated>1602664253506</updated>
+      <workItem from="1603414991059" duration="8388000" />
     </task>
     <task id="LOCAL-00133" summary="实现组织架构">
       <created>1602666628477</created>
@@ -533,7 +522,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603420703942</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="调整文字设置">
+      <created>1603420880036</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1603420880036</updated>
+    </task>
+    <task id="LOCAL-00181" summary="调整文字设置2">
+      <created>1603420924418</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1603420924418</updated>
+    </task>
+    <option name="localTasksCounter" value="182" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,8 +572,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="启用treeselect搜索，条件为title" />
-    <MESSAGE value="添加数据源提醒" />
     <MESSAGE value="删除不需要的组件" />
     <MESSAGE value="清理不必要的引用" />
     <MESSAGE value="通过bus传递了上月统计数据" />
@@ -594,7 +595,9 @@
     <MESSAGE value="把折线图组件拆解到上一级" />
     <MESSAGE value="在输入框中输入，获取日志趋势信息；&#10;需要加上选择框else判断；&#10;趋势图默认值需要获取" />
     <MESSAGE value="获取并打印了默认情况下，折线图的值，" />
-    <option name="LAST_COMMIT_MESSAGE" value="获取并打印了默认情况下，折线图的值，" />
+    <MESSAGE value="调整文字设置" />
+    <MESSAGE value="调整文字设置2" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整文字设置2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
