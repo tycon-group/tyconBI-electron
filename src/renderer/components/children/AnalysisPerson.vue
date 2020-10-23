@@ -1,7 +1,7 @@
 <template>
   <div class="a-layout">
     <div class="layout-header"><PersonInfo /></div>
-    <div class="layout-table"><PersonListNav :worklogsData="worklogsData"/></div>
+    <div class="layout-table"><PersonListNav :worklogsData="worklogsData" :worklogsPieData="worklogsPieData"/></div>
     <div class="layout-content"><router-view></router-view></div>
   </div>
 </template>
@@ -21,8 +21,10 @@ export default {
     return {
       itemEmpID: '',
       worklogsData: [],
+      worklogsPieData: [],
       semiannualM: '',
       yearTimeData: '',
+      pieYear1: '',
     };
   },
   mounted() {
@@ -43,6 +45,20 @@ export default {
         .then((res) => {
           console.log(res.data, '取到上一个月的值');
           this.worklogsData = res.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+      // 默认折线图的值
+      if (months + 1 < 4) {
+        this.pieYear1 = years - 1;
+      } else {
+        this.pieYear1 = years;
+      }
+      const urlPie = `https://tyconcps.cn:4399/kpi/worklog/trend/?empID=${this.itemEmpID}&fiscal_year=${this.pieYear1}`;
+      this.$http.get(urlPie)
+        .then((res) => {
+          this.worklogsPieData = res.data;
         })
         .catch((error) => {
           console.log(error);

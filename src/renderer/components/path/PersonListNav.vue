@@ -42,7 +42,7 @@ export default {
       flagTS: false,
     };
   },
-  props: ['worklogsData'],
+  props: ['worklogsData', 'worklogsPieData'],
   mounted() {
     const vm = this;
     Bus.$on('flagTS', (data) => {
@@ -64,6 +64,7 @@ export default {
         name: 'personWork',
         params: {
           workPER: this.worklogsData,
+          workPiePER: this.worklogsPieData,
         },
       });
     },

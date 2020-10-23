@@ -28,9 +28,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="三和一，部分需修改">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="在输入框中输入，获取日志趋势信息；&#10;需要加上选择框else判断；&#10;趋势图默认值需要获取">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,35 +190,8 @@
       <workItem from="1603255714880" duration="180000" />
       <workItem from="1603256200013" duration="139000" />
       <workItem from="1603256347241" duration="15482000" />
-      <workItem from="1603328923313" duration="14315000" />
-    </task>
-    <task id="LOCAL-00126" summary="使用/deep/效果不好">
-      <created>1602210032392</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1602210032392</updated>
-    </task>
-    <task id="LOCAL-00127" summary="去除/deep/">
-      <created>1602210071582</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1602210071582</updated>
-    </task>
-    <task id="LOCAL-00128" summary="显示样式类似组织架构，但是功能无法实现">
-      <created>1602298228071</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1602298228071</updated>
-    </task>
-    <task id="LOCAL-00129" summary="回退回固定数据">
-      <created>1602321803413</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1602321803413</updated>
+      <workItem from="1603328923313" duration="23681000" />
+      <workItem from="1603414991059" duration="3777000" />
     </task>
     <task id="LOCAL-00130" summary="尝试组织人员分开">
       <created>1602571438670</created>
@@ -533,7 +508,35 @@
       <option name="project" value="LOCAL" />
       <updated>1603349700275</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="刚刚误删了元素二的赋值；删除无意义的打印">
+      <created>1603350123804</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1603350123804</updated>
+    </task>
+    <task id="LOCAL-00176" summary="优化打印提示">
+      <created>1603350284269</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1603350284269</updated>
+    </task>
+    <task id="LOCAL-00177" summary="把折线图组件拆解到上一级">
+      <created>1603350624020</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1603350624020</updated>
+    </task>
+    <task id="LOCAL-00178" summary="在输入框中输入，获取日志趋势信息；&#10;需要加上选择框else判断；&#10;趋势图默认值需要获取">
+      <created>1603361342734</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1603361342734</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,11 +572,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="select的change改为click" />
-    <MESSAGE value="select的click改回change,并在change中调用" />
-    <MESSAGE value="select的click改回change,并在change中调用select" />
-    <MESSAGE value="修改组织架构权限，显示；&#10;传递被查看人员的ID" />
-    <MESSAGE value="需要将连接位移到group页面；&#10;实现了传值" />
     <MESSAGE value="取到最新一个月的数据" />
     <MESSAGE value="启用treeselect搜索，条件为title" />
     <MESSAGE value="添加数据源提醒" />
@@ -594,7 +592,12 @@
     <MESSAGE value="绑定好月份选择" />
     <MESSAGE value="绑定好季度" />
     <MESSAGE value="三和一，部分需修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="三和一，部分需修改" />
+    <MESSAGE value="刚刚误删了元素二的赋值" />
+    <MESSAGE value="刚刚误删了元素二的赋值；删除无意义的打印" />
+    <MESSAGE value="优化打印提示" />
+    <MESSAGE value="把折线图组件拆解到上一级" />
+    <MESSAGE value="在输入框中输入，获取日志趋势信息；&#10;需要加上选择框else判断；&#10;趋势图默认值需要获取" />
+    <option name="LAST_COMMIT_MESSAGE" value="在输入框中输入，获取日志趋势信息；&#10;需要加上选择框else判断；&#10;趋势图默认值需要获取" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -611,7 +614,7 @@
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603162415408" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599118238628" />
-    <state x="372" y="75" width="1200" height="840" maximized="true" key="DiffContextDialog" timestamp="1603349755964">
+    <state x="372" y="75" width="1200" height="840" maximized="true" key="DiffContextDialog" timestamp="1603418689474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="372" y="75" width="1200" height="840" maximized="true" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603349755964" />
