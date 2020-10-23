@@ -3,7 +3,7 @@
     <div class="layout-header"><GroupInfo /></div>
     <div class="layout-table"><GroupListNav /></div>
     <div class="layout-content"><router-view></router-view></div>
-    <div class="layout-footer"><GroupRank /></div>
+    <div class="layout-footer" v-show="false"><GroupRank /></div>
   </div>
 
 </template>
