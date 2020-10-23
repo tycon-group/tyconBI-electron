@@ -25,20 +25,20 @@
         </a-input>
       </a-form-model-item>
       <a-form-model-item>
-        <a-checkbox
-            v-decorator="[
-            'remember',
-            {
-              valuePropName: 'checked',
-              initialValue: true,
-            },
-          ]"
-        >
-          Remember me
-        </a-checkbox>
-<!--        <a class="login-form-forgot" href="#">-->
-<!--          Forgot password-->
-<!--        </a>-->
+<!--        <a-checkbox-->
+<!--            v-decorator="[-->
+<!--            'remember',-->
+<!--            {-->
+<!--              valuePropName: 'checked',-->
+<!--              initialValue: true,-->
+<!--            },-->
+<!--          ]"-->
+<!--        >-->
+<!--          Remember me-->
+<!--        </a-checkbox>-->
+        <a class="login-form-forgot" href="#">
+          Forgot password
+        </a>
         <a-button type="primary" html-type="submit" class="login-form-button" @click="handleSubmit(user)">
           Log in
         </a-button>
