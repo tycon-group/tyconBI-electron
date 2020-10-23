@@ -28,11 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整文字设置2">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="实现动态取值">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisPerson.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,14 +189,7 @@
       <workItem from="1603256200013" duration="139000" />
       <workItem from="1603256347241" duration="15482000" />
       <workItem from="1603328923313" duration="23681000" />
-      <workItem from="1603414991059" duration="8388000" />
-    </task>
-    <task id="LOCAL-00133" summary="实现组织架构">
-      <created>1602666628477</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1602666628477</updated>
+      <workItem from="1603414991059" duration="10272000" />
     </task>
     <task id="LOCAL-00134" summary="点击人员可以跳转">
       <created>1602667115215</created>
@@ -536,7 +527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603420924418</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="实现动态取值">
+      <created>1603431206583</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1603431206583</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,7 +570,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="删除不需要的组件" />
     <MESSAGE value="清理不必要的引用" />
     <MESSAGE value="通过bus传递了上月统计数据" />
     <MESSAGE value="获取到传递来的值" />
@@ -597,7 +594,8 @@
     <MESSAGE value="获取并打印了默认情况下，折线图的值，" />
     <MESSAGE value="调整文字设置" />
     <MESSAGE value="调整文字设置2" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整文字设置2" />
+    <MESSAGE value="实现动态取值" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现动态取值" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
