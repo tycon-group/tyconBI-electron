@@ -1,7 +1,8 @@
 <template>
   <div class="total">
     <div class="totalPie" id="potentialCount">
-      <PotentialEcharts />
+<!--      <PotentialEcharts />-->
+      <a-empty style="margin-top: 200px;"><span slot="description">值为空</span></a-empty>
     </div>
   </div>
 </template>

@@ -28,10 +28,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="const originalPush = Router.prototype.push&#10;   Router.prototype.push = function push(location) {&#10;   return originalPush.call(this, location).catch(err =&gt; err)&#10;}&#10;&#10;解决： Error: Avoided redundant navigation to current location:">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/GroupListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupListNav.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="隐藏组织看部门内人员列表">
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Groups/GroupTotal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Groups/GroupTotal.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,21 +188,7 @@
       <workItem from="1603256200013" duration="139000" />
       <workItem from="1603256347241" duration="15482000" />
       <workItem from="1603328923313" duration="23681000" />
-      <workItem from="1603414991059" duration="14950000" />
-    </task>
-    <task id="LOCAL-00135" summary="优化居中 选择框位置">
-      <created>1602725691680</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1602725691681</updated>
-    </task>
-    <task id="LOCAL-00136" summary="优化列表选项的底部边框">
-      <created>1602729550527</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1602729550527</updated>
+      <workItem from="1603414991059" duration="15304000" />
     </task>
     <task id="LOCAL-00137" summary="删除废弃的选择框组件">
       <created>1602739050464</created>
@@ -535,7 +519,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603435394035</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="调整显示">
+      <created>1603441582697</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1603441582697</updated>
+    </task>
+    <task id="LOCAL-00185" summary="隐藏组织看部门内人员列表">
+      <created>1603441786447</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1603441786447</updated>
+    </task>
+    <option name="localTasksCounter" value="186" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,8 +569,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="通过bus传递了上月统计数据" />
-    <MESSAGE value="获取到传递来的值" />
     <MESSAGE value="实现了日志信息的打印" />
     <MESSAGE value="优化了跳转结构" />
     <MESSAGE value="替换按钮组内容至选择框" />
@@ -596,7 +592,9 @@
     <MESSAGE value="调整文字设置2" />
     <MESSAGE value="实现动态取值" />
     <MESSAGE value="const originalPush = Router.prototype.push&#10;   Router.prototype.push = function push(location) {&#10;   return originalPush.call(this, location).catch(err =&gt; err)&#10;}&#10;&#10;解决： Error: Avoided redundant navigation to current location:" />
-    <option name="LAST_COMMIT_MESSAGE" value="const originalPush = Router.prototype.push&#10;   Router.prototype.push = function push(location) {&#10;   return originalPush.call(this, location).catch(err =&gt; err)&#10;}&#10;&#10;解决： Error: Avoided redundant navigation to current location:" />
+    <MESSAGE value="调整显示" />
+    <MESSAGE value="隐藏组织看部门内人员列表" />
+    <option name="LAST_COMMIT_MESSAGE" value="隐藏组织看部门内人员列表" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
