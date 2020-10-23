@@ -36,9 +36,9 @@
         >
           Remember me
         </a-checkbox>
-        <a class="login-form-forgot" href="#">
-          Forgot password
-        </a>
+<!--        <a class="login-form-forgot" href="#">-->
+<!--          Forgot password-->
+<!--        </a>-->
         <a-button type="primary" html-type="submit" class="login-form-button" @click="handleSubmit(user)">
           Log in
         </a-button>
