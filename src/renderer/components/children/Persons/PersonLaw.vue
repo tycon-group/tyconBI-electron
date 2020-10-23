@@ -1,7 +1,7 @@
 <template>
   <div class="total">
-    <div class="detailed">这是遵纪守法明细模块，待确认</div>
-    <div class="trend">这是遵纪守法趋势模块，待确认</div>
+    <div class="detailed"><a-empty style="margin-top: 10%;"><span slot="description">值为空</span></a-empty></div>
+    <div class="trend"><a-empty style="margin-top: 10%;"><span slot="description">值为空</span></a-empty></div>
   </div>
 </template>
 
