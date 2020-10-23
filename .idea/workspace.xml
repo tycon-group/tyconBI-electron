@@ -28,9 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="实现动态取值">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="const originalPush = Router.prototype.push&#10;   Router.prototype.push = function push(location) {&#10;   return originalPush.call(this, location).catch(err =&gt; err)&#10;}&#10;&#10;解决： Error: Avoided redundant navigation to current location:">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/AnalysisGroup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/GroupListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupListNav.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +67,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/renderer/components/path" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,19 +80,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\tyconBI-electron\src\renderer\components\path" />
-      <recent name="D:\tyconBI-electron\src\renderer\components\children\Persons" />
-      <recent name="D:\tyconBI-electron\src\renderer\components\children\Persons\ranking" />
-      <recent name="D:\tyconBI-electron\src\renderer\components\children\Groups" />
-      <recent name="D:\tyconBI-electron\src\renderer\components\children\part" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\tyconBI-electron" />
       <recent name="D:\tyconBI-electron\src\renderer\components\children\Persons" />
       <recent name="D:\tyconBI-electron\src\renderer\components\children\Persons\ranking" />
       <recent name="D:\tyconBI-electron\src\renderer\components\children\Groups" />
       <recent name="D:\tyconBI-electron\src\renderer\components\path" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\tyconBI-electron\src\renderer\components\path" />
+      <recent name="D:\tyconBI-electron\src\renderer\components\children\Persons" />
+      <recent name="D:\tyconBI-electron\src\renderer\components\children\Persons\ranking" />
+      <recent name="D:\tyconBI-electron\src\renderer\components\children\Groups" />
+      <recent name="D:\tyconBI-electron\src\renderer\components\children\part" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -189,14 +190,7 @@
       <workItem from="1603256200013" duration="139000" />
       <workItem from="1603256347241" duration="15482000" />
       <workItem from="1603328923313" duration="23681000" />
-      <workItem from="1603414991059" duration="10272000" />
-    </task>
-    <task id="LOCAL-00134" summary="点击人员可以跳转">
-      <created>1602667115215</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1602667115215</updated>
+      <workItem from="1603414991059" duration="14950000" />
     </task>
     <task id="LOCAL-00135" summary="优化居中 选择框位置">
       <created>1602725691680</created>
@@ -534,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603431206583</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="const originalPush = Router.prototype.push&#10;   Router.prototype.push = function push(location) {&#10;   return originalPush.call(this, location).catch(err =&gt; err)&#10;}&#10;&#10;解决： Error: Avoided redundant navigation to current location:">
+      <created>1603435394035</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1603435394035</updated>
+    </task>
+    <option name="localTasksCounter" value="184" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +571,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="清理不必要的引用" />
     <MESSAGE value="通过bus传递了上月统计数据" />
     <MESSAGE value="获取到传递来的值" />
     <MESSAGE value="实现了日志信息的打印" />
@@ -595,7 +595,8 @@
     <MESSAGE value="调整文字设置" />
     <MESSAGE value="调整文字设置2" />
     <MESSAGE value="实现动态取值" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现动态取值" />
+    <MESSAGE value="const originalPush = Router.prototype.push&#10;   Router.prototype.push = function push(location) {&#10;   return originalPush.call(this, location).catch(err =&gt; err)&#10;}&#10;&#10;解决： Error: Avoided redundant navigation to current location:" />
+    <option name="LAST_COMMIT_MESSAGE" value="const originalPush = Router.prototype.push&#10;   Router.prototype.push = function push(location) {&#10;   return originalPush.call(this, location).catch(err =&gt; err)&#10;}&#10;&#10;解决： Error: Avoided redundant navigation to current location:" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

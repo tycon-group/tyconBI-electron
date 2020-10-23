@@ -2,6 +2,7 @@
   <div class="a-layout">
     <div class="layout-header"><GroupInfo /></div>
     <div class="layout-table"><GroupListNav /></div>
+    <div class="layout-content"><router-view></router-view></div>
     <div class="layout-footer"><GroupRank /></div>
   </div>
 
@@ -30,7 +31,13 @@ export default {
 
 .layout-table {
   width: 100%;
-  height: 35%;
+  height: 5%;
+}
+
+.layout-content {
+  width: 100%;
+  height: 30%;
+  margin-top: 2%;
 }
 
 .layout-footer {

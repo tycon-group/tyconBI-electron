@@ -1,114 +1,102 @@
 <template>
   <div class="groupListNav">
-    <a-tabs default-active-key="total" @change="callback">
-      <a-tab-pane key="total" tab="总览">
-        <GroupTotal />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-      </a-tab-pane>
-      <a-tab-pane key="work" tab="工作能力">
-        <GroupWork />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-      </a-tab-pane>
-      <a-tab-pane key="attitude" tab="工作态度">
-        <GroupAttitude />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-      </a-tab-pane>
+    <a-menu
+        v-model="current"
+        mode="horizontal">
+      <a-menu-item key="total" @click="totalGRO">
+        <span>总览</span>
+      </a-menu-item>
 
-      <a-tab-pane key="potential" tab="发展潜力">
-        <GroupPotential />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-      </a-tab-pane>
-      <a-tab-pane key="contribution" tab="突出贡献">
-        <GroupContribution />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-      </a-tab-pane>
-      <a-tab-pane key="law" tab="遵纪守法">
-        <GroupLaw />
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-      </a-tab-pane>
-    </a-tabs>
+      <a-menu-item key="work" @click="workGRO">
+        <span>工作能力</span>
+      </a-menu-item>
+
+      <a-menu-item key="attitude" @click="attitudeGRO">
+        <span>工作态度</span>
+      </a-menu-item>
+
+      <a-menu-item key="potential" @click="potentialGRO">
+        <span>发展潜力</span>
+      </a-menu-item>
+
+      <a-menu-item key="contribution" @click="contributionGRO">
+        <span>突出贡献</span>
+      </a-menu-item>
+
+      <a-menu-item key="law" @click="lawGRO">
+        <span>遵纪守法</span>
+      </a-menu-item>
+    </a-menu>
   </div>
 </template>
 
 <script>
-import GroupTotal from '../children/Groups/GroupTotal';
-import GroupWork from '../children/Groups/GroupWork';
-import GroupAttitude from '../children/Groups/GroupAttitude';
-import GroupPotential from '../children/Groups/GroupPotential';
-import GroupContribution from '../children/Groups/GroupContribution';
-import GroupLaw from '../children/Groups/GroupLaw';
 
 export default {
-  name: 'GroupListNav',
-  components: {
-    GroupTotal,
-    GroupWork,
-    GroupAttitude,
-    GroupPotential,
-    GroupContribution,
-    GroupLaw,
-  },
+  name: 'PersonListNav',
   data() {
-    return {};
+    return {
+      current: ['total'],
+      flagTS: false,
+    };
   },
+  props: ['worklogsData'],
   methods: {
-    callback(key) {
-      console.log(key);
+    totalGRO() {
+      this.$router.push({
+        name: 'groupTotal',
+        params: {
+          totalGRO: this.worklogsData, // 待修改数据源
+        },
+      });
+    },
+    workGRO() {
+      this.$router.push({
+        name: 'groupWork',
+        params: {
+          workGRO: this.worklogsData,
+        },
+      });
+      console.log('出阿来啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊');
+    },
+    attitudeGRO() {
+      this.$router.push({
+        name: 'groupAttitude',
+        params: {
+          attitudeGRO: this.worklogsData, // 待修改数据源
+        },
+      });
+    },
+    potentialGRO() {
+      this.$router.push({
+        name: 'groupPotential',
+        params: {
+          potentialGRO: this.worklogsData, // 待修改数据源
+        },
+      });
+    },
+    contributionGRO() {
+      this.$router.push({
+        name: 'groupContribution',
+        params: {
+          contributionGRO: this.worklogsData, // 待修改数据源
+        },
+      });
+    },
+    lawGRO() {
+      this.$router.push({
+        name: 'groupLaw',
+        params: {
+          lawGRO: this.worklogsData, // 待修改数据源
+        },
+      });
     },
   },
 };
 </script>
 
 <style scoped>
-.groupListNav{
+.groupListNav {
   width: 100%;
   height: 100%;
 }
