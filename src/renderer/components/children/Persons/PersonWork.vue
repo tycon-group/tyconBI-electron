@@ -61,6 +61,7 @@ export default {
       count_of_scored2: '',
       chartPie: null,
       pieYear: '',
+      defaultPieData: [],
       pieData: [],
     };
   },
@@ -86,11 +87,14 @@ export default {
       } else {
         this.pieYear = tempYear;
       }
+      this.defaultPieData = this.$route.params.workPiePER;
+      this.pieData = this.defaultPieData;
+      console.log(this.pieData, this.defaultPieData);
+      this.drawCharts();
     }, 200);
   },
   // 日期选择时调用
   mounted() {
-    this.drawCharts(); // 折线图
     const vm = this;
     // 用$on事件来接收参数   统计
     Bus.$on('worklogsData', (data) => {
@@ -122,7 +126,7 @@ export default {
           },
           legend: {
             bottom: 'bottom',
-            data: ['日志数', '日志评论数', '直属评分', '人事评分', '日志补写率', '高评数', '低评数'],
+            data: ['日志总数', '评论数', '直属评分数', '人事评分数', '补写数量', '高分数量', '低分数量'],
           },
           grid: {
             left: '3%',
