@@ -53,7 +53,6 @@ export default {
 .personListNav{
   width: 100%;
   height: 100%;
-  border-top: 1px solid #dddddd;
 }
 
 </style>

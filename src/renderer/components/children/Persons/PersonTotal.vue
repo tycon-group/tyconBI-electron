@@ -33,6 +33,7 @@ export default {
 .radar {
   width: 100%;
   height: 40%;
+  border-bottom: 1px solid #dddddd;
 }
 
 .evidence {
