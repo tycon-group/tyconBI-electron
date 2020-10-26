@@ -34,7 +34,7 @@ export default {
             bottom: 'bottom',
             data: ['大于55岁', '45~55岁', '35~45岁', '25~35岁', '小于25岁'],
           },
-          color: ['yellowgreen', 'green', 'purple', 'orange', 'indigo', 'blue'],
+          color: ['yellowgreen', 'green', '#3399FF', 'orange', 'indigo'],
           series: [
             {
               name: '分布占比',

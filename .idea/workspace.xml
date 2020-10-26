@@ -28,7 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="剩余图标传值">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改图标描述">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/AgeEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/AgeEcharts.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/path/DegreeEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/DegreeEcharts.vue" afterDir="false" />
@@ -193,14 +193,7 @@
       <workItem from="1603256347241" duration="15482000" />
       <workItem from="1603328923313" duration="23681000" />
       <workItem from="1603414991059" duration="19106000" />
-      <workItem from="1603670145330" duration="5479000" />
-    </task>
-    <task id="LOCAL-00144" summary="获取当前时间，计算年限。优化显示一般的数据情况">
-      <created>1602834970009</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1602834970009</updated>
+      <workItem from="1603670145330" duration="6288000" />
     </task>
     <task id="LOCAL-00145" summary="修改折线图，X轴为4月到下年3月">
       <created>1603076811143</created>
@@ -538,7 +531,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603674558335</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="修改图标描述">
+      <created>1603676373502</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1603676373502</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,7 +574,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="通过焦点失去来触发传值" />
     <MESSAGE value="修改数据格式" />
     <MESSAGE value="绑定好月份选择" />
     <MESSAGE value="绑定好季度" />
@@ -599,7 +598,8 @@
     <MESSAGE value="多个图标只有最后一个自动更新大小，&#10;window.addEventListener('resize', this.chartPie.resize);" />
     <MESSAGE value="工作年限传值成功" />
     <MESSAGE value="剩余图标传值" />
-    <option name="LAST_COMMIT_MESSAGE" value="剩余图标传值" />
+    <MESSAGE value="修改图标描述" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改图标描述" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

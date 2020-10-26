@@ -34,13 +34,13 @@ export default {
             bottom: 'bottom',
             data: ['初中及以下', '高中', '本科（专科)', '硕士及以上'],
           },
-          color: ['red', 'indigo', 'yellowgreen', 'orange', 'yellow', 'green', 'purple'],
+          color: ['red', 'yellowgreen', '#3399FF', 'orange'],
           series: [
             {
               name: '分布占比',
               type: 'pie',
               radius: '55%',
-              center: ['50%', '60%'],
+              center: ['55%', '45%'],
               avoidLabelOverlap: true,
               data: this.groupEducation,
               itemStyle: {

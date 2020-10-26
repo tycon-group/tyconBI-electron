@@ -34,13 +34,13 @@ export default {
             bottom: 'bottom',
             data: ['男', '女'],
           },
-          color: ['red', 'indigo', 'blue', 'orange', 'yellow', 'green', 'purple'],
+          color: ['red', '#3399FF'],
           series: [
             {
               name: '分布占比',
               type: 'pie',
               radius: '55%',
-              center: ['50%', '60%'],
+              center: ['50%', '50%'],
               avoidLabelOverlap: true,
               data: this.groupGender,
               itemStyle: {

@@ -34,7 +34,7 @@ export default {
             bottom: 'bottom',
             data: ['超过15年', '10~15年', '5~10年', '1~5年', '不满1年'],
           },
-          color: ['red', 'indigo', 'purple', 'orange', 'yellowgreen', 'green', 'blue'],
+          color: ['#CC6600', '#CCFF33', '#3399FF', '#00FF99', 'green'],
           series: [
             {
               name: '分布占比',
