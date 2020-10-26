@@ -34,7 +34,7 @@ export default {
             bottom: 'bottom',
             data: ['男', '女'],
           },
-          color: ['red', '#3399FF'],
+          color: ['#5AB1EF', '#D87A80'],
           series: [
             {
               name: '分布占比',

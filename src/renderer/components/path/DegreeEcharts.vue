@@ -34,7 +34,7 @@ export default {
             bottom: 'bottom',
             data: ['初中及以下', '高中', '本科（专科)', '硕士及以上'],
           },
-          color: ['red', 'yellowgreen', '#3399FF', 'orange'],
+          color: ['#EDAFDA', '#A0A7E6', '#5AB1EF', '#D87A80'],
           series: [
             {
               name: '分布占比',

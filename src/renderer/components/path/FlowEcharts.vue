@@ -34,13 +34,13 @@ export default {
             bottom: 'bottom',
             data: ['超过15年', '10~15年', '5~10年', '1~5年', '不满1年'],
           },
-          color: ['#CC6600', '#CCFF33', '#3399FF', '#00FF99', 'green'],
+          color: ['#2EC7C9', '#B6A2DE', '#E5CF0D', '#FFB980', '#97B552'],
           series: [
             {
               name: '分布占比',
               type: 'pie',
               radius: '55%',
-              center: ['50%', '60%'],
+              center: ['55%', '50%'],
               avoidLabelOverlap: true,
               data: this.groupWorkingYear,
               itemStyle: {

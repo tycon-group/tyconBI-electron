@@ -34,13 +34,13 @@ export default {
             bottom: 'bottom',
             data: ['大于55岁', '45~55岁', '35~45岁', '25~35岁', '小于25岁'],
           },
-          color: ['yellowgreen', 'green', '#3399FF', 'orange', 'indigo'],
+          color: ['#8D98B3', '#FFB980', '#B6A2DE', '#2EC7C9', '#97B552'],
           series: [
             {
               name: '分布占比',
               type: 'pie',
               radius: '55%',
-              center: ['50%', '60%'],
+              center: ['55%', '50%'],
               avoidLabelOverlap: true,
               data: this.groupAge,
               itemStyle: {
