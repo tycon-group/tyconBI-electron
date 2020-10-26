@@ -2,7 +2,8 @@
   <div class="groupListNav">
     <a-menu
         v-model="current"
-        mode="horizontal">
+        mode="horizontal"
+        selected-keys="total">
       <a-menu-item key="total" @click="totalGRO">
         <span>总览</span>
       </a-menu-item>

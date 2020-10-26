@@ -28,12 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修改图标描述">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="微调图表位置大小">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/AgeEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/AgeEcharts.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/DegreeEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/DegreeEcharts.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/FlowEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/FlowEcharts.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/SexEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/SexEcharts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/GroupListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupListNav.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,14 +190,7 @@
       <workItem from="1603256347241" duration="15482000" />
       <workItem from="1603328923313" duration="23681000" />
       <workItem from="1603414991059" duration="19106000" />
-      <workItem from="1603670145330" duration="6288000" />
-    </task>
-    <task id="LOCAL-00145" summary="修改折线图，X轴为4月到下年3月">
-      <created>1603076811143</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1603076811143</updated>
+      <workItem from="1603670145330" duration="8239000" />
     </task>
     <task id="LOCAL-00146" summary="优化个人信息显示，切换组织时，刷新变为空白">
       <created>1603085942259</created>
@@ -538,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603676373502</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="微调图表位置大小">
+      <created>1603677280510</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1603677280510</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,7 +571,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改数据格式" />
     <MESSAGE value="绑定好月份选择" />
     <MESSAGE value="绑定好季度" />
     <MESSAGE value="三和一，部分需修改" />
@@ -599,7 +595,8 @@
     <MESSAGE value="工作年限传值成功" />
     <MESSAGE value="剩余图标传值" />
     <MESSAGE value="修改图标描述" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改图标描述" />
+    <MESSAGE value="微调图表位置大小" />
+    <option name="LAST_COMMIT_MESSAGE" value="微调图表位置大小" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
