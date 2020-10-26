@@ -28,8 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整颜色和图表位置">
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="添加折线图线条颜色">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,14 +190,7 @@
       <workItem from="1603256347241" duration="15482000" />
       <workItem from="1603328923313" duration="23681000" />
       <workItem from="1603414991059" duration="19106000" />
-      <workItem from="1603670145330" duration="17627000" />
-    </task>
-    <task id="LOCAL-00149" summary="添加补写数，评分数区分人事和直属，优化css">
-      <created>1603092697320</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1603092697320</updated>
+      <workItem from="1603670145330" duration="20266000" />
     </task>
     <task id="LOCAL-00150" summary="select的change改为click">
       <created>1603093849847</created>
@@ -534,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603693781139</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="添加折线图线条颜色">
+      <created>1603695884554</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1603695884554</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,7 +571,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="刚刚误删了元素二的赋值" />
     <MESSAGE value="刚刚误删了元素二的赋值；删除无意义的打印" />
     <MESSAGE value="优化打印提示" />
     <MESSAGE value="把折线图组件拆解到上一级" />
@@ -595,7 +595,8 @@
     <MESSAGE value="默认选中总计" />
     <MESSAGE value="优化年份月份选择器" />
     <MESSAGE value="调整颜色和图表位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整颜色和图表位置" />
+    <MESSAGE value="添加折线图线条颜色" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加折线图线条颜色" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

@@ -4,7 +4,7 @@
     <a-layout>
       <a-layout-header style="padding: 0; width: 100%; height: 64px; background-color: #f4f4f4; position:fixed; top:0; z-index:999;">
         <div class="header-total">
-          <SearchInput />
+          <SearchInput  v-show="false"/>
           <ButtonGroupTime />
         </div>
       </a-layout-header>
