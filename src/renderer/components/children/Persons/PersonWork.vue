@@ -130,6 +130,7 @@ export default {
             bottom: 'bottom',
             data: ['日志总数', '评论数', '直属评分数', '人事评分数', '补写数量', '高分数量', '低分数量'],
           },
+          color: ['#2EC7C9', '#B6A2DE', '#E5CF0D', '#FFB980', '#97B552', '#8D98B3', '#A0A7E6'],
           grid: {
             left: '3%',
             right: '4%',
