@@ -72,7 +72,15 @@ export default {
     },
     tsSelect() {
       setTimeout(() => {
-        console.log(this.value, 'test2');
+        console.log(this.value, '此处取到组织号，将数据处理后传到组织页面');
+        const url = `https://tyconcps.cn:4399/hr/orgAndEmpDetail/${this.value}`;
+        this.$http.get(url)
+          .then((res) => {
+            Bus.$emit('groupData', res);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
         // 此处setTimeout一下，就可以取到最新数据
         this.$router.push({
           name: 'analysisGroup', // 此处会报错，两次进入同一个路由，对项目没有影响

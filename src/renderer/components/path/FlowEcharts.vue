@@ -7,11 +7,13 @@
 <script>
 // eslint-disable-next-line import/no-extraneous-dependencies
 import echarts from 'echarts';
+import Bus from './bus';
 
 export default {
   data() {
     return {
       chartPie: null,
+      groupWorkingYear: '',
     };
   },
   methods: {
@@ -30,9 +32,9 @@ export default {
           legend: {
             orient: 'vertical',
             bottom: 'bottom',
-            data: ['3年以下', '3-5年', '5年以上'],
+            data: ['>=15', '10~15', '5~10', '3~5', '1~3', '<1', '未知'],
           },
-          color: ['red', 'indigo', 'purple'],
+          color: ['red', 'indigo', 'purple', 'orange', 'yellowgreen', 'green', 'blue'],
           series: [
             {
               name: '分布占比',
@@ -40,11 +42,7 @@ export default {
               radius: '55%',
               center: ['50%', '60%'],
               avoidLabelOverlap: true,
-              data: [
-                { value: 65, name: '3年以下' },
-                { value: 30, name: '3-5年' },
-                { value: 20, name: '5年以上' },
-              ],
+              data: this.groupWorkingYear,
               itemStyle: {
                 emphasis: {
                   shadowBlur: 10,
@@ -64,6 +62,11 @@ export default {
   },
 
   mounted() {
+    const vm = this;
+    Bus.$on('groupData', (data) => {
+      vm.groupWorkingYear = data.data.workingyear;
+      console.log(data.data.workingyear);
+    });
     this.drawCharts();
   },
   // updated: function () {
