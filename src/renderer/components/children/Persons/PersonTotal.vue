@@ -4,7 +4,7 @@
       <RadarEcharts />
     </div>
     <div class="evidence">
-      <PersonRankNav />
+      <PersonRankNav v-show="false" />
     </div>
   </div>
 </template>
