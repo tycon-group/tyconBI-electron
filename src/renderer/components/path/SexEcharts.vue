@@ -7,11 +7,13 @@
 <script>
 // eslint-disable-next-line import/no-extraneous-dependencies
 import echarts from 'echarts';
+import Bus from './bus';
 
 export default {
   data() {
     return {
       chartPie: null,
+      groupGender: '',
     };
   },
   methods: {
@@ -30,7 +32,7 @@ export default {
           legend: {
             orient: 'vertical',
             bottom: 'bottom',
-            data: ['男性', '女性'],
+            data: ['男', '女', '未知'],
           },
           color: ['red', 'indigo', 'blue', 'orange', 'yellow', 'green', 'purple'],
           series: [
@@ -40,10 +42,7 @@ export default {
               radius: '55%',
               center: ['50%', '60%'],
               avoidLabelOverlap: true,
-              data: [
-                { value: 335, name: '男性' },
-                { value: 310, name: '女性' },
-              ],
+              data: this.groupGender,
               itemStyle: {
                 emphasis: {
                   shadowBlur: 10,
@@ -63,6 +62,11 @@ export default {
   },
 
   mounted() {
+    const vm = this;
+    Bus.$on('groupData', (data) => {
+      vm.groupGender = data.data.gender;
+      console.log(data.data.gender);
+    });
     this.drawCharts();
   },
   // updated: function () {

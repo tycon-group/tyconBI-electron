@@ -7,11 +7,13 @@
 <script>
 // eslint-disable-next-line import/no-extraneous-dependencies
 import echarts from 'echarts';
+import Bus from './bus';
 
 export default {
   data() {
     return {
       chartPie: null,
+      groupEducation: '',
     };
   },
   methods: {
@@ -30,7 +32,7 @@ export default {
           legend: {
             orient: 'vertical',
             bottom: 'bottom',
-            data: ['大专以下', '大专', '本科', '研究生及以上'],
+            data: ['小学', '初中', '高中（高职、高技、中专）', '专科', '本科', '硕士研究生', '博士研究生', '未知'],
           },
           color: ['red', 'indigo', 'yellowgreen', 'orange', 'yellow', 'green', 'purple'],
           series: [
@@ -40,12 +42,7 @@ export default {
               radius: '55%',
               center: ['50%', '60%'],
               avoidLabelOverlap: true,
-              data: [
-                { value: 35, name: '大专以下' },
-                { value: 35, name: '大专' },
-                { value: 10, name: '本科' },
-                { value: 5, name: '研究生及以上' },
-              ],
+              data: this.groupEducation,
               itemStyle: {
                 emphasis: {
                   shadowBlur: 10,
@@ -60,6 +57,11 @@ export default {
       }, 200);
     },
     drawCharts() {
+      const vm = this;
+      Bus.$on('groupData', (data) => {
+        vm.groupEducation = data.data.education;
+        console.log(data.data.education);
+      });
       this.drawPieChart();
     },
   },

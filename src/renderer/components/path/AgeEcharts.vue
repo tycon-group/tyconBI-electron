@@ -7,11 +7,13 @@
 <script>
 // eslint-disable-next-line import/no-extraneous-dependencies
 import echarts from 'echarts';
+import Bus from './bus';
 
 export default {
   data() {
     return {
       chartPie: null,
+      groupAge: '',
     };
   },
   methods: {
@@ -30,9 +32,9 @@ export default {
           legend: {
             orient: 'vertical',
             bottom: 'bottom',
-            data: ['30岁以下', '31-50', '50岁以上'],
+            data: ['>=5', '45~55', '35~45', '25~35', '<25', '未知'],
           },
-          color: ['yellowgreen', 'green', 'purple'],
+          color: ['yellowgreen', 'green', 'purple', 'orange', 'indigo', 'blue'],
           series: [
             {
               name: '分布占比',
@@ -40,11 +42,7 @@ export default {
               radius: '55%',
               center: ['50%', '60%'],
               avoidLabelOverlap: true,
-              data: [
-                { value: 33, name: '30岁以下' },
-                { value: 31, name: '31-50' },
-                { value: 3, name: '50岁以上' },
-              ],
+              data: this.groupAge,
               itemStyle: {
                 emphasis: {
                   shadowBlur: 10,
@@ -64,6 +62,11 @@ export default {
   },
 
   mounted() {
+    const vm = this;
+    Bus.$on('groupData', (data) => {
+      vm.groupAge = data.data.age;
+      console.log(data.data.age);
+    });
     this.drawCharts();
   },
   // updated: function () {
