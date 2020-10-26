@@ -28,9 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="微调图表位置大小">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="默认选中总计">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/GroupListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupListNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ButtonGroupTime.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,14 +190,7 @@
       <workItem from="1603256347241" duration="15482000" />
       <workItem from="1603328923313" duration="23681000" />
       <workItem from="1603414991059" duration="19106000" />
-      <workItem from="1603670145330" duration="8239000" />
-    </task>
-    <task id="LOCAL-00146" summary="优化个人信息显示，切换组织时，刷新变为空白">
-      <created>1603085942259</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1603085942259</updated>
+      <workItem from="1603670145330" duration="16134000" />
     </task>
     <task id="LOCAL-00147" summary="添加选择框的跳转，准备传组织号">
       <created>1603091487816</created>
@@ -535,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603677280510</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="默认选中总计">
+      <created>1603679601540</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1603679601540</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +571,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="绑定好月份选择" />
     <MESSAGE value="绑定好季度" />
     <MESSAGE value="三和一，部分需修改" />
     <MESSAGE value="刚刚误删了元素二的赋值" />
@@ -596,7 +595,8 @@
     <MESSAGE value="剩余图标传值" />
     <MESSAGE value="修改图标描述" />
     <MESSAGE value="微调图表位置大小" />
-    <option name="LAST_COMMIT_MESSAGE" value="微调图表位置大小" />
+    <MESSAGE value="默认选中总计" />
+    <option name="LAST_COMMIT_MESSAGE" value="默认选中总计" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -660,10 +660,10 @@
     </state>
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602471557655" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916421385" />
-    <state x="-1122" y="168" key="run.anything.popup" timestamp="1603156800124">
+    <state x="-1122" y="168" key="run.anything.popup" timestamp="1603679593655">
       <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
-    <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603156800124" />
+    <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603679593655" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
     <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1603443516876">

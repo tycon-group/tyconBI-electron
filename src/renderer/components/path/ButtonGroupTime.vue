@@ -3,6 +3,7 @@
     <a-input @blur="inputBlur" v-model="value" placeholder="请输入年份" suffix="年" style="width: 140px" :max-length="4"/>
     <a-select
         show-search
+        v-model="selectTime"
         placeholder="请选择一个时间跨度~"
         option-filter-prop="children"
         style="width: 200px"
@@ -129,13 +130,26 @@ export default {
       }
     },
     inputBlur() {
-      if (this.inputYear !== '' && this.selectTime !== '') {
-        console.log('输入可以传值,over', this.yearTimeData);
-        Bus.$emit('yearTimeData', this.yearTimeData);
-      }
       // 折线图传年份值
       if (this.inputYear !== '') {
+        if (this.selectTime !== '') {
+          console.log('输入可以传值,over', this.yearTimeData);
+          Bus.$emit('yearTimeData', this.yearTimeData);
+        } else {
+          this.yearTimeData[1] = 'all';
+          Bus.$emit('yearTimeData', this.yearTimeData);
+        }
         Bus.$emit('pieYear', this.inputYear);
+      } else {
+        const date1 = new Date();
+        const years = date1.getFullYear();
+        const months = date1.getMonth();
+        this.yearTimeData[0] = years;
+        this.yearTimeData[1] = months;
+        this.selectTime = '';
+        this.$message.success('默认显示本年度上月数据~');
+        Bus.$emit('yearTimeData', this.yearTimeData);
+        Bus.$emit('pieYear', years);
       }
     },
     handleFocus() {
