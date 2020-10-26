@@ -32,7 +32,7 @@ export default {
           legend: {
             orient: 'vertical',
             bottom: 'bottom',
-            data: ['小学', '初中', '高中（高职、高技、中专）', '专科', '本科', '硕士研究生', '博士研究生', '未知'],
+            data: ['初中及以下', '高中', '本科（专科)', '硕士及以上'],
           },
           color: ['red', 'indigo', 'yellowgreen', 'orange', 'yellow', 'green', 'purple'],
           series: [
@@ -61,6 +61,7 @@ export default {
       Bus.$on('groupData', (data) => {
         vm.groupEducation = data.data.education;
         console.log(data.data.education);
+        this.drawPieChart();
       });
       this.drawPieChart();
     },

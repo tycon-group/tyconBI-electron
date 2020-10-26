@@ -32,7 +32,7 @@ export default {
           legend: {
             orient: 'vertical',
             bottom: 'bottom',
-            data: ['>=5', '45~55', '35~45', '25~35', '<25', '未知'],
+            data: ['大于55岁', '45~55岁', '35~45岁', '25~35岁', '小于25岁'],
           },
           color: ['yellowgreen', 'green', 'purple', 'orange', 'indigo', 'blue'],
           series: [
@@ -66,6 +66,7 @@ export default {
     Bus.$on('groupData', (data) => {
       vm.groupAge = data.data.age;
       console.log(data.data.age);
+      this.drawCharts();
     });
     this.drawCharts();
   },

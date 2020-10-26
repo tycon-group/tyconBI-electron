@@ -32,7 +32,7 @@ export default {
           legend: {
             orient: 'vertical',
             bottom: 'bottom',
-            data: ['>=15', '10~15', '5~10', '3~5', '1~3', '<1', '未知'],
+            data: ['超过15年', '10~15年', '5~10年', '1~5年', '不满1年'],
           },
           color: ['red', 'indigo', 'purple', 'orange', 'yellowgreen', 'green', 'blue'],
           series: [
@@ -66,6 +66,7 @@ export default {
     Bus.$on('groupData', (data) => {
       vm.groupWorkingYear = data.data.workingyear;
       console.log(data.data.workingyear);
+      this.drawCharts();
     });
     this.drawCharts();
   },

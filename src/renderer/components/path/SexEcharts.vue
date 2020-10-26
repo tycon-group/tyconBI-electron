@@ -32,7 +32,7 @@ export default {
           legend: {
             orient: 'vertical',
             bottom: 'bottom',
-            data: ['男', '女', '未知'],
+            data: ['男', '女'],
           },
           color: ['red', 'indigo', 'blue', 'orange', 'yellow', 'green', 'purple'],
           series: [
@@ -66,6 +66,7 @@ export default {
     Bus.$on('groupData', (data) => {
       vm.groupGender = data.data.gender;
       console.log(data.data.gender);
+      this.drawCharts();
     });
     this.drawCharts();
   },
