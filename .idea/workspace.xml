@@ -28,8 +28,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="隐藏组织看部门内人员列表">
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Groups/GroupTotal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Groups/GroupTotal.vue" afterDir="false" />
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="将组织和人员的空值用图标表示">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/AgeEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/AgeEcharts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/DegreeEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/DegreeEcharts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/FlowEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/FlowEcharts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/SexEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/SexEcharts.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,35 +192,8 @@
       <workItem from="1603256200013" duration="139000" />
       <workItem from="1603256347241" duration="15482000" />
       <workItem from="1603328923313" duration="23681000" />
-      <workItem from="1603414991059" duration="15304000" />
-    </task>
-    <task id="LOCAL-00137" summary="删除废弃的选择框组件">
-      <created>1602739050464</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1602739050464</updated>
-    </task>
-    <task id="LOCAL-00138" summary="获取menu中的选取值的url属性">
-      <created>1602744668420</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1602744668420</updated>
-    </task>
-    <task id="LOCAL-00139" summary="将数据传到electron-store保存">
-      <created>1602745513106</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1602745513106</updated>
-    </task>
-    <task id="LOCAL-00140" summary="通过BUS.js取到了人员url地址">
-      <created>1602748076414</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1602748076414</updated>
+      <workItem from="1603414991059" duration="19106000" />
+      <workItem from="1603670145330" duration="1843000" />
     </task>
     <task id="LOCAL-00141" summary="开始将值打印到页面上">
       <created>1602759044593</created>
@@ -533,7 +510,35 @@
       <option name="project" value="LOCAL" />
       <updated>1603441786447</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="组织中大部分设为空列表显示">
+      <created>1603442042423</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1603442042423</updated>
+    </task>
+    <task id="LOCAL-00187" summary="去掉记住密码">
+      <created>1603442252867</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1603442252868</updated>
+    </task>
+    <task id="LOCAL-00188" summary="恢复忘记密码，删掉记住密码">
+      <created>1603442499408</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1603442499408</updated>
+    </task>
+    <task id="LOCAL-00189" summary="将组织喝人员的空值用图标表示">
+      <created>1603444564180</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1603444564180</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,10 +574,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="实现了日志信息的打印" />
-    <MESSAGE value="优化了跳转结构" />
-    <MESSAGE value="替换按钮组内容至选择框" />
-    <MESSAGE value="改正接口所需要的参数" />
     <MESSAGE value="输入框中取到年值" />
     <MESSAGE value="对于输入框中的年份，前七个算作财年，后面12个算作真实年份" />
     <MESSAGE value="调整默认显示上一月数据的接口链接" />
@@ -594,7 +595,11 @@
     <MESSAGE value="const originalPush = Router.prototype.push&#10;   Router.prototype.push = function push(location) {&#10;   return originalPush.call(this, location).catch(err =&gt; err)&#10;}&#10;&#10;解决： Error: Avoided redundant navigation to current location:" />
     <MESSAGE value="调整显示" />
     <MESSAGE value="隐藏组织看部门内人员列表" />
-    <option name="LAST_COMMIT_MESSAGE" value="隐藏组织看部门内人员列表" />
+    <MESSAGE value="组织中大部分设为空列表显示" />
+    <MESSAGE value="去掉忘记密码" />
+    <MESSAGE value="恢复忘记密码，删掉记住密码" />
+    <MESSAGE value="将组织和人员的空值用图标表示" />
+    <option name="LAST_COMMIT_MESSAGE" value="将组织和人员的空值用图标表示" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -611,7 +616,7 @@
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603162415408" />
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599118238628" />
-    <state x="372" y="75" width="1200" height="840" maximized="true" key="DiffContextDialog" timestamp="1603418689474">
+    <state x="372" y="75" width="1200" height="840" maximized="true" key="DiffContextDialog" timestamp="1603442690869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="372" y="75" width="1200" height="840" maximized="true" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603349755964" />
@@ -620,17 +625,19 @@
     </state>
     <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603244404219" />
     <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598505023455" />
-    <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1603261100278">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1137" y="341" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1603444574479">
+      <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
+    <state x="-1137" y="341" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603444574479" />
     <state x="783" y="439" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603261100278" />
     <state x="184" y="86" key="MergeDialog" timestamp="1602471458118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="MergeDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602471458118" />
-    <state x="712" y="228" key="RollbackChangesDialog" timestamp="1602233517610">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1208" y="130" key="RollbackChangesDialog" timestamp="1603444020872">
+      <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
+    <state x="-1208" y="130" key="RollbackChangesDialog/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603444020872" />
     <state x="712" y="228" key="RollbackChangesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602233517610" />
     <state x="526" y="91" key="SettingsEditor" timestamp="1603256651261">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -662,10 +669,10 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603156800124" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1603274334811">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1603443516876">
+      <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
-    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603101893689" />
+    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603443516876" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603274334811" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
