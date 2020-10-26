@@ -27,10 +27,10 @@ export default {
     },
   },
   created() {
-    const Store = require('electron-store');
-    const store = new Store();
-    this.dept1 = store.get('dept1');
-    console.log(this.dept1, '加载前将存储值取出来');
+    // const Store = require('electron-store');
+    // const store = new Store();
+    this.dept1 = true;
+    // console.log(this.dept1, '加载前将存储值取出来');
   },
   mounted() {
     console.log(this.dept1, '这是加载后的');
