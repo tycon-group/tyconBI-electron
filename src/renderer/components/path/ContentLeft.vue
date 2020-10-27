@@ -49,7 +49,9 @@ export default {
       this.keyItem = key.key;
       console.log(key);
       this.keyID = this.keyItem.substring(this.keyItem.lastIndexOf('/') + 1);
-      this.$refs.ContentsUp.clickData();
+      this.$nextTick(function () {
+        this.$refs.ContentsUp.clickData();
+      });
     },
     onClose() {
       this.visible = false;
