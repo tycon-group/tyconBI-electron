@@ -1,7 +1,7 @@
 <template>
   <a-row :gutter="16">
-    <a-col :span="24" v-bind:style="antdMain" style="text-align: center;">
-      <a-statistic-countdown title="距离本期打分最终期限还有：" :value="deadline" format="D 天 H 时 m 分 s 秒" @finish="onFinish" />
+    <a-col :span="24" style="text-align: center;">
+      <a-statistic-countdown v-bind:valueStyle="antdMain" title="距离本期打分最终期限还有：" :value="deadline" format="D 天 H 时 m 分 s 秒" @finish="onFinish" />
     </a-col>
   </a-row>
 </template>
@@ -14,7 +14,7 @@ export default {
       seconds: 0,
       deadline: 0,
       antdMain: {
-        background: '#FFFFFF',
+        color: '#000000',
       },
     };
   },
@@ -26,17 +26,19 @@ export default {
     this.seconds = seconds;
     // eslint-disable-next-line no-mixed-operators
     this.deadline = Date.now() + 1000 * seconds;
-    // console.log(time);
-    console.log(1000 * 60 * 60 * 24 * 14);
+    // console.log(end, 'dsdaskjdajsdasdkal');
+    // console.log(1000 * 60 * 60 * 24 * 14);
     console.log(1000 * seconds);// 打印剩余毫秒数
     this.changedBgColor();
   },
   methods: {
     changedBgColor() {
       if (this.seconds < 60 * 60 * 24 * 3) {
-        this.antdMain.background = 'red';
+        this.antdMain.color = '#C12E34';
+      } else if (this.seconds <= 60 * 60 * 24 * 10 && this.seconds >= 60 * 60 * 24 * 3) {
+        this.antdMain.color = '#E6B600';
       } else {
-        this.antdMain.background = '#1890FF';
+        this.antdMain.color = '#0098D9';
       }
     },
     onFinish() {
