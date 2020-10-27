@@ -28,10 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整倒计时颜色">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修复 Error in v-on handler: &quot;TypeError: Cannot read property 'clickData' of undefined&quot;  &#10;this.$nextTick(function () {&#10;        this.$refs.ContentsUp.clickData();&#10;      });">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/ContentLeft.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/LogsAll.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,14 +191,7 @@
       <workItem from="1603328923313" duration="23681000" />
       <workItem from="1603414991059" duration="19106000" />
       <workItem from="1603670145330" duration="3722000" />
-      <workItem from="1603761060766" duration="4852000" />
-    </task>
-    <task id="LOCAL-00143" summary="提交了头像值">
-      <created>1602824969326</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1602824969327</updated>
+      <workItem from="1603761060766" duration="12330000" />
     </task>
     <task id="LOCAL-00144" summary="获取当前时间，计算年限。优化显示一般的数据情况">
       <created>1602834970009</created>
@@ -537,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603768540968</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="修复 Error in v-on handler: &quot;TypeError: Cannot read property 'clickData' of undefined&quot;  &#10;this.$nextTick(function () {&#10;        this.$refs.ContentsUp.clickData();&#10;      });">
+      <created>1603774976068</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1603774976068</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +572,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="调整取日期的位置，使用范围扩大" />
     <MESSAGE value="通过焦点失去来触发传值" />
     <MESSAGE value="修改数据格式" />
     <MESSAGE value="绑定好月份选择" />
@@ -598,7 +596,8 @@
     <MESSAGE value="多个图标只有最后一个自动更新大小，" />
     <MESSAGE value="多个图标只有最后一个自动更新大小，&#10;window.addEventListener('resize', this.chartPie.resize);" />
     <MESSAGE value="调整倒计时颜色" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整倒计时颜色" />
+    <MESSAGE value="修复 Error in v-on handler: &quot;TypeError: Cannot read property 'clickData' of undefined&quot;  &#10;this.$nextTick(function () {&#10;        this.$refs.ContentsUp.clickData();&#10;      });" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复 Error in v-on handler: &quot;TypeError: Cannot read property 'clickData' of undefined&quot;  &#10;this.$nextTick(function () {&#10;        this.$refs.ContentsUp.clickData();&#10;      });" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -638,19 +637,20 @@
     </state>
     <state x="-1208" y="130" key="RollbackChangesDialog/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603444020872" />
     <state x="712" y="228" key="RollbackChangesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602233517610" />
-    <state x="526" y="91" key="SettingsEditor" timestamp="1603256651261">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1394" y="-7" key="SettingsEditor" timestamp="1603781145895">
+      <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
+    <state x="-1394" y="-7" key="SettingsEditor/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603781145895" />
     <state x="526" y="91" key="SettingsEditor/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603256651261" />
     <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598922387845" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1599199373140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2" timestamp="1603256447595">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1311" y="148" key="Vcs.Push.Dialog.v2" timestamp="1603781150399">
+      <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
-    <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1601194280372" />
+    <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603781150399" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603256447595" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
     <state x="-1157" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603092657420">
