@@ -4,7 +4,7 @@
       <a-collapse v-model="activeKey">
         <a-collapse-panel v-for="mark in mark_show" :key="mark.index" header="评分">
           <p>评分人：<span class="mark_reason">{{ mark.author }}</span></p>
-          <p>评分时间：<span class="mark_reason">{{ mark.comment_time }}</span></p>
+          <p>评分时间：<span class="mark_reason">{{ mark.comment_time | timefilters }}</span></p>
           <p>{{ mark.type }}为: <span class="mark_number">{{ mark.score }}</span></p>
           <p>理由: <span class="mark_reason">{{ mark.remarks }}</span></p>
         </a-collapse-panel>
@@ -17,6 +17,21 @@
 import Bus from './bus.js';
 export default {
   name: 'MarkShow',
+  filters: {
+    timefilters(val) {
+      if (val === null || val === '') {
+        return '暂无时间';
+      }
+      const d = new Date(val); // val 为表格内取到的后台时间
+      const month = d.getMonth() + 1 < 10 ? `0${d.getMonth() + 1}` : d.getMonth() + 1;
+      const day = d.getDate() < 10 ? `0${d.getDate()}` : d.getDate();
+      const hours = d.getHours() < 10 ? `0${d.getHours()}` : d.getHours();
+      const min = d.getMinutes() < 10 ? `0${d.getMinutes()}` : d.getMinutes();
+      const sec = d.getSeconds() < 10 ? `0${d.getSeconds()}` : d.getSeconds();
+      const times = `${d.getFullYear()}-${month}-${day} ${hours}:${min}:${sec}`;
+      return times;
+    },
+  },
   data() {
     return {
       mark_show: [],
