@@ -28,10 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="饼状图缩小">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整登录框位置">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,14 +193,8 @@
       <workItem from="1603670145330" duration="3722000" />
       <workItem from="1603761060766" duration="13112000" />
       <workItem from="1603871295516" duration="3440000" />
-      <workItem from="1603933740133" duration="896000" />
-    </task>
-    <task id="LOCAL-00147" summary="添加选择框的跳转，准备传组织号">
-      <created>1603091487816</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1603091487816</updated>
+      <workItem from="1603933740133" duration="1685000" />
+      <workItem from="1603959777362" duration="999000" />
     </task>
     <task id="LOCAL-00148" summary="此处setTimeout一下，就可以取到最新数据">
       <created>1603092151712</created>
@@ -539,7 +532,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603934310032</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="调整登录框位置">
+      <created>1603934759182</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1603934759182</updated>
+    </task>
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +575,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="绑定好季度" />
     <MESSAGE value="三和一，部分需修改" />
     <MESSAGE value="刚刚误删了元素二的赋值" />
     <MESSAGE value="刚刚误删了元素二的赋值；删除无意义的打印" />
@@ -600,7 +599,8 @@
     <MESSAGE value="0.0.5版本" />
     <MESSAGE value="修复了时间显示格式的问题" />
     <MESSAGE value="饼状图缩小" />
-    <option name="LAST_COMMIT_MESSAGE" value="饼状图缩小" />
+    <MESSAGE value="调整登录框位置" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整登录框位置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

@@ -10,11 +10,11 @@
         <div class="row_right">性别：{{ gender }}</div>
       </div>
       <div class="row">
-        <div class="row_left">职位：{{ zhPosition }}</div>
+        <div class="row_left">工号：{{ empID }}</div>
         <div class="row_right">学历：{{ education }}</div>
       </div>
       <div class="row">
-        <div class="row_left">出生年月：{{ dateOfBirth }}</div>
+        <div class="row_left">职位：{{ zhPosition }}</div>
         <div class="row_right">入职日期：{{ dateOfHire }}</div>
       </div>
       <div class="row">
@@ -41,7 +41,7 @@ export default {
       gender: '',
       zhPosition: '',
       education: '',
-      dateOfBirth: '',
+      empID: '',
       dateOfHire: '',
       yearForWork: '',
       yearInCompany: '',
@@ -60,7 +60,7 @@ export default {
           this.itemData = res.data;
           this.zhName = this.itemData.name;
           this.enName = this.itemData.enName;
-          // 职位数组变为只取第一哥元素的值
+          // 职位数组变为只取第一个元素的值
           const zhPositions = this.itemData.roles[0];
           console.log(zhPositions);
           this.zhPosition = zhPositions;
@@ -79,11 +79,11 @@ export default {
             this.education = '暂无学历信息';
           }
           // 生日
-          const dateOfBirths = this.itemData.dateOfBirth;
-          if (dateOfBirths !== null) {
-            this.dateOfBirth = this.itemData.dateOfBirth;
+          const empIDs = this.itemData.empID;
+          if (empIDs !== null) {
+            this.empID = this.itemData.empID;
           } else {
-            this.dateOfBirth = '暂无生日信息';
+            this.empID = '暂无工号信息';
           }
           // 入职时间
           const dateOfHires = this.itemData.dateOfHire;
