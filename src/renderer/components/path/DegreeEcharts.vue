@@ -39,7 +39,7 @@ export default {
             {
               name: '分布占比',
               type: 'pie',
-              radius: '55%',
+              radius: '52%',
               center: ['55%', '45%'],
               avoidLabelOverlap: true,
               data: this.groupEducation,

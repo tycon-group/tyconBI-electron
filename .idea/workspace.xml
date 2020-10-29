@@ -28,9 +28,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="0.0.5版本">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="修复了时间显示格式的问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/MarkShow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/MarkShow.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/AgeEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/AgeEcharts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/SexEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/SexEcharts.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,14 +194,8 @@
       <workItem from="1603414991059" duration="19106000" />
       <workItem from="1603670145330" duration="3722000" />
       <workItem from="1603761060766" duration="13112000" />
-      <workItem from="1603871295516" duration="1098000" />
-    </task>
-    <task id="LOCAL-00145" summary="修改折线图，X轴为4月到下年3月">
-      <created>1603076811143</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1603076811143</updated>
+      <workItem from="1603871295516" duration="3440000" />
+      <workItem from="1603933740133" duration="290000" />
     </task>
     <task id="LOCAL-00146" summary="优化个人信息显示，切换组织时，刷新变为空白">
       <created>1603085942259</created>
@@ -537,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603787587812</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="修复了时间显示格式的问题">
+      <created>1603872639991</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1603872639992</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,7 +576,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改数据格式" />
     <MESSAGE value="绑定好月份选择" />
     <MESSAGE value="绑定好季度" />
     <MESSAGE value="三和一，部分需修改" />
@@ -598,7 +600,8 @@
     <MESSAGE value="调整倒计时颜色" />
     <MESSAGE value="修复 Error in v-on handler: &quot;TypeError: Cannot read property 'clickData' of undefined&quot;  &#10;this.$nextTick(function () {&#10;        this.$refs.ContentsUp.clickData();&#10;      });" />
     <MESSAGE value="0.0.5版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="0.0.5版本" />
+    <MESSAGE value="修复了时间显示格式的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复了时间显示格式的问题" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

@@ -39,8 +39,8 @@ export default {
             {
               name: '分布占比',
               type: 'pie',
-              radius: '55%',
-              center: ['50%', '50%'],
+              radius: '52%',
+              center: ['50%', '45%'],
               avoidLabelOverlap: true,
               data: this.groupGender,
               itemStyle: {
