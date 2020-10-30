@@ -28,9 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整登录框位置">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="去掉生日选项，改为工号">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/GroupListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/GroupListNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,14 +195,8 @@
       <workItem from="1603761060766" duration="13112000" />
       <workItem from="1603871295516" duration="3440000" />
       <workItem from="1603933740133" duration="1685000" />
-      <workItem from="1603959777362" duration="999000" />
-    </task>
-    <task id="LOCAL-00148" summary="此处setTimeout一下，就可以取到最新数据">
-      <created>1603092151712</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1603092151712</updated>
+      <workItem from="1603959777362" duration="2420000" />
+      <workItem from="1604020173792" duration="1606000" />
     </task>
     <task id="LOCAL-00149" summary="添加补写数，评分数区分人事和直属，优化css">
       <created>1603092697320</created>
@@ -539,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603934759182</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="去掉生日选项，改为工号">
+      <created>1603960810492</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1603960810492</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +577,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="三和一，部分需修改" />
     <MESSAGE value="刚刚误删了元素二的赋值" />
     <MESSAGE value="刚刚误删了元素二的赋值；删除无意义的打印" />
     <MESSAGE value="优化打印提示" />
@@ -600,7 +601,8 @@
     <MESSAGE value="修复了时间显示格式的问题" />
     <MESSAGE value="饼状图缩小" />
     <MESSAGE value="调整登录框位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整登录框位置" />
+    <MESSAGE value="去掉生日选项，改为工号" />
+    <option name="LAST_COMMIT_MESSAGE" value="去掉生日选项，改为工号" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -665,10 +667,10 @@
     </state>
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602471557655" />
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916421385" />
-    <state x="-1122" y="168" key="run.anything.popup" timestamp="1603156800124">
+    <state x="-1122" y="168" key="run.anything.popup" timestamp="1603960980290">
       <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
-    <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603156800124" />
+    <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603960980290" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
     <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1603443516876">

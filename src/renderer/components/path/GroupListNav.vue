@@ -17,7 +17,7 @@
       </a-menu-item>
 
       <a-menu-item key="potential" @click="potentialGRO">
-        <span>发展潜力</span>
+        <span style="color: red">待定待定</span>
       </a-menu-item>
 
       <a-menu-item key="contribution" @click="contributionGRO">
