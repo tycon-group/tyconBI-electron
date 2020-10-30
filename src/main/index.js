@@ -34,6 +34,21 @@ function createWindow() {
   });
 }
 
+// 限制只可以打开一个应用,2.x的文档
+// eslint-disable-next-line no-unused-vars
+const isSecondInstance = app.makeSingleInstance((commandLine, workingDirectory) => {
+  // Someone tried to run a second instance, we should focus our window.
+  if (mainWindow) {
+    if (mainWindow.isMinimized()) mainWindow.restore();
+    mainWindow.focus();
+    mainWindow.show();
+  }
+});
+
+if (isSecondInstance) {
+  app.quit();
+}
+
 app.on('ready', createWindow);
 
 app.on('window-all-closed', () => {

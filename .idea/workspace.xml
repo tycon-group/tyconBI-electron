@@ -28,11 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="合并子组件，去除不必要配置">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整水球图细节">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,21 +196,7 @@
       <workItem from="1603871295516" duration="3440000" />
       <workItem from="1603933740133" duration="1685000" />
       <workItem from="1603959777362" duration="2420000" />
-      <workItem from="1604020173792" duration="13425000" />
-    </task>
-    <task id="LOCAL-00156" summary="添加数据源提醒">
-      <created>1603162270968</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1603162270968</updated>
-    </task>
-    <task id="LOCAL-00157" summary="删除不需要的组件">
-      <created>1603162432796</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1603162432796</updated>
+      <workItem from="1604020173792" duration="14540000" />
     </task>
     <task id="LOCAL-00158" summary="清理不必要的引用">
       <created>1603171527607</created>
@@ -542,7 +527,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604036674302</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="添加水球图表示总体评价">
+      <created>1604044341278</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1604044341278</updated>
+    </task>
+    <task id="LOCAL-00206" summary="调整水球图细节">
+      <created>1604044720323</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1604044720323</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -578,8 +577,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="调整文字设置2" />
-    <MESSAGE value="实现动态取值" />
     <MESSAGE value="const originalPush = Router.prototype.push&#10;   Router.prototype.push = function push(location) {&#10;   return originalPush.call(this, location).catch(err =&gt; err)&#10;}&#10;&#10;解决： Error: Avoided redundant navigation to current location:" />
     <MESSAGE value="调整显示" />
     <MESSAGE value="隐藏组织看部门内人员列表" />
@@ -603,7 +600,9 @@
     <MESSAGE value="调整工作态度的数据呈现" />
     <MESSAGE value="微调总计的雷达图大小" />
     <MESSAGE value="合并子组件，去除不必要配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="合并子组件，去除不必要配置" />
+    <MESSAGE value="添加水球图表示总体评价" />
+    <MESSAGE value="调整水球图细节" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整水球图细节" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
