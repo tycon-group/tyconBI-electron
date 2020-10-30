@@ -28,9 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整部分选项框的样式 3">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整工作态度的数据呈现">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,14 +195,7 @@
       <workItem from="1603871295516" duration="3440000" />
       <workItem from="1603933740133" duration="1685000" />
       <workItem from="1603959777362" duration="2420000" />
-      <workItem from="1604020173792" duration="8486000" />
-    </task>
-    <task id="LOCAL-00153" summary="需要将连接位移到group页面；&#10;实现了传值">
-      <created>1603101912905</created>
-      <option name="number" value="00153" />
-      <option name="presentableId" value="LOCAL-00153" />
-      <option name="project" value="LOCAL" />
-      <updated>1603101912905</updated>
+      <workItem from="1604020173792" duration="9730000" />
     </task>
     <task id="LOCAL-00154" summary="取到最新一个月的数据">
       <created>1603157187034</created>
@@ -540,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604029034558</updated>
     </task>
-    <option name="localTasksCounter" value="202" />
+    <task id="LOCAL-00202" summary="调整工作态度的数据呈现">
+      <created>1604035408364</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1604035408364</updated>
+    </task>
+    <option name="localTasksCounter" value="203" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +576,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="在输入框中输入，获取日志趋势信息；&#10;需要加上选择框else判断；&#10;趋势图默认值需要获取" />
     <MESSAGE value="获取并打印了默认情况下，折线图的值，" />
     <MESSAGE value="调整文字设置" />
     <MESSAGE value="调整文字设置2" />
@@ -601,7 +600,8 @@
     <MESSAGE value="调整部分选项框的样式" />
     <MESSAGE value="调整部分选项框的样式 2" />
     <MESSAGE value="调整部分选项框的样式 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整部分选项框的样式 3" />
+    <MESSAGE value="调整工作态度的数据呈现" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整工作态度的数据呈现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

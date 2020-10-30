@@ -32,12 +32,12 @@ export default {
 
 .radar {
   width: 100%;
-  height: 40%;
+  height: 50%;
   border-bottom: 1px solid #dddddd;
 }
 
 .evidence {
   width: 100%;
-  height: 60%;
+  height: 50%;
 }
 </style>
