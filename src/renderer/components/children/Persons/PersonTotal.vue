@@ -14,7 +14,7 @@
         </a-card>
       </div>
       <div class="evMark">
-        <div id="myChartWater" :style="{width: '340px', height: '220px',}"></div>
+        <div title="晋升评价" id="myChartWater" :style="{width: '340px', height: '220px',}"></div>
       </div>
     </div>
   </div>
@@ -31,8 +31,8 @@ export default {
   data() {
     return {
       chartPie: null,
-      score: 0.8,
-      healthyName: '良好',
+      score: 0.9,
+      healthyName: '优秀',
     };
   },
   methods: {
@@ -126,7 +126,7 @@ export default {
         series: [
           {
             type: 'liquidFill',
-            radius: '80%', // 水球的半径
+            radius: '60%', // 水球的半径
             data,
             backgroundStyle: {
               color: 'white',
@@ -144,13 +144,13 @@ export default {
                       this.healthyName
                     }}`,
                 textStyle: {
-                  fontSize: 55, // 字体大小
+                  fontSize: 40, // 字体大小
                 },
                 position: ['50%', '50%'],
                 rich: {
                   // 富文本 对字体进一步设置样式。a对应的value,b对应的healthyName
                   a: {
-                    fontSize: 60,
+                    fontSize: 50,
                     lineHeight: 10,
                     fontWeight: 'bold',
                     padding: [0, 0, 0, 20],
