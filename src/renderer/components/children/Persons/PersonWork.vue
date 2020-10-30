@@ -1,7 +1,7 @@
 <template>
   <div class="total">
     <div class="detailed">
-      <div class="col1">
+      <div class="col1" style="background-color: #888888">
         <span class="partName">日志数 ></span>
         <br/>
         <span class="partValue">{{ count_of_worklogs }}</span>
@@ -182,7 +182,6 @@ export default {
 .col1 {
   width: 33%;
   height: 50%;
-  margin-top: 15px;
   float: left;
   text-align: center;
 }
