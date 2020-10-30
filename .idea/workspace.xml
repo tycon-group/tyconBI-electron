@@ -28,10 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整水球图细节">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="设置了一次只打开一个页面">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,14 +195,7 @@
       <workItem from="1603871295516" duration="3440000" />
       <workItem from="1603933740133" duration="1685000" />
       <workItem from="1603959777362" duration="2420000" />
-      <workItem from="1604020173792" duration="14540000" />
-    </task>
-    <task id="LOCAL-00158" summary="清理不必要的引用">
-      <created>1603171527607</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1603171527607</updated>
+      <workItem from="1604020173792" duration="18319000" />
     </task>
     <task id="LOCAL-00159" summary="通过bus传递了上月统计数据">
       <created>1603172768955</created>
@@ -541,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604044720323</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="设置了一次只打开一个页面">
+      <created>1604045409823</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1604045409823</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +576,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="const originalPush = Router.prototype.push&#10;   Router.prototype.push = function push(location) {&#10;   return originalPush.call(this, location).catch(err =&gt; err)&#10;}&#10;&#10;解决： Error: Avoided redundant navigation to current location:" />
     <MESSAGE value="调整显示" />
     <MESSAGE value="隐藏组织看部门内人员列表" />
     <MESSAGE value="组织中大部分设为空列表显示" />
@@ -602,7 +600,8 @@
     <MESSAGE value="合并子组件，去除不必要配置" />
     <MESSAGE value="添加水球图表示总体评价" />
     <MESSAGE value="调整水球图细节" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整水球图细节" />
+    <MESSAGE value="设置了一次只打开一个页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="设置了一次只打开一个页面" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">

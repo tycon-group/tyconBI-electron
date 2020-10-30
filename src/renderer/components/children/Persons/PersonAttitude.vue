@@ -47,8 +47,21 @@
         <br/>
         <span class="partName">异常<span class="titleNumber"></span></span>
         <br/>
-        <span class="partName">次数</span><span class="partValue">1 <span class="littleFont">(次)</span></span>
-        <span class="partName">时长</span><span class="partValue">2 <span class="littleFont">(分钟)</span></span>
+        <a-popover trigger="hover">
+          <template slot="content">
+            <p>消迟到：1次</p>
+            <p>消早退：0次</p>
+            <p>消缺卡：1次</p>
+          </template>
+          <span class="partName">次数</span><span class="partValue">{{ testss }} <span class="littleFont">(次)</span></span>
+        </a-popover>
+        <a-popover trigger="hover">
+          <template slot="content">
+            <p>消迟到：2分钟</p>
+            <p>消早退：0分钟</p>
+          </template>
+          <span class="partName">时长</span><span class="partValue">2 <span class="littleFont">(分钟)</span></span>
+        </a-popover>
       </div>
     </div>
     <div class="trend">
@@ -60,6 +73,11 @@
 <script>
 export default {
   name: 'PersonWork',
+  data() {
+    return {
+      testss: '0',
+    };
+  },
 };
 </script>
 
