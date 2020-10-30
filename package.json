@@ -59,7 +59,6 @@
       "allowToChangeInstallationDirectory": true,
       "perMachine": true
     },
-
     "mac": {
       "icon": "build/icons/icon.icns",
       "target": "pkg"
@@ -70,7 +69,6 @@
         "nsis",
         "zip"
       ]
-
     },
     "linux": {
       "icon": "build/icons",
@@ -84,6 +82,7 @@
   "dependencies": {
     "ant-design-vue": "^1.6.4",
     "axios": "^0.18.0",
+    "echarts-liquidfill": "^2.0.6",
     "electron-store": "^6.0.0",
     "electron-updater": "^4.3.5",
     "moment": "^2.28.0",
