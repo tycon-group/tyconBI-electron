@@ -3,13 +3,13 @@
     <div class="detailed">
       <div class="col1">
         <br/>
-        <span class="partName">应出勤工时</span>
+        <span class="partName">应出勤工时<span class="titleNumber"></span> </span>
         <br/>
         <span class="partValue">136 <span class="littleFont">(小时)</span></span>
       </div>
       <div class="col1">
         <br/>
-        <span class="partName">出勤工时</span>
+        <span class="partName">出勤工时<span class="titleNumber"></span> </span>
         <br/>
         <span class="partValue">135 <span class="littleFont">(小时)</span></span>
       </div>
@@ -45,10 +45,10 @@
       </div>
       <div class="col2">
         <br/>
-        <span class="partName">异常</span>
+        <span class="partName">异常<span class="titleNumber"></span></span>
         <br/>
-        <span class="partName">次数：</span><span class="partValue">1 <span class="littleFont">(次)</span></span>
-        <span class="partName">时长：</span><span class="partValue">2 <span class="littleFont">(分钟)</span></span>
+        <span class="partName">次数</span><span class="partValue">1 <span class="littleFont">(次)</span></span>
+        <span class="partName">时长</span><span class="partValue">2 <span class="littleFont">(分钟)</span></span>
       </div>
     </div>
     <div class="trend">
@@ -83,12 +83,14 @@ export default {
   width: 25%;
   height: 50%;
   float: left;
+  margin-top: -20px;
   text-align: center;
 }
 .col2 {
   width: 25%;
   height: 50%;
   float: left;
+  margin-top: -10px;
   text-align: center;
 }
 

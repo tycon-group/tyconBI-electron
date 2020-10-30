@@ -28,10 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整部分选项框的样式 2">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整部分选项框的样式 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonWork.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,14 +195,7 @@
       <workItem from="1603871295516" duration="3440000" />
       <workItem from="1603933740133" duration="1685000" />
       <workItem from="1603959777362" duration="2420000" />
-      <workItem from="1604020173792" duration="6985000" />
-    </task>
-    <task id="LOCAL-00152" summary="修改组织架构权限，显示；&#10;传递被查看人员的ID">
-      <created>1603097229261</created>
-      <option name="number" value="00152" />
-      <option name="presentableId" value="LOCAL-00152" />
-      <option name="project" value="LOCAL" />
-      <updated>1603097229261</updated>
+      <workItem from="1604020173792" duration="8486000" />
     </task>
     <task id="LOCAL-00153" summary="需要将连接位移到group页面；&#10;实现了传值">
       <created>1603101912905</created>
@@ -541,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604026485450</updated>
     </task>
-    <option name="localTasksCounter" value="201" />
+    <task id="LOCAL-00201" summary="调整部分选项框的样式 3">
+      <created>1604029034558</created>
+      <option name="number" value="00201" />
+      <option name="presentableId" value="LOCAL-00201" />
+      <option name="project" value="LOCAL" />
+      <updated>1604029034558</updated>
+    </task>
+    <option name="localTasksCounter" value="202" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +576,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="把折线图组件拆解到上一级" />
     <MESSAGE value="在输入框中输入，获取日志趋势信息；&#10;需要加上选择框else判断；&#10;趋势图默认值需要获取" />
     <MESSAGE value="获取并打印了默认情况下，折线图的值，" />
     <MESSAGE value="调整文字设置" />
@@ -602,7 +600,8 @@
     <MESSAGE value="替换发展潜力，改为放在总览中的，晋升评价" />
     <MESSAGE value="调整部分选项框的样式" />
     <MESSAGE value="调整部分选项框的样式 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整部分选项框的样式 2" />
+    <MESSAGE value="调整部分选项框的样式 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整部分选项框的样式 3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -673,10 +672,10 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603960980290" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1603443516876">
+    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1604033700125">
       <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
-    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603443516876" />
+    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1604033700125" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603274334811" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
