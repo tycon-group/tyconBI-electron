@@ -28,9 +28,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="调整工作态度的数据呈现">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="微调总计的雷达图大小">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonRankNav.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonTotal.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/AttitudeRank.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/ContributionRank.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/LawRank.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/PotentialRank.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/ranking/WorkRank.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/RadarEcharts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/RadarEcharts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,14 +203,7 @@
       <workItem from="1603871295516" duration="3440000" />
       <workItem from="1603933740133" duration="1685000" />
       <workItem from="1603959777362" duration="2420000" />
-      <workItem from="1604020173792" duration="9730000" />
-    </task>
-    <task id="LOCAL-00154" summary="取到最新一个月的数据">
-      <created>1603157187034</created>
-      <option name="number" value="00154" />
-      <option name="presentableId" value="LOCAL-00154" />
-      <option name="project" value="LOCAL" />
-      <updated>1603157187035</updated>
+      <workItem from="1604020173792" duration="10639000" />
     </task>
     <task id="LOCAL-00155" summary="启用treeselect搜索，条件为title">
       <created>1603160343174</created>
@@ -540,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604035408364</updated>
     </task>
-    <option name="localTasksCounter" value="203" />
+    <task id="LOCAL-00203" summary="微调总计的雷达图大小">
+      <created>1604036037980</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1604036037981</updated>
+    </task>
+    <option name="localTasksCounter" value="204" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -576,7 +584,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="获取并打印了默认情况下，折线图的值，" />
     <MESSAGE value="调整文字设置" />
     <MESSAGE value="调整文字设置2" />
     <MESSAGE value="实现动态取值" />
@@ -601,7 +608,8 @@
     <MESSAGE value="调整部分选项框的样式 2" />
     <MESSAGE value="调整部分选项框的样式 3" />
     <MESSAGE value="调整工作态度的数据呈现" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整工作态度的数据呈现" />
+    <MESSAGE value="微调总计的雷达图大小" />
+    <option name="LAST_COMMIT_MESSAGE" value="微调总计的雷达图大小" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
