@@ -198,10 +198,10 @@ export default {
 }
 
 .partName {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .partValue {
-  font-size: 30px;
+  font-size: 24px;
 }
 </style>

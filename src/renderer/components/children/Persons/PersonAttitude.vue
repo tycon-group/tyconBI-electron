@@ -1,7 +1,7 @@
 <template>
   <div class="total">
     <div class="detailed">
-      <div class="col1" style="background-color: #888888">
+      <div class="col1">
         <br/>
         <span class="partName">应出勤工时</span>
         <br/>
@@ -15,40 +15,40 @@
       </div>
       <div class="col1">
         <br/>
-        <span class="partName">请假 0 <span class="littleFont">(次)</span></span>
+        <span class="partName">请假 <span class="titleNumber">0</span> <span class="littleFont">(次)</span></span>
         <br/>
         <span class="partValue">0 <span class="littleFont">(天)</span>| 0 <span class="littleFont">(小时)</span></span>
       </div>
       <div class="col1">
         <br/>
-        <span class="partName">日志评分数</span>
+        <span class="partName">外出 <span class="titleNumber">0</span> <span class="littleFont">(次)</span></span>
         <br/>
-        <span class="partName">直属：</span><span class="partValue">{{  }}</span>
-        <span class="partName">人事：</span><span class="partValue">{{  }}</span>
+        <span class="partValue">0 <span class="littleFont">(天)</span>| 0 <span class="littleFont">(小时)</span></span>
       </div>
       <div class="col2">
         <br/>
-        <span class="partName">日志补写数</span>
+        <span class="partName">加班  <span class="titleNumber">0</span> <span class="littleFont">(次)</span></span>
         <br/>
-        <span class="partValue">{{  }}</span>
+        <span class="partValue">135 <span class="littleFont">(小时)</span></span>
       </div>
       <div class="col2">
         <br/>
-        <span class="partName">高评数</span>
+        <span class="partName">迟到  <span class="titleNumber">0</span> <span class="littleFont">(次)</span></span>
         <br/>
-        <span class="partValue">{{  }}</span>
+        <span class="partValue">135 <span class="littleFont">(小时)</span></span>
       </div>
       <div class="col2">
         <br/>
-        <span class="partName">低评数</span>
+        <span class="partName">早退  <span class="titleNumber">0</span> <span class="littleFont">(次)</span></span>
         <br/>
-        <span class="partValue">{{  }}</span>
+        <span class="partValue">135 <span class="littleFont">(小时)</span></span>
       </div>
       <div class="col2">
         <br/>
-        <span class="partName">低评数2</span>
+        <span class="partName">异常</span>
         <br/>
-        <span class="partValue">{{  }}</span>
+        <span class="partName">次数：</span><span class="partValue">1 <span class="littleFont">(次)</span></span>
+        <span class="partName">时长：</span><span class="partValue">2 <span class="littleFont">(分钟)</span></span>
       </div>
     </div>
     <div class="trend">
@@ -93,15 +93,18 @@ export default {
 }
 
 .partName {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .partValue {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .littleFont{
   color: #DDDDDD;
   font-size: 12px;
+}
+.titleNumber{
+  font-size: 24px;
 }
 </style>
