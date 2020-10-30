@@ -1,34 +1,40 @@
 <template>
   <div class="total">
     <div class="detailed">
-      <div class="col1" style="background-color: #888888">
-        <span class="partName">日志数 ></span>
+      <div class="col1">
+        <br/>
+        <span class="partName">日志数</span>
         <br/>
         <span class="partValue">{{ count_of_worklogs }}</span>
       </div>
       <div class="col1">
-        <span class="partName">日志评论数 ></span>
+        <br/>
+        <span class="partName">日志评论数</span>
         <br/>
         <span class="partValue">{{ count_of_commented }}</span>
       </div>
       <div class="col1">
-        <span class="partName">日志评分数 ></span>
+        <br/>
+        <span class="partName">日志评分数</span>
         <br/>
         <span class="partName">直属：</span><span class="partValue">{{ count_of_scored }}</span>
         <span class="partName">人事：</span><span class="partValue">{{ count_of_scored2 }}</span>
       </div>
       <div class="col2">
-        <span class="partName">日志补写数 ></span>
+        <br/>
+        <span class="partName">日志补写数</span>
         <br/>
         <span class="partValue">{{ count_of_rewrote }}</span>
       </div>
       <div class="col2">
-        <span class="partName">高评数 ></span>
+        <br/>
+        <span class="partName">高评数</span>
         <br/>
         <span class="partValue">{{ count_of_high_score }}</span>
       </div>
       <div class="col2">
-        <span class="partName">低评数 ></span>
+        <br/>
+        <span class="partName">低评数</span>
         <br/>
         <span class="partValue">{{ count_of_low_score }}</span>
       </div>
@@ -173,7 +179,6 @@ export default {
   height: 40%;
   border-bottom: 1px solid #dddddd;
 }
-
 .trend {
   width: 100%;
   height: 60%;
@@ -191,12 +196,12 @@ export default {
   float: left;
   text-align: center;
 }
+
 .partName {
   font-size: 12px;
 }
 
 .partValue {
   font-size: 30px;
-
 }
 </style>

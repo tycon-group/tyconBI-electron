@@ -2,43 +2,51 @@
   <div class="total">
     <div class="detailed">
       <div class="col1" style="background-color: #888888">
-        <span class="partName">应出勤工时 ></span>
         <br/>
-        <span class="partValue">136 <span style="color: #DDDDDD">(小时)</span></span>
+        <span class="partName">应出勤工时</span>
+        <br/>
+        <span class="partValue">136 <span class="littleFont">(小时)</span></span>
       </div>
       <div class="col1">
-        <span class="partName">日志评论数 ></span>
         <br/>
-        <span class="partValue">{{  }}</span>
+        <span class="partName">出勤工时</span>
+        <br/>
+        <span class="partValue">135 <span class="littleFont">(小时)</span></span>
       </div>
       <div class="col1">
-        <span class="partName">日志评论数2 ></span>
         <br/>
-        <span class="partValue">{{  }}</span>
+        <span class="partName">请假 0 <span class="littleFont">(次)</span></span>
+        <br/>
+        <span class="partValue">0 <span class="littleFont">(天)</span>| 0 <span class="littleFont">(小时)</span></span>
       </div>
       <div class="col1">
-        <span class="partName">日志评分数 ></span>
+        <br/>
+        <span class="partName">日志评分数</span>
         <br/>
         <span class="partName">直属：</span><span class="partValue">{{  }}</span>
         <span class="partName">人事：</span><span class="partValue">{{  }}</span>
       </div>
       <div class="col2">
-        <span class="partName">日志补写数 ></span>
+        <br/>
+        <span class="partName">日志补写数</span>
         <br/>
         <span class="partValue">{{  }}</span>
       </div>
       <div class="col2">
-        <span class="partName">高评数 ></span>
+        <br/>
+        <span class="partName">高评数</span>
         <br/>
         <span class="partValue">{{  }}</span>
       </div>
       <div class="col2">
-        <span class="partName">低评数 ></span>
+        <br/>
+        <span class="partName">低评数</span>
         <br/>
         <span class="partValue">{{  }}</span>
       </div>
       <div class="col2">
-        <span class="partName">低评数2 ></span>
+        <br/>
+        <span class="partName">低评数2</span>
         <br/>
         <span class="partValue">{{  }}</span>
       </div>
@@ -66,7 +74,6 @@ export default {
   height: 40%;
   border-bottom: 1px solid #dddddd;
 }
-
 .trend {
   width: 100%;
   height: 60%;
@@ -83,5 +90,18 @@ export default {
   height: 50%;
   float: left;
   text-align: center;
+}
+
+.partName {
+  font-size: 12px;
+}
+
+.partValue {
+  font-size: 30px;
+}
+
+.littleFont{
+  color: #DDDDDD;
+  font-size: 12px;
 }
 </style>
