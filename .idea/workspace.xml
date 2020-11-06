@@ -28,10 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="设置了一次只打开一个页面">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="优化路由中的&lt;a&gt;标签的显示效果">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/DeptBtn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/DeptBtn.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/CompanyMenu.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,14 +199,7 @@
       <workItem from="1604274840041" duration="579000" />
       <workItem from="1604275435612" duration="1372000" />
       <workItem from="1604565795423" duration="780000" />
-      <workItem from="1604628099852" duration="1694000" />
-    </task>
-    <task id="LOCAL-00159" summary="通过bus传递了上月统计数据">
-      <created>1603172768955</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1603172768955</updated>
+      <workItem from="1604628099852" duration="2890000" />
     </task>
     <task id="LOCAL-00160" summary="获取到传递来的值">
       <created>1603184405891</created>
@@ -545,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604045409823</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="优化路由中的&lt;a&gt;标签的显示效果">
+      <created>1604630296414</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1604630296415</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,7 +580,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="调整显示" />
     <MESSAGE value="隐藏组织看部门内人员列表" />
     <MESSAGE value="组织中大部分设为空列表显示" />
     <MESSAGE value="去掉忘记密码" />
@@ -606,7 +604,8 @@
     <MESSAGE value="添加水球图表示总体评价" />
     <MESSAGE value="调整水球图细节" />
     <MESSAGE value="设置了一次只打开一个页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="设置了一次只打开一个页面" />
+    <MESSAGE value="优化路由中的&lt;a&gt;标签的显示效果" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化路由中的&lt;a&gt;标签的显示效果" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
@@ -677,11 +676,11 @@
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603960980290" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
     <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1604038385695">
-      <screen x="-1920" y="-98" width="1920" height="1040" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1604630278170">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1604038385695" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603274334811" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1604630278170" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
   </component>
 </project>

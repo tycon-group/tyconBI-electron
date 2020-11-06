@@ -15,7 +15,7 @@
     </a-tree-select>
     <a-menu v-if="empData !== undefined && empData.length > 0" class="CodeMirror-vscrollbar2" style = "display: block; bottom: 0;" mode="inline" :scroll="{ x: false }">
       <a-menu-item @click="ckItem(item.url, item.empID)" v-for="item in empData" :key="item.index" style="width: 98%; text-align: center; border-bottom: 1px solid #F4F4F4">
-        <router-link to="/analysis/analysisPerson">
+        <router-link to="/analysis/analysisPerson" ondragstart="return false">
           <span>{{ item.name }}</span>
         </router-link>
       </a-menu-item>
