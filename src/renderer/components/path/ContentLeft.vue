@@ -63,13 +63,12 @@ export default {
       const Store = require('electron-store');
       const store = new Store();
       const empID = store.get('empID');
-      const dept2 = 'direct';
-      this.type1 = dept2;
-      // if (dept1 === true) {
-      //   this.type1 = 'direct';
-      // } else {
-      //   this.type1 = 'cross';
-      // }
+      const dept2 = store.get('dept1');
+      if (dept2 === true) {
+        this.type1 = 'direct';
+      } else {
+        this.type1 = 'cross';
+      }
       const url = `https://tyconcps.cn:4399/wl/myUndoneWorklogs/${empID}/?type=${this.type1}`;
       this.$http.get(url)
         .then((res) => {
