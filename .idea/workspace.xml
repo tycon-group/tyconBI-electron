@@ -30,7 +30,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="设置了一次只打开一个页面">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/DeptBtn.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/DeptBtn.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/Menus.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,6 +197,10 @@
       <workItem from="1603933740133" duration="1685000" />
       <workItem from="1603959777362" duration="2420000" />
       <workItem from="1604020173792" duration="18319000" />
+      <workItem from="1604274840041" duration="579000" />
+      <workItem from="1604275435612" duration="1372000" />
+      <workItem from="1604565795423" duration="780000" />
+      <workItem from="1604628099852" duration="1694000" />
     </task>
     <task id="LOCAL-00159" summary="通过bus传递了上月统计数据">
       <created>1603172768955</created>

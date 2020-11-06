@@ -5,21 +5,21 @@
     </div>
     <a-menu theme="dark" mode="inline" :default-selected-keys="[$route.path]">
       <a-menu-item key="/home" class="things" @click="toThing">
-        <router-link to="/home">
+        <router-link to="/home" ondragstart="return false">
           <a-icon type="project" />
           <span>待办事项</span>
         </router-link>
       </a-menu-item>
 
       <a-menu-item key="/markpage" class="analysis" @click="toMark">
-        <router-link to="/markpage">
+        <router-link to="/markpage" ondragstart="return false">
           <a-icon type="schedule" />
           <span class="marks">所有日志</span>
         </router-link>
       </a-menu-item>
 
       <a-menu-item key="/analysis" class="analysis" @click="toKPI">
-        <router-link to="/analysis">
+        <router-link to="/analysis" ondragstart="return false">
           <a-icon type="line-chart" />
           <span>KPI分析</span>
         </router-link>
