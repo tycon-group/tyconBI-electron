@@ -11,7 +11,7 @@
         <br/>
         <span class="partName">出勤工时<span class="titleNumber"></span> </span>
         <br/>
-        <span class="partValue">135 <span class="littleFont">(小时)</span></span>
+        <span class="partValue">141 <span class="littleFont">(小时)</span></span>
       </div>
       <div class="col1">
         <br/>
@@ -27,21 +27,21 @@
       </div>
       <div class="col2">
         <br/>
-        <span class="partName">加班  <span class="titleNumber">0</span> <span class="littleFont">(次)</span></span>
+        <span class="partName">加班  <span class="titleNumber">3</span> <span class="littleFont">(次)</span></span>
         <br/>
-        <span class="partValue">135 <span class="littleFont">(小时)</span></span>
+        <span class="partValue">5 <span class="littleFont">(小时)</span></span>
       </div>
       <div class="col2">
         <br/>
-        <span class="partName">迟到  <span class="titleNumber">0</span> <span class="littleFont">(次)</span></span>
+        <span class="partName">迟到  <span class="titleNumber">1</span> <span class="littleFont">(次)</span></span>
         <br/>
-        <span class="partValue">135 <span class="littleFont">(小时)</span></span>
+        <span class="partValue">2 <span class="littleFont">(分钟)</span></span>
       </div>
       <div class="col2">
         <br/>
         <span class="partName">早退  <span class="titleNumber">0</span> <span class="littleFont">(次)</span></span>
         <br/>
-        <span class="partValue">135 <span class="littleFont">(小时)</span></span>
+        <span class="partValue">0 <span class="littleFont">(分钟)</span></span>
       </div>
       <div class="col2">
         <br/>
@@ -53,7 +53,7 @@
             <p>消早退：0次</p>
             <p>消缺卡：1次</p>
           </template>
-          <span class="partName">次数</span><span class="partValue">{{ testss }} <span class="littleFont">(次)</span></span>
+          <span class="partName">次数</span><span class="partValue">2 <span class="littleFont">(次)</span></span>
         </a-popover>
         <a-popover trigger="hover">
           <template slot="content">
@@ -75,7 +75,7 @@ export default {
   name: 'PersonWork',
   data() {
     return {
-      testss: '0',
+      testss: '2',
     };
   },
 };

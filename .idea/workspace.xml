@@ -28,9 +28,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="1">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="打包11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,14 +200,8 @@
       <workItem from="1604275435612" duration="1372000" />
       <workItem from="1604565795423" duration="780000" />
       <workItem from="1604628099852" duration="3206000" />
-      <workItem from="1604640289814" duration="4945000" />
-    </task>
-    <task id="LOCAL-00161" summary="实现了日志信息的打印">
-      <created>1603186878857</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1603186878857</updated>
+      <workItem from="1604640289814" duration="6375000" />
+      <workItem from="1604891846309" duration="412000" />
     </task>
     <task id="LOCAL-00162" summary="优化了跳转结构">
       <created>1603187411024</created>
@@ -545,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604631332838</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="打包11">
+      <created>1604651574031</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1604651574031</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,7 +582,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="组织中大部分设为空列表显示" />
     <MESSAGE value="去掉忘记密码" />
     <MESSAGE value="恢复忘记密码，删掉记住密码" />
     <MESSAGE value="将组织和人员的空值用图标表示" />
@@ -606,7 +606,8 @@
     <MESSAGE value="设置了一次只打开一个页面" />
     <MESSAGE value="优化路由中的&lt;a&gt;标签的显示效果" />
     <MESSAGE value="优化路由中的&lt;a&gt;标签的显示效果  剩余部分" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化路由中的&lt;a&gt;标签的显示效果  剩余部分" />
+    <MESSAGE value="打包11" />
+    <option name="LAST_COMMIT_MESSAGE" value="打包11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
