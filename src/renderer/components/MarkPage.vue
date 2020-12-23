@@ -22,7 +22,6 @@
 <script>
 import Menus from './path/Menus.vue';
 import ContentsUp from './path/ContentsUp';
-import MarkShow from './path/MarkShow';
 import SearchInput from './path/SearchInput';
 import DataBtn from './path/DataBtn';
 import LogsAll from './path/LogsAll';
@@ -34,7 +33,6 @@ export default {
     LogsAll,
     DataBtn,
     SearchInput,
-    MarkShow,
     ContentsUp,
     Menus,
   },

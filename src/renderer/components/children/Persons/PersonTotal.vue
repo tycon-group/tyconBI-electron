@@ -8,9 +8,9 @@
     <div class="evidence">
       <div class="evContent">
         <a-card>
-          <p>高分次数：</p>
-          <p>出勤率：</p>
-          <p>突出贡献：</p>
+          <p>高分次数：{{ high_mark}} 次</p>
+          <p>出勤率：{{attendance}} %</p>
+          <p>突出贡献次数：{{ contribute}}次</p>
         </a-card>
       </div>
       <div class="evMark">
@@ -33,6 +33,9 @@ export default {
       chartPie: null,
       score: 0.9,
       healthyName: '优秀',
+      high_mark: 3,
+      attendance: 99,
+      contribute: 3,
     };
   },
   methods: {
