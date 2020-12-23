@@ -34,7 +34,7 @@ export default {
             indicator: [
               { text: '工作能力', max: 100 },
               { text: '工作态度', max: 100 },
-              { text: '待定待定', max: 100 },
+              { text: '发展潜力', max: 100 },
               { text: '突出贡献', max: 100 },
               { text: '遵纪守法', max: 100 },
             ],
