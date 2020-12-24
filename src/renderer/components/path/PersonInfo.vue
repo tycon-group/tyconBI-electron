@@ -138,6 +138,9 @@ export default {
       vm.flagTS = data;
       console.log(this.flagTS, '测试2'); // 这里取到了被点击的列表所对应的人员的信息链接
     });
+    // 此处写的方法专门为了测试突出贡献中的人员姓名写，后期需要删除
+    Bus.$emit('test_name', this.zhName);
+    console.log(this.zhName, 'dsadjasdasdjlasjdljadjla21312310938831098132093821');
   },
 };
 </script>
