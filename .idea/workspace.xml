@@ -28,9 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="打包11">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="完成部分传值">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonContribution.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonContribution.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonInfo.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,63 +202,25 @@
       <workItem from="1604565795423" duration="780000" />
       <workItem from="1604628099852" duration="3206000" />
       <workItem from="1604640289814" duration="6375000" />
-      <workItem from="1604891846309" duration="412000" />
-    </task>
-    <task id="LOCAL-00162" summary="优化了跳转结构">
-      <created>1603187411024</created>
-      <option name="number" value="00162" />
-      <option name="presentableId" value="LOCAL-00162" />
-      <option name="project" value="LOCAL" />
-      <updated>1603187411024</updated>
-    </task>
-    <task id="LOCAL-00163" summary="替换按钮组内容至选择框">
-      <created>1603249578407</created>
-      <option name="number" value="00163" />
-      <option name="presentableId" value="LOCAL-00163" />
-      <option name="project" value="LOCAL" />
-      <updated>1603249578423</updated>
-    </task>
-    <task id="LOCAL-00164" summary="替换按钮组内容至选择框">
-      <created>1603250130675</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1603250130675</updated>
-    </task>
-    <task id="LOCAL-00165" summary="改正接口所需要的参数">
-      <created>1603255760056</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1603255760056</updated>
-    </task>
-    <task id="LOCAL-00166" summary="输入框中取到财年值">
-      <created>1603258915471</created>
-      <option name="number" value="00166" />
-      <option name="presentableId" value="LOCAL-00166" />
-      <option name="project" value="LOCAL" />
-      <updated>1603258915471</updated>
-    </task>
-    <task id="LOCAL-00167" summary="对于输入框中的年份，前七个算作财年，后面12个算作真实年份">
-      <created>1603261398174</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1603261398174</updated>
-    </task>
-    <task id="LOCAL-00168" summary="调整默认显示上一月数据的接口链接">
-      <created>1603263574440</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1603263574440</updated>
-    </task>
-    <task id="LOCAL-00169" summary="调整取日期的位置，使用范围扩大">
-      <created>1603264528842</created>
-      <option name="number" value="00169" />
-      <option name="presentableId" value="LOCAL-00169" />
-      <option name="project" value="LOCAL" />
-      <updated>1603264528842</updated>
+      <workItem from="1604891846309" duration="1410000" />
+      <workItem from="1604903445228" duration="2599000" />
+      <workItem from="1604906244624" duration="208000" />
+      <workItem from="1607407125958" duration="511000" />
+      <workItem from="1607908737187" duration="183000" />
+      <workItem from="1607912270151" duration="45000" />
+      <workItem from="1607912448876" duration="6000" />
+      <workItem from="1607912466430" duration="17000" />
+      <workItem from="1607912514688" duration="85000" />
+      <workItem from="1607921540428" duration="63000" />
+      <workItem from="1608713555718" duration="4492000" />
+      <workItem from="1608772636348" duration="11642000" />
+      <workItem from="1608873736804" duration="1000" />
+      <workItem from="1608873750832" duration="253000" />
+      <workItem from="1608874026236" duration="29000" />
+      <workItem from="1608874124868" duration="41000" />
+      <workItem from="1608874896773" duration="15000" />
+      <workItem from="1608874925570" duration="10000" />
+      <workItem from="1608875275502" duration="7929000" />
     </task>
     <task id="LOCAL-00170" summary="通过焦点失去来触发传值">
       <created>1603268838882</created>
@@ -546,7 +509,63 @@
       <option name="project" value="LOCAL" />
       <updated>1604651574031</updated>
     </task>
-    <option name="localTasksCounter" value="211" />
+    <task id="LOCAL-00211" summary="修改部分测试数据">
+      <created>1604892425616</created>
+      <option name="number" value="00211" />
+      <option name="presentableId" value="LOCAL-00211" />
+      <option name="project" value="LOCAL" />
+      <updated>1604892425616</updated>
+    </task>
+    <task id="LOCAL-00212" summary="第12版本">
+      <created>1604892468515</created>
+      <option name="number" value="00212" />
+      <option name="presentableId" value="LOCAL-00212" />
+      <option name="project" value="LOCAL" />
+      <updated>1604892468516</updated>
+    </task>
+    <task id="LOCAL-00213" summary="修改发展潜力">
+      <created>1608714446705</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1608714446705</updated>
+    </task>
+    <task id="LOCAL-00214" summary="修改发展潜力,强调下，内容写到了total页面">
+      <created>1608716501013</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1608716501013</updated>
+    </task>
+    <task id="LOCAL-00215" summary="总览页面的左下角数据，删除多余的雷达图">
+      <created>1608717395514</created>
+      <option name="number" value="00215" />
+      <option name="presentableId" value="LOCAL-00215" />
+      <option name="project" value="LOCAL" />
+      <updated>1608717395514</updated>
+    </task>
+    <task id="LOCAL-00216" summary="优化app的注释">
+      <created>1608776541424</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1608776541424</updated>
+    </task>
+    <task id="LOCAL-00217" summary="antdv 中的sorter方法里也可以使用系统自带的方法&#10;sorter: (a, b) =&gt; new Date(a.time).getTime() - new Date(b.time).getTime(),">
+      <created>1608795488379</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1608795488379</updated>
+    </task>
+    <task id="LOCAL-00218" summary="完成部分传值">
+      <created>1608803003400</created>
+      <option name="number" value="00218" />
+      <option name="presentableId" value="LOCAL-00218" />
+      <option name="project" value="LOCAL" />
+      <updated>1608803003400</updated>
+    </task>
+    <option name="localTasksCounter" value="219" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,14 +601,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="去掉忘记密码" />
-    <MESSAGE value="恢复忘记密码，删掉记住密码" />
-    <MESSAGE value="将组织和人员的空值用图标表示" />
-    <MESSAGE value="多个图标只有最后一个自动更新大小，" />
-    <MESSAGE value="多个图标只有最后一个自动更新大小，&#10;window.addEventListener('resize', this.chartPie.resize);" />
-    <MESSAGE value="调整倒计时颜色" />
-    <MESSAGE value="修复 Error in v-on handler: &quot;TypeError: Cannot read property 'clickData' of undefined&quot;  &#10;this.$nextTick(function () {&#10;        this.$refs.ContentsUp.clickData();&#10;      });" />
-    <MESSAGE value="0.0.5版本" />
     <MESSAGE value="修复了时间显示格式的问题" />
     <MESSAGE value="饼状图缩小" />
     <MESSAGE value="调整登录框位置" />
@@ -607,24 +618,23 @@
     <MESSAGE value="优化路由中的&lt;a&gt;标签的显示效果" />
     <MESSAGE value="优化路由中的&lt;a&gt;标签的显示效果  剩余部分" />
     <MESSAGE value="打包11" />
-    <option name="LAST_COMMIT_MESSAGE" value="打包11" />
+    <MESSAGE value="修改部分测试数据" />
+    <MESSAGE value="第12版本" />
+    <MESSAGE value="修改发展潜力" />
+    <MESSAGE value="修改发展潜力,强调下，内容写到了total页面" />
+    <MESSAGE value="总览页面的左下角数据，删除多余的雷达图" />
+    <MESSAGE value="优化app的注释" />
+    <MESSAGE value="antdv 中的sorter方法里也可以使用系统自带的方法&#10;sorter: (a, b) =&gt; new Date(a.time).getTime() - new Date(b.time).getTime()," />
+    <MESSAGE value="完成部分传值" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成部分传值" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="826" y="432" key="#ESLint" timestamp="1599535417718">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="826" y="432" key="#ESLint/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1599535417718" />
-    <state x="826" y="432" key="#ESLint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599473331741" />
-    <state x="818" y="356" key="#Notifications" timestamp="1597916829791">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="818" y="356" key="#Notifications/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916829791" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603162415408">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608716576512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603162415408" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599118238628" />
-    <state x="372" y="75" width="1200" height="840" maximized="true" key="DiffContextDialog" timestamp="1603442690869">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608716576512" />
+    <state x="372" y="75" width="1200" height="840" maximized="true" key="DiffContextDialog" timestamp="1607908922164">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="372" y="75" width="1200" height="840" maximized="true" key="DiffContextDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603349755964" />
@@ -632,7 +642,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603244404219" />
-    <state x="780" y="226" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598505023455" />
     <state x="-1137" y="341" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1603444574479">
       <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
@@ -652,17 +661,11 @@
     </state>
     <state x="-1394" y="-7" key="SettingsEditor/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1604640061808" />
     <state x="526" y="91" key="SettingsEditor/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603256651261" />
-    <state x="518" y="157" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598922387845" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1599199373140">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599199373140" />
-    <state x="-1311" y="148" key="Vcs.Push.Dialog.v2" timestamp="1604640250002">
+    <state x="-1311" y="148" key="Vcs.Push.Dialog.v2" timestamp="1604892478831">
       <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
-    <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1604640250002" />
+    <state x="-1311" y="148" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1604892478831" />
     <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1603256447595" />
-    <state x="609" y="246" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599460494989" />
     <state x="-1157" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603092657420">
       <screen x="-1920" y="-98" width="1920" height="1040" />
     </state>
@@ -671,18 +674,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1602471557655" />
-    <state x="927" y="240" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597916421385" />
-    <state x="-1122" y="168" key="run.anything.popup" timestamp="1603960980290">
-      <screen x="-1920" y="-98" width="1920" height="1040" />
+    <state x="798" y="266" key="run.anything.popup" timestamp="1608889000443">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1122" y="168" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1603960980290" />
-    <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1600247299037" />
-    <state x="798" y="266" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598601600117" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1604630278170">
+    <state x="798" y="266" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608889000443" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup" timestamp="1608795447354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1289" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@-1920.-98.1920.1040" timestamp="1604038385695" />
     <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-98.1920.1040@0.0.1920.1040" timestamp="1604630278170" />
-    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1599200055705" />
+    <state x="631" y="250" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608795447354" />
   </component>
 </project>

@@ -3,7 +3,7 @@
     <div class="contributionDetailed">
       <a-table
         :columns="columns"
-        :data-source="data"
+        :data-source="datas"
         @change="onChange"
         :pagination="{ pageSize: 3 }"
         :scroll="{ y: 240 }"/>
@@ -12,41 +12,41 @@
 </template>
 
 <script>
-import Bus from '../../path/bus';
+// import Bus from '../../path/bus';
 
 export default {
   name: 'PersonWork',
   data() {
     return {
-      test_name: '',
-      data: [
+      itemUrl: [],
+      datas: [
         {
           key: '1',
-          name: this.test_name,
+          name: '张三',
           time: '2019-05-10',
           info: '签下10W大单，创下本公司单笔订单记录。',
         },
         {
           key: '2',
-          name: this.test_name,
+          name: '张三',
           time: '2019-12-10',
           info: '签下50W大单，创下本公司单笔订单记录。',
         },
         {
           key: '3',
-          name: this.test_name,
+          name: '张三',
           time: '2020-03-10',
           info: '签下200W大单，创下本公司单笔订单记录。',
         },
         {
           key: '4',
-          name: this.test_name,
+          name: '张三',
           time: '2020-08-08',
           info: '将竞争对手的重要客户挖过来了。',
         },
         {
           key: '5',
-          name: this.test_name,
+          name: '张三',
           time: '2020-12-10',
           info: '成功与菊厂达成战略合作伙伴关系。',
         },
@@ -77,15 +77,26 @@ export default {
       console.log('params', pagination, sorter);
     },
   },
-  beforeCreate() {
-    // 此时测试，直接调用其他地方的被查看人员姓名，后期需要写专属api，获取数据
-    // 接收被查看人的信息，姓名
-    Bus.$on('test_name', (data) => {
-      const vm = this;
-      vm.test_name = data;
-      console.log(this.test_name, '被查看人员姓名'); // 这里取到了被点击的列表所对应的人员的信息链接
-    });
-  },
+  // created() {
+  //   const vm = this;
+  //   // 用$on事件来接收参数
+  //   Bus.$on('itemUrl', (data) => {
+  //     vm.itemUrl = data;
+  //     console.log(this.itemUrl, '测试'); // 这里取到了被点击的列表所对应的人员的信息链接
+  //     const url = this.itemUrl;
+  //     this.$http.get(url)
+  //       .then((res) => {
+  //         // eslint-disable-next-line no-plusplus
+  //         for (let i = 0; i <= this.datas.length; i++) {
+  //           console.log(this.datas[i], '第一次');
+  //           this.datas[i].name = res.data.name;
+  //           console.log(res.data, 'dsadasdasdas第二次dasdasdada ', this.datas[i]);
+  //         }
+  //       }).catch((error) => {
+  //         console.log(error);
+  //       });
+  //   });
+  // },
 };
 
 </script>
