@@ -18,7 +18,6 @@ export default {
   name: 'PersonWork',
   data() {
     return {
-      itemUrl: [],
       datas: [
         {
           key: '1',
@@ -77,26 +76,6 @@ export default {
       console.log('params', pagination, sorter);
     },
   },
-  // created() {
-  //   const vm = this;
-  //   // 用$on事件来接收参数
-  //   Bus.$on('itemUrl', (data) => {
-  //     vm.itemUrl = data;
-  //     console.log(this.itemUrl, '测试'); // 这里取到了被点击的列表所对应的人员的信息链接
-  //     const url = this.itemUrl;
-  //     this.$http.get(url)
-  //       .then((res) => {
-  //         // eslint-disable-next-line no-plusplus
-  //         for (let i = 0; i <= this.datas.length; i++) {
-  //           console.log(this.datas[i], '第一次');
-  //           this.datas[i].name = res.data.name;
-  //           console.log(res.data, 'dsadasdasdas第二次dasdasdada ', this.datas[i]);
-  //         }
-  //       }).catch((error) => {
-  //         console.log(error);
-  //       });
-  //   });
-  // },
 };
 
 </script>
