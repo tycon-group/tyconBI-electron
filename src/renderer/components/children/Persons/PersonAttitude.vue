@@ -64,9 +64,6 @@
         </a-popover>
       </div>
     </div>
-    <div class="trend">
-      <a-empty style="margin-top: 10%;"><span slot="description">值为空</span></a-empty>
-    </div>
   </div>
 </template>
 
@@ -75,7 +72,6 @@ export default {
   name: 'PersonWork',
   data() {
     return {
-      testss: '2',
     };
   },
 };
@@ -89,26 +85,22 @@ export default {
 
 .detailed {
   width: 100%;
-  height: 40%;
-  border-bottom: 1px solid #dddddd;
-}
-.trend {
-  width: 100%;
-  height: 60%;
+  height: 95%;
 }
 
 .col1 {
+  margin-top: 2%;
+  padding-top: 5%;
   width: 25%;
-  height: 50%;
+  height: 45%;
   float: left;
-  margin-top: -20px;
   text-align: center;
 }
 .col2 {
   width: 25%;
-  height: 50%;
+  height: 45%;
+  padding-top: 5%;
   float: left;
-  margin-top: -10px;
   text-align: center;
 }
 

@@ -29,9 +29,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="暂时去掉动态传值，等后续接口">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonPotential.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonPotential.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,14 +229,7 @@
       <workItem from="1609113237711" duration="5000" />
       <workItem from="1609113554527" duration="56000" />
       <workItem from="1609113618632" duration="98000" />
-      <workItem from="1609117286857" duration="4480000" />
-    </task>
-    <task id="LOCAL-00172" summary="绑定好月份选择">
-      <created>1603334865114</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1603334865114</updated>
+      <workItem from="1609117286857" duration="4921000" />
     </task>
     <task id="LOCAL-00173" summary="绑定好季度">
       <created>1603335729876</created>
@@ -574,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609120404700</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="发展潜力模拟数据">
+      <created>1609122348115</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1609122348116</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +610,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="调整登录框位置" />
     <MESSAGE value="去掉生日选项，改为工号" />
     <MESSAGE value="替换发展潜力，改为放在总览中的，晋升评价" />
     <MESSAGE value="调整部分选项框的样式" />
@@ -635,6 +634,7 @@
     <MESSAGE value="完成部分传值" />
     <MESSAGE value="暂时去掉动态传值，等后续接口" />
     <MESSAGE value="遵纪守法模拟数据，建议改名" />
-    <option name="LAST_COMMIT_MESSAGE" value="遵纪守法模拟数据，建议改名" />
+    <MESSAGE value="发展潜力模拟数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="发展潜力模拟数据" />
   </component>
 </project>
