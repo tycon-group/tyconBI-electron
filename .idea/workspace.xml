@@ -29,9 +29,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="">
+    <list default="true" id="5195a550-ad99-4316-bc0a-2118d6e546d1" name="Default Changelist" comment="隐藏组织nav，设置scoped，，CSS只作用于当前">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/children/Persons/PersonAttitude.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/path/PersonListNav.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,49 +230,8 @@
       <workItem from="1609113237711" duration="5000" />
       <workItem from="1609113554527" duration="56000" />
       <workItem from="1609113618632" duration="98000" />
-      <workItem from="1609117286857" duration="4921000" />
-    </task>
-    <task id="LOCAL-00173" summary="绑定好季度">
-      <created>1603335729876</created>
-      <option name="number" value="00173" />
-      <option name="presentableId" value="LOCAL-00173" />
-      <option name="project" value="LOCAL" />
-      <updated>1603335729877</updated>
-    </task>
-    <task id="LOCAL-00174" summary="三和一，部分需修改">
-      <created>1603349700275</created>
-      <option name="number" value="00174" />
-      <option name="presentableId" value="LOCAL-00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1603349700275</updated>
-    </task>
-    <task id="LOCAL-00175" summary="刚刚误删了元素二的赋值；删除无意义的打印">
-      <created>1603350123804</created>
-      <option name="number" value="00175" />
-      <option name="presentableId" value="LOCAL-00175" />
-      <option name="project" value="LOCAL" />
-      <updated>1603350123804</updated>
-    </task>
-    <task id="LOCAL-00176" summary="优化打印提示">
-      <created>1603350284269</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1603350284269</updated>
-    </task>
-    <task id="LOCAL-00177" summary="把折线图组件拆解到上一级">
-      <created>1603350624020</created>
-      <option name="number" value="00177" />
-      <option name="presentableId" value="LOCAL-00177" />
-      <option name="project" value="LOCAL" />
-      <updated>1603350624020</updated>
-    </task>
-    <task id="LOCAL-00178" summary="在输入框中输入，获取日志趋势信息；&#10;需要加上选择框else判断；&#10;趋势图默认值需要获取">
-      <created>1603361342734</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1603361342734</updated>
+      <workItem from="1609117286857" duration="12522000" />
+      <workItem from="1609206089078" duration="18556000" />
     </task>
     <task id="LOCAL-00179" summary="获取并打印了默认情况下，折线图的值，">
       <created>1603420703942</created>
@@ -574,7 +534,49 @@
       <option name="project" value="LOCAL" />
       <updated>1609122348116</updated>
     </task>
-    <option name="localTasksCounter" value="222" />
+    <task id="LOCAL-00222" summary="个人工作态度部分数据">
+      <created>1609122983001</created>
+      <option name="number" value="00222" />
+      <option name="presentableId" value="LOCAL-00222" />
+      <option name="project" value="LOCAL" />
+      <updated>1609122983001</updated>
+    </task>
+    <task id="LOCAL-00223" summary="隐藏组织nav，设置scoped，，CSS只作用于当前">
+      <created>1609123783826</created>
+      <option name="number" value="00223" />
+      <option name="presentableId" value="LOCAL-00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1609123783826</updated>
+    </task>
+    <task id="LOCAL-00224" summary="修改readme">
+      <created>1609145705495</created>
+      <option name="number" value="00224" />
+      <option name="presentableId" value="LOCAL-00224" />
+      <option name="project" value="LOCAL" />
+      <updated>1609145705495</updated>
+    </task>
+    <task id="LOCAL-00225" summary="发展潜力的测试数据更新">
+      <created>1609219886643</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1609219886643</updated>
+    </task>
+    <task id="LOCAL-00226" summary="提交突出贡献的模拟数据">
+      <created>1609222758369</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1609222758369</updated>
+    </task>
+    <task id="LOCAL-00227" summary="遵纪守法模拟数据">
+      <created>1609223806882</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1609223806882</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,12 +612,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="去掉生日选项，改为工号" />
-    <MESSAGE value="替换发展潜力，改为放在总览中的，晋升评价" />
-    <MESSAGE value="调整部分选项框的样式" />
-    <MESSAGE value="调整部分选项框的样式 2" />
-    <MESSAGE value="调整部分选项框的样式 3" />
-    <MESSAGE value="调整工作态度的数据呈现" />
     <MESSAGE value="微调总计的雷达图大小" />
     <MESSAGE value="合并子组件，去除不必要配置" />
     <MESSAGE value="添加水球图表示总体评价" />
@@ -635,6 +631,12 @@
     <MESSAGE value="暂时去掉动态传值，等后续接口" />
     <MESSAGE value="遵纪守法模拟数据，建议改名" />
     <MESSAGE value="发展潜力模拟数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="发展潜力模拟数据" />
+    <MESSAGE value="个人工作态度部分数据" />
+    <MESSAGE value="隐藏组织nav，设置scoped，，CSS只作用于当前" />
+    <MESSAGE value="修改readme" />
+    <MESSAGE value="发展潜力的测试数据更新" />
+    <MESSAGE value="提交突出贡献的模拟数据" />
+    <MESSAGE value="遵纪守法模拟数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="遵纪守法模拟数据" />
   </component>
 </project>

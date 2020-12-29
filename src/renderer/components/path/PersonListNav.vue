@@ -123,6 +123,27 @@ export default {
             info: '收到浦江镇党委的嘉奖。',
           },
         ];
+        this.attitudeData = {
+          estimateTime: 135,
+          actualTime: 155,
+          leaveTimes: 0,
+          leaveDay: 0,
+          leaveHour: 0,
+          outTimes: 0,
+          outDay: 0,
+          outHour: 0,
+          overTimes: 4,
+          overHour: 20,
+          lateTimes: 0,
+          lateMinute: 0,
+          earlyTimes: 0,
+          earlyMinute: 0,
+          clearLateTimes: 0,
+          clearEarlyTimes: 0,
+          clearLackTimes: 0,
+          clearLateMinute: 0,
+          clearEarlyMinute: 0,
+        };
       } else if (this.itemEmpID === 'A00076') {
         this.potentialData = [
           {
@@ -170,6 +191,27 @@ export default {
           },
         ];
         this.lawData = [];
+        this.attitudeData = {
+          estimateTime: 135,
+          actualTime: 185,
+          leaveTimes: 0,
+          leaveDay: 0,
+          leaveHour: 0,
+          outTimes: 0,
+          outDay: 0,
+          outHour: 0,
+          overTimes: 10,
+          overHour: 50,
+          lateTimes: 0,
+          lateMinute: 0,
+          earlyTimes: 0,
+          earlyMinute: 0,
+          clearLateTimes: 0,
+          clearEarlyTimes: 0,
+          clearLackTimes: 0,
+          clearLateMinute: 0,
+          clearEarlyMinute: 0,
+        };
       } else if (this.itemEmpID === 'A00134') {
         this.potentialData = [
           {
@@ -212,6 +254,27 @@ export default {
           },
         ];
         this.lawData = [];
+        this.attitudeData = {
+          estimateTime: 135,
+          actualTime: 175,
+          leaveTimes: 0,
+          leaveDay: 0,
+          leaveHour: 0,
+          outTimes: 0,
+          outDay: 0,
+          outHour: 0,
+          overTimes: 7,
+          overHour: 40,
+          lateTimes: 0,
+          lateMinute: 0,
+          earlyTimes: 0,
+          earlyMinute: 0,
+          clearLateTimes: 0,
+          clearEarlyTimes: 0,
+          clearLackTimes: 0,
+          clearLateMinute: 0,
+          clearEarlyMinute: 0,
+        };
       } else {
         this.potentialData = [
           {
@@ -248,6 +311,27 @@ export default {
             info: '使用脚本程序，违规领取公司的月饼。',
           },
         ];
+        this.attitudeData = {
+          estimateTime: 135,
+          actualTime: 139,
+          leaveTimes: 1,
+          leaveDay: 0,
+          leaveHour: 4,
+          outTimes: 1,
+          outDay: 0,
+          outHour: 4,
+          overTimes: 2,
+          overHour: 4,
+          lateTimes: 1,
+          lateMinute: 60,
+          earlyTimes: 0,
+          earlyMinute: 0,
+          clearLateTimes: 1,
+          clearEarlyTimes: 0,
+          clearLackTimes: 1,
+          clearLateMinute: 3,
+          clearEarlyMinute: 0,
+        };
       }
     });
 
