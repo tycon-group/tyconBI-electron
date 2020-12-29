@@ -75,7 +75,7 @@ export default {
             areaStyle: {},
             data: [
               {
-                value: [60, 73, 85, 40, 16],
+                value: [60, 73, 85, 90, 70],
                 name: '维度占比',
               },
             ],
@@ -88,96 +88,30 @@ export default {
       this.drawPieChart();
     },
     initWater() {
-      const value = this.score;
-      const myChart = echarts.init(document.getElementById('myChartWater'));
-      const colorScore = this.score * 100;
-      const colorList = [];
-      if (colorScore >= 90) {
-        const color1 = 'rgb(45,224,1135)';
-        const color2 = 'rgb(74,227,141)';
-        colorList.push(color1);
-        colorList.push(color2);
-      } else if (colorScore >= 80 && colorScore < 90) {
-        const color1 = 'rgb(41,145,235)';
-        const color2 = 'rgb(0,137,255)';
-        colorList.push(color1);
-        colorList.push(color2);
-      } else if (colorScore >= 60 && colorScore < 80) {
-        const color1 = 'rgb(219,185,246)';
-        const color2 = 'rgb(253,208,0)';
-        colorList.push(color1);
-        colorList.push(color2);
-      } else if (colorScore < 60) {
-        const color1 = 'rgb(207,74,84)';
-        const color2 = 'rgb(243,17,34)';
-        colorList.push(color1);
-        colorList.push(color2);
-      }
-      const data = [];
-      data.push(value);
-      data.push(value);
-      myChart.setOption({
-        backgroundColor: 'white', // 容器背景颜色
-        title: {
-          text: '',
-          textStyle: {
-            fontWeight: 'normal',
-            fontSize: 25,
-            color: 'rgb(97, 142, 205)',
+      const totalChart = echarts.init(document.getElementById('water'));
+      const option = {
+        tooltip: {
+          formatter: '{a} <br/>{b} : {c}%',
+        },
+        toolbox: {
+          feature: {
+            restore: {},
+            saveAsImage: {},
           },
         },
         series: [
           {
-            type: 'liquidFill',
-            radius: '60%', // 水球的半径
-            data,
-            backgroundStyle: {
-              color: 'white',
-            },
-            label: {
-              normal: {
-                formatter:
-                    `{a|${
-                      (value * 100).toFixed(0)
-                    }}` +
-                    ' ' +
-                    '\n' +
-                    '\n' +
-                    `{b|${
-                      this.healthyName
-                    }}`,
-                textStyle: {
-                  fontSize: 40, // 字体大小
-                },
-                position: ['50%', '50%'],
-                rich: {
-                  // 富文本 对字体进一步设置样式。a对应的value,b对应的healthyName
-                  a: {
-                    fontSize: 50,
-                    lineHeight: 10,
-                    fontWeight: 'bold',
-                    padding: [0, 0, 0, 20],
-                  },
-                  b: {
-                    fontSize: 30,
-                    lineHeight: 10,
-                    fontWeight: 'bold',
-                  },
-                },
-              },
-            },
-            outline: {
-              show: true, // 是否显示轮廓 布尔值
-              borderDistance: 0, // 外部轮廓与图表的距离 数字
-              itemStyle: {
-                borderColor: '#edf2f6', // 边框的颜色
-                borderWidth: 1, // 边框的宽度
-              },
-            },
-            color: [...colorList],
+            name: '业务指标',
+            type: 'gauge',
+            detail: { formatter: '{value}%' },
+            data: [{ value: 50, name: '完成率' }],
           },
         ],
-      });
+      };
+      setInterval(() => {
+        option.series[0].data[0].value = (Math.random() * 100).toFixed(2) - 0;
+        totalChart.setOption(option, true);
+      }, 2000);
     },
   },
 
