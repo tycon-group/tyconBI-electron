@@ -40,11 +40,83 @@ export default {
     return {
       current: ['total'],
       flagTS: false,
+      potentialData: '',
     };
   },
   props: ['worklogsData', 'worklogsPieData'],
   mounted() {
+    // 这里是发展潜力的测试方法
     const vm = this;
+    Bus.$on('itemEmpID', (data) => {
+      // 这里是工作能力的测试方法
+      vm.itemEmpID = data;
+      if (this.itemEmpID === 'A00001') {
+        this.potentialData = [
+          {
+            i: 1,
+            co: '#f50',
+            io: '一级注册建筑师',
+          },
+          {
+            i: 2,
+            co: '#87d068',
+            io: '管理精通',
+          },
+          {
+            i: 3,
+            co: '#232ee9',
+            io: '风投精通',
+          },
+          {
+            i: 4,
+            co: '#2db7f5',
+            io: '商务英语精通',
+          },
+        ];
+      } else if (this.itemEmpID === 'A00076') {
+        this.potentialData = [
+          {
+            i: 1,
+            co: '#108ee9',
+            io: '风控精通',
+          },
+          {
+            i: 2,
+            co: '#085564',
+            io: '一级律师',
+          },
+          {
+            i: 3,
+            co: '#87d068',
+            io: '管理精通',
+          },
+          {
+            i: 4,
+            co: '#2db7f5',
+            io: '英语精通',
+          },
+        ];
+      } else {
+        this.potentialData = [
+          {
+            i: 1,
+            co: '#108ee9',
+            io: '英语精通',
+          },
+          {
+            i: 2,
+            co: '#87d068',
+            io: '管理精通',
+          },
+          {
+            i: 3,
+            co: '#823418',
+            io: '德语精通',
+          },
+        ];
+      }
+    });
+
     Bus.$on('flagTS', (data) => {
       vm.flagTS = data;
       console.log(this.flagTS, '测试显示');
@@ -80,7 +152,7 @@ export default {
       this.$router.push({
         name: 'personPotential',
         params: {
-          potentialPER: this.worklogsData, // 待修改数据源
+          potentialPER: this.potentialData, // 待再次修改数据源
         },
       });
     },

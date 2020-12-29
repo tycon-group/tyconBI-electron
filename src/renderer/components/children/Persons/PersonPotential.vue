@@ -5,17 +5,8 @@
         技能库：
       </h4>
       <div>
-        <a-tag class="tags" color="#f50">
-          office 精通
-        </a-tag>
-        <a-tag class="tags" color="#2db7f5">
-          CAD 良好
-        </a-tag>
-        <a-tag class="tags" color="#87d068">
-          Photoshop 精通
-        </a-tag>
-        <a-tag class="tags" color="#108ee9">
-          AI 良好
+        <a-tag class="tags" v-for="(item, i) in datas" :key="i" :color=item.co>
+          {{ item.io }}
         </a-tag>
       </div>
     </div>
@@ -23,8 +14,21 @@
 </template>
 
 <script>
+
 export default {
   name: 'PersonPotential',
+  data() {
+    return {
+      datas: [],
+    };
+  },
+  // 特意为模拟数据所写
+  mounted() {
+    setTimeout(() => {
+      this.datas = this.$route.params.potentialPER;
+      console.log(this.datas, 'chulai ');
+    }, 200);
+  },
 };
 </script>
 

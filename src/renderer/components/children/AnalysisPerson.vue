@@ -36,8 +36,9 @@ export default {
     const vm = this;
     // 默认出现上一个月值
     Bus.$on('itemEmpID', (data) => {
+      // 这里是工作能力的测试方法
       vm.itemEmpID = data;
-      console.log(this.itemEmpID); // 这里取到了被点击的列表所对应的人员的信息链接
+      console.log(this.itemEmpID, '这里取到了被点击的列表所对应的人员的信息链接'); // 这里取到了被点击的列表所对应的人员的信息链接
       // 此处获取上月数据，故月份值-1，但.getMonth()方法返回值为0-11类似于index，所以不用-1
       console.log(years, months);
       const url = `https://tyconcps.cn:4399/kpi/worklog/reports/month/?empID=${this.itemEmpID}&year=${years}&month=${months}`; // 还需要加上当前年条件
@@ -114,6 +115,10 @@ export default {
             console.log(error);
           });
       }
+      // 发展潜力的动态数据
+      // 遵纪守法的动态数据
+      // 突出贡献的动态数据
+      // 工作态度的动态数据
     });
     Bus.$on('pieYear', (data) => {
       vm.pieYear = data;
