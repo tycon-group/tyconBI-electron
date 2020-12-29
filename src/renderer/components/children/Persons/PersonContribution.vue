@@ -6,7 +6,7 @@
         :data-source="datas"
         @change="onChange"
         :pagination="{ pageSize: 3 }"
-        :scroll="{ y: 240 }"/>
+        :scroll="{ y: 280 }"/>
     </div>
   </div>
 </template>
@@ -18,38 +18,7 @@ export default {
   name: 'PersonWork',
   data() {
     return {
-      datas: [
-        {
-          key: '1',
-          name: '张三',
-          time: '2019-05-10',
-          info: '签下10W大单，创下本公司单笔订单记录。',
-        },
-        {
-          key: '2',
-          name: '张三',
-          time: '2019-12-10',
-          info: '签下50W大单，创下本公司单笔订单记录。',
-        },
-        {
-          key: '3',
-          name: '张三',
-          time: '2020-03-10',
-          info: '签下200W大单，创下本公司单笔订单记录。',
-        },
-        {
-          key: '4',
-          name: '张三',
-          time: '2020-08-08',
-          info: '将竞争对手的重要客户挖过来了。',
-        },
-        {
-          key: '5',
-          name: '张三',
-          time: '2020-12-10',
-          info: '成功与菊厂达成战略合作伙伴关系。',
-        },
-      ],
+      datas: [],
       columns: [
         {
           title: '姓名',
@@ -61,6 +30,12 @@ export default {
           defaultSortOrder: 'descend',
           // eslint-disable-next-line no-undef
           sorter: (a, b) => new Date(a.time).getTime() - new Date(b.time).getTime(),
+        },
+        {
+          title: '颁发单位',
+          dataIndex: 'dept',
+          sorter: (a, b) => a.dept.length - b.dept.length,
+          sortDirections: ['descend', 'ascend'],
         },
         {
           title: '事件简介',
@@ -75,6 +50,12 @@ export default {
     onChange(pagination, sorter) {
       console.log('params', pagination, sorter);
     },
+  },
+  mounted() {
+    setTimeout(() => {
+      this.datas = this.$route.params.contributionPER;
+      console.log(this.datas, 'tuchugongxian ');
+    }, 200);
   },
 };
 

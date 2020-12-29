@@ -41,6 +41,10 @@ export default {
       current: ['total'],
       flagTS: false,
       potentialData: '',
+      contributionData: '',
+      lawData: '',
+      attitudeData: '',
+      totalData: '',
     };
   },
   props: ['worklogsData', 'worklogsPieData'],
@@ -73,6 +77,43 @@ export default {
             io: '商务英语精通',
           },
         ];
+        this.contributionData = [
+          {
+            key: '1',
+            name: '邵乃文',
+            time: '2019-05-10',
+            dept: '总裁办',
+            info: '签下2亿大单，创下本公司单笔订单最高记录。',
+          },
+          {
+            key: '2',
+            name: '邵乃文',
+            time: '2019-12-10',
+            dept: '总裁办',
+            info: '签下5亿大单，创下本公司单笔订单最高记录。',
+          },
+          {
+            key: '3',
+            name: '邵乃文',
+            time: '2020-03-10',
+            dept: '总裁办',
+            info: '签下10亿大单，创下本公司单笔订单记录。',
+          },
+          {
+            key: '4',
+            name: '邵乃文',
+            time: '2020-08-08',
+            dept: '总裁办',
+            info: '成功中标园区地块，让太江集团有了自己的第一个园区。',
+          },
+          {
+            key: '5',
+            name: '邵乃文',
+            time: '2020-12-10',
+            dept: '总裁办',
+            info: '成功升级为一级建筑单位。',
+          },
+        ];
       } else if (this.itemEmpID === 'A00076') {
         this.potentialData = [
           {
@@ -96,6 +137,29 @@ export default {
             io: '英语精通',
           },
         ];
+        this.contributionData = [
+          {
+            key: '1',
+            name: '于坤',
+            time: '2019-06-10',
+            dept: '总裁办',
+            info: '精准风控，是公司成功避开易亏损项目。',
+          },
+          {
+            key: '2',
+            name: '于坤',
+            time: '2019-12-12',
+            dept: '总裁办',
+            info: '研读新修订宪法，同步更新公司各项规章制度。',
+          },
+          {
+            key: '3',
+            name: '于坤',
+            time: '2020-08-10',
+            dept: '总裁办',
+            info: '发现商业合同中不平等的条款，及时提出异议，让公司免于亏损。',
+          },
+        ];
       } else {
         this.potentialData = [
           {
@@ -114,6 +178,29 @@ export default {
             io: '德语精通',
           },
         ];
+        this.contributionData = [
+          {
+            key: '1',
+            name: '蒋玲玲',
+            time: '2019-09-10',
+            dept: '总裁办',
+            info: '重新制定公司内部人事行政规范，使公司运转效率更高。',
+          },
+          {
+            key: '2',
+            name: '蒋玲玲',
+            time: '2020-06-25',
+            dept: '总裁办',
+            info: '成功举办端午活动，得到全公司上下一致好评，让公司上下更加齐心。',
+          },
+          {
+            key: '3',
+            name: '蒋玲玲',
+            time: '2020-12-25',
+            dept: '总裁办',
+            info: '举办圣诞节活动，从你画我猜到交换礼物，得到了大家的高度赞赏。',
+          },
+        ];
       }
     });
 
@@ -127,7 +214,7 @@ export default {
       this.$router.push({
         name: 'personTotal',
         params: {
-          totalPER: this.worklogsData, // 待修改数据源
+          totalPER: this.totalData, // 待修改数据源
         },
       });
     },
@@ -144,7 +231,7 @@ export default {
       this.$router.push({
         name: 'personAttitude',
         params: {
-          attitudePER: this.worklogsData, // 待修改数据源
+          attitudePER: this.attitudeData, // 待修改数据源
         },
       });
     },
@@ -160,7 +247,7 @@ export default {
       this.$router.push({
         name: 'personContribution',
         params: {
-          contributionPER: this.worklogsData, // 待修改数据源
+          contributionPER: this.contributionData, // 待修改数据源
         },
       });
     },
@@ -168,7 +255,7 @@ export default {
       this.$router.push({
         name: 'personLaw',
         params: {
-          lawPER: this.worklogsData, // 待修改数据源
+          lawPER: this.lawData, // 待修改数据源
         },
       });
     },
