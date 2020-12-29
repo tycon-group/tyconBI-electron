@@ -114,6 +114,15 @@ export default {
             info: '成功升级为一级建筑单位。',
           },
         ];
+        this.lawData = [
+          {
+            key: '1',
+            name: '邵乃文',
+            time: '2020-12-12',
+            dept: '党支部',
+            info: '收到浦江镇党委的嘉奖。',
+          },
+        ];
       } else if (this.itemEmpID === 'A00076') {
         this.potentialData = [
           {
@@ -160,7 +169,8 @@ export default {
             info: '发现商业合同中不平等的条款，及时提出异议，让公司免于亏损。',
           },
         ];
-      } else {
+        this.lawData = [];
+      } else if (this.itemEmpID === 'A00134') {
         this.potentialData = [
           {
             i: 1,
@@ -199,6 +209,43 @@ export default {
             time: '2020-12-25',
             dept: '总裁办',
             info: '举办圣诞节活动，从你画我猜到交换礼物，得到了大家的高度赞赏。',
+          },
+        ];
+        this.lawData = [];
+      } else {
+        this.potentialData = [
+          {
+            i: 1,
+            co: '#108ee9',
+            io: '游泳',
+          },
+          {
+            i: 2,
+            co: '#87d068',
+            io: '潜水',
+          },
+          {
+            i: 3,
+            co: '#823418',
+            io: '划水',
+          },
+        ];
+        this.contributionData = [
+          {
+            key: '1',
+            name: '某某',
+            time: '2020-12-12',
+            dept: '总经办',
+            info: '扶老奶奶过马路，被送锦旗。',
+          },
+        ];
+        this.lawData = [
+          {
+            key: '1',
+            name: '某某',
+            time: '2020-01-12',
+            dept: '总裁办',
+            info: '使用脚本程序，违规领取公司的月饼。',
           },
         ];
       }

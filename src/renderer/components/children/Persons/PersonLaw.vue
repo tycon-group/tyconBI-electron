@@ -16,20 +16,7 @@ export default {
   name: 'PersonLaw',
   data() {
     return {
-      datas: [
-        {
-          key: '1',
-          name: '李四',
-          time: '2019-05-10',
-          info: '路上见义勇为，扶摔倒的老奶奶。',
-        },
-        {
-          key: '2',
-          name: '李四',
-          time: '2020-12-10',
-          info: '虚报款项，让公司损失数万元。',
-        },
-      ],
+      datas: [],
       columns: [
         {
           title: '姓名',
@@ -41,6 +28,12 @@ export default {
           defaultSortOrder: 'descend',
           // eslint-disable-next-line no-undef
           sorter: (a, b) => new Date(a.time).getTime() - new Date(b.time).getTime(),
+        },
+        {
+          title: '颁发单位',
+          dataIndex: 'dept',
+          sorter: (a, b) => a.dept.length - b.dept.length,
+          sortDirections: ['descend', 'ascend'],
         },
         {
           title: '事件简介',
@@ -55,6 +48,12 @@ export default {
     onChange(pagination, sorter) {
       console.log('params', pagination, sorter);
     },
+  },
+  mounted() {
+    setTimeout(() => {
+      this.datas = this.$route.params.lawPER;
+      console.log(this.datas, '遵纪守法 ');
+    }, 200);
   },
 };
 
