@@ -54,6 +54,7 @@ export default {
     Bus.$on('itemEmpID', (data) => {
       // 这里是工作能力的测试方法
       vm.itemEmpID = data;
+      // 邵乃文
       if (this.itemEmpID === 'A00001') {
         this.potentialData = [
           {
@@ -144,6 +145,18 @@ export default {
           clearLateMinute: 0,
           clearEarlyMinute: 0,
         };
+        this.totalData = {
+          radarData: [60, 60, 90, 100, 70],
+          high_mark: 0,
+          low_mark: 0,
+          attendance: 0,
+          skills: 4,
+          contribute: 5,
+          lawsUp: 1,
+          lawsDown: 0,
+          // markData: this.markData.sum(this.radarData),
+        };
+        // 于坤
       } else if (this.itemEmpID === 'A00076') {
         this.potentialData = [
           {
@@ -212,6 +225,17 @@ export default {
           clearLateMinute: 0,
           clearEarlyMinute: 0,
         };
+        this.totalData = {
+          radarData: [60, 100, 90, 90, 60],
+          high_mark: 0,
+          low_mark: 0,
+          attendance: 100,
+          skills: 4,
+          contribute: 3,
+          lawsUp: 0,
+          lawsDown: 0,
+        };
+        // 蒋玲玲
       } else if (this.itemEmpID === 'A00134') {
         this.potentialData = [
           {
@@ -275,7 +299,19 @@ export default {
           clearLateMinute: 0,
           clearEarlyMinute: 0,
         };
+        this.totalData = {
+          radarData: [100, 100, 80, 90, 60],
+          high_mark: 7,
+          low_mark: 1,
+          attendance: 100,
+          // 个数减1
+          skills: 3,
+          contribute: 3,
+          lawsUp: 0,
+          lawsDown: 0,
+        };
       } else {
+        // 其他
         this.potentialData = [
           {
             i: 1,
@@ -331,6 +367,16 @@ export default {
           clearLackTimes: 1,
           clearLateMinute: 3,
           clearEarlyMinute: 0,
+        };
+        this.totalData = {
+          radarData: [60, 80, 80, 70, 50],
+          high_mark: 0,
+          low_mark: 0,
+          attendance: 80,
+          skills: 3,
+          contribute: 1,
+          lawsUp: 0,
+          lawsDown: 1,
         };
       }
     });

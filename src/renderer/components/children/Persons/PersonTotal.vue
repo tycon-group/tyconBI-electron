@@ -8,11 +8,11 @@
     <div class="evidence">
       <div class="evContent">
         <a-card>
-          <p>高分次数：{{ datas.high_mark }} 次</p>
-          <p>出勤率：{{ datas.attendance }} %</p>
-          <p>突出贡献次数：{{ datas.contribute }}次</p>
-          <p>出勤率：{{ datas.attendance }} %</p>
-          <p>突出贡献次数：{{ datas.contribute }}次</p>
+          <p>高分次数：{{ high_mark }} 次 | 低分次数：{{ low_mark }} 次</p>
+          <p>出勤率：{{ attendance }}</p>
+          <p>技能数量：{{ skills }} 个</p>
+          <p>突出贡献：{{ contribute }} 次</p>
+          <p>法纪记录：褒：{{ lawsUp }} 次 | 贬：{{ lawsDown }} 次</p>
         </a-card>
       </div>
       <div class="evMark">
@@ -32,7 +32,15 @@ export default {
   name: 'PersonTotal',
   data() {
     return {
-      datas: '',
+      radarData: [],
+      markData: '',
+      high_mark: '',
+      low_mark: '',
+      attendance: '',
+      skills: '',
+      contribute: '',
+      lawsUp: '',
+      lawsDown: '',
     };
   },
   methods: {
@@ -73,7 +81,7 @@ export default {
             areaStyle: {},
             data: [
               {
-                value: this.datas.radarData,
+                value: this.radarData,
                 name: '维度占比',
               },
             ],
@@ -89,7 +97,6 @@ export default {
     drawCharts() {
       this.drawPieChart();
       this.initWater();
-      // window.onresize = this.chartPie.resize;
     },
     initWater() {
       const totalChart = echarts.init(document.getElementById('myChartWater'));
@@ -450,7 +457,7 @@ export default {
         totalChart.setOption(option, true);
       }
       // 此处录入分数
-      numb(this.datas.markData);
+      numb(this.markData);
       // window.onresize = totalChart.resize;
       window.addEventListener('resize', () => {
         totalChart.resize();
@@ -460,8 +467,28 @@ export default {
 
   mounted() {
     setTimeout(() => {
-      this.datas = this.$route.params.totalPER;
-      console.log(this.datas, '总览 ');
+      const tempData = this.$route.params.totalPER;
+      this.radarData = tempData.radarData;
+      // 计算出晋升分值，目前使平均1:1
+      function sum(arr, n) {
+        return (n < 1) ? 0 : sum(arr, n - 1) + arr[n - 1];
+      }
+      const lenRadarData = this.radarData.length;
+      // 平均值
+      this.markData = sum(this.radarData, lenRadarData) / lenRadarData;
+      // 卡片内容
+      this.high_mark = tempData.high_mark;
+      this.low_mark = tempData.low_mark;
+      if (tempData.attendance === 0) {
+        this.attendance = '不参加考勤评价~';
+      } else {
+        this.attendance = `${tempData.attendance} %`;
+      }
+      this.skills = tempData.skills;
+      this.contribute = tempData.contribute;
+      this.lawsUp = tempData.lawsUp;
+      this.lawsDown = tempData.lawsDown;
+      console.log(this.markData, '总览 ');
       this.drawCharts();
     }, 200);
   },
@@ -497,7 +524,7 @@ export default {
 .evContent{
   width: 50%;
   height: 80%;
-  margin-top: 5%;
+  margin-top: 3%;
   float: left;
 }
 
