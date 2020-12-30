@@ -8,9 +8,11 @@
     <div class="evidence">
       <div class="evContent">
         <a-card>
-          <p>高分次数：{{ high_mark}} 次</p>
-          <p>出勤率：{{attendance}} %</p>
-          <p>突出贡献次数：{{ contribute}}次</p>
+          <p>高分次数：{{ datas.high_mark }} 次</p>
+          <p>出勤率：{{ datas.attendance }} %</p>
+          <p>突出贡献次数：{{ datas.contribute }}次</p>
+          <p>出勤率：{{ datas.attendance }} %</p>
+          <p>突出贡献次数：{{ datas.contribute }}次</p>
         </a-card>
       </div>
       <div class="evMark">
@@ -30,18 +32,14 @@ export default {
   name: 'PersonTotal',
   data() {
     return {
-      chartPie: null,
-      score: 0.9,
-      healthyName: '优秀',
-      high_mark: 3,
-      attendance: 99,
-      contribute: 3,
+      datas: '',
     };
   },
   methods: {
     drawPieChart() {
-      this.chartPie = echarts.init(document.getElementById('radars'));
-      this.chartPie.setOption({
+      const chartPie = echarts.init(document.getElementById('radars'));
+      this.chartP = chartPie;
+      const option = {
         title: {
           text: '综合分析',
         },
@@ -75,20 +73,27 @@ export default {
             areaStyle: {},
             data: [
               {
-                value: [60, 73, 85, 90, 70],
+                value: this.datas.radarData,
                 name: '维度占比',
               },
             ],
           },
         ],
+      };
+      chartPie.setOption(option, true);
+      // window.onresize = chartPie.resize;
+      window.addEventListener('resize', () => {
+        chartPie.resize();
       });
-      window.onresize = this.chartPie.resize;
     },
     drawCharts() {
       this.drawPieChart();
+      this.initWater();
+      // window.onresize = this.chartPie.resize;
     },
     initWater() {
       const totalChart = echarts.init(document.getElementById('myChartWater'));
+      this.chartT = totalChart;
       let data = 100;
       let rate = '♥♥♥♥♥';
       const option = {
@@ -422,36 +427,43 @@ export default {
         ],
       };
 
-      // 随机数据
-      function numb() {
-        data = Math.floor(Math.random() * 100);
-        if (data >= 0 && data < 20) {
-          rate = '♡♡♡♡♡';
-        } else if (data >= 20 && data < 40) {
+      // 爱心分类显示
+      function numb(mark) {
+        // 带参的分数
+        data = mark;
+        if (data >= 0 && data < 40) {
           rate = '♥♡♡♡♡';
         } else if (data >= 40 && data < 60) {
           rate = '♥♥♡♡♡';
-        } else if (data >= 60 && data < 80) {
+        } else if (data >= 60 && data < 75) {
           rate = '♥♥♥♡♡';
-        } else if (data >= 80 && data <= 100) {
+        } else if (data >= 75 && data < 90) {
           rate = '♥♥♥♥♡';
-        } else {
+        } else if (data >= 90 && data <= 100) {
           rate = '♥♥♥♥♥';
+        } else {
+          rate = '♡♡♡♡♡';
         }
         option.title[0].text = `晋升评分\n${rate}`;
         option.title[1].text = data;
         option.series[0].data[0].value = data;
         totalChart.setOption(option, true);
       }
-      setInterval(() => {
-        numb();
-      }, 1000);
+      // 此处录入分数
+      numb(this.datas.markData);
+      // window.onresize = totalChart.resize;
+      window.addEventListener('resize', () => {
+        totalChart.resize();
+      });
     },
   },
 
   mounted() {
-    this.drawCharts();
-    this.initWater();
+    setTimeout(() => {
+      this.datas = this.$route.params.totalPER;
+      console.log(this.datas, '总览 ');
+      this.drawCharts();
+    }, 200);
   },
   // updated: function () {
   //     this.drawCharts()
